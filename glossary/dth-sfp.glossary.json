@@ -2,7 +2,7 @@
   "$schema": "folio-glossary/v1",
   "id": "dth-sfp",
   "title": "Glossary of the Digital Transformation Handbook for Substandard and Falsified Medical Product Reporting Systems",
-  "description": "Domain terms for substandard and falsified (SF) medical product reporting systems, quoting the WHO handbook (ISBN 978-92-4-012074-7) with L1 page provenance and SKOS mappings into dpi-h-ra (litlfred/smart-ra), dth-sc (litlfred/dth-sc), dth-pc (litlfred/dth-pc), and dth-hrh (litlfred/dth-hrh). General digital health and enterprise architecture terms are held in dpi-h-ra; supply chain and traceability terms in dth-sc; product master data and trade item terms in dth-pc; and health workforce / ISCO-08 occupation terms in dth-hrh.",
+  "description": "Domain terms for substandard and falsified (SF) medical product reporting systems, quoting the WHO handbook (ISBN 978-92-4-012074-7) with L1 page provenance and SKOS mappings into dpi-h-ra (litlfred/smart-ra), dth-sc (litlfred/dth-sc), dth-pc (litlfred/dth-pc), and dth-hrh (litlfred/dth-hrh). General digital health and enterprise architecture terms are held in dpi-h-ra; supply chain and traceability terms in dth-sc; product master data and trade item terms in dth-pc; and health workforce / ISCO-08 occupation terms in dth-hrh. Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless dpi-h-ra, dth-sc, dth-pc, or dth-hrh already holds it (FHIR, ITU, UAT, POS, SDG, CQL, ISCO, NPC).",
   "modified": "2026-10-31",
   "source": "who-iris/library/9789240120747-eng",
   "license": "CC-BY-NC-SA-3.0-IGO",
@@ -12,7 +12,10 @@
       "prefLabel": "SF Report",
       "altLabel": [
         "substandard and falsified medical product report",
-        "SF medical product report"
+        "SF medical product report",
+        "SFR",
+        "SF",
+        "SFP"
       ],
       "definition": "A structured notification submitted by a health care professional, member of the public or patient, or pharmaceutical supply chain actor to a national medicines regulatory authority (NMRA) or designated surveillance system regarding a medical product suspected of being substandard, falsified, or unregistered.",
       "scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Captures the report data object produced by business process SF-REP-001 (Table 10, p. 29) and defined by core data elements SFR.A1.DE1–SFR.A1.DE10 (Table 11, p. 31).",
@@ -30,7 +33,8 @@
         "reporter-feedback-loop",
         "substandard-medical-product",
         "falsified-medical-product"
-      ]
+      ],
+      "notation": "SFR"
     },
     {
       "id": "report-type",
@@ -339,7 +343,8 @@
         "passive-pharmacovigilance",
         "adverse-drug-reaction",
         "post-market-surveillance"
-      ]
+      ],
+      "notation": "PV"
     },
     {
       "id": "active-pharmacovigilance",
@@ -404,7 +409,8 @@
         "therapeutic-failure",
         "sf-report",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/adverse-events-following-immunization"
-      ]
+      ],
+      "notation": "ADR"
     },
     {
       "id": "post-market-surveillance",
@@ -424,7 +430,8 @@
         "risk-based-post-market-surveillance",
         "pharmacovigilance",
         "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
-      ]
+      ],
+      "notation": "PMS"
     },
     {
       "id": "risk-based-post-market-surveillance",
@@ -442,6 +449,11 @@
       "related": [
         "sf-report",
         "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+      ],
+      "notation": "Rb-PMS",
+      "altLabel": [
+        "Rb-PMS",
+        "risk-based post-market surveillance"
       ]
     },
     {
@@ -463,12 +475,14 @@
         "national-medicines-regulatory-authority",
         "sf-report",
         "medical-product-alert"
-      ]
+      ],
+      "notation": "GSMS"
     },
     {
       "id": "member-state-mechanism",
       "prefLabel": "Member State Mechanism",
       "altLabel": [
+        "MSM",
         "WHO Member State Mechanism on Substandard and Falsified Medical Products"
       ],
       "definition": "A formal mechanism established by the World Health Assembly to promote global collaboration among Member States to prevent, detect and respond to substandard and falsified medical products, protecting public health and enhancing access to quality medical products (13).",
@@ -482,7 +496,8 @@
       "related": [
         "global-surveillance-and-monitoring-system",
         "national-medicines-regulatory-authority"
-      ]
+      ],
+      "notation": "MSM"
     },
     {
       "id": "national-medicines-regulatory-authority",
@@ -506,7 +521,8 @@
         "sf-report",
         "post-market-surveillance",
         "global-surveillance-and-monitoring-system"
-      ]
+      ],
+      "notation": "NMRA"
     },
     {
       "id": "medical-product-alert",
@@ -594,7 +610,8 @@
       "broadMatch": [
         "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
-      ]
+      ],
+      "notation": "HCP"
     },
     {
       "id": "doctor",
@@ -699,7 +716,8 @@
       "related": [
         "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
-      ]
+      ],
+      "notation": "CHW"
     },
     {
       "id": "laboratory-technician",
@@ -899,6 +917,599 @@
         "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
+    },
+    {
+      "id": "business-process-model-and-notation",
+      "prefLabel": "Business Process Model and Notation",
+      "altLabel": [
+        "BPMN"
+      ],
+      "notation": "BPMN",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8) and Annex 3 (p. 55 / PDF p. 67), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/business-process"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-implementation-investment-guide",
+      "prefLabel": "Digital implementation investment guide",
+      "altLabel": [
+        "DIIG",
+        "WHO Digital Implementation Investment Guide"
+      ],
+      "notation": "DIIG",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "hl7",
+      "prefLabel": "Health Level Seven",
+      "altLabel": [
+        "HL7",
+        "Health Level Seven®",
+        "Health Level Seven International",
+        "HL7FHIR"
+      ],
+      "notation": "HL7",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8) as 'Health Level Seven®'. A candidate organization entry: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/fast-healthcare-interoperability-resources"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "information-and-communication-technology",
+      "prefLabel": "Information and communication technology",
+      "altLabel": [
+        "ICT",
+        "information and communication technology"
+      ],
+      "notation": "ICT",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "identifier",
+      "prefLabel": "Identity, identification or identifier",
+      "altLabel": [
+        "ID",
+        "identity/identification/identifier"
+      ],
+      "notation": "ID",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8) as 'identity/identification/identifier'. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "low-and-middle-income-countries",
+      "prefLabel": "Low- and middle-income countries",
+      "altLabel": [
+        "LMIC",
+        "LMICs",
+        "low- and middle-income countries"
+      ],
+      "notation": "LMIC",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8) as 'LMICs: low- and middle-income countries'. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "monitoring-and-evaluation",
+      "prefLabel": "Monitoring and evaluation",
+      "altLabel": [
+        "M&E",
+        "monitoring and evaluation"
+      ],
+      "notation": "M&E",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. A candidate: the handbook defines 'Monitoring' and 'Evaluation' separately in its glossary (pp. ix–xi).",
+      "related": [
+        "monitoring",
+        "evaluation"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "raci",
+      "prefLabel": "Responsible, accountable, consulted, informed",
+      "altLabel": [
+        "RACI",
+        "RACI matrix",
+        "responsible, accountable, consulted, informed"
+      ],
+      "notation": "RACI",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8) and Annex 4 (p. 62 / PDF p. 74), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "software-as-a-service",
+      "prefLabel": "Software as a service",
+      "altLabel": [
+        "SaaS",
+        "software as a service"
+      ],
+      "notation": "SaaS",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "smart",
+      "prefLabel": "Standards-based, machine-readable, adaptive, requirements-based and testable",
+      "altLabel": [
+        "SMART"
+      ],
+      "notation": "SMART",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "united-health-futures",
+      "prefLabel": "United Health Futures",
+      "altLabel": [
+        "UHF"
+      ],
+      "notation": "UHF",
+      "scopeNote": "Named in the handbook's acknowledgements (p. v / PDF p. 7) and abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. Collaborating organization in Switzerland; a candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "who",
+      "prefLabel": "World Health Organization",
+      "altLabel": [
+        "WHO"
+      ],
+      "notation": "WHO",
+      "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. A candidate organization entry: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
+      "status": "candidate"
+    },
+    {
+      "id": "declaration-of-interests",
+      "prefLabel": "Declaration of Interests",
+      "altLabel": [
+        "DOI",
+        "WHO Declaration of Interests"
+      ],
+      "notation": "DOI",
+      "scopeNote": "Expanded in the acknowledgements (p. v / PDF p. 7). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-000-acknowledgements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-adaptation-kit",
+      "prefLabel": "Digital adaptation kit",
+      "altLabel": [
+        "DAK",
+        "DAKs",
+        "digital adaptation kit"
+      ],
+      "notation": "DAK",
+      "scopeNote": "Expanded in 'How to use this handbook' (p. 6 / PDF p. 18). A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
+      "status": "candidate"
+    },
+    {
+      "id": "togaf",
+      "prefLabel": "The Open Group Architecture Framework",
+      "altLabel": [
+        "TOGAF",
+        "TOGAF®"
+      ],
+      "notation": "TOGAF",
+      "scopeNote": "Expanded in 'How to use this handbook' (Table 1, p. 5 / PDF p. 17) and §3.2 (p. 21 / PDF p. 33). A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/enterprise-architecture"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
+      "status": "candidate"
+    },
+    {
+      "id": "openhie",
+      "prefLabel": "Open Health Information Exchange",
+      "altLabel": [
+        "OpenHIE"
+      ],
+      "notation": "OpenHIE",
+      "scopeNote": "Expanded in 'How to use this handbook' (Table 1, p. 5 / PDF p. 17). A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/health-information-exchange"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
+      "status": "candidate"
+    },
+    {
+      "id": "health-information-system",
+      "prefLabel": "Health information system",
+      "altLabel": [
+        "HIS",
+        "health information system"
+      ],
+      "notation": "HIS",
+      "scopeNote": "Used in Table 1 (p. 4 / PDF p. 16), §1 (p. 7 / PDF p. 19), and Table 6 (p. 22 / PDF p. 34). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
+      "status": "candidate"
+    },
+    {
+      "id": "unicef",
+      "prefLabel": "United Nations Children's Fund",
+      "altLabel": [
+        "UNICEF"
+      ],
+      "notation": "UNICEF",
+      "scopeNote": "Named in Table 1 (p. 5 / PDF p. 17). A candidate organization entry: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
+      "status": "candidate"
+    },
+    {
+      "id": "path",
+      "prefLabel": "PATH",
+      "altLabel": [
+        "PATH"
+      ],
+      "notation": "PATH",
+      "scopeNote": "Named in Table 1 (p. 5 / PDF p. 17). A candidate organization entry: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
+      "status": "candidate"
+    },
+    {
+      "id": "information-technology",
+      "prefLabel": "Information technology",
+      "altLabel": [
+        "IT",
+        "information technology"
+      ],
+      "notation": "IT",
+      "scopeNote": "Used in §2.3 (p. 15 / PDF p. 27) and Table 13 (p. 32 / PDF p. 44). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-015-23-establish-governance-and-leadership.md",
+      "status": "candidate"
+    },
+    {
+      "id": "technical-working-group",
+      "prefLabel": "Technical working group",
+      "altLabel": [
+        "TWG",
+        "technical working group"
+      ],
+      "notation": "TWG",
+      "scopeNote": "Named in §2.3 (p. 15 / PDF p. 27) and persona SFP-R-15. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-015-23-establish-governance-and-leadership.md",
+      "status": "candidate"
+    },
+    {
+      "id": "service-availability-and-readiness-assessment",
+      "prefLabel": "Service Availability and Readiness Assessment",
+      "altLabel": [
+        "SARA"
+      ],
+      "notation": "SARA",
+      "scopeNote": "Expanded in Table 6 (p. 22 / PDF p. 34). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-020-32-link-to-the-enterprise-architecture.md",
+      "status": "candidate"
+    },
+    {
+      "id": "demographic-and-health-surveys",
+      "prefLabel": "Demographic and Health Surveys",
+      "altLabel": [
+        "DHS"
+      ],
+      "notation": "DHS",
+      "scopeNote": "Expanded in Table 6 (p. 22 / PDF p. 34). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-020-32-link-to-the-enterprise-architecture.md",
+      "status": "candidate"
+    },
+    {
+      "id": "geographic-information-system",
+      "prefLabel": "Geographic information system",
+      "altLabel": [
+        "GIS"
+      ],
+      "notation": "GIS",
+      "scopeNote": "Used in Table 6 (p. 22 / PDF p. 34). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-020-32-link-to-the-enterprise-architecture.md",
+      "status": "candidate"
+    },
+    {
+      "id": "isco-08",
+      "prefLabel": "International Standard Classification of Occupations, 2008",
+      "altLabel": [
+        "ISCO-08"
+      ],
+      "notation": "ISCO-08",
+      "scopeNote": "2008 revision of the ILO International Standard Classification of Occupations (ISCO), used to code user personas in §4.1 (p. 25 / PDF p. 37). A candidate: no definition has been written.",
+      "exactMatch": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-classification-of-diseases-11",
+      "prefLabel": "International Classification of Diseases, 11th Revision",
+      "altLabel": [
+        "ICD-11",
+        "ICD",
+        "International Classification of Diseases"
+      ],
+      "notation": "ICD-11",
+      "scopeNote": "Expanded in §4.4 (p. 31 / PDF p. 43) as 'International Classification of Diseases [ICD-11]'. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "snomed-global-patient-set",
+      "prefLabel": "SNOMED Global Patient Set",
+      "altLabel": [
+        "SNOMED-GPS",
+        "SNOMED GPS",
+        "SNOMED",
+        "GPS"
+      ],
+      "notation": "SNOMED-GPS",
+      "scopeNote": "Named as 'SNOMED-GPS' in §4.4 (p. 31 / PDF p. 43). Matched to dpi-h-ra's SNOMED GPS concept.",
+      "exactMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/snomed-gps"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "security-assertion-markup-language",
+      "prefLabel": "Security Assertion Markup Language",
+      "altLabel": [
+        "SAML"
+      ],
+      "notation": "SAML",
+      "scopeNote": "Named in Table 13 (p. 33 / PDF p. 45) alongside OpenID Connect for single sign-on authentication. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "openid-connect",
+      "prefLabel": "OpenID Connect",
+      "altLabel": [
+        "OpenID",
+        "OpenID Connect"
+      ],
+      "notation": "OpenID",
+      "scopeNote": "Named in Table 13 (p. 33 / PDF p. 45) alongside SAML for single sign-on authentication. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "iso",
+      "prefLabel": "International Organization for Standardization",
+      "altLabel": [
+        "ISO",
+        "ISO 27000"
+      ],
+      "notation": "ISO",
+      "scopeNote": "Named in Table 13 (p. 35 / PDF p. 47, 'ISO 27000 family'). A candidate organization entry: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "global-trade-item-number",
+      "prefLabel": "Global Trade Item Number",
+      "altLabel": [
+        "GTIN"
+      ],
+      "notation": "GTIN",
+      "scopeNote": "Expanded in reference 19 (p. 48 / PDF p. 60). A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-032-references.md",
+      "status": "candidate"
+    },
+    {
+      "id": "gs1",
+      "prefLabel": "GS1",
+      "altLabel": [
+        "GS1"
+      ],
+      "notation": "GS1",
+      "scopeNote": "Named in reference 19 (p. 48 / PDF p. 60). A candidate organization entry: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-032-references.md",
+      "status": "candidate"
+    },
+    {
+      "id": "collaborative-requirements-development-methodology",
+      "prefLabel": "Collaborative Requirements Development Methodology",
+      "altLabel": [
+        "CRDM"
+      ],
+      "notation": "CRDM",
+      "scopeNote": "Expanded in reference 21 (p. 48 / PDF p. 60). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-032-references.md",
+      "status": "candidate"
+    },
+    {
+      "id": "user-interface",
+      "prefLabel": "User interface",
+      "altLabel": [
+        "UI"
+      ],
+      "notation": "UI",
+      "scopeNote": "Used in Annex 4 RACI matrix ('Design UI/UX', p. 62 / PDF p. 74). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-038-annex-4-stakeholder-raci-matrix.md",
+      "status": "candidate"
+    },
+    {
+      "id": "user-experience",
+      "prefLabel": "User experience",
+      "altLabel": [
+        "UX"
+      ],
+      "notation": "UX",
+      "scopeNote": "Used in Annex 4 RACI matrix ('Design UI/UX', p. 62 / PDF p. 74). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-038-annex-4-stakeholder-raci-matrix.md",
+      "status": "candidate"
+    },
+    {
+      "id": "enterprise-resource-planning",
+      "prefLabel": "Enterprise resource planning",
+      "altLabel": [
+        "ERP",
+        "enterprise resource planning"
+      ],
+      "notation": "ERP",
+      "scopeNote": "Expanded in the Annex 5 table notes (p. 63 / PDF p. 75). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-039-annex-5-template-for-assessing-current-software.md",
+      "status": "candidate"
+    },
+    {
+      "id": "logistics-management-information-system",
+      "prefLabel": "Logistics management information system",
+      "altLabel": [
+        "LMIS",
+        "logistics management information system"
+      ],
+      "notation": "LMIS",
+      "scopeNote": "Expanded in the Annex 5 table notes (p. 63 / PDF p. 75). Linked as closeMatch to dth-sc's Health Supply Chain Information System.",
+      "closeMatch": [
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-039-annex-5-template-for-assessing-current-software.md",
+      "status": "candidate"
+    },
+    {
+      "id": "openlmis",
+      "prefLabel": "OpenLMIS",
+      "altLabel": [
+        "OpenLMIS"
+      ],
+      "notation": "OpenLMIS",
+      "scopeNote": "Named as an order management system in Annex 5 (p. 63 / PDF p. 75). A candidate: no definition has been written.",
+      "broader": [
+        "logistics-management-information-system"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-039-annex-5-template-for-assessing-current-software.md",
+      "status": "candidate"
+    },
+    {
+      "id": "rapidsms",
+      "prefLabel": "RapidSMS",
+      "altLabel": [
+        "RapidSMS"
+      ],
+      "notation": "RapidSMS",
+      "scopeNote": "Named in Annex 5 (p. 63 / PDF p. 75). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-039-annex-5-template-for-assessing-current-software.md",
+      "status": "candidate"
+    },
+    {
+      "id": "individual-case-safety-report",
+      "prefLabel": "Individual Case Safety Report",
+      "altLabel": [
+        "ICSR"
+      ],
+      "notation": "ICSR",
+      "scopeNote": "Expanded in the DAK decision-point notes for pharmacovigilance co-routing (§1.3 p. 12 / PDF p. 24). A candidate: no definition has been written.",
+      "related": [
+        "adverse-drug-reaction",
+        "pharmacovigilance"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-011-13-assess-current-substandard-and-falsified-repo.md",
+      "status": "candidate"
+    },
+    {
+      "id": "unstructured-supplementary-service-data",
+      "prefLabel": "Unstructured Supplementary Service Data",
+      "altLabel": [
+        "USSD"
+      ],
+      "notation": "USSD",
+      "scopeNote": "Used in the DAK business process and scenario notes for feature-phone SF reporting. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-024-43-develop-business-processes-and-workflows.md",
+      "status": "candidate"
+    },
+    {
+      "id": "role-based-access-control",
+      "prefLabel": "Role-based access control",
+      "altLabel": [
+        "RBAC"
+      ],
+      "notation": "RBAC",
+      "scopeNote": "Expanded in non-functional requirement SFR.NFXNREQ.001 (Table 13, p. 32 / PDF p. 44). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "quality-control",
+      "prefLabel": "Quality control",
+      "altLabel": [
+        "QC",
+        "quality control laboratory"
+      ],
+      "notation": "QC",
+      "scopeNote": "Used in the DAK business process for sample dispatch to a quality control (QC) laboratory (Table 10, p. 29 / PDF p. 41). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-024-43-develop-business-processes-and-workflows.md",
+      "status": "candidate"
+    },
+    {
+      "id": "decision-model-and-notation",
+      "prefLabel": "Decision Model and Notation",
+      "altLabel": [
+        "DMN",
+        "DT"
+      ],
+      "notation": "DMN",
+      "scopeNote": "Standard used for the DAK decision tables (SFR.DT.01–04) derived from Figure 4 (§4.3, p. 30 / PDF p. 42). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-024-43-develop-business-processes-and-workflows.md",
+      "status": "candidate"
+    },
+    {
+      "id": "application-programming-interface",
+      "prefLabel": "Application programming interface",
+      "altLabel": [
+        "API",
+        "APIs"
+      ],
+      "notation": "API",
+      "scopeNote": "Used in the DAK interoperability requirements (Table 13, p. 32 / PDF p. 44). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "implementation-guide",
+      "prefLabel": "Implementation Guide",
+      "altLabel": [
+        "IG",
+        "FHIR IG"
+      ],
+      "notation": "IG",
+      "scopeNote": "Used in the DAK data dictionary bindings (§4.4, p. 31 / PDF p. 43). The expansion is supplied, not quoted: check it in context before adopting.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/fast-healthcare-interoperability-resources"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+      "status": "candidate"
+    },
+    {
+      "id": "oral-rehydration-salts",
+      "prefLabel": "Oral rehydration salts",
+      "altLabel": [
+        "ORS"
+      ],
+      "notation": "ORS",
+      "scopeNote": "Used in user scenario SFP-SCEN-04 (§4.2, p. 27 / PDF p. 39). The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
+      "status": "candidate"
     }
   ]
 }
