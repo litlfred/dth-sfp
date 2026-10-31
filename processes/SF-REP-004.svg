@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 660" width="1220" height="660" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1220" height="660" fill="#ffffff"/>
+  <text x="20" y="36" font-size="16" font-weight="700" fill="#0f172a">Take regulatory action on confirmed SF product (SF-REP-004)</text>
+  <text x="20" y="56" font-size="11" fill="#475569">WHO DTH for SF Medical Product Reporting Systems — SF-REP-004 (OMG BPMN 2.0)</text>
+  <rect x="40" y="80" width="1160" height="180" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="40" y="80" width="110" height="180" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="52" y="104" font-size="11" font-weight="600" fill="#1e293b">NMRA Regulatory Enforcement </text>
+  <rect x="40" y="260" width="1160" height="180" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="40" y="260" width="110" height="180" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="52" y="284" font-size="11" font-weight="600" fill="#1e293b">Supply Chain Actors, Manufac</text>
+  <rect x="40" y="440" width="1160" height="180" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="40" y="440" width="110" height="180" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="52" y="464" font-size="11" font-weight="600" fill="#1e293b">Law Enforcement, Customs &amp; M</text>
+  <line x1="216" y1="170" x2="350" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="170" x2="520" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="650" y1="170" x2="180" y2="350" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="310" y1="350" x2="690" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="740" y1="170" x2="180" y2="530" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="460" y="344" font-size="9" fill="#0f172a" text-anchor="middle">Yes (falsified / illicit)</text>
+  <line x1="740" y1="170" x2="860" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="800" y="164" font-size="9" fill="#0f172a" text-anchor="middle">No (quality defect)</text>
+  <line x1="310" y1="530" x2="860" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="990" y1="170" x2="1030" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="198" cy="170" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="198" y="202" font-size="9" fill="#1e293b" text-anchor="middle">Confirmed SF medical produ</text>
+  <rect x="350" y="135" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="415" y="159" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Issue national Medical Product</text>
+  <text x="415" y="173" font-size="9" fill="#1e3a8a" text-anchor="middle">Alert &amp; notify health</text>
+  <text x="415" y="187" font-size="9" fill="#1e3a8a" text-anchor="middle">facilities</text>
+  <rect x="520" y="135" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="585" y="159" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Order batch quarantine, recall</text>
+  <text x="585" y="173" font-size="9" fill="#1e3a8a" text-anchor="middle">or market withdrawal (dth-sc</text>
+  <text x="585" y="187" font-size="9" fill="#1e3a8a" text-anchor="middle">Recall)</text>
+  <polygon points="715,145 740,170 715,195 690,170" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="715" y="139" font-size="9" font-weight="600" fill="#854d0e" text-anchor="middle">Deliberate falsification or il</text>
+  <rect x="860" y="135" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="925" y="159" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Apply regulatory sanctions &amp;</text>
+  <text x="925" y="173" font-size="9" fill="#1e3a8a" text-anchor="middle">close national enforcement action</text>
+  <circle cx="1048" cy="170" r="18" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+  <text x="1048" y="202" font-size="9" fill="#1e293b" text-anchor="middle">Regulatory action complete</text>
+  <rect x="180" y="315" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="245" y="339" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Trace affected batch (DE6),</text>
+  <text x="245" y="353" font-size="9" fill="#1e3a8a" text-anchor="middle">quarantine stock &amp; remove</text>
+  <text x="245" y="367" font-size="9" fill="#1e3a8a" text-anchor="middle">from supply chain</text>
+  <rect x="180" y="495" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="245" y="519" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Refer case to law</text>
+  <text x="245" y="533" font-size="9" fill="#1e3a8a" text-anchor="middle">enforcement &amp; customs for</text>
+  <text x="245" y="547" font-size="9" fill="#1e3a8a" text-anchor="middle">seizure/investigation (§2.</text>
+</svg>

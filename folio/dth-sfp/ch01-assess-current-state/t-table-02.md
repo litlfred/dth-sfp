@@ -1,0 +1,10 @@
+### Table 2. Stakeholder analysis for SF medical product reporting (p. 9 / PDF p. 21)
+
+| Dimension | Sample questions |
+| --- | --- |
+| Roles and responsibilities | • What is this stakeholder’s current role in managing or reporting substandard and falsified medical products?<br>• How does this stakeholder contribute to pharmacovigilance or digital health efforts?<br>• What decisions can this stakeholder make regarding digital substandard and falsified reporting systems?<br>• Are they implementers, advisors, funders, regulators or end users? |
+| Information flows and interactions | • What data does this stakeholder generate, use or depend on related to substandard and falsified products?<br>• Who do they share this information with, and how frequently?<br>• Are there any existing digital platforms or tools they use that must integrate with the substandard and falsified reporting system? |
+| Influence and power | • How much influence does this stakeholder have over policy, funding or system design decisions?<br>• Can this stakeholder help or hinder the adoption of the digital reporting system?<br>• Who do they influence or rely on for decision-making? |
+| Interests and expectations | • What are this stakeholder’s main concerns or interests in relation to substandard and falsified reporting?<br>• What outcomes would they expect or value from this system?<br>• Are there any incentives or risks for them in engaging with this initiative? |
+| Engagement and collaboration | • Have they been engaged in similar initiatives before? If so, what worked well or poorly?<br>• What is the best way to engage them – technical working groups, one-on-one meetings, formal memoranda of understanding?<br>• Are there any other partners or intermediaries they trust and collaborate with? |
+| Capacity and resources | • Does this stakeholder have the technical, financial or human resource capacity to contribute to or implement the system?<br>• Will they need support, training or tools to fulfil their responsibilities? |

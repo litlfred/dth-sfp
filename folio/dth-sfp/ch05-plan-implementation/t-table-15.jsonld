@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/tbl-table-15",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:table-15",
+  "kind": "table",
+  "title": "Table 15. Software development and procurement options (p. 38 / PDF p. 50)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-027"
+  ],
+  "text": "t-table-15.md",
+  "meta": {
+    "source": "who-iris/library/9789240120747-eng/sections/sec-027-5-plan-the-implementation.md",
+    "pdfPage": 50,
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+        "term": "suspect-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/open-source",
+        "term": "open-source"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/open-standards",
+        "term": "open-standards"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/total-cost-of-ownership",
+        "term": "total-cost-of-ownership"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/deploy",
+        "term": "deploy"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/open-source",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/open-standards",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/total-cost-of-ownership",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/deploy"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bbd18f65be45490fbbaf02346511ae5e.jsonld",
+          "name": "Reporting Module",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "name": "Components"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

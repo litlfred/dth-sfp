@@ -1,0 +1,157 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/fig-fig-03",
+  "@type": [
+    "folio-assistant-core:Figure",
+    "doco:Figure"
+  ],
+  "label": "fig:fig-03",
+  "kind": "figure",
+  "title": "Fig. 3. Links to the enterprise architecture / DIIG national digital health architecture (p. 22 / PDF p. 34)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-020"
+  ],
+  "text": "f-fig-03.md",
+  "meta": {
+    "source": "who-iris/library/9789240120747-eng/media/figures/vfig-p034.png",
+    "pdfPage": 34,
+    "figureFile": "media/vfig-p034.png",
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+        "term": "suspect-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/enterprise-architecture",
+        "term": "enterprise-architecture"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+        "term": "interoperability"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/point-of-service-applications",
+        "term": "point-of-service-applications"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+        "term": "registry"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "term": "national-product-catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "term": "traceability"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry",
+        "term": "health-workforce-registry"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/enterprise-architecture",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/point-of-service-applications",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+      "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+      "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-59c26d672a4248e0bb83cf4d26cba10c.jsonld",
+          "name": "Product Registry",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-4e0767822dcf46409554156a133fbc67.jsonld",
+          "name": "DPI-H: Facility Registry",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-350840520ae44f658b6ad3b3762e382e.jsonld",
+          "name": "DPI-H Health Workforce Registry (HWR)",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3f41de2b51c24041b08243bf72b140d1.jsonld",
+          "name": "Terminology Service",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld",
+          "name": "DPI-F Information Mediator",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-d79aa0eec0584b0792b44bca408afeb6.jsonld",
+          "name": "DPI-F Security & Consent Module",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "name": "Components"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-8c5dd12b8d4e425184f6003d0513d569.jsonld",
+          "name": "Interoperability Layer"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-bea56e01c8345fbc803dee47a17ccfd3.jsonld",
+          "name": "Track and Trace through DHSC Components (DTH SC Fig. 24)"
+        }
+      ],
+      "figures": [
+        {
+          "figure": "media/vfig-p034.png",
+          "model": "0.3.0-draft.1",
+          "view": "id-92267636cc42566ca5d2cff0e81be8c9",
+          "viewName": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

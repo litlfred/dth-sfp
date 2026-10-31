@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_SF_REP_001"
+                  targetNamespace="https://litlfred.github.io/dth-sfp/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:import namespace="https://litlfred.github.io/bootstrap/v0/processes/ns#" location="https://litlfred.github.io/bootstrap/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld"/>
+  <bpmn:resource id="sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
+  <bpmn:resource id="sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
+  <bpmn:resource id="sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
+  <bpmn:resource id="sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
+  <bpmn:resource id="sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
+  <bpmn:resource id="sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
+  <bpmn:resource id="sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
+  <bpmn:resource id="sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
+  <bpmn:resource id="sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
+  <bpmn:resource id="sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
+  <bpmn:resource id="sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
+  <bpmn:resource id="sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
+  <bpmn:resource id="sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
+  <bpmn:resource id="sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
+  <bpmn:resource id="sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
+  <bpmn:collaboration id="Collaboration_Process_SF_REP_001">
+    <bpmn:participant id="Participant_Process_SF_REP_001" name="Detect and report suspected SF medical product (SF-REP-001)" processRef="Process_SF_REP_001"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_SF_REP_001" name="Detect and report suspected SF medical product (SF-REP-001)" isExecutable="false">
+    <bpmn:documentation>End-to-end workflow for detecting and reporting a suspected substandard or falsified (SF) medical product, formalised from Table 10 (SF-REP-001 process matrix, p. 29 / PDF p. 41), Fig. 4 (workflow diagram, p. 30 / PDF p. 42), and Table 9 (9 user scenarios, pp. 27-28 / PDF pp. 39-40). Finding F5 corrections applied and recorded: (1) Fig. 4 step 2 duplicated gateway 1 (&#x27;Is the product registered?&#x27;) — collapsed into task Task_CheckRegistration followed by exclusive gateway Gw_IsRegistered; (2) Fig. 4 gateway 1 had an unlabelled bypass arrow to the end event — replaced by explicit branch Task_FlagUnregistered documenting Finding F2 (unregistered/unlicensed products defined in glossary p. ix but omitted from DE8); (3) Fig. 4 gateway 5 was labelled as an imperative (&#x27;Select type of report&#x27;) — separated into user task Task_SelectReportType and exclusive gateway Gw_ReportCategory (&#x27;Suspected category: Substandard or Falsified?&#x27;); (4) Fig. 4 repeated step numbers 6, 7, 8 on both branches — assigned distinct node IDs and labels on the substandard branch (6a-8a) and falsified branch (6b-8b) before converging at Gw_MergeSubmission; (5) all symbols conform to OMG BPMN 2.0 and Annex 3 (pp. 54-55 / PDF pp. 66-67).</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="advisory"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_SF_REP_001">
+      <bpmn:lane id="Lane_SF_REP_001_HCP" name="Healthcare professional / patient / supplier reporter (SFP-R-01..SFP-R-12, SFP-R-14)" partitionElementRef="sfp-r-01">
+        <bpmn:documentation>Personas pers:sfp-r-01..pers:sfp-r-12 and pers:sfp-r-14. Observes suspected quality defect, falsification, or therapeutic failure/adverse reaction and submits an SF report.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_SF_REP_001</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1_OpenAppAndCheckReg</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_IsRegistered</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_FlagUnregistered</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_3_EnterProductDetails</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_4_EnterBatchExpiry</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_5_SelectReportType</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_ReportCategory</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_6a_SubstandardDetails</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_7a_UploadSubstandardPhotos</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_6b_FalsifiedDetails</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_7b_UploadFalsifiedPhotos</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_ContactInfo</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_8a_EnterContact</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_8b_RemainAnonymous</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_9_SubmitReport</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_SF_REP_001_NMRA" name="NMRA &amp; SF Reporting System Back-End (SFP-R-13)" partitionElementRef="sfp-r-13">
+        <bpmn:documentation>Persona pers:sfp-r-13 / ArchiMate role National Regulatory Authority (id-8e67c8e9e1195cdc857b03a2c640e7fe). Validates report, assigns tracking number, notifies focal points, and triggers investigation.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_10_ReceiveAndValidate</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_11_SendAcknowledgement</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_12_InitialScreening</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_SF_REP_001</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_SF_REP_001" name="Observe suspected SF product or adverse reaction">
+      <bpmn:outgoing>Flow_01</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_1_OpenAppAndCheckReg" name="1. Open SF reporting app &amp; check product registration (DE1, DE3)">
+      <bpmn:incoming>Flow_01</bpmn:incoming>
+      <bpmn:outgoing>Flow_02</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gw_IsRegistered" name="Is product in national product catalogue?">
+      <bpmn:incoming>Flow_02</bpmn:incoming>
+      <bpmn:outgoing>Flow_03_Yes</bpmn:outgoing>
+      <bpmn:outgoing>Flow_03_No</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Task_FlagUnregistered" name="2a. Record suspected unregistered product details (F2 note)">
+      <bpmn:incoming>Flow_03_No</bpmn:incoming>
+      <bpmn:outgoing>Flow_04a</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_3_EnterProductDetails" name="3. Select registered product &amp; auto-populate product type (SFR.DT.02)">
+      <bpmn:incoming>Flow_03_Yes</bpmn:incoming>
+      <bpmn:outgoing>Flow_04b</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_4_EnterBatchExpiry" name="4. Enter or scan batch number (DE6) &amp; expiry date (DE7)">
+      <bpmn:incoming>Flow_04a</bpmn:incoming>
+      <bpmn:incoming>Flow_04b</bpmn:incoming>
+      <bpmn:outgoing>Flow_05</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_5_SelectReportType" name="5. Select report channel &amp; suspected SF category (DE2, DE8, SFR.DT.01)">
+      <bpmn:incoming>Flow_05</bpmn:incoming>
+      <bpmn:outgoing>Flow_06</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gw_ReportCategory" name="Suspected category?">
+      <bpmn:incoming>Flow_06</bpmn:incoming>
+      <bpmn:outgoing>Flow_07_Sub</bpmn:outgoing>
+      <bpmn:outgoing>Flow_07_Fal</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Task_6a_SubstandardDetails" name="6a. Describe suspected quality defect / therapeutic failure &amp; ADR (DE9)">
+      <bpmn:incoming>Flow_07_Sub</bpmn:incoming>
+      <bpmn:outgoing>Flow_08a</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_7a_UploadSubstandardPhotos" name="7a. Attach photos of defective product &amp; packaging">
+      <bpmn:incoming>Flow_08a</bpmn:incoming>
+      <bpmn:outgoing>Flow_09a</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_6b_FalsifiedDetails" name="6b. Describe suspected falsification, counterfeit label or source">
+      <bpmn:incoming>Flow_07_Fal</bpmn:incoming>
+      <bpmn:outgoing>Flow_08b</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_7b_UploadFalsifiedPhotos" name="7b. Attach photos of falsified packaging, seal &amp; batch mark">
+      <bpmn:incoming>Flow_08b</bpmn:incoming>
+      <bpmn:outgoing>Flow_09b</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gw_ContactInfo" name="8. Provide reporter contact details (DE10) or submit anonymously?">
+      <bpmn:incoming>Flow_09a</bpmn:incoming>
+      <bpmn:incoming>Flow_09b</bpmn:incoming>
+      <bpmn:outgoing>Flow_10_Contact</bpmn:outgoing>
+      <bpmn:outgoing>Flow_10_Anon</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Task_8a_EnterContact" name="8a. Confirm reporter profile, region (SFR.DT.03) &amp; contact (DE10)">
+      <bpmn:incoming>Flow_10_Contact</bpmn:incoming>
+      <bpmn:outgoing>Flow_11a</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_8b_RemainAnonymous" name="8b. Omit personal contact details (anonymous report)">
+      <bpmn:incoming>Flow_10_Anon</bpmn:incoming>
+      <bpmn:outgoing>Flow_11b</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sendTask id="Task_9_SubmitReport" name="9. Submit SF report (online or via offline outbox SF-REP-006)">
+      <bpmn:incoming>Flow_11a</bpmn:incoming>
+      <bpmn:incoming>Flow_11b</bpmn:incoming>
+      <bpmn:outgoing>Flow_12</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:receiveTask id="Task_10_ReceiveAndValidate" name="10. Receive SF report, assign tracking number &amp; log in NMRA registry">
+      <bpmn:incoming>Flow_12</bpmn:incoming>
+      <bpmn:outgoing>Flow_13</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:serviceTask id="Task_11_SendAcknowledgement" name="11. Return confirmation &amp; tracking number to reporter (SFR.FXNREQ.003-004)">
+      <bpmn:incoming>Flow_13</bpmn:incoming>
+      <bpmn:outgoing>Flow_14</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="Task_12_InitialScreening" name="12. Screen report, notify focal point (SFR.FXNREQ.005) &amp; trigger SF-REP-002/003">
+      <bpmn:incoming>Flow_14</bpmn:incoming>
+      <bpmn:outgoing>Flow_15</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="End_SF_REP_001" name="SF report registered &amp; queued for regulatory assessment">
+      <bpmn:incoming>Flow_15</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_01" sourceRef="Start_SF_REP_001" targetRef="Task_1_OpenAppAndCheckReg"/>
+    <bpmn:sequenceFlow id="Flow_02" sourceRef="Task_1_OpenAppAndCheckReg" targetRef="Gw_IsRegistered"/>
+    <bpmn:sequenceFlow id="Flow_03_Yes" sourceRef="Gw_IsRegistered" targetRef="Task_3_EnterProductDetails" name="Registered"/>
+    <bpmn:sequenceFlow id="Flow_03_No" sourceRef="Gw_IsRegistered" targetRef="Task_FlagUnregistered" name="Not found (unregistered / F2)"/>
+    <bpmn:sequenceFlow id="Flow_04a" sourceRef="Task_FlagUnregistered" targetRef="Task_4_EnterBatchExpiry"/>
+    <bpmn:sequenceFlow id="Flow_04b" sourceRef="Task_3_EnterProductDetails" targetRef="Task_4_EnterBatchExpiry"/>
+    <bpmn:sequenceFlow id="Flow_05" sourceRef="Task_4_EnterBatchExpiry" targetRef="Task_5_SelectReportType"/>
+    <bpmn:sequenceFlow id="Flow_06" sourceRef="Task_5_SelectReportType" targetRef="Gw_ReportCategory"/>
+    <bpmn:sequenceFlow id="Flow_07_Sub" sourceRef="Gw_ReportCategory" targetRef="Task_6a_SubstandardDetails" name="Substandard"/>
+    <bpmn:sequenceFlow id="Flow_07_Fal" sourceRef="Gw_ReportCategory" targetRef="Task_6b_FalsifiedDetails" name="Falsified"/>
+    <bpmn:sequenceFlow id="Flow_08a" sourceRef="Task_6a_SubstandardDetails" targetRef="Task_7a_UploadSubstandardPhotos"/>
+    <bpmn:sequenceFlow id="Flow_08b" sourceRef="Task_6b_FalsifiedDetails" targetRef="Task_7b_UploadFalsifiedPhotos"/>
+    <bpmn:sequenceFlow id="Flow_09a" sourceRef="Task_7a_UploadSubstandardPhotos" targetRef="Gw_ContactInfo"/>
+    <bpmn:sequenceFlow id="Flow_09b" sourceRef="Task_7b_UploadFalsifiedPhotos" targetRef="Gw_ContactInfo"/>
+    <bpmn:sequenceFlow id="Flow_10_Contact" sourceRef="Gw_ContactInfo" targetRef="Task_8a_EnterContact" name="Contact provided"/>
+    <bpmn:sequenceFlow id="Flow_10_Anon" sourceRef="Gw_ContactInfo" targetRef="Task_8b_RemainAnonymous" name="Anonymous"/>
+    <bpmn:sequenceFlow id="Flow_11a" sourceRef="Task_8a_EnterContact" targetRef="Task_9_SubmitReport"/>
+    <bpmn:sequenceFlow id="Flow_11b" sourceRef="Task_8b_RemainAnonymous" targetRef="Task_9_SubmitReport"/>
+    <bpmn:sequenceFlow id="Flow_12" sourceRef="Task_9_SubmitReport" targetRef="Task_10_ReceiveAndValidate"/>
+    <bpmn:sequenceFlow id="Flow_13" sourceRef="Task_10_ReceiveAndValidate" targetRef="Task_11_SendAcknowledgement"/>
+    <bpmn:sequenceFlow id="Flow_14" sourceRef="Task_11_SendAcknowledgement" targetRef="Task_12_InitialScreening"/>
+    <bpmn:sequenceFlow id="Flow_15" sourceRef="Task_12_InitialScreening" targetRef="End_SF_REP_001"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Process_SF_REP_001">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_SF_REP_001" bpmnElement="Collaboration_Process_SF_REP_001">
+      <bpmndi:BPMNShape id="Shape_Participant_Process_SF_REP_001" bpmnElement="Participant_Process_SF_REP_001" isHorizontal="true">
+        <dc:Bounds x="20" y="80" width="2920" height="360"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_001_HCP" bpmnElement="Lane_SF_REP_001_HCP" isHorizontal="true">
+        <dc:Bounds x="40" y="80" width="2900" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_001_NMRA" bpmnElement="Lane_SF_REP_001_NMRA" isHorizontal="true">
+        <dc:Bounds x="40" y="260" width="2900" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_SF_REP_001" bpmnElement="Start_SF_REP_001">
+        <dc:Bounds x="180" y="152" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_1_OpenAppAndCheckReg" bpmnElement="Task_1_OpenAppAndCheckReg">
+        <dc:Bounds x="350" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gw_IsRegistered" bpmnElement="Gw_IsRegistered">
+        <dc:Bounds x="520" y="145" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_FlagUnregistered" bpmnElement="Task_FlagUnregistered">
+        <dc:Bounds x="690" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_3_EnterProductDetails" bpmnElement="Task_3_EnterProductDetails">
+        <dc:Bounds x="860" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_4_EnterBatchExpiry" bpmnElement="Task_4_EnterBatchExpiry">
+        <dc:Bounds x="1030" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_5_SelectReportType" bpmnElement="Task_5_SelectReportType">
+        <dc:Bounds x="1200" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gw_ReportCategory" bpmnElement="Gw_ReportCategory">
+        <dc:Bounds x="1370" y="145" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_6a_SubstandardDetails" bpmnElement="Task_6a_SubstandardDetails">
+        <dc:Bounds x="1540" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_7a_UploadSubstandardPhotos" bpmnElement="Task_7a_UploadSubstandardPhotos">
+        <dc:Bounds x="1710" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_6b_FalsifiedDetails" bpmnElement="Task_6b_FalsifiedDetails">
+        <dc:Bounds x="1880" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_7b_UploadFalsifiedPhotos" bpmnElement="Task_7b_UploadFalsifiedPhotos">
+        <dc:Bounds x="2050" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gw_ContactInfo" bpmnElement="Gw_ContactInfo">
+        <dc:Bounds x="2220" y="145" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_8a_EnterContact" bpmnElement="Task_8a_EnterContact">
+        <dc:Bounds x="2390" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_8b_RemainAnonymous" bpmnElement="Task_8b_RemainAnonymous">
+        <dc:Bounds x="2560" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_9_SubmitReport" bpmnElement="Task_9_SubmitReport">
+        <dc:Bounds x="2730" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_10_ReceiveAndValidate" bpmnElement="Task_10_ReceiveAndValidate">
+        <dc:Bounds x="180" y="315" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_11_SendAcknowledgement" bpmnElement="Task_11_SendAcknowledgement">
+        <dc:Bounds x="350" y="315" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_12_InitialScreening" bpmnElement="Task_12_InitialScreening">
+        <dc:Bounds x="520" y="315" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_SF_REP_001" bpmnElement="End_SF_REP_001">
+        <dc:Bounds x="690" y="332" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_01" bpmnElement="Flow_01">
+        <di:waypoint x="216" y="170"/>
+        <di:waypoint x="350" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_02" bpmnElement="Flow_02">
+        <di:waypoint x="480" y="170"/>
+        <di:waypoint x="520" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_03_Yes" bpmnElement="Flow_03_Yes">
+        <di:waypoint x="570" y="170"/>
+        <di:waypoint x="860" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_03_No" bpmnElement="Flow_03_No">
+        <di:waypoint x="570" y="170"/>
+        <di:waypoint x="690" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_04a" bpmnElement="Flow_04a">
+        <di:waypoint x="820" y="170"/>
+        <di:waypoint x="1030" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_04b" bpmnElement="Flow_04b">
+        <di:waypoint x="990" y="170"/>
+        <di:waypoint x="1030" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_05" bpmnElement="Flow_05">
+        <di:waypoint x="1160" y="170"/>
+        <di:waypoint x="1200" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_06" bpmnElement="Flow_06">
+        <di:waypoint x="1330" y="170"/>
+        <di:waypoint x="1370" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_07_Sub" bpmnElement="Flow_07_Sub">
+        <di:waypoint x="1420" y="170"/>
+        <di:waypoint x="1540" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_07_Fal" bpmnElement="Flow_07_Fal">
+        <di:waypoint x="1420" y="170"/>
+        <di:waypoint x="1880" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_08a" bpmnElement="Flow_08a">
+        <di:waypoint x="1670" y="170"/>
+        <di:waypoint x="1710" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_08b" bpmnElement="Flow_08b">
+        <di:waypoint x="2010" y="170"/>
+        <di:waypoint x="2050" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_09a" bpmnElement="Flow_09a">
+        <di:waypoint x="1840" y="170"/>
+        <di:waypoint x="2220" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_09b" bpmnElement="Flow_09b">
+        <di:waypoint x="2180" y="170"/>
+        <di:waypoint x="2220" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_10_Contact" bpmnElement="Flow_10_Contact">
+        <di:waypoint x="2270" y="170"/>
+        <di:waypoint x="2390" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_10_Anon" bpmnElement="Flow_10_Anon">
+        <di:waypoint x="2270" y="170"/>
+        <di:waypoint x="2560" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_11a" bpmnElement="Flow_11a">
+        <di:waypoint x="2520" y="170"/>
+        <di:waypoint x="2730" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_11b" bpmnElement="Flow_11b">
+        <di:waypoint x="2690" y="170"/>
+        <di:waypoint x="2730" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_12" bpmnElement="Flow_12">
+        <di:waypoint x="2860" y="170"/>
+        <di:waypoint x="180" y="350"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_13" bpmnElement="Flow_13">
+        <di:waypoint x="310" y="350"/>
+        <di:waypoint x="350" y="350"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_14" bpmnElement="Flow_14">
+        <di:waypoint x="480" y="350"/>
+        <di:waypoint x="520" y="350"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_15" bpmnElement="Flow_15">
+        <di:waypoint x="650" y="350"/>
+        <di:waypoint x="690" y="350"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,1821 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp",
+      "@type": "skos:ConceptScheme",
+      "skos:prefLabel": "Glossary of the Digital Transformation Handbook for Substandard and Falsified Medical Product Reporting Systems",
+      "skos:definition": "Domain terms for substandard and falsified (SF) medical product reporting systems, quoting the WHO handbook (ISBN 978-92-4-012074-7) with L1 page provenance and SKOS mappings into dpi-h-ra (litlfred/smart-ra), dth-sc (litlfred/dth-sc), dth-pc (litlfred/dth-pc), and dth-hrh (litlfred/dth-hrh). General digital health and enterprise architecture terms are held in dpi-h-ra; supply chain and traceability terms in dth-sc; product master data and trade item terms in dth-pc; and health workforce / ISCO-08 occupation terms in dth-hrh.",
+      "dcterms:modified": "2026-10-31",
+      "dcterms:source": "who-iris/library/9789240120747-eng",
+      "dcterms:license": "CC-BY-NC-SA-3.0-IGO"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "SF Report"
+        }
+      ],
+      "skos:altLabel": [
+        "substandard and falsified medical product report",
+        "SF medical product report"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A structured notification submitted by a health care professional, member of the public or patient, or pharmaceutical supply chain actor to a national medicines regulatory authority (NMRA) or designated surveillance system regarding a medical product suspected of being substandard, falsified, or unregistered."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Captures the report data object produced by business process SF-REP-001 (Table 10, p. 29) and defined by core data elements SFR.A1.DE1–SFR.A1.DE10 (Table 11, p. 31).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/anonymous-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-024-43-develop-business-processes-and-workflows.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Report Type"
+        }
+      ],
+      "skos:altLabel": [
+        "type of report",
+        "SFR.A1.DE2",
+        "SFR.A1.DE8"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Classification of an SF report by reporting channel or suspected defect category: in SFR.A1.DE8 (Table 11, p. 31), whether the report originates from a health care professional, the public, or the pharmaceutical industry (manufacturer/importer); in Fig. 4 (p. 30), whether the suspected product is reported as substandard or falsified."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Finding F2: the handbook glossary defines unregistered/unlicensed medical products as the third WHO SF category, but Fig. 4 and Table 11 (DE8) only distinguish substandard vs falsified paths. Finding F4: SFR.A1.DE2 (Type of report) has an empty description and data type in Table 11 while SFR.A1.DE8 repeats the label with a three-category value description.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-element"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Suspect Product"
+        }
+      ],
+      "skos:altLabel": [
+        "suspected SF medical product",
+        "suspect medical product"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A medical product observed with a suspected quality defect, abnormal physical appearance, suspicious packaging or labelling, suspected falsification, or unexpected therapeutic failure/adverse reaction, pending regulatory screening, investigation, or laboratory confirmation."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Identified in Table 11 via product name (SFR.A1.DE1), product ID (SFR.A1.DE3), manufacturer (SFR.A1.DE4), type of product (SFR.A1.DE5), batch number (SFR.A1.DE6), and expiry date (SFR.A1.DE7).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/medical-product"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-024-43-develop-business-processes-and-workflows.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Reporter"
+        }
+      ],
+      "skos:altLabel": [
+        "SF reporter",
+        "reporting user"
+      ],
+      "skos:definition": [
+        {
+          "@value": "An individual who detects or suspects a substandard or falsified medical product and submits a report to the regulatory authority or reporting system, including health care professionals, patients and members of the public, and supply chain or industry actors."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Specialised into user personas across §4.1, Tables 7–9, and Annex 2 (Finding F3: the persona lists across §4.1, Table 7, Table 8, Table 9, and Annex 2 differ and are unioned in the L2 persona set SFP-R-01..SFP-R-15).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/anonymous-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/end-user"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/anonymous-report",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Anonymous Report"
+        }
+      ],
+      "skos:altLabel": [
+        "confidential SF report",
+        "unidentified reporter submission"
+      ],
+      "skos:definition": [
+        {
+          "@value": "An SF report submitted without personal identifying or contact information (SFR.A1.DE9, SFR.A1.DE10), protecting the reporter from fear of reprisal or liability while preventing direct follow-up communication unless an anonymous tracking channel is used."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Highlighted in Table 5 (barriers: fear of reprisal), Table 8 (laboratory technician and pharmacist personas), Fig. 4 (gateway 8: Did user include contact information?), and Table 11 (SFR.A1.DE9, SFR.A1.DE10).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-024-43-develop-business-processes-and-workflows.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/therapeutic-failure",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Therapeutic Failure"
+        }
+      ],
+      "skos:altLabel": [
+        "lack of efficacy",
+        "treatment failure"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Failure of a medical product to produce the expected clinical or therapeutic effect when administered to a patient, which may indicate an inadequate dose of active pharmaceutical ingredient or absence of active ingredient due to a substandard or falsified product."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Described in Introduction (p. 1, PDF p. 13) and Table 9 user scenarios (Doctor, Nurse, Midwife, Paramedic) as a primary clinical trigger for suspecting an SF product alongside adverse drug reactions.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-004-reporting-of-substandard-and-falsified-medical-p.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Tracking Number"
+        }
+      ],
+      "skos:altLabel": [
+        "report tracking number",
+        "confirmation reference number"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A unique identifier automatically generated and returned to the reporter upon submission of an SF report (Table 12, SFR.FXNREQ.003) so the reporter and regulatory authority can reference and monitor the progress of the report."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Enables business process SF-REP-002 (Receive, acknowledge and track report) and the reporter feedback loop.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-element"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Reporter Feedback Loop"
+        }
+      ],
+      "skos:altLabel": [
+        "feedback to reporter",
+        "status update notification"
+      ],
+      "skos:definition": [
+        {
+          "@value": "The bidirectional communication mechanism through which a reporting system acknowledges receipt of an SF report, issues a tracking number, requests supplementary evidence when contact details are provided, and informs the reporter of investigation progress and regulatory outcomes."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Addressed across Table 5 (lack of feedback barrier), Table 9 (stages 5 and 6 across all 9 scenarios), Table 10 (SF-REP-001 step 12), and Table 12 (functional requirements 3–5).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/national-medicines-regulatory-authority"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/business-process"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/detection-to-notification-time",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Detection-to-Notification Time"
+        }
+      ],
+      "skos:altLabel": [
+        "time from detection to notification",
+        "reporting turnaround time"
+      ],
+      "skos:definition": [
+        {
+          "@value": "The elapsed time between initial detection of a suspected substandard or falsified medical product and notification or alert issuance by the regulatory authority, used as a fidelity and timeliness measure for SF reporting systems."
+        }
+      ],
+      "skos:scopeNote": "Cluster C domain concept (dth-sfp#1 §2.1C). Appears in §2.4 strategic goals (p. 16, PDF p. 28; empirical example numbers stay in source prose only) and Table 18 M&E fidelity measures (p. 44, PDF p. 56).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/monitoring"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/evaluation"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/outcome"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-029-61-develop-a-monitoring-and-evaluation-plan.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/polypharmacy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Polypharmacy"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Polypharmacy is the concurrent use of multiple medications. Although there is no standard definition, polypharmacy is often defined as the routine use of five or more medications (16). This includes over-the-counter, prescription and/or traditional and complementary medicines used by a patient."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing WHO reference 16). Cluster C domain concept (dth-sfp#1 §2.1C). Finding F3/orphan glossary entry: defined in the front-matter glossary (p. viii) where it relates to confounding clinical assessment of adverse reactions/therapeutic failure, but never used in the handbook body text (pp. 1–59).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/therapeutic-failure"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/medical-product"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Substandard Medical Product"
+        }
+      ],
+      "skos:altLabel": [
+        "out of specification medical product",
+        "substandard product"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Substandard medical products are those that are authorized by national regulatory authorities, but fail to meet either national or international quality standards or specifications – or, in some cases, both (9)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. ix, PDF p. 11, citing reference 9). Finding F1 (two definitions in source): the Introduction (p. 1, PDF p. 13, citing WHA70/A70/23 reference 23) defines substandard medical products as: \"Also called 'out of specification', these are authorized medical products that fail to meet either their quality standards or their specifications, or both.\" Both wordings are preserved here without choosing between them.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Falsified Medical Product"
+        }
+      ],
+      "skos:altLabel": [
+        "falsified product"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Medical products that deliberately/fraudulently misrepresent their identity, composition or source (9)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. vii, PDF p. 9, citing reference 9; identical wording on p. 1, PDF p. 13, citing reference 23).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Unregistered or Unlicensed Medical Product"
+        }
+      ],
+      "skos:altLabel": [
+        "unregistered medical product",
+        "unlicensed medical product"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Medical products that have not undergone evaluation and/or approval by the national or regional regulatory authority for the market in which they are marketed/distributed or used, subject to permitted conditions under national or regional regulation and legislation (9)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. ix, PDF p. 11, citing reference 9; also on p. 1, PDF p. 13, citing reference 23). Finding F2: although defined as the third WHO category alongside substandard and falsified products, the Ch. 4 workflow (Fig. 4, p. 30) and data dictionary element SFR.A1.DE8 (Table 11, p. 31) offer only substandard and falsified paths.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/medical-product",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Medical Product"
+        }
+      ],
+      "skos:altLabel": [
+        "health product"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A term that includes medicines, vaccines, diagnostics and medical devices (including in vitro diagnostics) (9)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 9). Finding F10: in smart-ra (dpi-h-ra/product), \"Product\" is an ArchiMate business/contract offering (homonym); in dth-sfp and dth-pc, medical product / generic product / trade item denotes a physical health commodity.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product"
+        }
+      ],
+      "skos:closeMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Pharmacovigilance"
+        }
+      ],
+      "skos:altLabel": [
+        "PV"
+      ],
+      "skos:definition": [
+        {
+          "@value": "The science and activities relating to the detection, assessment, understanding and prevention of adverse effects or any other medicine/vaccine-related problem (15)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 15).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/active-pharmacovigilance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/passive-pharmacovigilance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/post-market-surveillance"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/active-pharmacovigilance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Active Pharmacovigilance"
+        }
+      ],
+      "skos:altLabel": [
+        "proactive pharmacovigilance",
+        "active safety surveillance"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Active (or proactive) safety surveillance means that active measures are taken to detect adverse events. This is managed by active follow-up after treatment and the events may be detected by asking patients directly or screening patient records. The most comprehensive method is cohort event monitoring (1)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. vii, PDF p. 9, citing reference 1).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/passive-pharmacovigilance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/passive-pharmacovigilance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Passive Pharmacovigilance"
+        }
+      ],
+      "skos:altLabel": [
+        "spontaneous reporting",
+        "voluntary reporting"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Passive surveillance means that no active measures are taken to look for adverse effects other than the encouragement of health professionals and others to report safety concerns. Reporting is dependent on the initiative and motivation of the potential reporters. This is the most common form of pharmacovigilance. It is commonly referred to as “spontaneous” or “voluntary” reporting (1)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 1).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/active-pharmacovigilance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Adverse Drug Reaction"
+        }
+      ],
+      "skos:altLabel": [
+        "ADR"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A response to a drug that is noxious and unintended, and which occurs at doses normally used in man for the prophylaxis, diagnosis or therapy of disease, or for the modification of physiological function (2)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. vii, PDF p. 9, citing reference 2). Linked to SFR.A1.DE9 (Adverse reaction details) in Table 11.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/therapeutic-failure"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/adverse-events-following-immunization"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/post-market-surveillance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Post-Market Surveillance"
+        }
+      ],
+      "skos:altLabel": [
+        "PMS",
+        "post-marketing surveillance"
+      ],
+      "skos:definition": [
+        {
+          "@value": "The activities of monitoring the quality, safety and efficacy of medical products after they have been registered and marketed (17)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 17).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/risk-based-post-market-surveillance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/risk-based-post-market-surveillance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Risk-Based Post-Market Surveillance"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "An approach to post-market surveillance that prioritizes and allocates resources toward medical products and supply chains that pose the highest potential risks to public health, thereby ensuring efficient and targeted quality monitoring (19)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (pp. viii–ix, PDF pp. 10–11, citing reference 19).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/post-market-surveillance"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Global Surveillance and Monitoring System"
+        }
+      ],
+      "skos:altLabel": [
+        "GSMS",
+        "WHO GSMS"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A WHO initiative launched in 2013 to improve the quality of reporting of substandard and falsified medical products, assist Member States in investigating incidents, and issue global medical product alerts when necessary (11)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. vii, PDF p. 9, citing reference 11). Target of business process SF-REP-005 (Report confirmed case to WHO GSMS).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/member-state-mechanism"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/national-medicines-regulatory-authority"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/medical-product-alert"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/member-state-mechanism",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Member State Mechanism"
+        }
+      ],
+      "skos:altLabel": [
+        "WHO Member State Mechanism on Substandard and Falsified Medical Products"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A formal mechanism established by the World Health Assembly to promote global collaboration among Member States to prevent, detect and respond to substandard and falsified medical products, protecting public health and enhancing access to quality medical products (13)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 13).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/national-medicines-regulatory-authority"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/governance"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/national-medicines-regulatory-authority",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "National Medicines Regulatory Authority"
+        }
+      ],
+      "skos:altLabel": [
+        "NMRA",
+        "national regulatory authority",
+        "NRA"
+      ],
+      "skos:definition": [
+        {
+          "@value": "The national agency responsible for ensuring that pharmaceuticals and other medical products meet standards of quality, safety and efficacy, Including registration, marketing authorization, inspection, post-market surveillance and regulatory enforcement (14)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 14). Maps to the shared ArchiMate BusinessRole `National Regulatory Authority` (`id-8e67c8e9e1195cdc857b03a2c640e7fe`) in smart-ra.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/post-market-surveillance"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system"
+        }
+      ],
+      "skos:closeMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/medical-product-alert",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Medical Product Alert"
+        }
+      ],
+      "skos:altLabel": [
+        "WHO Medical Product Alert",
+        "rapid alert"
+      ],
+      "skos:definition": [
+        {
+          "@value": "An official safety and quality communication issued by a national regulatory authority or WHO to warn health professionals, supply chain actors and the public about confirmed substandard or falsified medical products in circulation and support product recall or quarantine."
+        }
+      ],
+      "skos:scopeNote": "Domain concept from Introduction (p. 1, PDF p. 13), §1.3 (Table 4), and §2.2 ArchiMate business object list in dth-sfp#1.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/national-medicines-regulatory-authority"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-004-reporting-of-substandard-and-falsified-medical-p.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/enabling-environment",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Enabling Environment"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Attitudes, actions, policies and practices that stimulate and support the effective and efficient functioning of organizations and individuals (8)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. vii, PDF p. 9, citing DIIG reference 8). Assessed in Chapter 1 (DIIG phase 1).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/digital-transformation"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/governance"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/digital-infrastructure"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/monitoring",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Monitoring"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The routine tracking and reporting of priority information about a programme or project, its inputs and intended outputs, outcomes and impacts (8)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 8). Addressed in Chapter 6 (Monitor, evaluate and scale).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/evaluation"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/detection-to-notification-time"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/evaluation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Evaluation"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The systematic and objective assessment of an ongoing or completed project, programme or policy, with the aim of determining the relevance and fulfilment of objectives, development efficiency, effectiveness, impact and sustainability (8)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. vii, PDF p. 9, citing reference 8). Operationalised in Chapter 6 (Tables 16–18).",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/monitoring"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/detection-to-notification-time"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Health Care Professional"
+        }
+      ],
+      "skos:altLabel": [
+        "HCP",
+        "health professional"
+      ],
+      "skos:definition": [
+        {
+          "@value": "Individuals with formal training and licensure who provide health care services, such as doctors, nurses, pharmacists, dentists and midwives (12)."
+        }
+      ],
+      "skos:scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 12). Parent reporter category for clinical personas in §4.1 and Tables 7–9.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:closeMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-practitioner"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/doctor",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Doctor"
+        }
+      ],
+      "skos:altLabel": [
+        "Medical doctor",
+        "Physician",
+        "ISCO-08 2211",
+        "ISCO-08 2212"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A medical practitioner (ISCO-08 codes 2211 Generalist medical practitioners, 2212 Specialist medical practitioners) who diagnoses and treats patients, prescribes or administers medicines, and detects and reports suspected SF medical products upon observing unexpected adverse reactions or therapeutic failure."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from §4.1 (p. 25), Table 7 (p. 25), and Table 9 scenario 1 (p. 27). Bound to DAK persona `SFP-R-01`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/nurse",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Nurse"
+        }
+      ],
+      "skos:altLabel": [
+        "Nursing professional",
+        "ISCO-08 2221"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A nursing professional (ISCO-08 code 2221) who prepares and administers medications at the point of care, monitors patient responses, and detects and reports suspected SF medical products when observing packaging anomalies, particulate contamination, or unexpected clinical responses."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from §4.1 (p. 25), Table 7 (p. 25), and Table 9 scenario 2 (p. 27). Bound to DAK persona `SFP-R-02`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/individual-patient",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Individual or Patient Reporter"
+        }
+      ],
+      "skos:altLabel": [
+        "Individual",
+        "Patient",
+        "Caregiver",
+        "Public reporter"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A patient, caregiver, or member of the public (ISCO-08 N/A) who purchases or uses a medical product, notices abnormal appearance, taste, packaging, or adverse effects, and reports the suspected SF product directly or through a health worker."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from Table 7 (p. 26) and Table 9 scenario 3 (p. 27). Bound to DAK persona `SFP-R-03`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/anonymous-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/end-user"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/community-health-worker",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Community Health Worker"
+        }
+      ],
+      "skos:altLabel": [
+        "CHW",
+        "ISCO-08 3253",
+        "ISCO-08 3259"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A frontline community health provider (Table 8 lists ISCO-08 code 3259; standard ISCO-08 code for Community health workers is 3253) who delivers basic health services and products in community settings and reports suspected SF products observed during home visits or community outreach."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from Table 8 (p. 26) and Table 9 scenario 4 (p. 27). Bound to DAK persona `SFP-R-04`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:closeMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/laboratory-technician",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Laboratory Technician"
+        }
+      ],
+      "skos:altLabel": [
+        "Medical and pathology laboratory technician",
+        "ISCO-08 3212"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A medical or quality-control laboratory technician (ISCO-08 code 3212) who uses diagnostic reagents or tests medical product samples and reports suspected substandard or falsified reagents, test kits, or pharmaceuticals."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from Table 8 (p. 26) and Table 9 scenario 5 (p. 27). Bound to DAK persona `SFP-R-05`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacist",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Pharmacist"
+        }
+      ],
+      "skos:altLabel": [
+        "Hospital or community pharmacist",
+        "ISCO-08 2262"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A licensed pharmacist (ISCO-08 code 2262) who procures, inspects, stores, and dispenses medical products, verifies packaging, batch numbers, and supplier credentials, and reports suspected SF products discovered during dispensing or stock inspection."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from §4.1 (p. 25), Table 8 (p. 26), and Table 9 scenario 6 (p. 28). Bound to DAK persona `SFP-R-06`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/dentist",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Dentist"
+        }
+      ],
+      "skos:altLabel": [
+        "Dental practitioner",
+        "ISCO-08 2261"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A dental professional (ISCO-08 code 2261) who administers dental anaesthetics, antimicrobials, and restorative materials, and reports suspected SF dental medicines or devices when observing unexpected clinical failure or product defects."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from §4.1 (p. 25) and Table 9 scenario 7 (p. 28; Finding F3: listed in §4.1 and Table 9, omitted from Tables 7–8). Bound to DAK persona `SFP-R-07`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/midwife",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Midwife"
+        }
+      ],
+      "skos:altLabel": [
+        "Midwifery professional",
+        "ISCO-08 2222"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A midwifery professional (ISCO-08 code 2222) providing maternal and newborn care who detects and reports suspected SF uterotonics, antibiotics, or maternal health products when encountering lack of efficacy or product quality anomalies."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from Table 9 scenario 8 (p. 28; Finding F3: present in Table 9, omitted from §4.1 and Tables 7–8). Bound to DAK persona `SFP-R-08`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/paramedic",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Paramedic"
+        }
+      ],
+      "skos:altLabel": [
+        "Emergency paramedic",
+        "Paramedical practitioner",
+        "ISCO-08 2240",
+        "ISCO-08 3258"
+      ],
+      "skos:definition": [
+        {
+          "@value": "An emergency medical / paramedical responder (ISCO-08 codes 2240 Paramedical practitioners, 3258 Ambulance workers) who administers emergency medicines in field settings (often with intermittent connectivity) and submits SF reports online or via offline outbox synchronisation."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization from Table 9 scenario 9 (p. 28; Finding F3: present in Table 9, omitted from §4.1 and Tables 7–8). Primary actor for offline submission subprocess SF-REP-006. Bound to DAK persona `SFP-R-09`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacy-technician",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Pharmacy Technician"
+        }
+      ],
+      "skos:altLabel": [
+        "Pharmaceutical technician and assistant",
+        "ISCO-08 3213"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A pharmaceutical technician or assistant (ISCO-08 code 3213) supporting inventory receipt, shelving, and dispensing who inspects packaging and batch/expiry details and reports suspected SF products."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization named in §4.1 (p. 25; Finding F3: named in §4.1, omitted from Tables 7–9). Bound to DAK persona `SFP-R-10`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacist"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/public-health-worker",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Public Health Worker"
+        }
+      ],
+      "skos:altLabel": [
+        "Public health officer",
+        "ISCO-08 2269"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A public health practitioner (ISCO-08 code 2269) involved in disease control programmes, immunization campaigns, or field surveillance who detects and reports suspected SF medical products."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization named in §4.1 (p. 25; Finding F3: named in §4.1, omitted from Tables 7–9). Bound to DAK persona `SFP-R-11`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/veterinarian",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Veterinarian"
+        }
+      ],
+      "skos:altLabel": [
+        "Veterinary practitioner",
+        "ISCO-08 2250"
+      ],
+      "skos:definition": [
+        {
+          "@value": "A veterinary professional (ISCO-08 code 2250) who prescribes or administers veterinary and zoonotic medical products and reports suspected SF products in animal health settings."
+        }
+      ],
+      "skos:scopeNote": "Cluster C persona specialization named in Annex 2 user persona template (p. 53, PDF p. 65; Finding F3: appears only in Annex 2, omitted from §4.1 and Tables 7–9). Bound to DAK persona `SFP-R-12`.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        },
+        {
+          "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240120747-eng/sections/sec-036-annex-2-user-persona-template.md",
+      "skos:note": "candidate"
+    }
+  ]
+}

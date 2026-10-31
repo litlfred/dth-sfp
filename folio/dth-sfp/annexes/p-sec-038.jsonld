@@ -1,0 +1,80 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/prose-sec-038",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:sec-038",
+  "kind": "prose",
+  "title": "Stakeholder RACI matrix (PDF pp. 68–68)",
+  "text": "p-sec-038.md",
+  "meta": {
+    "source": "who-iris/library/9789240120747-eng/sections/sec-038-annex-4-stakeholder-raci-matrix.md",
+    "sectionId": "sec-038",
+    "pageStart": 68,
+    "pageEnd": 68,
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+        "term": "suspect-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/business-process",
+        "term": "business-process"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
+        "term": "user-persona"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "term": "stakeholder"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/business-process",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "name": "Components"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

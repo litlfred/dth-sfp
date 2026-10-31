@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/prose-sec-031",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:sec-031",
+  "kind": "prose",
+  "title": "Share implementation experiences (PDF pp. 58–59)",
+  "text": "p-sec-031.md",
+  "meta": {
+    "source": "who-iris/library/9789240120747-eng/sections/sec-031-7-share-implementation-experiences.md",
+    "sectionId": "sec-031",
+    "pageStart": 58,
+    "pageEnd": 59,
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+        "term": "suspect-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop",
+        "term": "reporter-feedback-loop"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system",
+        "term": "global-surveillance-and-monitoring-system"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bbd18f65be45490fbbaf02346511ae5e.jsonld",
+          "name": "Reporting Module",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e3c4f0ec36f35eccb0d4c50f887316e5.jsonld",
+          "name": "Global Platforms",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "name": "Components"
+        }
+      ]
+    },
+    "sourceOnly": true
+  },
+  "provenance": "authored"
+}

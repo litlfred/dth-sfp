@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
+             xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
+             id="Definitions_Decision_SFR_DT_02"
+             name="SFR.DT.02 — Selected product to applicable product type (SFR.A1.DE5)"
+             namespace="https://litlfred.github.io/dth-sfp/decisions">
+  <decision id="Decision_SFR_DT_02" name="SFR.DT.02 — Selected product to applicable product type (SFR.A1.DE5)">
+    <description>Derives the applicable product type (SFR.A1.DE5) from the product selected by the reporter in the National Product Catalogue (dth-pc/national-product-catalogue), per Table 12 requirement 6 (assigned ID SFR.FXNREQ.006, p. 31 / PDF p. 43): &#x27;As a public health agency, I want the system to assign the applicable type of product after a user selects a specific product, so that I can minimize reporting errors.&#x27; Finding F4 noted: SFR.A1.DE5 in Table 11 has an empty description and data type; the WHO medical product categories come from the handbook glossary definition of &#x27;Medical product&#x27; (p. viii).</description>
+    <decisionTable id="DecisionTable_Decision_SFR_DT_02" hitPolicy="FIRST">
+      <input id="In_ProdId" label="Selected product identifier (SFR.A1.DE3)">
+        <inputExpression id="Expr_In_ProdId" typeRef="boolean"><text>productIdSelected</text></inputExpression>
+      </input>
+      <input id="In_CatClass" label="Catalogue product classification (dth-pc)">
+        <inputExpression id="Expr_In_CatClass" typeRef="string"><text>catalogueCategory</text></inputExpression>
+      </input>
+      <output id="Out_ProdType" name="productType" label="Assigned product type (SFR.A1.DE5)" typeRef="string"/>
+      <output id="Out_Source" name="assignmentMode" label="Assignment mode" typeRef="string"/>
+      <rule id="Rule_DT02_1">
+        <description>Selected catalogue item is a pharmaceutical medicine (glossary &#x27;Medical product&#x27;, p. viii).</description>
+        <inputEntry id="Rule_DT02_1_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT02_1_in_2"><text>&quot;Medicine&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT02_1_out_1"><text>&quot;Medicine&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT02_1_out_2"><text>&quot;Auto-assigned from National Product Catalogue (SFR.FXNREQ.006)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT02_2">
+        <description>Selected catalogue item is a vaccine (glossary &#x27;Medical product&#x27;, p. viii).</description>
+        <inputEntry id="Rule_DT02_2_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT02_2_in_2"><text>&quot;Vaccine&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT02_2_out_1"><text>&quot;Vaccine&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT02_2_out_2"><text>&quot;Auto-assigned from National Product Catalogue (SFR.FXNREQ.006)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT02_3">
+        <description>Selected catalogue item is a diagnostic / in vitro diagnostic reagent or kit (Table 8 Lab Technician, glossary p. viii).</description>
+        <inputEntry id="Rule_DT02_3_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT02_3_in_2"><text>&quot;Diagnostic / IVD&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT02_3_out_1"><text>&quot;Diagnostic (in vitro diagnostic)&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT02_3_out_2"><text>&quot;Auto-assigned from National Product Catalogue (SFR.FXNREQ.006)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT02_4">
+        <description>Selected catalogue item is a medical device (glossary &#x27;Medical product&#x27;, p. viii).</description>
+        <inputEntry id="Rule_DT02_4_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT02_4_in_2"><text>&quot;Medical device&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT02_4_out_1"><text>&quot;Medical device&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT02_4_out_2"><text>&quot;Auto-assigned from National Product Catalogue (SFR.FXNREQ.006)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT02_5">
+        <description>Unmatched product: manual fallback noted per Finding F4.</description>
+        <inputEntry id="Rule_DT02_5_in_1"><text>false</text></inputEntry>
+        <inputEntry id="Rule_DT02_5_in_2"><text>-</text></inputEntry>
+        <outputEntry id="Rule_DT02_5_out_1"><text>&quot;Unclassified / manual entry&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT02_5_out_2"><text>&quot;Product not matched in catalogue; reporter enters product description manually (Finding F4: DE5 value set not specified in Table 11)&quot;</text></outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

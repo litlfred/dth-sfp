@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
+             xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
+             id="Definitions_Decision_SFR_DT_01"
+             name="SFR.DT.01 — Report type and registration status to workflow path"
+             namespace="https://litlfred.github.io/dth-sfp/decisions">
+  <decision id="Decision_SFR_DT_01" name="SFR.DT.01 — Report type and registration status to workflow path">
+    <description>Routes an SF report submission based on product registration status in the national product catalogue and suspected SF category (Fig. 4 gateways, p. 30 / PDF p. 42; SFR.A1.DE2 &amp; SFR.A1.DE8, Table 11, p. 31 / PDF p. 43). Finding F2 recorded: the handbook glossary (p. ix) and Introduction (p. 1) define unregistered/unlicensed medical products as the third WHO category, but Fig. 4 and SFR.A1.DE8 provide only substandard and falsified options.</description>
+    <decisionTable id="DecisionTable_Decision_SFR_DT_01" hitPolicy="UNIQUE">
+      <input id="In_Registered" label="Product registered in national catalogue?">
+        <inputExpression id="Expr_In_Registered" typeRef="boolean"><text>isProductRegistered</text></inputExpression>
+      </input>
+      <input id="In_Channel" label="Reporting channel (SFR.A1.DE8)">
+        <inputExpression id="Expr_In_Channel" typeRef="string"><text>reportingChannel</text></inputExpression>
+      </input>
+      <input id="In_Category" label="Suspected SF category (Fig. 4 gateway 5)">
+        <inputExpression id="Expr_In_Category" typeRef="string"><text>suspectedCategory</text></inputExpression>
+      </input>
+      <output id="Out_Path" name="workflowPath" label="Workflow branch (SF-REP-001)" typeRef="string"/>
+      <output id="Out_Note" name="regulatoryNote" label="Regulatory handling note" typeRef="string"/>
+      <rule id="Rule_DT01_1">
+        <description>Healthcare professional reporting a suspected substandard registered product (Fig. 4 left branch, DE8).</description>
+        <inputEntry id="Rule_DT01_1_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT01_1_in_2"><text>&quot;Healthcare professional&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT01_1_in_3"><text>&quot;Substandard&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT01_1_out_1"><text>&quot;substandard-branch&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT01_1_out_2"><text>&quot;Route through substandard quality defect / therapeutic failure branch (steps 6a-8a)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT01_2">
+        <description>Public/patient reporting a suspected substandard registered product (Fig. 4 left branch, DE8).</description>
+        <inputEntry id="Rule_DT01_2_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT01_2_in_2"><text>&quot;Public&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT01_2_in_3"><text>&quot;Substandard&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT01_2_out_1"><text>&quot;substandard-branch&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT01_2_out_2"><text>&quot;Route through substandard quality defect / adverse reaction branch (steps 6a-8a)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT01_3">
+        <description>Manufacturer/importer reporting a suspected substandard batch (Fig. 4 left branch, DE8).</description>
+        <inputEntry id="Rule_DT01_3_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT01_3_in_2"><text>&quot;Pharmaceutical industry&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT01_3_in_3"><text>&quot;Substandard&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT01_3_out_1"><text>&quot;substandard-branch&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT01_3_out_2"><text>&quot;Route through manufacturer/importer quality defect branch (steps 6a-8a)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT01_4">
+        <description>Healthcare professional reporting a suspected falsified registered product (Fig. 4 right branch, DE8).</description>
+        <inputEntry id="Rule_DT01_4_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT01_4_in_2"><text>&quot;Healthcare professional&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT01_4_in_3"><text>&quot;Falsified&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT01_4_out_1"><text>&quot;falsified-branch&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT01_4_out_2"><text>&quot;Route through suspected falsification branch (steps 6b-8b) and flag for inspectorate&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT01_5">
+        <description>Public/patient reporting a suspected falsified product (Fig. 4 right branch, DE8).</description>
+        <inputEntry id="Rule_DT01_5_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT01_5_in_2"><text>&quot;Public&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT01_5_in_3"><text>&quot;Falsified&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT01_5_out_1"><text>&quot;falsified-branch&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT01_5_out_2"><text>&quot;Route through suspected falsification branch (steps 6b-8b)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT01_6">
+        <description>Manufacturer/importer reporting counterfeit/falsified product misrepresentation (Fig. 4 right branch, DE8).</description>
+        <inputEntry id="Rule_DT01_6_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT01_6_in_2"><text>&quot;Pharmaceutical industry&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT01_6_in_3"><text>&quot;Falsified&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT01_6_out_1"><text>&quot;falsified-branch&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT01_6_out_2"><text>&quot;Route through counterfeit/falsification branch (steps 6b-8b) and notify law enforcement liaison&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT01_7">
+        <description>Product not found in national product catalogue: Fig. 4 had an unlabelled bypass to End (F5) and omitted unregistered from DE8 (F2); captured explicitly for regulatory review.</description>
+        <inputEntry id="Rule_DT01_7_in_1"><text>false</text></inputEntry>
+        <inputEntry id="Rule_DT01_7_in_2"><text>-</text></inputEntry>
+        <inputEntry id="Rule_DT01_7_in_3"><text>-</text></inputEntry>
+        <outputEntry id="Rule_DT01_7_out_1"><text>&quot;unregistered-or-falsified-branch&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT01_7_out_2"><text>&quot;Finding F2/F5: Product not in national product catalogue; capture unregistered/unlicensed product details and route for regulatory verification&quot;</text></outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

@@ -1,0 +1,6 @@
+### Named Decision Points Without Rules in the Handbook (`litlfred/dth-sfp#1` §2.4)
+
+Per owner rule (`litlfred/dth-sfp#1` §2.4), decision logic is extracted into DMN tables **only where the handbook states the rule**; nothing is inferred. Two decision points named in the handbook state no rule and are recorded here as explicit source gaps:
+
+1. **Adverse drug reaction reported (`SFR.A1.DE9`) → Co-routing to Pharmacovigilance (PV) system** (§1.3 p. 12, §2.1 p. 15, Table 11 p. 31): The handbook emphasises aligning SF reporting with national pharmacovigilance systems (`VigiFlow` / `VigiBase`) and captures `SFR.A1.DE9` (*Adverse reaction details: Details of any adverse reaction that the patient experienced after using the product*), but gives no threshold or routing rule for when an SF report must automatically generate or forward an Individual Case Safety Report (ICSR) to the PV system.
+2. **Risk impact × probability → Priority level** (Annex 7 *Risk management template*, p. 59 / PDF p. 71): Annex 7 illustrates a risk register table with columns `Risk description`, `Category`, `Impact`, `Probability`, `Priority`, `Risk mitigation`, `Action`, and `Status`, containing a single example row (`Impact: High`, `Probability: Medium`, `Priority: High`), without defining the impact × probability scoring matrix.

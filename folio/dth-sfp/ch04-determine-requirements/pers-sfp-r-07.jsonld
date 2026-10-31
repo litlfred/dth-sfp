@@ -1,0 +1,108 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/pers-sfp-r-07",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:sfp-r-07",
+  "kind": "persona",
+  "title": "SFP-R-07 — Dentist (ISCO-08: 2261)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-022",
+    "papers/dth-sfp/blocks/prose-sec-023",
+    "papers/dth-sfp/blocks/tbl-table-07",
+    "papers/dth-sfp/blocks/tbl-table-08"
+  ],
+  "text": "pers-sfp-r-07.md",
+  "meta": {
+    "roleId": "SFP-R-07",
+    "title": "SFP-R-07 — Dentist (ISCO-08: 2261)",
+    "isco08": "2261",
+    "personaType": "human",
+    "bpmnRoleId": "sfp-r-07",
+    "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
+    "sections": [
+      "sec-022",
+      "sec-023"
+    ],
+    "pdfPages": [
+      37,
+      40
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/dentist",
+        "term": "dentist"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
+        "term": "reporter"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
+        "term": "user-persona"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "term": "occupation"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "term": "international-standard-classification-of-occupations"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
+        "term": "health-professional"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/dentist",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-9cecae7a982548e1960a36ed41713a7c.jsonld",
+          "name": "Health Facility",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-19be800d18a34a618d6e1955cf58e956.jsonld",
+          "name": "ALL High Level - Health Workforce"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-2d524cffba25509e82684f47d624cc42.jsonld",
+          "name": "Health Supply Chain Partners and Processes (DTH SC Figs. 1-3)"
+        }
+      ]
+    },
+    "reviewNotes": [
+      "F3: Listed in §4.1 and Table 9 scenario 7, omitted from Tables 7–8."
+    ]
+  },
+  "provenance": "authored"
+}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_SF_REP_002"
+                  targetNamespace="https://litlfred.github.io/dth-sfp/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:import namespace="https://litlfred.github.io/bootstrap/v0/processes/ns#" location="https://litlfred.github.io/bootstrap/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld"/>
+  <bpmn:resource id="sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
+  <bpmn:resource id="sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
+  <bpmn:resource id="sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
+  <bpmn:resource id="sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
+  <bpmn:resource id="sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
+  <bpmn:resource id="sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
+  <bpmn:resource id="sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
+  <bpmn:resource id="sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
+  <bpmn:resource id="sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
+  <bpmn:resource id="sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
+  <bpmn:resource id="sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
+  <bpmn:resource id="sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
+  <bpmn:resource id="sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
+  <bpmn:resource id="sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
+  <bpmn:resource id="sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
+  <bpmn:collaboration id="Collaboration_Process_SF_REP_002">
+    <bpmn:participant id="Participant_Process_SF_REP_002" name="Receive, acknowledge and track SF report (SF-REP-002)" processRef="Process_SF_REP_002"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_SF_REP_002" name="Receive, acknowledge and track SF report (SF-REP-002)" isExecutable="false">
+    <bpmn:documentation>Workflow for receiving an SF report, generating a unique tracking number, sending confirmation to the reporter, notifying the NMRA focal point, and serving status updates, drafted from Table 9 stages 5-6 (pp. 27-28 / PDF pp. 39-40) and Table 12 functional requirements SFR.FXNREQ.001-007 (p. 31 / PDF p. 43). Source gap note: the handbook states the required notifications and tracking number generation but does not specify SLA escalation timers; no escalation timer is inferred.</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="advisory"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_SF_REP_002">
+      <bpmn:lane id="Lane_SF_REP_002_NMRA" name="NMRA Case Management System &amp; Reviewer (SFP-R-13)" partitionElementRef="sfp-r-13">
+        <bpmn:documentation>Persona pers:sfp-r-13. Ingests submitted report, resolves product type and reporter region, mints tracking number, alerts focal point, and publishes status changes.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_SF_REP_002</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_201_DeriveRegionAndProductType</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_202_GenerateTrackingNumber</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_203_SendConfirmation</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_204_NotifyFocalPoint</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_205_UpdateCaseStatus</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_SF_REP_002_Reporter" name="Reporter (SFP-R-01..SFP-R-12, SFP-R-14)" partitionElementRef="sfp-r-01">
+        <bpmn:documentation>Persona pers:sfp-r-01. Receives confirmation and tracking number and checks status updates.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_206_ReceiveTrackingNumber</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_207_ViewStatusUpdates</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_SF_REP_002</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_SF_REP_002" name="SF report received from reporter">
+      <bpmn:outgoing>Flow_201</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Task_201_DeriveRegionAndProductType" name="Derive reporter region (SFR.DT.03 / FXNREQ.001) &amp; product type (SFR.DT.02 / FXNREQ.006)">
+      <bpmn:incoming>Flow_201</bpmn:incoming>
+      <bpmn:outgoing>Flow_202</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_202_GenerateTrackingNumber" name="Generate unique tracking number (SFR.FXNREQ.003)">
+      <bpmn:incoming>Flow_202</bpmn:incoming>
+      <bpmn:outgoing>Flow_203</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sendTask id="Task_203_SendConfirmation" name="Send submission confirmation &amp; tracking number to reporter (SFR.FXNREQ.004)">
+      <bpmn:incoming>Flow_203</bpmn:incoming>
+      <bpmn:outgoing>Flow_204</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:serviceTask id="Task_204_NotifyFocalPoint" name="Send real-time alert to NMRA focal point (SFR.FXNREQ.005)">
+      <bpmn:incoming>Flow_204</bpmn:incoming>
+      <bpmn:outgoing>Flow_205</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="Task_205_UpdateCaseStatus" name="Update case status during assessment &amp; publish to reporter feedback loop">
+      <bpmn:incoming>Flow_205</bpmn:incoming>
+      <bpmn:outgoing>Flow_206</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:receiveTask id="Task_206_ReceiveTrackingNumber" name="Receive confirmation &amp; tracking number">
+      <bpmn:incoming>Flow_206</bpmn:incoming>
+      <bpmn:outgoing>Flow_207</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:userTask id="Task_207_ViewStatusUpdates" name="Check report progress via tracking number (Table 9 stages 5-6)">
+      <bpmn:incoming>Flow_207</bpmn:incoming>
+      <bpmn:outgoing>Flow_208</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="End_SF_REP_002" name="Report acknowledged and tracked to closure">
+      <bpmn:incoming>Flow_208</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_201" sourceRef="Start_SF_REP_002" targetRef="Task_201_DeriveRegionAndProductType"/>
+    <bpmn:sequenceFlow id="Flow_202" sourceRef="Task_201_DeriveRegionAndProductType" targetRef="Task_202_GenerateTrackingNumber"/>
+    <bpmn:sequenceFlow id="Flow_203" sourceRef="Task_202_GenerateTrackingNumber" targetRef="Task_203_SendConfirmation"/>
+    <bpmn:sequenceFlow id="Flow_204" sourceRef="Task_203_SendConfirmation" targetRef="Task_204_NotifyFocalPoint"/>
+    <bpmn:sequenceFlow id="Flow_205" sourceRef="Task_204_NotifyFocalPoint" targetRef="Task_205_UpdateCaseStatus"/>
+    <bpmn:sequenceFlow id="Flow_206" sourceRef="Task_205_UpdateCaseStatus" targetRef="Task_206_ReceiveTrackingNumber"/>
+    <bpmn:sequenceFlow id="Flow_207" sourceRef="Task_206_ReceiveTrackingNumber" targetRef="Task_207_ViewStatusUpdates"/>
+    <bpmn:sequenceFlow id="Flow_208" sourceRef="Task_207_ViewStatusUpdates" targetRef="End_SF_REP_002"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Process_SF_REP_002">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_SF_REP_002" bpmnElement="Collaboration_Process_SF_REP_002">
+      <bpmndi:BPMNShape id="Shape_Participant_Process_SF_REP_002" bpmnElement="Participant_Process_SF_REP_002" isHorizontal="true">
+        <dc:Bounds x="20" y="80" width="1220" height="360"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_002_NMRA" bpmnElement="Lane_SF_REP_002_NMRA" isHorizontal="true">
+        <dc:Bounds x="40" y="80" width="1200" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_002_Reporter" bpmnElement="Lane_SF_REP_002_Reporter" isHorizontal="true">
+        <dc:Bounds x="40" y="260" width="1200" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_SF_REP_002" bpmnElement="Start_SF_REP_002">
+        <dc:Bounds x="180" y="152" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_201_DeriveRegionAndProductType" bpmnElement="Task_201_DeriveRegionAndProductType">
+        <dc:Bounds x="350" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_202_GenerateTrackingNumber" bpmnElement="Task_202_GenerateTrackingNumber">
+        <dc:Bounds x="520" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_203_SendConfirmation" bpmnElement="Task_203_SendConfirmation">
+        <dc:Bounds x="690" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_204_NotifyFocalPoint" bpmnElement="Task_204_NotifyFocalPoint">
+        <dc:Bounds x="860" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_205_UpdateCaseStatus" bpmnElement="Task_205_UpdateCaseStatus">
+        <dc:Bounds x="1030" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_206_ReceiveTrackingNumber" bpmnElement="Task_206_ReceiveTrackingNumber">
+        <dc:Bounds x="180" y="315" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_207_ViewStatusUpdates" bpmnElement="Task_207_ViewStatusUpdates">
+        <dc:Bounds x="350" y="315" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_SF_REP_002" bpmnElement="End_SF_REP_002">
+        <dc:Bounds x="520" y="332" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_201" bpmnElement="Flow_201">
+        <di:waypoint x="216" y="170"/>
+        <di:waypoint x="350" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_202" bpmnElement="Flow_202">
+        <di:waypoint x="480" y="170"/>
+        <di:waypoint x="520" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_203" bpmnElement="Flow_203">
+        <di:waypoint x="650" y="170"/>
+        <di:waypoint x="690" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_204" bpmnElement="Flow_204">
+        <di:waypoint x="820" y="170"/>
+        <di:waypoint x="860" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_205" bpmnElement="Flow_205">
+        <di:waypoint x="990" y="170"/>
+        <di:waypoint x="1030" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_206" bpmnElement="Flow_206">
+        <di:waypoint x="1160" y="170"/>
+        <di:waypoint x="180" y="350"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_207" bpmnElement="Flow_207">
+        <di:waypoint x="310" y="350"/>
+        <di:waypoint x="350" y="350"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_208" bpmnElement="Flow_208">
+        <di:waypoint x="480" y="350"/>
+        <di:waypoint x="520" y="350"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

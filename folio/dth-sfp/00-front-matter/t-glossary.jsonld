@@ -1,0 +1,190 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/tbl-glossary",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:glossary",
+  "kind": "table",
+  "title": "Handbook Glossary (35 entries, pp. vii–ix / PDF pp. 9–11)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-002"
+  ],
+  "text": "t-glossary.md",
+  "meta": {
+    "source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
+    "pdfPage": 9,
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+        "term": "suspect-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product",
+        "term": "substandard-medical-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product",
+        "term": "falsified-medical-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product",
+        "term": "unregistered-or-unlicensed-medical-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/medical-product",
+        "term": "medical-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance",
+        "term": "pharmacovigilance"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/active-pharmacovigilance",
+        "term": "active-pharmacovigilance"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/passive-pharmacovigilance",
+        "term": "passive-pharmacovigilance"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction",
+        "term": "adverse-drug-reaction"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/post-market-surveillance",
+        "term": "post-market-surveillance"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/risk-based-post-market-surveillance",
+        "term": "risk-based-post-market-surveillance"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system",
+        "term": "global-surveillance-and-monitoring-system"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/member-state-mechanism",
+        "term": "member-state-mechanism"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/national-medicines-regulatory-authority",
+        "term": "national-medicines-regulatory-authority"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/polypharmacy",
+        "term": "polypharmacy"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/enterprise-architecture",
+        "term": "enterprise-architecture"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+        "term": "interoperability"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+        "term": "registry"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines",
+        "term": "smart-guidelines"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+        "term": "product-master-data"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "term": "traceability"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/medical-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/active-pharmacovigilance",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/passive-pharmacovigilance",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/post-market-surveillance",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/risk-based-post-market-surveillance",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/member-state-mechanism",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/national-medicines-regulatory-authority",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/polypharmacy",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/enterprise-architecture",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines",
+      "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+      "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e3c4f0ec36f35eccb0d4c50f887316e5.jsonld",
+          "name": "Global Platforms",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "name": "Components"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-8c5dd12b8d4e425184f6003d0513d569.jsonld",
+          "name": "Interoperability Layer"
+        }
+      ]
+    },
+    "reviewNotes": [
+      "F1: Two definitions of 'substandard medical product' — Glossary (p. ix, citing ref 9) states 'authorized by national regulatory authorities, but fail to meet either national or international quality standards or specifications – or, in some cases, both', whereas Introduction (p. 1, citing ref 23 WHA70/A70/23) states 'fail to meet either their quality standards or their specifications, or both'. Both are preserved as alternatives.",
+      "F3 (Polypharmacy orphan glossary entry): 'Polypharmacy' is defined on p. viii (citing ref 16) but never used in the handbook body text (pp. 1-59).",
+      "F6: Glossary entry for 'Registry' (p. viii) is truncated mid-sentence ('...canonical minimum data etc.').",
+      "F9 & F10: Term comparison with smart-ra (dpi-h-ra) recorded — 'enterprise architecture', 'interoperability', 'product' (ArchiMate business offering vs physical medical product homonym), and 'SMART Guidelines' carry distinct wordings across smart-ra and dth-sfp."
+    ]
+  },
+  "provenance": "authored"
+}

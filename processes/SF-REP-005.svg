@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 480" width="1220" height="480" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1220" height="480" fill="#ffffff"/>
+  <text x="20" y="36" font-size="16" font-weight="700" fill="#0f172a">Report confirmed SF case to WHO GSMS (SF-REP-005)</text>
+  <text x="20" y="56" font-size="11" fill="#475569">WHO DTH for SF Medical Product Reporting Systems — SF-REP-005 (OMG BPMN 2.0)</text>
+  <rect x="40" y="80" width="1160" height="180" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="40" y="80" width="110" height="180" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="52" y="104" font-size="11" font-weight="600" fill="#1e293b">NMRA Focal Point (SFP-R-13)</text>
+  <rect x="40" y="260" width="1160" height="180" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="40" y="260" width="110" height="180" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="52" y="284" font-size="11" font-weight="600" fill="#1e293b">WHO Global Surveillance and </text>
+  <line x1="216" y1="170" x2="350" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="170" x2="520" y2="170" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="650" y1="170" x2="180" y2="350" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="310" y1="350" x2="350" y2="350" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="350" x2="520" y2="350" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="198" cy="170" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="198" y="202" font-size="9" fill="#1e293b" text-anchor="middle">National SF incident valid</text>
+  <rect x="350" y="135" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="415" y="159" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Compile validated SF product,</text>
+  <text x="415" y="173" font-size="9" fill="#1e3a8a" text-anchor="middle">batch &amp; investigation dossier</text>
+  <rect x="520" y="135" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="585" y="159" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Transmit SF report to</text>
+  <text x="585" y="173" font-size="9" fill="#1e3a8a" text-anchor="middle">WHO GSMS (Table 4,</text>
+  <text x="585" y="187" font-size="9" fill="#1e3a8a" text-anchor="middle">Intro p. 1)</text>
+  <rect x="180" y="315" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="245" y="339" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Register incident in WHO</text>
+  <text x="245" y="353" font-size="9" fill="#1e3a8a" text-anchor="middle">GSMS database &amp; assess</text>
+  <text x="245" y="367" font-size="9" fill="#1e3a8a" text-anchor="middle">cross-border risk</text>
+  <rect x="350" y="315" width="130" height="70" rx="6" ry="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="415" y="339" font-size="9.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">Assist Member States &amp;</text>
+  <text x="415" y="353" font-size="9" fill="#1e3a8a" text-anchor="middle">issue WHO Medical Product</text>
+  <text x="415" y="367" font-size="9" fill="#1e3a8a" text-anchor="middle">Alert when necessary</text>
+  <circle cx="538" cy="350" r="18" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+  <text x="538" y="382" font-size="9" fill="#1e293b" text-anchor="middle">Global surveillance record</text>
+</svg>

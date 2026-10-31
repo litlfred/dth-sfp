@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_SF_REP_003"
+                  targetNamespace="https://litlfred.github.io/dth-sfp/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:import namespace="https://litlfred.github.io/bootstrap/v0/processes/ns#" location="https://litlfred.github.io/bootstrap/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld"/>
+  <bpmn:resource id="sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
+  <bpmn:resource id="sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
+  <bpmn:resource id="sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
+  <bpmn:resource id="sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
+  <bpmn:resource id="sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
+  <bpmn:resource id="sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
+  <bpmn:resource id="sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
+  <bpmn:resource id="sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
+  <bpmn:resource id="sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
+  <bpmn:resource id="sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
+  <bpmn:resource id="sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
+  <bpmn:resource id="sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
+  <bpmn:resource id="sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
+  <bpmn:resource id="sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
+  <bpmn:resource id="sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
+  <bpmn:collaboration id="Collaboration_Process_SF_REP_003">
+    <bpmn:participant id="Participant_Process_SF_REP_003" name="Investigate SF report and follow up with reporter (SF-REP-003)" processRef="Process_SF_REP_003"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_SF_REP_003" name="Investigate SF report and follow up with reporter (SF-REP-003)" isExecutable="false">
+    <bpmn:documentation>Workflow for regulatory investigation of a reported suspect medical product, reporter follow-up when contact details are available (DE10), and laboratory quality/authenticity testing, drafted from Introduction (p. 1 / PDF p. 13), Table 9 stage 6 (pp. 27-28 / PDF pp. 39-40), Table 10 (p. 29 / PDF p. 41), and Ch. 7 (p. 47 / PDF p. 59). Source gap note: pharmacovigilance co-routing rules when DE9 (adverse reaction) is populated and detailed laboratory analytical protocols are not specified in the handbook and are recorded as explicit open decision points.</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="advisory"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_SF_REP_003">
+      <bpmn:lane id="Lane_SF_REP_003_NMRA" name="NMRA Reviewer &amp; Inspectorate (SFP-R-13)" partitionElementRef="sfp-r-13">
+        <bpmn:documentation>Persona pers:sfp-r-13. Screens SF report, requests follow-up information if contact details exist, coordinates sample analysis, and determines regulatory outcome.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_SF_REP_003</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_301_ReviewDossier</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_301_HasContact</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_302_RequestFollowUp</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_303_DispatchSampleToLab</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_306_EvaluateLabFindings</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_SF_REP_003</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_SF_REP_003_Reporter" name="Reporter (SFP-R-01..SFP-R-12)" partitionElementRef="sfp-r-01">
+        <bpmn:documentation>Persona pers:sfp-r-01. Provides supplementary details or retained product sample when contacted and receives outcome feedback.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_304_ProvideFollowUp</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_SF_REP_003_Lab" name="Quality Control / Testing Laboratory (SFP-R-05)" partitionElementRef="sfp-r-05">
+        <bpmn:documentation>Persona pers:sfp-r-05. Conducts physical, chemical, or authenticity analysis on suspect product sample.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_305_PerformLabAnalysis</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_SF_REP_003" name="Screened SF report opened for investigation">
+      <bpmn:outgoing>Flow_301</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_301_ReviewDossier" name="Review product, batch (DE6), expiry (DE7), photos &amp; ADR details (DE9)">
+      <bpmn:incoming>Flow_301</bpmn:incoming>
+      <bpmn:outgoing>Flow_302</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gw_301_HasContact" name="Did reporter provide contact info (DE10)?">
+      <bpmn:incoming>Flow_302</bpmn:incoming>
+      <bpmn:outgoing>Flow_303_Yes</bpmn:outgoing>
+      <bpmn:outgoing>Flow_303_No</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="Task_302_RequestFollowUp" name="Request additional information or physical sample from reporter">
+      <bpmn:incoming>Flow_303_Yes</bpmn:incoming>
+      <bpmn:outgoing>Flow_304</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:userTask id="Task_303_DispatchSampleToLab" name="Collect/receive sample &amp; dispatch to quality control laboratory">
+      <bpmn:incoming>Flow_303_No</bpmn:incoming>
+      <bpmn:incoming>Flow_305</bpmn:incoming>
+      <bpmn:outgoing>Flow_306</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_306_EvaluateLabFindings" name="Evaluate inspection &amp; laboratory findings and share feedback with reporter">
+      <bpmn:incoming>Flow_307</bpmn:incoming>
+      <bpmn:outgoing>Flow_308</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="End_SF_REP_003" name="Investigation complete (triggers SF-REP-004 / SF-REP-005 if confirmed)">
+      <bpmn:incoming>Flow_308</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="Task_304_ProvideFollowUp" name="Provide follow-up details or hand over suspect product sample">
+      <bpmn:incoming>Flow_304</bpmn:incoming>
+      <bpmn:outgoing>Flow_305</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_305_PerformLabAnalysis" name="Perform laboratory quality &amp; authenticity testing and return certificate">
+      <bpmn:incoming>Flow_306</bpmn:incoming>
+      <bpmn:outgoing>Flow_307</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_301" sourceRef="Start_SF_REP_003" targetRef="Task_301_ReviewDossier"/>
+    <bpmn:sequenceFlow id="Flow_302" sourceRef="Task_301_ReviewDossier" targetRef="Gw_301_HasContact"/>
+    <bpmn:sequenceFlow id="Flow_303_Yes" sourceRef="Gw_301_HasContact" targetRef="Task_302_RequestFollowUp" name="Contact available"/>
+    <bpmn:sequenceFlow id="Flow_303_No" sourceRef="Gw_301_HasContact" targetRef="Task_303_DispatchSampleToLab" name="Anonymous report"/>
+    <bpmn:sequenceFlow id="Flow_304" sourceRef="Task_302_RequestFollowUp" targetRef="Task_304_ProvideFollowUp"/>
+    <bpmn:sequenceFlow id="Flow_305" sourceRef="Task_304_ProvideFollowUp" targetRef="Task_303_DispatchSampleToLab"/>
+    <bpmn:sequenceFlow id="Flow_306" sourceRef="Task_303_DispatchSampleToLab" targetRef="Task_305_PerformLabAnalysis"/>
+    <bpmn:sequenceFlow id="Flow_307" sourceRef="Task_305_PerformLabAnalysis" targetRef="Task_306_EvaluateLabFindings"/>
+    <bpmn:sequenceFlow id="Flow_308" sourceRef="Task_306_EvaluateLabFindings" targetRef="End_SF_REP_003"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Process_SF_REP_003">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_SF_REP_003" bpmnElement="Collaboration_Process_SF_REP_003">
+      <bpmndi:BPMNShape id="Shape_Participant_Process_SF_REP_003" bpmnElement="Participant_Process_SF_REP_003" isHorizontal="true">
+        <dc:Bounds x="20" y="80" width="1296" height="540"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_003_NMRA" bpmnElement="Lane_SF_REP_003_NMRA" isHorizontal="true">
+        <dc:Bounds x="40" y="80" width="1276" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_003_Reporter" bpmnElement="Lane_SF_REP_003_Reporter" isHorizontal="true">
+        <dc:Bounds x="40" y="260" width="1276" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_003_Lab" bpmnElement="Lane_SF_REP_003_Lab" isHorizontal="true">
+        <dc:Bounds x="40" y="440" width="1276" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_SF_REP_003" bpmnElement="Start_SF_REP_003">
+        <dc:Bounds x="180" y="152" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_301_ReviewDossier" bpmnElement="Task_301_ReviewDossier">
+        <dc:Bounds x="350" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gw_301_HasContact" bpmnElement="Gw_301_HasContact">
+        <dc:Bounds x="520" y="145" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_302_RequestFollowUp" bpmnElement="Task_302_RequestFollowUp">
+        <dc:Bounds x="690" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_303_DispatchSampleToLab" bpmnElement="Task_303_DispatchSampleToLab">
+        <dc:Bounds x="860" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_306_EvaluateLabFindings" bpmnElement="Task_306_EvaluateLabFindings">
+        <dc:Bounds x="1030" y="135" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_SF_REP_003" bpmnElement="End_SF_REP_003">
+        <dc:Bounds x="1200" y="152" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_304_ProvideFollowUp" bpmnElement="Task_304_ProvideFollowUp">
+        <dc:Bounds x="180" y="315" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_305_PerformLabAnalysis" bpmnElement="Task_305_PerformLabAnalysis">
+        <dc:Bounds x="180" y="495" width="130" height="70"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_301" bpmnElement="Flow_301">
+        <di:waypoint x="216" y="170"/>
+        <di:waypoint x="350" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_302" bpmnElement="Flow_302">
+        <di:waypoint x="480" y="170"/>
+        <di:waypoint x="520" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_303_Yes" bpmnElement="Flow_303_Yes">
+        <di:waypoint x="570" y="170"/>
+        <di:waypoint x="690" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_303_No" bpmnElement="Flow_303_No">
+        <di:waypoint x="570" y="170"/>
+        <di:waypoint x="860" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_304" bpmnElement="Flow_304">
+        <di:waypoint x="820" y="170"/>
+        <di:waypoint x="180" y="350"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_305" bpmnElement="Flow_305">
+        <di:waypoint x="310" y="350"/>
+        <di:waypoint x="860" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_306" bpmnElement="Flow_306">
+        <di:waypoint x="990" y="170"/>
+        <di:waypoint x="180" y="530"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_307" bpmnElement="Flow_307">
+        <di:waypoint x="310" y="530"/>
+        <di:waypoint x="1030" y="170"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_308" bpmnElement="Flow_308">
+        <di:waypoint x="1160" y="170"/>
+        <di:waypoint x="1200" y="170"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
