@@ -1,0 +1,87 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/dt-sfr-dt-04",
+  "@type": [
+    "smart-base:DecisionTable",
+    "doco:Table"
+  ],
+  "label": "dt:sfr-dt-04",
+  "kind": "decision-table",
+  "title": "SFR.DT.04 — Digital capability roadmap milestone (Table 6)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-019",
+    "papers/dth-sfp/blocks/tbl-table-06"
+  ],
+  "text": "dt-sfr-dt-04.md",
+  "meta": {
+    "code": "SFR.DT.04",
+    "decisionId": "Decision_SFR_DT_04",
+    "title": "SFR.DT.04 — Digital capability roadmap milestone (Table 6)",
+    "canonicalDmn": "decisions/SFR-DT-04.dmn",
+    "dmnFile": "dt-sfr-dt-04.dmn",
+    "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+    "pdfPage": 32,
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type",
+        "term": "report-type"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "term": "national-product-catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-element",
+        "term": "data-element"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type",
+      "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-element"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-4e0767822dcf46409554156a133fbc67.jsonld",
+          "name": "DPI-H: Facility Registry",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

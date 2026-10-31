@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
+             xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
+             id="Definitions_Decision_SFR_DT_04"
+             name="SFR.DT.04: Digital capability roadmap milestone (Table 6)"
+             namespace="https://litlfred.github.io/dth-sfp/decisions">
+  <decision id="Decision_SFR_DT_04" name="Digital capability roadmap milestone">
+    <description>Maps each SF reporting system capability domain and investment horizon (Short-term, Medium-term, Long-term) to the milestone activities defined in Table 6 (&#x27;Examples of short-, medium- and long-term milestones for developing an SF medical product reporting system&#x27;, §3.1, p. 20 / PDF p. 32).</description>
+    <decisionTable id="DecisionTable_Decision_SFR_DT_04" hitPolicy="UNIQUE">
+      <input id="In_Domain" label="Capability area (Table 6)">
+        <inputExpression id="Expr_In_Domain" typeRef="string"><text>capabilityArea</text></inputExpression>
+      </input>
+      <input id="In_Horizon" label="Roadmap horizon (Table 6)">
+        <inputExpression id="Expr_In_Horizon" typeRef="string"><text>roadmapHorizon</text></inputExpression>
+      </input>
+      <output id="Out_Milestone" name="milestoneTarget" label="Target roadmap milestone (Table 6, p. 20)" typeRef="string"/>
+      <rule id="Rule_DT04_1">
+        <description>Table 6 row 1, Short-term.</description>
+        <inputEntry id="Rule_DT04_1_in_1"><text>&quot;Governance and policy&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_1_in_2"><text>&quot;Short-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_1_out_1"><text>&quot;Establish multisectoral TWG, review legal/regulatory mandate for SF reporting, and define data privacy/confidentiality policy&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_2">
+        <description>Table 6 row 1, Medium-term.</description>
+        <inputEntry id="Rule_DT04_2_in_1"><text>&quot;Governance and policy&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_2_in_2"><text>&quot;Medium-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_2_out_1"><text>&quot;Formalize SOPs for inter-agency coordination (NMRA, MOH, customs, law enforcement) and mandate digital SF reporting workflows&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_3">
+        <description>Table 6 row 1, Long-term.</description>
+        <inputEntry id="Rule_DT04_3_in_1"><text>&quot;Governance and policy&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_3_in_2"><text>&quot;Long-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_3_out_1"><text>&quot;Institutionalize sustainable financing, cross-border regulatory harmonization, and continuous policy review&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_4">
+        <description>Table 6 row 2, Short-term.</description>
+        <inputEntry id="Rule_DT04_4_in_1"><text>&quot;Business processes and workflows&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_4_in_2"><text>&quot;Short-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_4_out_1"><text>&quot;Map current SF reporting processes, define standardized minimum data elements (DE1-DE10), and design core SF-REP-001 workflow&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_5">
+        <description>Table 6 row 2, Medium-term.</description>
+        <inputEntry id="Rule_DT04_5_in_1"><text>&quot;Business processes and workflows&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_5_in_2"><text>&quot;Medium-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_5_out_1"><text>&quot;Implement automated acknowledgement/tracking numbers (SF-REP-002), reporter feedback loop, and laboratory investigation workflows (SF-REP-003)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_6">
+        <description>Table 6 row 2, Long-term.</description>
+        <inputEntry id="Rule_DT04_6_in_1"><text>&quot;Business processes and workflows&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_6_in_2"><text>&quot;Long-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_6_out_1"><text>&quot;Integrate end-to-end supply chain recall/traceability triggers (SF-REP-004) and automated WHO GSMS reporting (SF-REP-005)&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_7">
+        <description>Table 6 row 3, Short-term.</description>
+        <inputEntry id="Rule_DT04_7_in_1"><text>&quot;People and workforce&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_7_in_2"><text>&quot;Short-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_7_out_1"><text>&quot;Identify user personas (Tables 7-8), train initial pilot health workers and NMRA focal points, and launch awareness materials&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_8">
+        <description>Table 6 row 3, Medium-term.</description>
+        <inputEntry id="Rule_DT04_8_in_1"><text>&quot;People and workforce&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_8_in_2"><text>&quot;Medium-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_8_out_1"><text>&quot;Expand training to all reporting personas (Table 9) and embed SF reporting in continuing professional development&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_9">
+        <description>Table 6 row 3, Long-term.</description>
+        <inputEntry id="Rule_DT04_9_in_1"><text>&quot;People and workforce&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_9_in_2"><text>&quot;Long-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_9_out_1"><text>&quot;Embed SF surveillance competencies in pre-service curricula and sustain national community &amp; professional reporting culture&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_10">
+        <description>Table 6 row 4, Short-term.</description>
+        <inputEntry id="Rule_DT04_10_in_1"><text>&quot;Data and interoperability&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_10_in_2"><text>&quot;Short-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_10_out_1"><text>&quot;Adopt standardized core data dictionary (Table 11) and link to National Product Catalogue and Facility Registry&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_11">
+        <description>Table 6 row 4, Medium-term.</description>
+        <inputEntry id="Rule_DT04_11_in_1"><text>&quot;Data and interoperability&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_11_in_2"><text>&quot;Medium-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_11_out_1"><text>&quot;Enable standards-based exchange (FHIR / GS1 GTIN, batch, expiry) with pharmacovigilance, LMIS, and EHR systems&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_12">
+        <description>Table 6 row 4, Long-term.</description>
+        <inputEntry id="Rule_DT04_12_in_1"><text>&quot;Data and interoperability&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_12_in_2"><text>&quot;Long-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_12_out_1"><text>&quot;Achieve full enterprise architecture interoperability across national HIE, track-and-trace, and global WHO GSMS platforms&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_13">
+        <description>Table 6 row 5, Short-term.</description>
+        <inputEntry id="Rule_DT04_13_in_1"><text>&quot;Technology and applications&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_13_in_2"><text>&quot;Short-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_13_out_1"><text>&quot;Deploy core digital SF reporting application (web/mobile with offline outbox SF-REP-006) in pilot regions&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_14">
+        <description>Table 6 row 5, Medium-term.</description>
+        <inputEntry id="Rule_DT04_14_in_1"><text>&quot;Technology and applications&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_14_in_2"><text>&quot;Medium-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_14_out_1"><text>&quot;Scale application nationally with barcode scanning, multi-language support, and analytics dashboard&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_15">
+        <description>Table 6 row 5, Long-term.</description>
+        <inputEntry id="Rule_DT04_15_in_1"><text>&quot;Technology and applications&quot;</text></inputEntry>
+        <inputEntry id="Rule_DT04_15_in_2"><text>&quot;Long-term&quot;</text></inputEntry>
+        <outputEntry id="Rule_DT04_15_out_1"><text>&quot;Operate high-availability national surveillance platform with advanced risk-based post-market surveillance analytics&quot;</text></outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

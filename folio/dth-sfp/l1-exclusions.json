@@ -1,0 +1,72 @@
+[
+  {
+    "location": "p42:s4",
+    "text": "In any use of this work, there should be no suggestion that WHO endorses any specific organization, products or services.",
+    "reason": "editorial",
+    "classification": "editorial",
+    "section": "sec-front-matter",
+    "note": "WHO CC BY-NC-SA 3.0 IGO licence non-endorsement clause",
+    "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+    "signedOffAt": "2026-10-31"
+  },
+  {
+    "location": "p42:s6",
+    "text": "If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence.",
+    "reason": "editorial",
+    "classification": "editorial",
+    "section": "sec-front-matter",
+    "note": "WHO CC BY-NC-SA 3.0 IGO share-alike adaptation licence clause",
+    "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+    "signedOffAt": "2026-10-31"
+  },
+  {
+    "location": "p42:s7",
+    "text": "If you create a translation of this work, you should add the following disclaimer along with the suggested citation: “This translation was not created by the World Health Organization (WHO).",
+    "reason": "editorial",
+    "classification": "editorial",
+    "section": "sec-front-matter",
+    "note": "WHO translation disclaimer instruction",
+    "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+    "signedOffAt": "2026-10-31"
+  },
+  {
+    "location": "p42:s9",
+    "text": "The original English edition shall be the binding and authentic edition”.",
+    "reason": "editorial",
+    "classification": "editorial",
+    "section": "sec-front-matter",
+    "note": "WHO binding original English edition clause",
+    "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+    "signedOffAt": "2026-10-31"
+  },
+  {
+    "location": "p42:s10",
+    "text": "Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization (http://www.wipo.int/amc/en/mediation/rules/). **Suggested citation.** Digital transformation handbook for reporting substandard and falsified medical products: a practical handbook.",
+    "reason": "editorial",
+    "classification": "editorial",
+    "section": "sec-front-matter",
+    "note": "WIPO mediation clause for licence disputes",
+    "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+    "signedOffAt": "2026-10-31"
+  },
+  {
+    "location": "p42:s16",
+    "text": "The mention of specific companies or of certain manufacturers’ products does not imply that they are endorsed or recommended by WHO in preference to others of a similar nature that are not mentioned.",
+    "reason": "editorial",
+    "classification": "editorial",
+    "section": "sec-front-matter",
+    "note": "Standard WHO manufacturer/product non-endorsement disclaimer",
+    "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+    "signedOffAt": "2026-10-31"
+  },
+  {
+    "location": "p42:s21",
+    "text": "In no event shall WHO be liable for damages arising from its use. ## Contents | Section | Page | | --- | --- | | Acknowledgements | v | | Abbreviations and acronyms | vi | | Glossary | vii | | **Introduction** | **1** | | Reporting of substandard and falsified medical products | 1 | | Who this handbook is for | 2 | | How to use this handbook | 3 | | How this handbook was developed | 6 | | **1.",
+    "reason": "editorial",
+    "classification": "editorial",
+    "section": "sec-front-matter",
+    "note": "Standard WHO limitation of liability clause",
+    "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+    "signedOffAt": "2026-10-31"
+  }
+]

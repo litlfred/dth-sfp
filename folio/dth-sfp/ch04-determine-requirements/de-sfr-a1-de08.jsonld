@@ -1,0 +1,88 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/de-sfr-a1-de08",
+  "@type": [
+    "smart-base:DataElement"
+  ],
+  "label": "de:sfr-a1-de08",
+  "kind": "data-element",
+  "title": "SFR.A1.DE8 — Type of report (Table 11, p. 31 / PDF p. 43)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-025",
+    "papers/dth-sfp/blocks/tbl-table-11"
+  ],
+  "text": "de-sfr-a1-de08.md",
+  "meta": {
+    "elementId": "SFR.A1.DE8",
+    "name": "Type of report",
+    "dataType": "Coding (HCP | Public | Pharmaceutical industry)",
+    "description": "Indicates whether the report is from a health care professional, the public or the pharmaceutical industry (e.g. manufacturer, importer).",
+    "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+    "pdfPage": 43,
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type",
+        "term": "report-type"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product",
+        "term": "substandard-medical-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product",
+        "term": "falsified-medical-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product",
+        "term": "unregistered-or-unlicensed-medical-product"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/report-type",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/substandard-medical-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/falsified-medical-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-053fa0e33f6b5b0bb218195486c05160.jsonld",
+          "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-bea56e01c8345fbc803dee47a17ccfd3.jsonld",
+          "name": "Track and Trace through DHSC Components (DTH SC Fig. 24)"
+        }
+      ]
+    },
+    "reviewNotes": [
+      "F2: SFR.A1.DE8 and Fig. 4 omit 'unregistered/unlicensed medical products' (defined on p. ix and p. 1).",
+      "F4: SFR.A1.DE8 repeats the data element name 'Type of report' already used by SFR.A1.DE2."
+    ]
+  },
+  "provenance": "authored"
+}

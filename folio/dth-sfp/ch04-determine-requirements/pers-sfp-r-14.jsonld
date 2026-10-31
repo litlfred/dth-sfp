@@ -1,0 +1,112 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/pers-sfp-r-14",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:sfp-r-14",
+  "kind": "persona",
+  "title": "SFP-R-14 — Pharmaceutical Manufacturer, Importer & Supply Chain Actor (ISCO-08: 1321 / 3322)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-009",
+    "papers/dth-sfp/blocks/prose-sec-025",
+    "papers/dth-sfp/blocks/tbl-table-07",
+    "papers/dth-sfp/blocks/tbl-table-08"
+  ],
+  "text": "pers-sfp-r-14.md",
+  "meta": {
+    "roleId": "SFP-R-14",
+    "title": "SFP-R-14 — Pharmaceutical Manufacturer, Importer & Supply Chain Actor (ISCO-08: 1321 / 3322)",
+    "isco08": "1321 / 3322",
+    "personaType": "organisation",
+    "bpmnRoleId": "pers:sfp-r-14",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R14",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-004.bpmn",
+        "laneId": "Lane_SF_REP_004_SupplyChain",
+        "processId": "SF-REP-004"
+      }
+    ],
+    "source": "who-iris/library/9789240120747-eng/sections/sec-009-11-analyse-key-stakeholders.md",
+    "sections": [
+      "sec-009",
+      "sec-025"
+    ],
+    "pdfPages": [
+      21,
+      43
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+        "term": "suspect-product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
+        "term": "reporter"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
+        "term": "user-persona"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "term": "occupation"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "term": "international-standard-classification-of-occupations"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-66d0f91175c154b48413d57e9f952a34.jsonld",
+          "name": "Manufacturer / Distributor",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-19be800d18a34a618d6e1955cf58e956.jsonld",
+          "name": "ALL High Level - Health Workforce"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-2d524cffba25509e82684f47d624cc42.jsonld",
+          "name": "Health Supply Chain Partners and Processes (DTH SC Figs. 1-3)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

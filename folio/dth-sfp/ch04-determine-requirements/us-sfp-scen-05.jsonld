@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/scen-sfp-scen-05",
+  "@type": [
+    "smart-base:UserScenario"
+  ],
+  "label": "scen:sfp-scen-05",
+  "kind": "user-scenario",
+  "title": "Scenario 5: Laboratory Technician reporting a suspected SF medical product (Table 9, PDF p. 39)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-023",
+    "papers/dth-sfp/blocks/tbl-table-09"
+  ],
+  "text": "us-sfp-scen-05.md",
+  "meta": {
+    "scenarioId": "SFP-SCEN-05",
+    "persona": "pers:sfp-r-05",
+    "source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
+    "pdfPage": 39,
+    "stages": {
+      "discovery": "Detects erratic control results or physical defects in diagnostic test kits or laboratory reagents.",
+      "reporting": "Logs into the SF reporting system (with option to report anonymously if concerned about reprisal).",
+      "productDetails": "Enters diagnostic kit/reagent identifier, manufacturer, lot/batch number, and expiry date.",
+      "uploadingPhotos": "Uploads photos of the reagent lot certificate, cassette/strip defect, and packaging.",
+      "confirmationAndTracking": "Receives confirmation and tracking number.",
+      "followUpAndFeedback": "Receives regulatory follow-up regarding lot quarantine and laboratory quality alert."
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/laboratory-technician",
+        "term": "laboratory-technician"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
+        "term": "reporter"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number",
+        "term": "tracking-number"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop",
+        "term": "reporter-feedback-loop"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/use-case",
+        "term": "use-case"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/laboratory-technician",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter-feedback-loop",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/use-case"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-6b78a242e71a428c87434e2fe5891ee2.jsonld",
+          "name": "Update Subscription/Notification",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-2d524cffba25509e82684f47d624cc42.jsonld",
+          "name": "Health Supply Chain Partners and Processes (DTH SC Figs. 1-3)"
+        }
+      ]
+    },
+    "relatedBlocks": [
+      "pers:sfp-r-05"
+    ]
+  },
+  "provenance": "authored"
+}

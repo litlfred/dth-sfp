@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
+             xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
+             id="Definitions_Decision_SFR_DT_03"
+             name="SFR.DT.03: Assigned reporter geographic region (SFR.FXNREQ.001)"
+             namespace="https://litlfred.github.io/dth-sfp/decisions">
+  <decision id="Decision_SFR_DT_03" name="Assigned reporter geographic region">
+    <description>Derives the geographic region of an SF report from the authenticated reporter&#x27;s profile or facility registration per Table 12 requirement SFR.FXNREQ.001 (p. 31 / PDF p. 43): &#x27;As a public health agency, I want to know the region where the reporter is located based on the user&#x27;s profile, so that I do not have to ask the user to enter that information in the report.&#x27;</description>
+    <decisionTable id="DecisionTable_Decision_SFR_DT_03" hitPolicy="FIRST">
+      <input id="In_HasProfile" label="Reporter authenticated with registered profile?">
+        <inputExpression id="Expr_In_HasProfile" typeRef="boolean"><text>hasRegisteredProfile</text></inputExpression>
+      </input>
+      <input id="In_FacilityRegion" label="Profile / facility region attribute present?">
+        <inputExpression id="Expr_In_FacilityRegion" typeRef="boolean"><text>hasProfileRegion</text></inputExpression>
+      </input>
+      <output id="Out_RegionSource" name="regionResolution" label="Region derivation outcome" typeRef="string"/>
+      <output id="Out_PromptUser" name="promptReporterForRegion" label="Prompt reporter to enter region manually?" typeRef="boolean"/>
+      <rule id="Rule_DT03_1">
+        <description>Authenticated reporter with a profile region: system derives region automatically without prompting user (SFR.FXNREQ.001).</description>
+        <inputEntry id="Rule_DT03_1_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT03_1_in_2"><text>true</text></inputEntry>
+        <outputEntry id="Rule_DT03_1_out_1"><text>&quot;Auto-populated from reporter profile / Health Facility Registry (SFR.FXNREQ.001)&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT03_1_out_2"><text>false</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT03_2">
+        <description>Authenticated reporter whose profile has no region recorded.</description>
+        <inputEntry id="Rule_DT03_2_in_1"><text>true</text></inputEntry>
+        <inputEntry id="Rule_DT03_2_in_2"><text>false</text></inputEntry>
+        <outputEntry id="Rule_DT03_2_out_1"><text>&quot;Profile lacks region attribute; prompt reporter to select region&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT03_2_out_2"><text>true</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT03_3">
+        <description>Unauthenticated or anonymous reporter (SFR.A1.DE10 omitted) has no stored user profile.</description>
+        <inputEntry id="Rule_DT03_3_in_1"><text>false</text></inputEntry>
+        <inputEntry id="Rule_DT03_3_in_2"><text>-</text></inputEntry>
+        <outputEntry id="Rule_DT03_3_out_1"><text>&quot;Anonymous or unauthenticated submission; region optional or selected manually&quot;</text></outputEntry>
+        <outputEntry id="Rule_DT03_3_out_2"><text>true</text></outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_SF_REP_004"
+                  targetNamespace="https://litlfred.github.io/dth-sfp/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:import namespace="https://litlfred.github.io/bootstrap/v0/processes/ns#" location="https://litlfred.github.io/bootstrap/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld"/>
+  <bpmn:resource id="pers:sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
+  <bpmn:resource id="pers:sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
+  <bpmn:resource id="pers:sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
+  <bpmn:resource id="pers:sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
+  <bpmn:resource id="pers:sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
+  <bpmn:resource id="pers:sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
+  <bpmn:resource id="pers:sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
+  <bpmn:resource id="pers:sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
+  <bpmn:resource id="pers:sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
+  <bpmn:resource id="pers:sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
+  <bpmn:resource id="pers:sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
+  <bpmn:resource id="pers:sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
+  <bpmn:resource id="pers:sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
+  <bpmn:resource id="pers:sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
+  <bpmn:resource id="pers:sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
+  <bpmn:collaboration id="Collaboration_Process_SF_REP_004">
+    <bpmn:participant id="Participant_Process_SF_REP_004" name="SF-REP-004: Execute recall, alert and enforcement" processRef="Process_SF_REP_004"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_SF_REP_004" name="SF-REP-004: Execute recall, alert and enforcement" isExecutable="false">
+    <bpmn:documentation>Workflow for national regulatory alerts, supply chain batch quarantine/recall, law enforcement referral for criminal falsification, and regulatory sanctions, formalised from Introduction (page 1 / PDF page 13), §2.1-2.2 (pages 14-15 / PDF pages 26-27), and Table 4 (page 12 / PDF page 24).</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="advisory"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_SF_REP_004">
+      <bpmn:lane id="Lane_SF_REP_004_SupplyChain" name="Supply Chain &amp; Dispensers (SFP-R-14, R-06)" partitionElementRef="pers:sfp-r-14">
+        <bpmn:documentation>Personas pers:sfp-r-14, pers:sfp-r-06, and pers:sfp-r-10. Trace affected batch/lot numbers (DE6) and quarantine/recall stock across warehouses and pharmacies.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_403_ExecuteSupplyChainRecall</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="ChildLaneSet_Lane_SF_REP_004_SupplyChain">
+          <bpmn:lane id="Lane_SF_REP_004_R06" name="Pharmacist (SFP-R-06)" partitionElementRef="pers:sfp-r-06"/>
+          <bpmn:lane id="Lane_SF_REP_004_R10" name="Pharmacy Technician (SFP-R-10)" partitionElementRef="pers:sfp-r-10"/>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_SF_REP_004_NMRA" name="NMRA Enforcement Authority (SFP-R-13)" partitionElementRef="pers:sfp-r-13">
+        <bpmn:documentation>Persona pers:sfp-r-13. Issues national alerts, mandates batch recall/withdrawal, coordinates law enforcement referral, and applies sanctions.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_SF_REP_004</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_401_IssueRapidAlert</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_402_OrderRecallWithdrawal</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gw_401_CriminalFalsification</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_404_ApplySanctions</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_SF_REP_004</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_SF_REP_004_LawEnforcement" name="Law Enforcement &amp; Customs (SFP-R-15)" partitionElementRef="pers:sfp-r-15">
+        <bpmn:documentation>Persona pers:sfp-r-15 (§2.2 multisector alignment). Investigates criminal falsification networks and border seizures.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_405_LawEnforcementReferral</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:userTask id="Task_403_ExecuteSupplyChainRecall" name="Trace batch (DE6), quarantine &amp; remove stock">
+      <bpmn:documentation>Trace affected batch/lot numbers (SFR.A1.DE6), quarantine inventory, and execute recall across distribution and dispensing points (dth-sc Recall).</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_403</bpmn:incoming>
+      <bpmn:outgoing>Flow_404</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:startEvent id="Start_SF_REP_004" name="Confirmed SF product determination">
+      <bpmn:documentation>Triggered when investigation (SF-REP-003) confirms a substandard or falsified medical product.</bpmn:documentation>
+      <bpmn:outgoing>Flow_401</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_401_IssueRapidAlert" name="Issue national alert &amp; notify facilities">
+      <bpmn:documentation>Publish rapid national safety/quality alert to health facilities, pharmacies, and the public.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_401</bpmn:incoming>
+      <bpmn:outgoing>Flow_402</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Task_402_OrderRecallWithdrawal" name="Order batch quarantine or recall">
+      <bpmn:documentation>Issue mandatory regulatory order for batch quarantine, recall, or market withdrawal.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_402</bpmn:incoming>
+      <bpmn:outgoing>Flow_403</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gw_401_CriminalFalsification" name="Criminal falsification or trafficking?">
+      <bpmn:documentation>Determine whether the confirmed incident involves deliberate falsification, unlicensed manufacturing, or illicit trafficking.</bpmn:documentation>
+      <bpmn:incoming>Flow_404</bpmn:incoming>
+      <bpmn:outgoing>Flow_405_No</bpmn:outgoing>
+      <bpmn:outgoing>Flow_405_Yes</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Task_404_ApplySanctions" name="Apply regulatory sanctions &amp; close action">
+      <bpmn:documentation>Record enforcement outcome, apply regulatory sanctions, and close the national enforcement case.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_405_No</bpmn:incoming>
+      <bpmn:incoming>Flow_406</bpmn:incoming>
+      <bpmn:outgoing>Flow_407</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="End_SF_REP_004" name="Regulatory action completed">
+      <bpmn:documentation>National recall and enforcement actions completed.</bpmn:documentation>
+      <bpmn:incoming>Flow_407</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="Task_405_LawEnforcementReferral" name="Refer case to law enforcement &amp; customs">
+      <bpmn:documentation>Coordinate with law enforcement, customs, and justice authorities for seizure and criminal investigation (§2.1-2.2).</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_405_Yes</bpmn:incoming>
+      <bpmn:outgoing>Flow_406</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_401" sourceRef="Start_SF_REP_004" targetRef="Task_401_IssueRapidAlert"/>
+    <bpmn:sequenceFlow id="Flow_402" sourceRef="Task_401_IssueRapidAlert" targetRef="Task_402_OrderRecallWithdrawal"/>
+    <bpmn:sequenceFlow id="Flow_403" sourceRef="Task_402_OrderRecallWithdrawal" targetRef="Task_403_ExecuteSupplyChainRecall"/>
+    <bpmn:sequenceFlow id="Flow_404" sourceRef="Task_403_ExecuteSupplyChainRecall" targetRef="Gw_401_CriminalFalsification"/>
+    <bpmn:sequenceFlow id="Flow_405_No" sourceRef="Gw_401_CriminalFalsification" targetRef="Task_404_ApplySanctions" name="Quality defect"/>
+    <bpmn:sequenceFlow id="Flow_405_Yes" sourceRef="Gw_401_CriminalFalsification" targetRef="Task_405_LawEnforcementReferral" name="Falsified / illicit"/>
+    <bpmn:sequenceFlow id="Flow_406" sourceRef="Task_405_LawEnforcementReferral" targetRef="Task_404_ApplySanctions"/>
+    <bpmn:sequenceFlow id="Flow_407" sourceRef="Task_404_ApplySanctions" targetRef="End_SF_REP_004"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Process_SF_REP_004">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_SF_REP_004" bpmnElement="Collaboration_Process_SF_REP_004">
+      <bpmndi:BPMNShape id="Shape_Participant_Process_SF_REP_004" bpmnElement="Participant_Process_SF_REP_004" isHorizontal="true">
+        <dc:Bounds x="20" y="60" width="1320" height="640"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_004_SupplyChain" bpmnElement="Lane_SF_REP_004_SupplyChain" isHorizontal="true">
+        <dc:Bounds x="50" y="60" width="1290" height="200"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_004_NMRA" bpmnElement="Lane_SF_REP_004_NMRA" isHorizontal="true">
+        <dc:Bounds x="50" y="260" width="1290" height="240"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_SF_REP_004_LawEnforcement" bpmnElement="Lane_SF_REP_004_LawEnforcement" isHorizontal="true">
+        <dc:Bounds x="50" y="500" width="1290" height="200"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_403_ExecuteSupplyChainRecall" bpmnElement="Task_403_ExecuteSupplyChainRecall">
+        <dc:Bounds x="575" y="115" width="155" height="86"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_SF_REP_004" bpmnElement="Start_SF_REP_004">
+        <dc:Bounds x="110" y="362" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="86" y="406" width="95" height="40"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_401_IssueRapidAlert" bpmnElement="Task_401_IssueRapidAlert">
+        <dc:Bounds x="185" y="337" width="155" height="86"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_402_OrderRecallWithdrawal" bpmnElement="Task_402_OrderRecallWithdrawal">
+        <dc:Bounds x="375" y="337" width="155" height="86"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gw_401_CriminalFalsification" bpmnElement="Gw_401_CriminalFalsification">
+        <dc:Bounds x="765" y="355" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="630" y="360" width="125" height="40"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_404_ApplySanctions" bpmnElement="Task_404_ApplySanctions">
+        <dc:Bounds x="1060" y="337" width="155" height="86"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_SF_REP_004" bpmnElement="End_SF_REP_004">
+        <dc:Bounds x="1255" y="362" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1220" y="406" width="105" height="36"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_405_LawEnforcementReferral" bpmnElement="Task_405_LawEnforcementReferral">
+        <dc:Bounds x="880" y="555" width="155" height="86"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_401" bpmnElement="Flow_401">
+        <di:waypoint x="146" y="380"/>
+        <di:waypoint x="185" y="380"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_402" bpmnElement="Flow_402">
+        <di:waypoint x="340" y="380"/>
+        <di:waypoint x="375" y="380"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_403" bpmnElement="Flow_403">
+        <di:waypoint x="452" y="337"/>
+        <di:waypoint x="452" y="158"/>
+        <di:waypoint x="575" y="158"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_404" bpmnElement="Flow_404">
+        <di:waypoint x="730" y="158"/>
+        <di:waypoint x="790" y="158"/>
+        <di:waypoint x="790" y="355"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_405_No" bpmnElement="Flow_405_No">
+        <di:waypoint x="815" y="380"/>
+        <di:waypoint x="1060" y="380"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="892.5" y="342" width="90" height="35" /></bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_405_Yes" bpmnElement="Flow_405_Yes">
+        <di:waypoint x="790" y="405"/>
+        <di:waypoint x="790" y="598"/>
+        <di:waypoint x="880" y="598"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="794" y="435.75" width="95" height="35" /></bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_406" bpmnElement="Flow_406">
+        <di:waypoint x="1035" y="598"/>
+        <di:waypoint x="1138" y="598"/>
+        <di:waypoint x="1138" y="423"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_407" bpmnElement="Flow_407">
+        <di:waypoint x="1215" y="380"/>
+        <di:waypoint x="1255" y="380"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

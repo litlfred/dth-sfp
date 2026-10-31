@@ -1,0 +1,1311 @@
+{
+  "$schema": "l1-coverage-report/v1",
+  "definitionVersion": "smart-kg/docs/COVERAGE.md (markers §1, reasons §2) — folio-assistant-core l1-coverage v1",
+  "matchMethod": "normalised-substring",
+  "generatedAt": "2026-10-31T00:00:00.000Z",
+  "totals": {
+    "normative": 79,
+    "captured": 72,
+    "excluded": 7,
+    "unaccounted": 0,
+    "capturedPct": 91.14,
+    "accountedForPct": 100
+  },
+  "pages": [
+    {
+      "page": 1,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 2,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 3,
+      "normative": 4,
+      "captured": 4,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 4,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 5,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 6,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 7,
+      "normative": 6,
+      "captured": 6,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 8,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 9,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 10,
+      "normative": 3,
+      "captured": 3,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 11,
+      "normative": 6,
+      "captured": 6,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 12,
+      "normative": 3,
+      "captured": 3,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 13,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 14,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 15,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 16,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 17,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 18,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 19,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 20,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 21,
+      "normative": 3,
+      "captured": 3,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 22,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 23,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 24,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 25,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 26,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 27,
+      "normative": 9,
+      "captured": 9,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 28,
+      "normative": 3,
+      "captured": 3,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 29,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 30,
+      "normative": 5,
+      "captured": 5,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 31,
+      "normative": 6,
+      "captured": 6,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 32,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 33,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 34,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 35,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 36,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 37,
+      "normative": 13,
+      "captured": 13,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 38,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "page": 39,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 40,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 41,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "page": 42,
+      "normative": 7,
+      "captured": 0,
+      "excluded": 7,
+      "unaccounted": 0,
+      "capturedPct": 0,
+      "accountedForPct": 100
+    }
+  ],
+  "sentences": [
+    {
+      "location": "p3:s8",
+      "page": 3,
+      "text": "“approval workflow” can be a feature of a product master data management solution). | | Functional requirements | Capabilities the system must have to meet the end users’ needs and achieve tasks within the business process. | | Generic product or product information | In this handbook, the terms “generic product”, “product” or “product information” pertain to the general identifying details of a health product, excluding any manufacturer-specific information. | | Health care professional | An individual who provides health care treatment and advice based on formal training and experience.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-002",
+      "section": "sec-002-glossary"
+    },
+    {
+      "location": "p3:s12",
+      "page": 3,
+      "text": "An open-source software must have a licence approved by the Open-Source Initiative (12). | | Open standards | Standards that are documented and made freely available to the public, which are developed, approved and maintained via a collaborative and consensus-driven process.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-002",
+      "section": "sec-002-glossary"
+    },
+    {
+      "location": "p3:s13",
+      "page": 3,
+      "text": "Open standards facilitate interoperability and data exchange and are intended for widespread adoption (13). | | Organogram | A visual representation of the organization structure showing the hierarchy of various roles and their reporting relationships. | | Passive pharmacovigilance | Passive surveillance that mainly involves spontaneous adverse effects reports from case series and other safety reports. | | Persona | A generic aggregate description of a person involved in or benefiting from a health programme. | | Pharmacovigilance | The science and activities relating to the detection, assessment, understanding and prevention of adverse effects or any other medicine/vaccine-related problem (14). | | Polypharmacy | The concurrent use of multiple medications (15). | | Post-market surveillance (PMS) | The practice of monitoring the safety of a pharmaceutical drug or medical device after it has been released on the market, through collection and evaluation of experiences relating to the product (16). | | Registry | A governed, authoritative and centralized information system that captures, stores and maintains the unique attributes and identifiers of health facilities, health service users, products and/or health workforce using predefined canonical minimum data etc. | | SMART Guidelines | Standards-based, Machine-readable, Adaptive, Requirements-based and Testable Guidelines are recommended digital capabilities, health and data content aligned with normative recommendations.",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-002",
+      "section": "sec-002-glossary"
+    },
+    {
+      "location": "p3:s14",
+      "page": 3,
+      "text": "They represent packages of comprehensive documentation and reusable digital health components (e.g. health content, interoperability standards, code libraries, algorithms, technical and operational specifications) that facilitate country adaptation and adoption of clinical and public health protocols, health systems strengthening recommendations, and data and interoperability standards into digital health information systems with fidelity.",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-002",
+      "section": "sec-002-glossary"
+    },
+    {
+      "location": "p5:s3",
+      "page": 5,
+      "text": "In the long term, this should improve product quality and reduce the chances of substandard and falsified medical products entering the market (27).",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-004",
+      "section": "sec-004-reporting-of-substandard-and-falsified-medical-p"
+    },
+    {
+      "location": "p7:s11",
+      "page": 7,
+      "text": "Planning and implementing a digital health enterprise: phases, steps and resources** | Phase | Steps | Resources | | --- | --- | --- | | **PHASE 01: ASSESSING THE CURRENT STATE AND ENABLING ENVIRONMENT** | • Conduct an inventory of existing or previously used software applications, ICT systems and other tools to better understand the requirements for reuse and interoperability | • WHO core indicator sets<br>• Global digital health index<br>• WHO digital health atlas<br>• Digital health investment review tool<br>• HIS stages of continuous improvement | | **PHASE 02: ESTABLISHING A SHARED UNDERSTANDING AND STRATEGIC PLANNING** | • Develop a national digital health strategy outlining overarching needs, desired activities and outcomes<br>• Define a vision for how the health system will be strengthened through the use of digital technology<br>• Formulate a digital health investment roadmap to support the national digital health strategy | • WHO–ITU national eHealth strategy toolkit<br>• WHO handbook for health supply chain architecture<br>• Guidance for investing in digital health<br>• Digital Square global goods guidebook<br>• Principles for donor alignment<br>• Principles for digital development | | **PHASE 03: DEFINING THE FUTURE STATE** | • Plan and identify appropriate digital interventions, alongside the health and data content, to improve health system processes and address programmatic needs | • WHO classification of digital health interventions<br>• WHO guideline: recommendations on digital interventions for health system strengthening<br>• WHO SMART guidelines: Machine-readable recommendations, Digital adaptation kits | | **PHASE 04: PLANNING THE ENTERPRISE ARCHITECTURE** | • Review the current state and develop an architecture blueprint for the design of the digital health implementations<br>• Identify validated open standards to ensure data exchange, systems integration and future-proofing of digital health implementations | • ITU digital health platform handbook<br>• ITU SDG digital investment framework (eGov)<br>• Open Health Information Exchange (OpenHIE)<br>• The Open Group Architecture Framework (TOGAF) | | **PHASE 05: DETERMINING HEALTH CONTENT REQUIREMENTS** | • Identify validated health content appropriate for the implementation context<br>• Ensure use of content aligned with identified standards for the future state | • UNICEF human-centred design toolkit<br>• World Bank digital identity toolkit<br>• WHO digital clearinghouse | | **PHASE 06: M&E OF DIGITAL HEALTH IMPLEMENTATIONS AND FOSTERING DATA USE** | • Monitor implementation to ensure digital implementations are functioning as intended and having the desired effect<br>• Foster data-driven adaptive change management within the overall health system | • PATH Defining and building a data use culture<br>• MEASURE data demand and use of resources<br>• WHO SCORE<br>• WHO M&E digital health interventions | | **PHASE 07: IMPLEMENTING, MAINTAINING AND SCALING** | • Maintain and sustain digital health implementations<br>• Identify risks and appropriate mitigations | • Digital implementation investment guide<br>• Asian Development Bank total cost of ownership tool<br>• WHO handbook for health supply chain architecture<br>• WHO handbook for health product catalogue<br>• WHO MAPS toolkit: mHealth assessment and planning for scale<br>• WHO handbook for digitalizing primary health care<br>• Be He@lthy, Be Mobile handbooks for noncommunicable diseases<br>• Digital transformation handbook for reporting substandard and falsified medical products (this document) | *Source: Digital implementation investment guide (DIIG) (WHO; 2020) (3).* This handbook also aligns with WHO’s SMART Guidelines Initiative.",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-006",
+      "section": "sec-006-how-to-use-this-handbook"
+    },
+    {
+      "location": "p7:s12",
+      "page": 7,
+      "text": "SMART Guidelines are Standards-based, Machine-readable, Adaptive, Requirements-based and Testable recommended digital capabilities, health and data content aligned with normative recommendations (17).",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-006",
+      "section": "sec-006-how-to-use-this-handbook"
+    },
+    {
+      "location": "p7:s13",
+      "page": 7,
+      "text": "SMART Guidelines are WHO’s approach to systematize and accelerate the consistent application of recommended, life-saving interventions in the digital age.",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-006",
+      "section": "sec-006-how-to-use-this-handbook"
+    },
+    {
+      "location": "p7:s15",
+      "page": 7,
+      "text": "The five knowledge layers comprise: - **L1 Narrative:** enhanced clinical, public health guidelines and data recommendations - **L2 Operational:** digital adaptation kits (DAKs) - **L3 Machine readable:** machine-readable recommendations - **L4 Executable:** reference applications and services - **L5 Dynamic:** precision health model.",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-006",
+      "section": "sec-006-how-to-use-this-handbook"
+    },
+    {
+      "location": "p7:s16",
+      "page": 7,
+      "text": "These layers inform developers how to translate recommendations into specifications and standards; technologists how to integrate recommendations into updatable digital systems; and countries how to localize, make interoperable, institutionalize and update digital systems consistent with evidence-based recommendations (17).",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-006",
+      "section": "sec-006-how-to-use-this-handbook"
+    },
+    {
+      "location": "p7:s21",
+      "page": 7,
+      "text": "WHO’s SMART Guidelines approach** | Layer | Knowledge layers and associated products | Country implementation (Localization / Adaptation) | | --- | --- | --- | | **L1 Narrative** | Guideline and data recommendations: Enhanced guidelines | National policies, guidelines, data, and operational procedures | | **L2 Operational** | Semi-structured documentation of operational and functional requirements: Digital adaptation kits | Localized requirements | | **L3 Machine readable** | Structured, software-neutral, specifications, code, terminology and interoperability standards: Machine-readable recommendations | Localized machine-readable code and standards | | **L4 Executable** | Software that is able to execute static algorithms and interoperable digital components and deliver operational and functional requirements: Reference software | Localized static digital services and applications within a digital health enterprise | | **L5 Dynamic** | Executable dynamic algorithms that are trained and optimized with advanced analytics to achieve prioritize outcomes: Precision health models | Dynamic digital applications and services trained and optimized for prioritized local outcomes | *Source: WHO SMART guidelines: optimising country-level use of guideline recommendations in the digital age (Mehl et al., 2021) (18).*",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-006",
+      "section": "sec-006-how-to-use-this-handbook"
+    },
+    {
+      "location": "p9:s3",
+      "page": 9,
+      "text": "This chapter outlines the areas that should be analysed and the factors to consider.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-008",
+      "section": "sec-008-1-assess-the-current-state-and-enabling-environm"
+    },
+    {
+      "location": "p10:s3",
+      "page": 10,
+      "text": "The analysis should outline their roles in substandard and falsified medical products, pharmacovigilance and digital health.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-009",
+      "section": "sec-009-11-analyse-key-stakeholders"
+    },
+    {
+      "location": "p10:s4",
+      "page": 10,
+      "text": "It should help mobilize support and engage key players by examining responsibilities, information flows and power dynamics.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-009",
+      "section": "sec-009-11-analyse-key-stakeholders"
+    },
+    {
+      "location": "p10:s9",
+      "page": 10,
+      "text": "Stakeholder analysis: sample questions** | Dimension | Sample questions | | --- | --- | | Roles and responsibilities | • What is this stakeholder’s current role in managing or reporting substandard and falsified medical products?<br>• How does this stakeholder contribute to pharmacovigilance or digital health efforts?<br>• What decisions can this stakeholder make regarding digital substandard and falsified reporting systems?<br>• Are they implementers, advisors, funders, regulators or end users? | | Information flows and interactions | • What data does this stakeholder generate, use or depend on related to substandard and falsified products?<br>• Who do they share this information with, and how frequently?<br>• Are there any existing digital platforms or tools they use that must integrate with the substandard and falsified reporting system? | | Influence and power | • How much influence does this stakeholder have over policy, funding or system design decisions?<br>• Can this stakeholder help or hinder the adoption of the digital reporting system?<br>• Who do they influence or rely on for decision-making? | | Interests and expectations | • What are this stakeholder’s main concerns or interests in relation to substandard and falsified reporting?<br>• What outcomes would they expect or value from this system?<br>• Are there any incentives or risks for them in engaging with this initiative? | | Engagement and collaboration | • Have they been engaged in similar initiatives before?",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-009",
+      "section": "sec-009-11-analyse-key-stakeholders"
+    },
+    {
+      "location": "p11:s2",
+      "page": 11,
+      "text": "As one of the first steps, a digital readiness assessment should be conducted to ensure solutions are tailored to the existing infrastructure, capacity and context.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-010",
+      "section": "sec-010-12-assess-the-digital-readiness"
+    },
+    {
+      "location": "p11:s3",
+      "page": 11,
+      "text": "The outputs from the assessment should inform the necessary resources, enabling environment, budget and funding support for planning, implementation and operationalization of the substandard and falsified reporting system.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-010",
+      "section": "sec-010-12-assess-the-digital-readiness"
+    },
+    {
+      "location": "p11:s4",
+      "page": 11,
+      "text": "The following areas should be reviewed to assess the country's digital readiness. - **National digital health strategy.** Review the country’s national digital health strategy as well as the corresponding digital health architecture blueprint, implementation plan and supporting budget, if available.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-010",
+      "section": "sec-010-12-assess-the-digital-readiness"
+    },
+    {
+      "location": "p11:s9",
+      "page": 11,
+      "text": "Furthermore, determining the leadership and political priorities that align with or support the implementation is essential, as strong leadership and political will can significantly drive the success of digital health initiatives. - **Digital health governance framework.** The presence of an existing digital health governance framework should also be assessed.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-010",
+      "section": "sec-010-12-assess-the-digital-readiness"
+    },
+    {
+      "location": "p11:s12",
+      "page": 11,
+      "text": "This assessment should determine network coverage across the entire country, including regional, rural and remote areas, while identifying any potential challenges. - **Security and privacy protection.** Conduct an evaluation of the operational and governance requirements for security, privacy, data ownership and stewardship within the country.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-010",
+      "section": "sec-010-12-assess-the-digital-readiness"
+    },
+    {
+      "location": "p11:s15",
+      "page": 11,
+      "text": "The results of the assessment should inform planning necessary investments during implementation and operation stages. **Table 3.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-010",
+      "section": "sec-010-12-assess-the-digital-readiness"
+    },
+    {
+      "location": "p12:s2",
+      "page": 12,
+      "text": "The outputs of the analysis should be used to develop optimal business processes and workflows within the application.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-011",
+      "section": "sec-011-13-assess-current-substandard-and-falsified-repo"
+    },
+    {
+      "location": "p12:s5",
+      "page": 12,
+      "text": "As part of this analysis key pharmacovigilance structures, systems, procedures and mechanisms within the country should be identified.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-011",
+      "section": "sec-011-13-assess-current-substandard-and-falsified-repo"
+    },
+    {
+      "location": "p12:s29",
+      "page": 12,
+      "text": "However, challenges include difficulties in following up for more details, assessing credibility and managing potential false reports. ### End of chapter checklist After finishing the steps outlined in this chapter, there should be a comprehensive current state analysis of the key stakeholders including: - [ ] Digital readiness - [ ] Enabling environment - [ ] Technology infrastructure - [ ] Current reporting procedures - [ ] Barriers to reporting",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-011",
+      "section": "sec-011-13-assess-current-substandard-and-falsified-repo"
+    },
+    {
+      "location": "p14:s2",
+      "page": 14,
+      "text": "Before implementing a digital reporting system, countries should evaluate existing regulatory policies, identify gaps and determine whether new regulations or legislative amendments are necessary to support the implementation, operationalization and adoption. - **Pharmacovigilance and quality surveillance integration.** Substandard and falsified medicines reporting often intersects with pharmacovigilance systems.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-013",
+      "section": "sec-013-21-review-regulatory-policies-for-substandard-an"
+    },
+    {
+      "location": "p17:s2",
+      "page": 17,
+      "text": "These goals should be: - **Specific.** For instance, reduce the average detection-to-notification time for suspected substandard and falsified medical products from 14 days to 2 days. - **Measurable.** Use indicators like the number of detected substandard and falsified incidents, time to regulatory action, or user engagement metrics in the digital reporting platform. - **Achievable.** Align goals with available resources and capacity.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-016",
+      "section": "sec-016-24-set-the-strategic-goals"
+    },
+    {
+      "location": "p18:s6",
+      "page": 18,
+      "text": "By taking these strategic steps, countries can lay the groundwork for an effective, sustainable digital reporting system that ultimately safeguards the quality of medicines and protects public health. ### End of chapter checklist After finishing the steps outlined in this chapter, there should be a comprehensive current state analysis of the key stakeholders including: - [ ] New and/or amended regulatory policies on substandard and falsified medical products - [ ] Governance structures and mechanisms established - [ ] Strategic goals for reporting of substandard and falsified medical products",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-017",
+      "section": "sec-017-25-analyse-and-mitigate-risk"
+    },
+    {
+      "location": "p20:s3",
+      "page": 20,
+      "text": "The investment roadmap for the substandard and falsified reporting solution should consider and outline clear priorities across short- (e.g.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-019",
+      "section": "sec-019-31-develop-a-digital-investment-roadmap"
+    },
+    {
+      "location": "p21:s4",
+      "page": 21,
+      "text": "An enterprise architecture blueprint lays the foundation for scaling up and sustaining digital health applications that are standardized and interoperable and that will facilitate access to higher quality, more complete information, in turn resulting in better decisions and more improved health outcomes across multiple areas.” (3) A digital health enterprise architecture should be developed in alignment with the DIIG framework if one has not already been developed.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-020",
+      "section": "sec-020-32-link-to-the-enterprise-architecture"
+    },
+    {
+      "location": "p21:s5",
+      "page": 21,
+      "text": "If a digital health enterprise architecture is already in place, it should be aligned with the DIIG framework.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-020",
+      "section": "sec-020-32-link-to-the-enterprise-architecture"
+    },
+    {
+      "location": "p21:s23",
+      "page": 21,
+      "text": "GIS) | | **External Systems** | Non-health digital systems | Non-health digital applications, services, interoperability enabling components, and data sources with capabilities that may be leveraged by the digital health enterprise (e.g. national unique identification system, national procurement systems, national weather service data sources, etc.) | *Source: Digital implementation investment guide (DIIG) (WHO; 2020) (3).* ### End of chapter checklist After finishing the steps outlined in this chapter, there should be a comprehensive current state analysis of the key stakeholders including: - [ ] Digital investment roadmap for the substandard and falsified reporting solution - [ ] Digital health enterprise architecture that includes the substandard and falsified reporting application",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-020",
+      "section": "sec-020-32-link-to-the-enterprise-architecture"
+    },
+    {
+      "location": "p24:s3",
+      "page": 24,
+      "text": "A good user scenario should describe the context, the user’s objective, the challenges they face and how the tool addresses them.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-023",
+      "section": "sec-023-42-define-user-scenarios"
+    },
+    {
+      "location": "p25:s7",
+      "page": 25,
+      "text": "Conventional diagramming techniques should be employed to ensure that the workflow is universally comprehensible.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "bp:sf-rep-001",
+      "section": "sec-024-43-develop-business-processes-and-workflows"
+    },
+    {
+      "location": "p26:s3",
+      "page": 26,
+      "text": "Data dictionaries should utilize terminology standards (e.g.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "de:sfr-a1-de01",
+      "section": "sec-025-44-outline-data-requirements"
+    },
+    {
+      "location": "p27:s1",
+      "page": 27,
+      "text": "## 4.5 Gather requirements Functional and non-functional requirements outline what the reporting application needs to do and how it should perform.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s7",
+      "page": 27,
+      "text": "Sample list of non-functional requirements** | Requirement ID | Category | Non-functional requirement | | --- | --- | --- | | SFR.NFXNREQ.001 | Security – confidentiality | Provide password-protected access for authorized users. | | SFR.NFXNREQ.002 | Security – confidentiality | Provide a means to ensure confidentiality and privacy of personal health information. | | — | Security – confidentiality | Provide the ability for allowed users to view confidential data. | | — | Security – confidentiality | Provide end-to-end encryption of data. | | — | Security – confidentiality | Data at rest must be encrypted by the IT solution.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s8",
+      "page": 27,
+      "text": "Industry best practice cryptographic algorithms must be enforced by the IT solution. | | — | Security – confidentiality | Provide encrypted communication between components. | | — | Security – confidentiality | For sensitive data, secure data destruction processes must be in place.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s9",
+      "page": 27,
+      "text": "There must be evidence of secure data destruction. | | — | Security – confidentiality | Provide secure data transmission methods to prevent others from seeing data sent from one computer to another by using data encryption and private networks across public networks. | | — | Security – confidentiality | Data must be encrypted on all removable media used by the IT solution.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s11",
+      "page": 27,
+      "text": "USB memory stick, external hard drives). | | — | Security – confidentiality | A solution should have all levels of technical support for security controls. | | — | Security – authentication | Notify the user to change their password the first time they log in. | | — | Security – authentication | Adhere to complex password requirements. | | — | Security – authentication | Lock a user out after a specified number of wrong password attempts. | | — | Security – authentication | Notify a user if their account is locked due to wrong password attempts. | | — | Security – authentication | Provide role-based access to the system: users of the system get access on a need-to-know and need-to-use basis. | | — | Security – authentication | Multi-factor authentication must be enforced. | | — | Security – authentication | When authentication is required, all systems or applications should integrate with the single sign on authentication scheme (SAML; OpenID Connect) of the NMRA. | | — | Security – audit trail and logs | Log system logins and logouts (successful/unsuccessful). | | — | Security – audit trail and logs | Record all authentication violations, recorded by IP address, date, time and user credentials. | | — | Security – audit trail and logs | Log all activities performed by the user, including action category, IP address, date, time and user credentials. | | — | Security – audit trail and logs | Log access to data summaries, reports, analysis and visualization features. | | — | Security – audit trail and logs | Log exchange of data with other systems. | | — | Security – audit trail and logs | Log all data and system errors. | | — | Security – audit trail and logs | Audit history/trail/logs for all records should not be editable. | | — | Security – user management | Allow user with permission to create a new user and temporary password. | | — | Security – user management | Provide role-based access. | | — | Security – user management | Allow roles to be associated with specific geographical areas or health care facilities. | | — | Security – user management | Allow cascading user management and assignment of roles. | | — | Security – user management | Allow user to change their own password. | | — | Security – user management | Allow admin user to request password reset. | | — | Security – user management | Notify the user to regularly change their password. | | — | Security – user management | Allow each user to be assigned to one or more roles. | | — | Security – user management | Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing. | | — | Security – general | Perform periodic vulnerability scans and penetration testing when required. | | — | Security – general | The hosting provider should produce evidence that security controls are in place (i.e. network and web application firewalls; proxy; etc.) including evidence of recent security audits and security penetration tests. | | — | Security – general | All vendors have to mitigate security risk assessment outputs provided by NMRA as part of the price of the delivery. | | — | Security – general | There must be a governance mechanism to ensure confidential and sensitive data (to be determined through a separate confidentiality undertaking) is sufficiently protected in accordance with the highest standards, and in compliance with all applicable laws, ordinances, rules and regulations (including the United Nations Principles on Personal Data Protection and Privacy). | | — | Security – general | Provide a facility to set and maintain authorization access for data entry, validation, update, inquiry and report outputs. | | — | System requirements – general | Provide a unique version number for each revision. | | — | System requirements – general | Enable earlier versions of a record to be recoverable. | | — | System requirements – general | Enable deployment in an environment subject to power loss. | | — | System requirements – general | Work in an environment that is subject to loss of connectivity. | | — | System requirements – general | Generate IDs that are unique across different installations or sites. | | — | System requirements – general | Report version number when saving data to the database. | | — | System requirements – general | Be designed to be flexible enough to accommodate necessary changes in the future. | | — | System requirements – general | Allow for offline and online functionality. | | — | System requirements – general | Show the number of records that are not yet synchronized. | | — | System requirements – general | Have the ability to easily back up information. | | — | System requirements – general | Warn user if no valid backup for more than a predefined number of days. | | — | System requirements – general | Must have the ability to store images and other unstructured data. | | — | System requirements – general | Use standardized master data to identify health products and facilities. | | — | System requirements – general | The solution should be designed and certified according to ISO 27000 family. | | — | System requirements – general | All application software code must be created with exclusive intellectual property rights to NMRA. | | — | System requirements – general | The developer of software solution must ensure the legality of third-party software components usage.",
+      "markers": [
+        "negation",
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s12",
+      "page": 27,
+      "text": "Open source and other similar type of software licences are preferred with no or minimum costs for usage. | | — | System requirements – general | System must support the transformation of report data into charts or graphs or any other standard visual representations. | | — | System requirements – general | System must support the creation and export of reports to MS Word, MS Excel, Email or PDF or any other universal standard. | | — | System requirements – general | System must support the import of data and reports in pdf, xls, rtf, txt, doc, csv formats. | | — | System requirements – general | Documentation – detail design documentation, administrators’ documentation; support to create user guide documentation must be provided as a part of the price for the project. | | — | System requirements – general | Vendor to provide evidence of all internal testing including security testing results with corrective actions defined. | | — | System requirements – general | Training – administrators’ and users’ training must be provided as a part of the price for the project. | | — | System requirements – general | Support service contract must be ensured together with project realization contract. | | — | System requirements – scalability | Scalable to accommodate new demands. | | — | System requirements – scalability | Be able to accommodate at least [x number of] health care facilities. | | — | System requirements – scalability | Be able to accommodate at least [x number of] concurrent users. | | — | System requirements – scalability | Be able to accommodate more than [x number of] concurrent users. | | — | System requirements – usability | Be user-friendly for people with low computer literacy. | | — | System requirements – usability | Provide informative error messages and tool tips. | | — | System requirements – usability | Alert the user when navigating away from the form without saving. | | — | System requirements – usability | Support real-time data entry validation and feedback to prevent data entry errors from being recorded. | | — | System requirements – usability | Simplify data recording through predefined dropdown or searchable lists, radio buttons and check boxes. | | — | System requirements – usability | Support multiple languages – English, French, Spanish, Chinese, Russian, Arabic. | | — | System requirements – usability | Use industry-standard user interface practices and apply them in a consistent manner throughout the system. | | — | System requirements – usability | Easy to learn and intuitive to enable users to navigate between pages. | | — | System requirements – usability | Provide guidance to users to better support clinical guidelines and best clinical practices. | | — | System requirements – usability | Be reliable and robust (minimize the number of system crashes). | | — | System requirements – usability | Adjust display to fit small screens (such as mobile phones). | | — | System requirements – usability | Enable use via a web interface and mobile applications for use on various technology devices such as computers, laptops, tablets and mobiles – responsive design must be applied. | | — | System requirements – usability | Allow for localization such as branding with national regulatory authority and/or national/regional organization logos. | | — | System requirements – usability | Provide ability to store information such as name and batch number from images. | | — | System requirements – usability | Provide ability to scan data carriers such as barcodes to identify and store the encoded information. | | — | System requirements – usability | Automatically save data periodically to prevent loss from power outages or distractions. | | — | System requirements – usability | Portal should take no more than X seconds to load the First Contentful Paint and return search results no more than X seconds for users on desktop computers and mobile devices.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s13",
+      "page": 27,
+      "text": "The portal should be able to adapt to low bandwidth settings by deprioritizing delivery of non-crucial elements. | | — | System requirements – configuration | Configure the system centrally. | | — | System requirements – configuration | Configure business rules in line with guidelines and standard operating procedures (using the decision logic and contextual query language + Fast Healthcare Interoperability Resources [FHIR]). | | — | System requirements – configuration | Configure error messages. | | — | System requirements – configuration | Configure workflows and business rules to accommodate differences between facilities. | | — | System requirements – configuration | Architecture for development, UAT and production environments must be distinct from each other. | | — | System requirements – interoperability | Communicate with external systems through mediators. | | — | System requirements – interoperability | Provide secure access to data through application programming interfaces to interface with other SMART guideline reference app solutions, incumbent solutions (e.g. registration systems) and reporting tools. | | — | System requirements – interoperability | The reference application must have an FHIR back end/FHIR native and leverage the workstream 3 content (CQL + FHIR resources). | | — | System requirements – interoperability | Be interoperable with external systems through mediators. | | — | System requirements – interoperability | Exchange data with other approved systems. | | — | System requirements – interoperability | Accept data from multiple input methods including paper and geocoding (global positioning system). | | — | System requirements – hardware and connectivity | Allow for data exchange and efficient synchronization across multiple facilities and points of service when the internet is available, even when it is intermittent and slow. | | — | Requirements for delivery | Vendors to have a technical change and configuration management process in place that is compliant with the Information Technology Infrastructure Library framework. | | — | Requirements for delivery | Vendors to have secure software development processes in place (e.g.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s15",
+      "page": 27,
+      "text": "This should include backups applications and/or services, replicas and automated failover processes.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p27:s16",
+      "page": 27,
+      "text": "A disaster recovery plan and periodic testing is obligatory. | | — | Requirements for delivery | Project final acceptance and last payment milestone to be provided after the go-live following by stabilisation period accepted on agreed UAT results. | ### End of chapter checklist After finishing the steps outlined in this chapter, there should be a comprehensive current state analysis of the key stakeholders including: - [ ] User personas - [ ] Business process and workflow details - [ ] Data dictionaries with required data elements - [ ] Functional and non-functional requirements for the reporting application - [ ] Barriers to reporting",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "freq:sfr-001",
+      "section": "sec-026-45-gather-requirements"
+    },
+    {
+      "location": "p28:s10",
+      "page": 28,
+      "text": "Factors such as required features, time, effort, cost and national IT and data sovereignty policies should be considered when choosing the appropriate option as long-term maintenance costs could potentially be higher depending on the context and capacity available.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-027",
+      "section": "sec-027-5-plan-the-implementation"
+    },
+    {
+      "location": "p28:s11",
+      "page": 28,
+      "text": "This is a critical decision that significantly impacts the application's functionality and efficiency, and it should fit within the enterprise architecture outlined in Section 3.2.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-027",
+      "section": "sec-027-5-plan-the-implementation"
+    },
+    {
+      "location": "p28:s13",
+      "page": 28,
+      "text": "Software options** | Option | Advantages | Considerations | Challenges | | --- | --- | --- | --- | | Packaged off-the-shelf application | Saves time and effort, readily deployable | Might require customization | May not meet all specific requirements | | Software as a service (SaaS) | Cloud-based, ongoing support and updates | Reliability of vendor, scalability, data sovereignty, IT policies | Feasibility depends on policies and vendor evaluation | | Enhancing an existing application | Cost-effective, partially meets requirements | Extending functionalities, integrating new features | May require significant enhancements | | Building one from scratch | Meets all specific needs, maximum flexibility | Custom development | Higher costs, longer development time | | Selecting and enhancing an open-source solution | Customizable, cost-effective | Requires skilled personnel | Customization and ongoing maintenance needed | ### End of chapter checklist After finishing the steps outlined in this chapter, the following outputs should be available: - [ ] Project management plan - [ ] Budget - [ ] Substandard and falsified reporting application",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-027",
+      "section": "sec-027-5-plan-the-implementation"
+    },
+    {
+      "location": "p30:s4",
+      "page": 30,
+      "text": "As noted in WHO’s *Monitoring and evaluating digital health interventions: a practical guide to conducting research and assessment* (8): > “During the maturity life cycle of a digital health intervention, concurrent monitoring and evaluation (M&E) activities should be planned, often in parallel, supporting each other.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "ind:sfp-01",
+      "section": "sec-029-61-develop-a-monitoring-and-evaluation-plan"
+    },
+    {
+      "location": "p30:s17",
+      "page": 30,
+      "text": "The framework should outline how the reporting application is expected to work and what outcomes it aims to achieve.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "ind:sfp-01",
+      "section": "sec-029-61-develop-a-monitoring-and-evaluation-plan"
+    },
+    {
+      "location": "p30:s23",
+      "page": 30,
+      "text": "The design should be robust, ensuring that it can provide reliable and valid results that can inform decision-making. | | Step 4 | Determine who will be responsible for carrying out the M&E activities.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "ind:sfp-01",
+      "section": "sec-029-61-develop-a-monitoring-and-evaluation-plan"
+    },
+    {
+      "location": "p30:s27",
+      "page": 30,
+      "text": "Additionally, resources must be allocated to support these activities, including funding, personnel and data collection tools. | | Step 6 | All the above details must be summarized into an M&E implementation plan.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "ind:sfp-01",
+      "section": "sec-029-61-develop-a-monitoring-and-evaluation-plan"
+    },
+    {
+      "location": "p30:s29",
+      "page": 30,
+      "text": "It should also include mechanisms for reviewing and updating the M&E plan to ensure it remains relevant and effective over time. | ### Select metrics for monitoring and evaluation Identify the right metrics for assessing the performance and effectiveness of the reporting application.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "ind:sfp-01",
+      "section": "sec-029-61-develop-a-monitoring-and-evaluation-plan"
+    },
+    {
+      "location": "p31:s5",
+      "page": 31,
+      "text": "This plan should include details of stakeholders that will own and maintain the reporting application.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-030",
+      "section": "sec-030-62-develop-an-operations-and-continuous-improvem"
+    },
+    {
+      "location": "p31:s10",
+      "page": 31,
+      "text": "Recurring knowledge management needs, including training, updating job aids, recruitments and job rotations, must also be addressed in the plan.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-030",
+      "section": "sec-030-62-develop-an-operations-and-continuous-improvem"
+    },
+    {
+      "location": "p31:s14",
+      "page": 31,
+      "text": "Furthermore, the plan should outline the recurring costs for the required resources, system subscriptions, knowledge management, cybersecurity, M&E and efforts to maintain and operate the application.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-030",
+      "section": "sec-030-62-develop-an-operations-and-continuous-improvem"
+    },
+    {
+      "location": "p31:s16",
+      "page": 31,
+      "text": "This strategy should include budgeting for unexpected expenses and exploring potential funding sources.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-030",
+      "section": "sec-030-62-develop-an-operations-and-continuous-improvem"
+    },
+    {
+      "location": "p31:s17",
+      "page": 31,
+      "text": "A robust plan for data backups and system redundancy must be devised to mitigate the impact of system failures.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-030",
+      "section": "sec-030-62-develop-an-operations-and-continuous-improvem"
+    },
+    {
+      "location": "p31:s20",
+      "page": 31,
+      "text": "This process should include mechanisms for evaluating and prioritizing new requirements, as well as a structured approach to implementing changes. ### End of chapter checklist After finishing the steps outlined in this chapter, the following outputs should be available: - [ ] M&E plan - [ ] Operations and sustainability plan",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-030",
+      "section": "sec-030-62-develop-an-operations-and-continuous-improvem"
+    },
+    {
+      "location": "p36:s2",
+      "page": 36,
+      "text": "User persona template A user persona template/worksheet that summarizes each and every type of end user (e.g. pharmacists, doctors, nurses, dentists, midwives, paramedics, laboratory technicians, public health workers, veterinarians and pharmacy technicians) should be completed. | Section | Prompts and sample entries | | --- | --- | | **Persona occupation (e.g. nurse)** | — | | **Demographics** | • Gender<br>• Age<br>• Community of origin<br>• Language(s) used<br>• Education level | | **Expected roles and responsibilities** | • Daily<br>• Weekly<br>• Monthly | | **Behaviour patterns** | • Regularly prescribes medications<br>• Uses electronic health records daily<br>• Attends medical conferences and workshops<br>• Dispenses or administers medications and monitors patient reactions<br>• Uses mobile apps for quick reference and reporting<br>• Participates in community health programmes<br>• Uses existing pharmacy dispensing/stock software | | **Context description** | • Do they own their own mobile device?",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-036",
+      "section": "sec-036-annex-2-user-persona-template"
+    },
+    {
+      "location": "p37:s4",
+      "page": 37,
+      "text": "Diagrams should be clear, neat and easy for all viewers to understand the relationships across the different swim lanes.<br><br>For example, a pool could depict the business process of conducting an outreach activity, which involves multiple stakeholders represented by different swim lanes.<br><br>A business process diagram can contain two or more pools that connect through message flows (messages received from outside the pool) – this indicates different process owners collaborating and exchanging information.<br><br>For example, in the case of a referral, health facility “A” (the referring facility) represents the process owner that internally assigns the tasks for the actors represented as swim lanes.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s6",
+      "page": 37,
+      "text": "These two facilities exchange information relevant for a referral (e.g. client history, referral details), represented as message flows, but each facility has control only over the internal activities, without directly impacting the activities of the other facility. | | Pool — Lane 1 (highlighted), Lane 2, Lane 3 | **Swim lane** | Each individual or type of user is assigned to a swim lane, a designated area for noting the activities performed or expected by that specific actor.<br><br>For example, a [health domain abbreviation] health worker may have one swim lane, the supervisor another swim lane and the clients another swim lane. | | Thin circle | **Start event or trigger event** | The workflow diagram should contain a start event and an end event, defining the beginning and completion of the task. | | Thin circle with envelope | **Start event message** | This is a type of a start event.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s10",
+      "page": 37,
+      "text": "For clarity, there should be only one end event per swim lane. | | Rounded rectangle | **Activity, process step or task** | Each activity should start with a verb, such as “register client” or “calculate risk”.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s11",
+      "page": 37,
+      "text": "Between the start and end of a task, there should be a series of activities noting the successive actions performed by the actor for that swim lane.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s13",
+      "page": 37,
+      "text": "If the diagram is too complex, the subprocess symbol should be used to reference another process depicted on another page. | | Rounded rectangle with table icon | **Activity with a business rule** | This denotes a decision-making activity that requires the business rule, decision-support logic or scheduling logic to be detailed in a decision-support table.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s16",
+      "page": 37,
+      "text": "The end event should not have any output arrows.",
+      "markers": [
+        "negation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s18",
+      "page": 37,
+      "text": "All symbols (except for the end event and gateway) should have one and only one output arrow, leading to a new symbol, looping back to a previously used symbol or to the end event symbol.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s19",
+      "page": 37,
+      "text": "Connecting arrows should not cross over each other. | | Dashed arrow | **Message flow** | This denotes the flow of data or information from a process to another process.",
+      "markers": [
+        "negation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s21",
+      "page": 37,
+      "text": "This may be a simple binary (e.g. yes/no) filter with two corresponding output arrows, or a different set of outputs.<br><br>Only two different outputs should originate from a decision point.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s22",
+      "page": 37,
+      "text": "If more than two output or sequence flow arrows are needed, you are likely trying to depict decision-support logic or a business rule, which should be depicted as an activity with a business rule instead (see above). | | Diamond with `+` | **Parallel gateway** | This is used to model concurrency in a process.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s27",
+      "page": 37,
+      "text": "A catch – link event must follow the throw – link event. | | Double circle with outline right arrow | **Catch – link event** | This serves as the end of an off-page connector.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s29",
+      "page": 37,
+      "text": "A throw – link event must be aligned to a catch – link event. | | Rounded rectangle with `[+] ~` | **Ad hoc subprocess** | An ad hoc subprocess can contain multiple activities (tasks or subprocesses), which can be executed in any order, executed several times or skipped.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p37:s33",
+      "page": 37,
+      "text": "The above selection of symbols should be sufficient, though, for the purposes of illustrating the business process workflows in a clear, standard way.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-037",
+      "section": "sec-037-annex-3-business-process-model-and-notation-bpmn"
+    },
+    {
+      "location": "p38:s3",
+      "page": 38,
+      "text": "This can be adjusted to include stakeholders and activities relevant to the country’s context. | Activities | NMRA | Ministry of health | Implementation partner | Medical product industry | Health care professionals | Others... | Others... | | --- | --- | --- | --- | --- | --- | --- | --- | | Define project scope | A | R | C | I | I | I | I | | Gather requirements | I | R | C | C | C | I | A | | Design UI/UX | I | C | C | I | C | C | A | *Notes:* R (responsible) – person/organization that does the work; A (accountable) – decision-maker, approves the work; C (consulted) – provides input, must be consulted before the task is completed; I (informed) – needs updates on progress but not directly involved; UI – user interface; UX – user experience.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "prose:sec-038",
+      "section": "sec-038-annex-4-stakeholder-raci-matrix"
+    },
+    {
+      "location": "p42:s4",
+      "page": 42,
+      "text": "In any use of this work, there should be no suggestion that WHO endorses any specific organization, products or services.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+      "signedOffAt": "2026-10-31",
+      "section": "sec-front-matter",
+      "classification": "editorial",
+      "note": "WHO CC BY-NC-SA 3.0 IGO licence non-endorsement clause"
+    },
+    {
+      "location": "p42:s6",
+      "page": 42,
+      "text": "If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+      "signedOffAt": "2026-10-31",
+      "section": "sec-front-matter",
+      "classification": "editorial",
+      "note": "WHO CC BY-NC-SA 3.0 IGO share-alike adaptation licence clause"
+    },
+    {
+      "location": "p42:s7",
+      "page": 42,
+      "text": "If you create a translation of this work, you should add the following disclaimer along with the suggested citation: “This translation was not created by the World Health Organization (WHO).",
+      "markers": [
+        "obligation"
+      ],
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+      "signedOffAt": "2026-10-31",
+      "section": "sec-front-matter",
+      "classification": "editorial",
+      "note": "WHO translation disclaimer instruction"
+    },
+    {
+      "location": "p42:s9",
+      "page": 42,
+      "text": "The original English edition shall be the binding and authentic edition”.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+      "signedOffAt": "2026-10-31",
+      "section": "sec-front-matter",
+      "classification": "editorial",
+      "note": "WHO binding original English edition clause"
+    },
+    {
+      "location": "p42:s10",
+      "page": 42,
+      "text": "Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization (http://www.wipo.int/amc/en/mediation/rules/). **Suggested citation.** Digital transformation handbook for reporting substandard and falsified medical products: a practical handbook.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+      "signedOffAt": "2026-10-31",
+      "section": "sec-front-matter",
+      "classification": "editorial",
+      "note": "WIPO mediation clause for licence disputes"
+    },
+    {
+      "location": "p42:s16",
+      "page": 42,
+      "text": "The mention of specific companies or of certain manufacturers’ products does not imply that they are endorsed or recommended by WHO in preference to others of a similar nature that are not mentioned.",
+      "markers": [
+        "recommendation"
+      ],
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+      "signedOffAt": "2026-10-31",
+      "section": "sec-front-matter",
+      "classification": "editorial",
+      "note": "Standard WHO manufacturer/product non-endorsement disclaimer"
+    },
+    {
+      "location": "p42:s21",
+      "page": 42,
+      "text": "In no event shall WHO be liable for damages arising from its use. ## Contents | Section | Page | | --- | --- | | Acknowledgements | v | | Abbreviations and acronyms | vi | | Glossary | vii | | **Introduction** | **1** | | Reporting of substandard and falsified medical products | 1 | | Who this handbook is for | 2 | | How to use this handbook | 3 | | How this handbook was developed | 6 | | **1.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred (per litlfred/dth-sfp#1 §2.3 & §5)",
+      "signedOffAt": "2026-10-31",
+      "section": "sec-front-matter",
+      "classification": "editorial",
+      "note": "Standard WHO limitation of liability clause"
+    }
+  ],
+  "problems": [],
+  "source": {
+    "path": "folio/dth-sfp/l1-pages.json",
+    "sha256": "53b317076faaa310517902fc84cf56f6f806f2f0d6f3a9cea68b5aa7e03c1d0f"
+  },
+  "graph": {
+    "path": "folio/dth-sfp/l1-captured.json",
+    "sha256": "285ded4b842f12d7b3ea3d7bdbe508e4d5c7c62a55c23bf443a37d5a7ff675af"
+  },
+  "classificationBreakdown": {
+    "captured": 72,
+    "excludedTotal": 7,
+    "editorial": 7,
+    "backgroundFact": 0,
+    "sourceExample": 0,
+    "unaccounted": 0
+  }
+}
