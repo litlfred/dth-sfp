@@ -2,7 +2,7 @@
   "$schema": "folio-glossary/v1",
   "id": "dth-sfp",
   "title": "Glossary of the Digital Transformation Handbook for Substandard and Falsified Medical Product Reporting Systems",
-  "description": "Domain terms for substandard and falsified (SF) medical product reporting systems, quoting the WHO handbook (ISBN 978-92-4-012074-7) with L1 page provenance and SKOS mappings into dpi-h-ra (litlfred/smart-ra), dth-sc (litlfred/dth-sc), dth-pc (litlfred/dth-pc), and dth-hrh (litlfred/dth-hrh). General digital health and enterprise architecture terms are held in dpi-h-ra; supply chain and traceability terms in dth-sc; product master data and trade item terms in dth-pc; and health workforce / ISCO-08 occupation terms in dth-hrh. Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless dpi-h-ra, dth-sc, dth-pc, or dth-hrh already holds it (FHIR, ITU, UAT, POS, SDG, CQL, ISCO, NPC).",
+  "description": "Domain terms for substandard and falsified (SF) medical product reporting systems, quoting the WHO handbook (ISBN 978-92-4-012074-7) with L1 page provenance and SKOS mappings into dpi-h-ra (litlfred/smart-ra), dth-sc (litlfred/dth-sc), dth-pc (litlfred/dth-pc), and dth-hrh (litlfred/dth-hrh). General digital health and enterprise architecture terms are held in dpi-h-ra; supply chain and traceability terms in dth-sc; product master data and trade item terms in dth-pc; and health workforce / ISCO-08 occupation terms in dth-hrh. Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless dpi-h-ra, dth-sc, dth-pc, or dth-hrh already holds it (FHIR, ITU, UAT, POS, SDG, CQL, ISCO, NPC). Organizations several handbooks name live once in smart-ra's organizations scheme (litlfred/smart-ra#198) and are listed under members; organizations only this handbook names (United Health Futures, Instituto de Salud Pública de Chile, South African Health Products Regulatory Authority, UK Department of Health and Social Care, and the WHO Member State Mechanism) carry a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
   "modified": "2026-10-31",
   "source": "who-iris/library/9789240120747-eng",
   "license": "CC-BY-NC-SA-3.0-IGO",
@@ -497,7 +497,14 @@
         "global-surveillance-and-monitoring-system",
         "national-medicines-regulatory-authority"
       ],
-      "notation": "MSM"
+      "notation": "MSM",
+      "focus": {
+        "type": "OrganizationalCollaboration",
+        "homepage": "https://www.who.int/teams/regulation-prequalification/incidents-and-SF/mechanism",
+        "subOrganizationOf": [
+          "who"
+        ]
+      }
     },
     {
       "id": "national-medicines-regulatory-authority",
@@ -508,7 +515,7 @@
         "NRA"
       ],
       "definition": "The national agency responsible for ensuring that pharmaceuticals and other medical products meet standards of quality, safety and efficacy, Including registration, marketing authorization, inspection, post-market surveillance and regulatory enforcement (14).",
-      "scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 14). Maps to the shared ArchiMate BusinessRole `National Regulatory Authority` (`id-8e67c8e9e1195cdc857b03a2c640e7fe`) in smart-ra.",
+      "scopeNote": "Handbook glossary definition, quoted verbatim (p. viii, PDF p. 10, citing reference 14). Maps to the shared ArchiMate BusinessRole `National Regulatory Authority` (`id-8e67c8e9e1195cdc857b03a2c640e7fe`) in smart-ra. A kind of organization (each country has one), so it has no focus.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
       "status": "candidate",
       "broadMatch": [
@@ -959,7 +966,11 @@
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/fast-healthcare-interoperability-resources"
       ],
       "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.hl7.org/"
+      }
     },
     {
       "id": "information-and-communication-technology",
@@ -1062,7 +1073,11 @@
       "notation": "UHF",
       "scopeNote": "Named in the handbook's acknowledgements (p. v / PDF p. 7) and abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. Collaborating organization in Switzerland; a candidate: no definition has been written.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://unitedhealthfutures.org/"
+      }
     },
     {
       "id": "who",
@@ -1073,7 +1088,14 @@
       "notation": "WHO",
       "scopeNote": "Named in the handbook's abbreviations table (p. vi / PDF p. 8), which gives the expansion used as prefLabel. A candidate organization entry: no definition has been written.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-001-abbreviations-and-acronyms.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.who.int/",
+        "subOrganizationOf": [
+          "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/un/_focus"
+        ]
+      }
     },
     {
       "id": "declaration-of-interests",
@@ -1130,7 +1152,11 @@
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/health-information-exchange"
       ],
       "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "OrganizationalCollaboration",
+        "homepage": "https://ohie.org/"
+      }
     },
     {
       "id": "health-information-system",
@@ -1153,7 +1179,14 @@
       "notation": "UNICEF",
       "scopeNote": "Named in Table 1 (p. 5 / PDF p. 17). A candidate organization entry: no definition has been written.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.unicef.org/",
+        "subOrganizationOf": [
+          "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/un/_focus"
+        ]
+      }
     },
     {
       "id": "path",
@@ -1164,7 +1197,11 @@
       "notation": "PATH",
       "scopeNote": "Named in Table 1 (p. 5 / PDF p. 17). A candidate organization entry: no definition has been written.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-006-how-to-use-this-handbook.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.path.org/"
+      }
     },
     {
       "id": "information-technology",
@@ -1300,7 +1337,11 @@
       "notation": "ISO",
       "scopeNote": "Named in Table 13 (p. 35 / PDF p. 47, 'ISO 27000 family'). A candidate organization entry: no definition has been written.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.iso.org/"
+      }
     },
     {
       "id": "global-trade-item-number",
@@ -1325,7 +1366,11 @@
       "notation": "GS1",
       "scopeNote": "Named in reference 19 (p. 48 / PDF p. 60). A candidate organization entry: no definition has been written.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-032-references.md",
-      "status": "candidate"
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.gs1.org/"
+      }
     },
     {
       "id": "collaborative-requirements-development-methodology",
@@ -1510,6 +1555,71 @@
       "scopeNote": "Used in user scenario SFP-SCEN-04 (§4.2, p. 27 / PDF p. 39). The expansion is supplied, not quoted: check it in context before adopting.",
       "source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
       "status": "candidate"
+    },
+    {
+      "id": "instituto-de-salud-publica-chile",
+      "prefLabel": "Instituto de Salud Pública",
+      "altLabel": [
+        "ISP",
+        "Instituto de Salud Pública, Chile"
+      ],
+      "notation": "ISP",
+      "scopeNote": "Named in the handbook's acknowledgements (page 7) as Chile's national regulatory authority. A candidate: no definition has been written.",
+      "broader": [
+        "national-medicines-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-000-acknowledgements.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.ispch.gob.cl/"
+      }
+    },
+    {
+      "id": "sahpra",
+      "prefLabel": "South African Health Products Regulatory Authority",
+      "altLabel": [
+        "SAHPRA"
+      ],
+      "notation": "SAHPRA",
+      "scopeNote": "Named in the handbook's acknowledgements (page 7) as South Africa's national regulatory authority. A candidate: no definition has been written.",
+      "broader": [
+        "national-medicines-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240120747-eng/sections/sec-000-acknowledgements.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.sahpra.org.za/"
+      }
+    },
+    {
+      "id": "uk-department-of-health-and-social-care",
+      "prefLabel": "Department of Health and Social Care",
+      "altLabel": [
+        "DHSC",
+        "United Kingdom Department of Health and Social Care"
+      ],
+      "scopeNote": "Named in the handbook's acknowledgements (page 7, Fleming Fund). A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240120747-eng/sections/sec-000-acknowledgements.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+      }
     }
+  ],
+  "members": [
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/un",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/who",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unicef",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unido",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/itu",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/hl7",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gs1",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/path",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/openhie",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gates-foundation"
   ]
 }
