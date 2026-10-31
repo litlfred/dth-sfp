@@ -187,17 +187,13 @@
       <bpmndi:BPMNEdge id="Edge_Flow_405_No" bpmnElement="Flow_405_No">
         <di:waypoint x="815" y="380"/>
         <di:waypoint x="1060" y="380"/>
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="875" y="352" width="90" height="20"/>
-        </bpmndi:BPMNLabel>
+        <bpmndi:BPMNLabel><dc:Bounds x="892.5" y="342" width="90" height="35" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_405_Yes" bpmnElement="Flow_405_Yes">
         <di:waypoint x="790" y="405"/>
         <di:waypoint x="790" y="598"/>
         <di:waypoint x="880" y="598"/>
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="796" y="470" width="95" height="22"/>
-        </bpmndi:BPMNLabel>
+        <bpmndi:BPMNLabel><dc:Bounds x="794" y="435.75" width="95" height="35" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_406" bpmnElement="Flow_406">
         <di:waypoint x="1035" y="598"/>
