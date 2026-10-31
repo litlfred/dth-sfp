@@ -92,7 +92,7 @@
     {
       "instance": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "sha": "f2e2a2ab08e262ec7227539b20ef7eed827ab642",
+      "sha": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
       "upstreamRoot": "",
       "path": "cat-harness-tools",
       "via": "cat-harness-tools",
@@ -106,15 +106,15 @@
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "907338b0164f1a97978ae5da1cf2d2fc4aa8040e9398b44505ac3a4602d3e321",
-          "files": 3001
+          "treeDigest": "64633534adae633451bca98be3ee895edd1e2d1c9441bbca3e147dc0bdda170e",
+          "files": 3049
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-31",
-        "ref": "f2e2a2ab08e262ec7227539b20ef7eed827ab642",
+        "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
         "approver": "unverified"
       }
     },
@@ -273,29 +273,29 @@
     {
       "instance": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "sha": "be4e571d8dad29db098542ede6d0979c24c0ea13",
+      "sha": "093e95b3711201ca6756257fd967f453880cf31d",
       "upstreamRoot": "",
       "path": "folio-assistant-core",
       "via": "folio-assistant-core",
       "pinnedBy": "declared",
       "declaration": {
         "file": "folio-assistant-core.json",
-        "sha256": "434e18408e2e1a7f5fda96101bef18cadb786601fa3250172efc64738c3b00cd"
+        "sha256": "ca407b8da3daaf2c2dd506a6e43df2ed94db3e4f1125f59db81b3921f09223c0"
       },
       "directories": [
         {
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "0b5c0486c8c43e5a83f32b969570414515dee027e0be74c1093bedbea682907f",
-          "files": 6131
+          "treeDigest": "0a68bec6a700b84fda0d8c46281d635a8b76335e342c3d03e95e6a56e0ecc7b4",
+          "files": 6229
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-10-31",
-        "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
+        "ref": "093e95b3711201ca6756257fd967f453880cf31d",
         "approver": "unverified"
       }
     },

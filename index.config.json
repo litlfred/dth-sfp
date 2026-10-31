@@ -90,7 +90,7 @@
               "by": "litlfred",
               "on": "2026-10-31",
               "ref": "49178a48d460bb53acf6e90d8c0aee3f0146d8f7",
-              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 §2.4: DAK kinds and schemas from smart-base#242 and #233 (main tip 49178a48d460, matching dth-pc)."
+              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 \u00a72.4: DAK kinds and schemas from smart-base#242 and #233 (main tip 49178a48d460, matching dth-pc)."
             }
           }
         }
@@ -123,7 +123,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
+          "ref": "093e95b3711201ca6756257fd967f453880cf31d",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -139,8 +139,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
-              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1: layer pin aligned with dth-sc and dth-pc."
+              "ref": "093e95b3711201ca6756257fd967f453880cf31d",
+              "evidence": "folio-assistant-core moved to main 093e95b, past #412 (6cd0644, glossary organizations + acronym check) and #405 (093e95b, DIIG phases & SMART approach charts). Merge-and-repin window (coordinator, 2026-10-31). Prior: litlfred, 2026-10-31 01:55Z, dth-sfp#1: layer pin aligned with dth-sc and dth-pc."
             }
           }
         }
@@ -179,7 +179,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "f2e2a2ab08e262ec7227539b20ef7eed827ab642",
+          "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -198,8 +198,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "f2e2a2ab08e262ec7227539b20ef7eed827ab642",
-              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1: layer pin aligned with dth-sc and dth-pc."
+              "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
+              "evidence": "cat-harness-tools moved to f62a1d9 (same pin as dth-sc and dth-pc; needed for archimate/schemas/slugs.ts imported by folio-assistant-core 093e95b). Prior: litlfred, 2026-10-31 01:55Z, dth-sfp#1: layer pin aligned with dth-sc and dth-pc."
             }
           }
         }
@@ -295,7 +295,7 @@
               "by": "litlfred",
               "on": "2026-10-31",
               "ref": "bd6bfa1ce6fafe4dc4d54cc7abb8bcae2dfbff7a",
-              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 §2.0–§2.2: mount smart-ra (dpi-h-ra glossary and ArchiMate 0.3.0-draft.1 from #147, #148, and #183 bd6bfa1ce)."
+              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 \u00a72.0\u2013\u00a72.2: mount smart-ra (dpi-h-ra glossary and ArchiMate 0.3.0-draft.1 from #147, #148, and #183 bd6bfa1ce)."
             }
           }
         }
@@ -346,7 +346,7 @@
               "by": "litlfred",
               "on": "2026-10-31",
               "ref": "badd73df95971afdd4e5819b52acc2a8a7e0458f",
-              "evidence": "litlfred, 2026-10-31 00:45Z & 01:55Z, dth-sfp#1 §2.0: dth-sfp depends on dth-sc and mounts dth-sc glossary (claude/dth-sc-scaffold badd73d)."
+              "evidence": "litlfred, 2026-10-31 00:45Z & 01:55Z, dth-sfp#1 \u00a72.0: dth-sfp depends on dth-sc and mounts dth-sc glossary (claude/dth-sc-scaffold badd73d)."
             }
           }
         }
@@ -400,7 +400,7 @@
               "by": "litlfred",
               "on": "2026-10-31",
               "ref": "e2ee1cac628e7a9fa70f27ddce8e92e91c01d87b",
-              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 §2.0: dth-sfp links product search and product master data NFRs and DE3/DE6/DE7 to dth-pc (claude/dth-pc-scaffold e2ee1ca)."
+              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 \u00a72.0: dth-sfp links product search and product master data NFRs and DE3/DE6/DE7 to dth-pc (claude/dth-pc-scaffold e2ee1ca)."
             }
           }
         }
@@ -451,7 +451,7 @@
               "by": "litlfred",
               "on": "2026-10-31",
               "ref": "09152dbb817092affbb358ee4c98fba75d60a9fe",
-              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 §2.3 & P4: personas with ISCO-08 codes link to dth-hrh's occupation terms (main 09152db)."
+              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1 \u00a72.3 & P4: personas with ISCO-08 codes link to dth-hrh's occupation terms (main 09152db)."
             }
           }
         }
