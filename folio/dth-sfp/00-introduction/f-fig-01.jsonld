@@ -13,15 +13,35 @@
   ],
   "label": "fig:fig-01",
   "kind": "figure",
-  "title": "Fig. 1. Steps in the Digital Implementation Investment Guide (DIIG) (p. 4 / PDF p. 16)",
+  "title": "Fig. 1. Planning and implementing a digital health enterprise: phases, steps and resources (p. 4 / PDF p. 16)",
   "uses": [
     "papers/dth-sfp/blocks/prose-sec-006"
   ],
   "text": "f-fig-01.md",
   "meta": {
-    "source": "who-iris/library/9789240120747-eng/media/figures/vfig-p016.png",
+    "source": {
+      "library": "9789240120747-eng",
+      "file": "who-iris/library/9789240120747-eng/figures/vfig-p016.png",
+      "page": 16,
+      "method": "generated",
+      "citation": "WHO. Digital transformation handbook for reporting substandard and falsified medical products. 2025. Fig. 1, adapted from WHO Digital transformation handbook for health product catalogue, 2025, Fig. 4, and WHO Digital implementation investment guide (DIIG), 2020, Fig. 1.1.1",
+      "issue": "litlfred/dth-sfp#1",
+      "generated": {
+        "adaptation": "figure-data/diig-phases-sfp.json",
+        "repo": "https://github.com/litlfred/who-iris",
+        "commit": "5191f142a828bbe2f4d010dbe0d651513444da63",
+        "data": "https://github.com/litlfred/who-iris/blob/5191f142a828bbe2f4d010dbe0d651513444da63/library/9789240116191-eng/figure-data/fig-4-diig-phases.json",
+        "generator": "https://github.com/litlfred/folio-assistant-core/blob/4bfeb957292b6478bd54ba05b807a5b475ac3b93/scripts/diig-phases-svg.ts",
+        "tool": "diig-phases-svg",
+        "pr": [
+          "https://github.com/litlfred/who-iris/pull/149",
+          "https://github.com/litlfred/folio-assistant-core/pull/405"
+        ],
+        "output": "diig-phases-sfp.svg"
+      }
+    },
     "pdfPage": 16,
-    "figureFile": "media/vfig-p016.png",
+    "figureFile": "media/diig-phases-sfp.svg",
     "glossary": [
       {
         "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
@@ -122,7 +142,7 @@
       ],
       "figures": [
         {
-          "figure": "media/vfig-p016.png",
+          "figure": "media/diig-phases-sfp.svg",
           "model": "0.3.0-draft.1",
           "view": "id-4e6e25746e8d4398add06fcbc4fb5a4e",
           "viewName": "Capabilities-Goals"
