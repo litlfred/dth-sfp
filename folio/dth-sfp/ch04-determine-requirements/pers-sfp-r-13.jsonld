@@ -26,7 +26,39 @@
     "title": "SFP-R-13 — NMRA Reviewer, Inspectorate & Case System (ISCO-08: 2269 / Regulatory Authority)",
     "isco08": "2269 / Regulatory Authority",
     "personaType": "organisation-and-system",
-    "bpmnRoleId": "sfp-r-13",
+    "bpmnRoleId": "pers:sfp-r-13",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_NMRA",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-002.bpmn",
+        "laneId": "Lane_SF_REP_002_NMRA",
+        "processId": "SF-REP-002"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-003.bpmn",
+        "laneId": "Lane_SF_REP_003_NMRA",
+        "processId": "SF-REP-003"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-004.bpmn",
+        "laneId": "Lane_SF_REP_004_NMRA",
+        "processId": "SF-REP-004"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-005.bpmn",
+        "laneId": "Lane_SF_REP_005_NMRA",
+        "processId": "SF-REP-005"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-006.bpmn",
+        "laneId": "Lane_SF_REP_006_App",
+        "processId": "SF-REP-006"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-015-23-establish-governance-and-leadership.md",
     "sections": [
       "sec-015",

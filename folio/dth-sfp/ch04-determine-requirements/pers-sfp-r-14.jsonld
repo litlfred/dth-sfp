@@ -25,7 +25,19 @@
     "title": "SFP-R-14 — Pharmaceutical Manufacturer, Importer & Supply Chain Actor (ISCO-08: 1321 / 3322)",
     "isco08": "1321 / 3322",
     "personaType": "organisation",
-    "bpmnRoleId": "sfp-r-14",
+    "bpmnRoleId": "pers:sfp-r-14",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R14",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-004.bpmn",
+        "laneId": "Lane_SF_REP_004_SupplyChain",
+        "processId": "SF-REP-004"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-009-11-analyse-key-stakeholders.md",
     "sections": [
       "sec-009",

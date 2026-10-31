@@ -1,4 +1,4 @@
-### SFR.DT.02 — Selected product to applicable product type (Table 12 SFR.FXNREQ.006, DE5)
+### SFR.DT.02 — Applicable medical product type (Table 12 SFR.FXNREQ.006, DE5)
 
 - **Decision ID:** `Decision_SFR_DT_02` (`SFR.DT.02`)
 - **Canonical DMN 1.3 File:** [`decisions/SFR-DT-02.dmn`](../../../decisions/SFR-DT-02.dmn)

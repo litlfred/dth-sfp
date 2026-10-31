@@ -24,7 +24,19 @@
     "title": "SFP-R-09 — Paramedic (ISCO-08: 2240, 3258)",
     "isco08": "2240, 3258",
     "personaType": "human",
-    "bpmnRoleId": "sfp-r-09",
+    "bpmnRoleId": "pers:sfp-r-09",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R09",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-006.bpmn",
+        "laneId": "Lane_SF_REP_006_Reporter",
+        "processId": "SF-REP-006"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
     "sections": [
       "sec-023"

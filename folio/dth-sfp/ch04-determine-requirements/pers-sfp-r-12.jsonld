@@ -24,7 +24,19 @@
     "title": "SFP-R-12 — Veterinarian (ISCO-08: 2250)",
     "isco08": "2250",
     "personaType": "human",
-    "bpmnRoleId": "sfp-r-12",
+    "bpmnRoleId": "pers:sfp-r-12",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R12",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-002.bpmn",
+        "laneId": "Lane_SF_REP_002_R12",
+        "processId": "SF-REP-002"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-036-annex-2-user-persona-template.md",
     "sections": [
       "sec-036"

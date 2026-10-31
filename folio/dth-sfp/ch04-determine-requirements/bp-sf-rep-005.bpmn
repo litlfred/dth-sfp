@@ -9,63 +9,81 @@
                   targetNamespace="https://litlfred.github.io/dth-sfp/workflows"
                   exporter="folio-assistant" exporterVersion="1">
   <bpmn:import namespace="https://litlfred.github.io/bootstrap/v0/processes/ns#" location="https://litlfred.github.io/bootstrap/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld"/>
-  <bpmn:resource id="sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
-  <bpmn:resource id="sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
-  <bpmn:resource id="sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
-  <bpmn:resource id="sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
-  <bpmn:resource id="sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
-  <bpmn:resource id="sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
-  <bpmn:resource id="sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
-  <bpmn:resource id="sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
-  <bpmn:resource id="sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
-  <bpmn:resource id="sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
-  <bpmn:resource id="sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
-  <bpmn:resource id="sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
-  <bpmn:resource id="sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
-  <bpmn:resource id="sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
-  <bpmn:resource id="sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
+  <bpmn:resource id="pers:sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
+  <bpmn:resource id="pers:sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
+  <bpmn:resource id="pers:sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
+  <bpmn:resource id="pers:sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
+  <bpmn:resource id="pers:sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
+  <bpmn:resource id="pers:sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
+  <bpmn:resource id="pers:sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
+  <bpmn:resource id="pers:sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
+  <bpmn:resource id="pers:sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
+  <bpmn:resource id="pers:sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
+  <bpmn:resource id="pers:sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
+  <bpmn:resource id="pers:sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
+  <bpmn:resource id="pers:sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
+  <bpmn:resource id="pers:sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
+  <bpmn:resource id="pers:sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
   <bpmn:collaboration id="Collaboration_Process_SF_REP_005">
-    <bpmn:participant id="Participant_Process_SF_REP_005" name="Report confirmed SF case to WHO GSMS (SF-REP-005)" processRef="Process_SF_REP_005"/>
+    <bpmn:participant id="Participant_Process_SF_REP_005" name="SF-REP-005: Report confirmed SF case to WHO GSMS" processRef="Process_SF_REP_005"/>
   </bpmn:collaboration>
-  <bpmn:process id="Process_SF_REP_005" name="Report confirmed SF case to WHO GSMS (SF-REP-005)" isExecutable="false">
-    <bpmn:documentation>Workflow for national regulatory focal points to submit validated SF incident reports to the WHO Global Surveillance and Monitoring System (GSMS) and coordinate regional/global Medical Product Alerts (Introduction p. 1 / PDF p. 13; Table 4 p. 12 / PDF p. 24). Drafted strictly from the handbook&#x27;s stated step without inferring internal WHO GSMS workflows.</bpmn:documentation>
+  <bpmn:process id="Process_SF_REP_005" name="SF-REP-005: Report confirmed SF case to WHO GSMS" isExecutable="false">
+    <bpmn:documentation>Workflow for national regulatory focal points to submit validated SF incident reports to the WHO Global Surveillance and Monitoring System (GSMS) and coordinate regional/global Medical Product Alerts (Introduction page 1 / PDF page 13; Table 4 page 12 / PDF page 24). Drafted strictly from the handbook&#x27;s stated step without inferring internal WHO GSMS workflows.</bpmn:documentation>
     <bpmn:extensionElements>
       <cat-harness.processes:policy enforcement="advisory"/>
     </bpmn:extensionElements>
     <bpmn:laneSet id="LaneSet_Process_SF_REP_005">
-      <bpmn:lane id="Lane_SF_REP_005_NMRA" name="NMRA Focal Point (SFP-R-13)" partitionElementRef="sfp-r-13">
+      <bpmn:lane id="Lane_SF_REP_005_NMRA" name="NMRA Focal Point (SFP-R-13)" partitionElementRef="pers:sfp-r-13">
         <bpmn:documentation>Persona pers:sfp-r-13. Formats validated national SF case record and submits to WHO GSMS.</bpmn:documentation>
         <bpmn:flowNodeRef>Start_SF_REP_005</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_501_PrepareGSMSDossier</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_502_SubmitToGSMS</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_SF_REP_005_GSMS" name="WHO Global Surveillance and Monitoring System (GSMS) (SFP-R-15)" partitionElementRef="sfp-r-15">
+      <bpmn:lane id="Lane_SF_REP_005_GSMS" name="WHO Global Surveillance (GSMS) (SFP-R-15)" partitionElementRef="pers:sfp-r-15">
         <bpmn:documentation>Persona pers:sfp-r-15 / ArchiMate Global Platforms (id-e3c4f0ec36f35eccb0d4c50f887316e5). Logs global surveillance record and issues WHO Medical Product Alert when warranted.</bpmn:documentation>
         <bpmn:flowNodeRef>Task_503_RecordInGSMS</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_504_IssueGlobalAlert</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>End_SF_REP_005</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:startEvent id="Start_SF_REP_005" name="National SF incident validated for global reporting">
+    <bpmn:startEvent id="Start_SF_REP_005" name="Validated SF incident ready for GSMS">
+      <bpmn:documentation>Triggered when a national SF incident is validated for global reporting to WHO GSMS.</bpmn:documentation>
       <bpmn:outgoing>Flow_501</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:userTask id="Task_501_PrepareGSMSDossier" name="Compile validated SF product, batch &amp; investigation dossier">
+    <bpmn:userTask id="Task_501_PrepareGSMSDossier" name="Compile validated SF product &amp; batch dossier">
+      <bpmn:documentation>Prepare validated product, batch (DE6), manufacturer (DE4), and analytical dossier for global surveillance submission.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_501</bpmn:incoming>
       <bpmn:outgoing>Flow_502</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:sendTask id="Task_502_SubmitToGSMS" name="Transmit SF report to WHO GSMS (Table 4, Intro p. 1)">
+    <bpmn:serviceTask id="Task_502_SubmitToGSMS" name="Transmit SF report to WHO GSMS">
+      <bpmn:documentation>Transmit the structured SF report to the WHO Global Surveillance and Monitoring System (Table 4, Introduction page 1).</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_502</bpmn:incoming>
       <bpmn:outgoing>Flow_503</bpmn:outgoing>
-    </bpmn:sendTask>
-    <bpmn:receiveTask id="Task_503_RecordInGSMS" name="Register incident in WHO GSMS database &amp; assess cross-border risk">
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_503_RecordInGSMS" name="Register incident in GSMS &amp; assess risk">
+      <bpmn:documentation>Log the national SF report in the WHO GSMS global database and evaluate cross-border supply chain risk.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_503</bpmn:incoming>
       <bpmn:outgoing>Flow_504</bpmn:outgoing>
-    </bpmn:receiveTask>
-    <bpmn:serviceTask id="Task_504_IssueGlobalAlert" name="Assist Member States &amp; issue WHO Medical Product Alert when necessary">
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_504_IssueGlobalAlert" name="Coordinate Member States &amp; issue WHO alert">
+      <bpmn:documentation>Support Member State investigations and publish a WHO Medical Product Alert when multi-country risk is identified.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_504</bpmn:incoming>
       <bpmn:outgoing>Flow_505</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:endEvent id="End_SF_REP_005" name="Global surveillance record updated">
+      <bpmn:documentation>Global surveillance record updated in WHO GSMS.</bpmn:documentation>
       <bpmn:incoming>Flow_505</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_501" sourceRef="Start_SF_REP_005" targetRef="Task_501_PrepareGSMSDossier"/>
@@ -77,51 +95,59 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_Process_SF_REP_005">
     <bpmndi:BPMNPlane id="BPMNPlane_Process_SF_REP_005" bpmnElement="Collaboration_Process_SF_REP_005">
       <bpmndi:BPMNShape id="Shape_Participant_Process_SF_REP_005" bpmnElement="Participant_Process_SF_REP_005" isHorizontal="true">
-        <dc:Bounds x="20" y="80" width="1180" height="360"/>
+        <dc:Bounds x="20" y="60" width="1060" height="440"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Lane_SF_REP_005_NMRA" bpmnElement="Lane_SF_REP_005_NMRA" isHorizontal="true">
-        <dc:Bounds x="40" y="80" width="1160" height="180"/>
+        <dc:Bounds x="50" y="60" width="1030" height="220"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Lane_SF_REP_005_GSMS" bpmnElement="Lane_SF_REP_005_GSMS" isHorizontal="true">
-        <dc:Bounds x="40" y="260" width="1160" height="180"/>
+        <dc:Bounds x="50" y="280" width="1030" height="220"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Start_SF_REP_005" bpmnElement="Start_SF_REP_005">
-        <dc:Bounds x="180" y="152" width="36" height="36"/>
+        <dc:Bounds x="110" y="150" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="86" y="194" width="95" height="40"/>
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_501_PrepareGSMSDossier" bpmnElement="Task_501_PrepareGSMSDossier">
-        <dc:Bounds x="350" y="135" width="130" height="70"/>
+        <dc:Bounds x="195" y="125" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_502_SubmitToGSMS" bpmnElement="Task_502_SubmitToGSMS">
-        <dc:Bounds x="520" y="135" width="130" height="70"/>
+        <dc:Bounds x="400" y="125" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_503_RecordInGSMS" bpmnElement="Task_503_RecordInGSMS">
-        <dc:Bounds x="180" y="315" width="130" height="70"/>
+        <dc:Bounds x="595" y="345" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_504_IssueGlobalAlert" bpmnElement="Task_504_IssueGlobalAlert">
-        <dc:Bounds x="350" y="315" width="130" height="70"/>
+        <dc:Bounds x="800" y="345" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_SF_REP_005" bpmnElement="End_SF_REP_005">
-        <dc:Bounds x="520" y="332" width="36" height="36"/>
+        <dc:Bounds x="1005" y="370" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="970" y="414" width="105" height="38"/>
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Edge_Flow_501" bpmnElement="Flow_501">
-        <di:waypoint x="216" y="170"/>
-        <di:waypoint x="350" y="170"/>
+        <di:waypoint x="146" y="168"/>
+        <di:waypoint x="195" y="168"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_502" bpmnElement="Flow_502">
-        <di:waypoint x="480" y="170"/>
-        <di:waypoint x="520" y="170"/>
+        <di:waypoint x="350" y="168"/>
+        <di:waypoint x="400" y="168"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_503" bpmnElement="Flow_503">
-        <di:waypoint x="650" y="170"/>
-        <di:waypoint x="180" y="350"/>
+        <di:waypoint x="555" y="168"/>
+        <di:waypoint x="575" y="168"/>
+        <di:waypoint x="575" y="388"/>
+        <di:waypoint x="595" y="388"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_504" bpmnElement="Flow_504">
-        <di:waypoint x="310" y="350"/>
-        <di:waypoint x="350" y="350"/>
+        <di:waypoint x="750" y="388"/>
+        <di:waypoint x="800" y="388"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_505" bpmnElement="Flow_505">
-        <di:waypoint x="480" y="350"/>
-        <di:waypoint x="520" y="350"/>
+        <di:waypoint x="955" y="388"/>
+        <di:waypoint x="1005" y="388"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

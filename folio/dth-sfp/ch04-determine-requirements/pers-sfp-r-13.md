@@ -2,7 +2,7 @@
 
 - **Role ID:** `SFP-R-13` (`pers:sfp-r-13`)
 - **ISCO-08 Code(s):** `2269 / Regulatory Authority`
-- **BPMN Resource ID:** `sfp-r-13`
+- **BPMN Resource ID:** `pers:sfp-r-13`
 - **ArchiMate Role / Actor:** `National Regulatory Authority` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld`)
 - **L1 Source Sections:** `sec-015, sec-024, sec-026` (PDF pp. 28, 41, 43)
 

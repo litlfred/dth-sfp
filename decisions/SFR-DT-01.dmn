@@ -3,9 +3,9 @@
              xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
              xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
              id="Definitions_Decision_SFR_DT_01"
-             name="SFR.DT.01 — Report type and registration status to workflow path"
+             name="SFR.DT.01: Suspected product report classification and workflow path"
              namespace="https://litlfred.github.io/dth-sfp/decisions">
-  <decision id="Decision_SFR_DT_01" name="SFR.DT.01 — Report type and registration status to workflow path">
+  <decision id="Decision_SFR_DT_01" name="Suspected product report classification and workflow path">
     <description>Routes an SF report submission based on product registration status in the national product catalogue and suspected SF category (Fig. 4 gateways, p. 30 / PDF p. 42; SFR.A1.DE2 &amp; SFR.A1.DE8, Table 11, p. 31 / PDF p. 43). Finding F2 recorded: the handbook glossary (p. ix) and Introduction (p. 1) define unregistered/unlicensed medical products as the third WHO category, but Fig. 4 and SFR.A1.DE8 provide only substandard and falsified options.</description>
     <decisionTable id="DecisionTable_Decision_SFR_DT_01" hitPolicy="UNIQUE">
       <input id="In_Registered" label="Product registered in national catalogue?">

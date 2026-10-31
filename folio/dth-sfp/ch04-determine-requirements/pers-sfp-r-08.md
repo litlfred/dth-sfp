@@ -2,7 +2,7 @@
 
 - **Role ID:** `SFP-R-08` (`pers:sfp-r-08`)
 - **ISCO-08 Code(s):** `2222`
-- **BPMN Resource ID:** `sfp-r-08`
+- **BPMN Resource ID:** `pers:sfp-r-08`
 - **ArchiMate Role / Actor:** `Health Facility` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-9cecae7a982548e1960a36ed41713a7c.jsonld`)
 - **L1 Source Sections:** `sec-023` (PDF pp. 40)
 

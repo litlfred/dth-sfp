@@ -9,38 +9,41 @@
                   targetNamespace="https://litlfred.github.io/dth-sfp/workflows"
                   exporter="folio-assistant" exporterVersion="1">
   <bpmn:import namespace="https://litlfred.github.io/bootstrap/v0/processes/ns#" location="https://litlfred.github.io/bootstrap/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld"/>
-  <bpmn:resource id="sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
-  <bpmn:resource id="sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
-  <bpmn:resource id="sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
-  <bpmn:resource id="sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
-  <bpmn:resource id="sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
-  <bpmn:resource id="sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
-  <bpmn:resource id="sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
-  <bpmn:resource id="sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
-  <bpmn:resource id="sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
-  <bpmn:resource id="sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
-  <bpmn:resource id="sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
-  <bpmn:resource id="sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
-  <bpmn:resource id="sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
-  <bpmn:resource id="sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
-  <bpmn:resource id="sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
+  <bpmn:resource id="pers:sfp-r-01" name="Doctor / Healthcare Professional Reporter (SFP-R-01)"/>
+  <bpmn:resource id="pers:sfp-r-02" name="Nurse Reporter (SFP-R-02)"/>
+  <bpmn:resource id="pers:sfp-r-03" name="Individual / Patient Reporter (SFP-R-03)"/>
+  <bpmn:resource id="pers:sfp-r-04" name="Community Health Worker Reporter (SFP-R-04)"/>
+  <bpmn:resource id="pers:sfp-r-05" name="Laboratory Technician (SFP-R-05)"/>
+  <bpmn:resource id="pers:sfp-r-06" name="Pharmacist Reporter (SFP-R-06)"/>
+  <bpmn:resource id="pers:sfp-r-07" name="Dentist Reporter (SFP-R-07)"/>
+  <bpmn:resource id="pers:sfp-r-08" name="Midwife Reporter (SFP-R-08)"/>
+  <bpmn:resource id="pers:sfp-r-09" name="Paramedic / Field Reporter (SFP-R-09)"/>
+  <bpmn:resource id="pers:sfp-r-10" name="Pharmacy Technician Reporter (SFP-R-10)"/>
+  <bpmn:resource id="pers:sfp-r-11" name="Public Health Worker Reporter (SFP-R-11)"/>
+  <bpmn:resource id="pers:sfp-r-12" name="Veterinarian Reporter (SFP-R-12)"/>
+  <bpmn:resource id="pers:sfp-r-13" name="National Medicines Regulatory Authority (NMRA) Reviewer &amp; Case System (SFP-R-13)"/>
+  <bpmn:resource id="pers:sfp-r-14" name="Pharmaceutical Manufacturer / Supplier / Supply Chain Actor (SFP-R-14)"/>
+  <bpmn:resource id="pers:sfp-r-15" name="Governance, Law Enforcement &amp; Global Surveillance (WHO GSMS) Actor (SFP-R-15)"/>
   <bpmn:collaboration id="Collaboration_Process_SF_REP_006">
-    <bpmn:participant id="Participant_Process_SF_REP_006" name="Submit SF report offline and synchronise (SF-REP-006)" processRef="Process_SF_REP_006"/>
+    <bpmn:participant id="Participant_Process_SF_REP_006" name="SF-REP-006: Submit SF report offline and synchronise" processRef="Process_SF_REP_006"/>
   </bpmn:collaboration>
-  <bpmn:process id="Process_SF_REP_006" name="Submit SF report offline and synchronise (SF-REP-006)" isExecutable="false">
-    <bpmn:documentation>Subprocess of SF-REP-001 for capturing an SF report in low- or no-connectivity settings, queuing it in a local encrypted outbox, and synchronising automatically when connectivity is restored, drafted from Table 9 scenario 9 (Paramedic, p. 28 / PDF p. 40), Table 13 offline capability requirements (pp. 32-34 / PDF pp. 44-46), and Ch. 7 outbox implementation note (p. 47 / PDF p. 59).</bpmn:documentation>
+  <bpmn:process id="Process_SF_REP_006" name="SF-REP-006: Submit SF report offline and synchronise" isExecutable="false">
+    <bpmn:documentation>Subprocess of SF-REP-001 for capturing an SF report in low- or no-connectivity settings, queuing it in a local encrypted outbox, and synchronising automatically when connectivity is restored, drafted from Table 9 scenario 9 (Paramedic, page 28 / PDF page 40), Table 13 offline capability requirements (pages 32-34 / PDF pages 44-46), and Ch. 7 outbox implementation note (page 47 / PDF page 59).</bpmn:documentation>
     <bpmn:extensionElements>
       <cat-harness.processes:policy enforcement="advisory"/>
     </bpmn:extensionElements>
     <bpmn:laneSet id="LaneSet_Process_SF_REP_006">
-      <bpmn:lane id="Lane_SF_REP_006_Reporter" name="Paramedic / Field Reporter in Low-Connectivity Area (SFP-R-09)" partitionElementRef="sfp-r-09">
-        <bpmn:documentation>Persona pers:sfp-r-09 (Paramedic / field health worker). Captures SF report and product photos while offline.</bpmn:documentation>
+      <bpmn:lane id="Lane_SF_REP_006_Reporter" name="Paramedic / Field Reporter (SFP-R-09)" partitionElementRef="pers:sfp-r-09">
+        <bpmn:documentation>Personas pers:sfp-r-09 and pers:sfp-r-04 (field health workers in low-connectivity settings). Captures SF report and product photos while offline.</bpmn:documentation>
         <bpmn:flowNodeRef>Start_SF_REP_006</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_601_CompleteOfflineForm</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_602_SaveToOutbox</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="ChildLaneSet_Lane_SF_REP_006_Reporter">
+          <bpmn:lane id="Lane_SF_REP_006_R04" name="Community Health Worker Reporter (SFP-R-04)" partitionElementRef="pers:sfp-r-04"/>
+        </bpmn:childLaneSet>
       </bpmn:lane>
-      <bpmn:lane id="Lane_SF_REP_006_App" name="SF Reporting App Offline Outbox &amp; NMRA Sync Service (SFP-R-13)" partitionElementRef="sfp-r-13">
-        <bpmn:documentation>Persona pers:sfp-r-13 (SF Reporting POS App &amp; Server). Queues report locally, detects connectivity, uploads to NMRA server, and delivers tracking number.</bpmn:documentation>
+      <bpmn:lane id="Lane_SF_REP_006_App" name="SF Reporting App &amp; Sync Service (SFP-R-13)" partitionElementRef="pers:sfp-r-13">
+        <bpmn:documentation>Persona pers:sfp-r-13. Encrypts queued report on device, monitors network availability, synchronises to NMRA server, and returns tracking number.</bpmn:documentation>
         <bpmn:flowNodeRef>Task_603_QueueEncryptedOutbox</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gw_601_NetworkAvailable</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_604_SyncToNMRAServer</bpmn:flowNodeRef>
@@ -48,36 +51,59 @@
         <bpmn:flowNodeRef>End_SF_REP_006</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:startEvent id="Start_SF_REP_006" name="Detect suspect product without network connectivity">
+    <bpmn:startEvent id="Start_SF_REP_006" name="Detect suspect product while offline">
+      <bpmn:documentation>Field reporter detects a suspected SF product in an area without mobile or internet connectivity (Table 9 scenario 9).</bpmn:documentation>
       <bpmn:outgoing>Flow_601</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:userTask id="Task_601_CompleteOfflineForm" name="Complete SF report form (DE1-DE10) &amp; attach photos in offline mode">
+    <bpmn:userTask id="Task_601_CompleteOfflineForm" name="Complete SF report &amp; attach photos offline">
+      <bpmn:documentation>Capture mandatory SF report fields (DE1-DE10) and product photographs in the offline-capable reporting app.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_601</bpmn:incoming>
       <bpmn:outgoing>Flow_602</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="Task_602_SaveToOutbox" name="Submit report to local encrypted device outbox">
+    <bpmn:userTask id="Task_602_SaveToOutbox" name="Save report to local encrypted outbox">
+      <bpmn:documentation>Save the completed report locally for automatic background transmission once connectivity returns.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_602</bpmn:incoming>
       <bpmn:outgoing>Flow_603</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:serviceTask id="Task_603_QueueEncryptedOutbox" name="Store report &amp; attachments in local outbox queue (Table 13 offline NFR)">
+    <bpmn:serviceTask id="Task_603_QueueEncryptedOutbox" name="Queue encrypted report &amp; attachments locally">
+      <bpmn:documentation>Store the SF report payload and attached photos in the encrypted local outbox queue (Table 13 security &amp; offline NFRs).</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_603</bpmn:incoming>
       <bpmn:incoming>Flow_605_Wait</bpmn:incoming>
       <bpmn:outgoing>Flow_604</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:exclusiveGateway id="Gw_601_NetworkAvailable" name="Network connectivity restored?">
+      <bpmn:documentation>Check whether internet or mobile data connectivity is available to synchronise the queued report.</bpmn:documentation>
       <bpmn:incoming>Flow_604</bpmn:incoming>
       <bpmn:outgoing>Flow_605_Yes</bpmn:outgoing>
       <bpmn:outgoing>Flow_605_Wait</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:serviceTask id="Task_604_SyncToNMRAServer" name="Synchronise queued SF report to NMRA server &amp; trigger SF-REP-002">
+    <bpmn:serviceTask id="Task_604_SyncToNMRAServer" name="Synchronise queued report to NMRA server">
+      <bpmn:documentation>Upload the queued SF report and photos to the central NMRA reporting server and trigger SF-REP-002.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_605_Yes</bpmn:incoming>
       <bpmn:outgoing>Flow_606</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="Task_605_DeliverConfirmation" name="Update local status &amp; display assigned tracking number to reporter">
+    <bpmn:serviceTask id="Task_605_DeliverConfirmation" name="Update local status &amp; display tracking ID">
+      <bpmn:documentation>Record server acknowledgement and display the assigned tracking number to the field reporter.</bpmn:documentation>
+      <bpmn:extensionElements>
+        <cat-harness.processes:no-skill reason="Domain step from WHO DTH for Substandard and Falsified Medical Product Reporting Systems (9789240120747-eng)"/>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_606</bpmn:incoming>
       <bpmn:outgoing>Flow_607</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:endEvent id="End_SF_REP_006" name="Offline SF report synchronised &amp; acknowledged">
+    <bpmn:endEvent id="End_SF_REP_006" name="Offline report synchronised">
+      <bpmn:documentation>Queued offline report is synchronised and acknowledged.</bpmn:documentation>
       <bpmn:incoming>Flow_607</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_601" sourceRef="Start_SF_REP_006" targetRef="Task_601_CompleteOfflineForm"/>
@@ -85,76 +111,93 @@
     <bpmn:sequenceFlow id="Flow_603" sourceRef="Task_602_SaveToOutbox" targetRef="Task_603_QueueEncryptedOutbox"/>
     <bpmn:sequenceFlow id="Flow_604" sourceRef="Task_603_QueueEncryptedOutbox" targetRef="Gw_601_NetworkAvailable"/>
     <bpmn:sequenceFlow id="Flow_605_Yes" sourceRef="Gw_601_NetworkAvailable" targetRef="Task_604_SyncToNMRAServer" name="Online"/>
-    <bpmn:sequenceFlow id="Flow_605_Wait" sourceRef="Gw_601_NetworkAvailable" targetRef="Task_603_QueueEncryptedOutbox" name="Offline (retain in outbox)"/>
+    <bpmn:sequenceFlow id="Flow_605_Wait" sourceRef="Gw_601_NetworkAvailable" targetRef="Task_603_QueueEncryptedOutbox" name="Offline (retry)"/>
     <bpmn:sequenceFlow id="Flow_606" sourceRef="Task_604_SyncToNMRAServer" targetRef="Task_605_DeliverConfirmation"/>
     <bpmn:sequenceFlow id="Flow_607" sourceRef="Task_605_DeliverConfirmation" targetRef="End_SF_REP_006"/>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_Process_SF_REP_006">
     <bpmndi:BPMNPlane id="BPMNPlane_Process_SF_REP_006" bpmnElement="Collaboration_Process_SF_REP_006">
       <bpmndi:BPMNShape id="Shape_Participant_Process_SF_REP_006" bpmnElement="Participant_Process_SF_REP_006" isHorizontal="true">
-        <dc:Bounds x="20" y="80" width="1180" height="360"/>
+        <dc:Bounds x="20" y="60" width="1200" height="460"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Lane_SF_REP_006_Reporter" bpmnElement="Lane_SF_REP_006_Reporter" isHorizontal="true">
-        <dc:Bounds x="40" y="80" width="1160" height="180"/>
+        <dc:Bounds x="50" y="60" width="1170" height="220"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Lane_SF_REP_006_App" bpmnElement="Lane_SF_REP_006_App" isHorizontal="true">
-        <dc:Bounds x="40" y="260" width="1160" height="180"/>
+        <dc:Bounds x="50" y="280" width="1170" height="240"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Start_SF_REP_006" bpmnElement="Start_SF_REP_006">
-        <dc:Bounds x="180" y="152" width="36" height="36"/>
+        <dc:Bounds x="110" y="150" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="86" y="194" width="95" height="40"/>
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_601_CompleteOfflineForm" bpmnElement="Task_601_CompleteOfflineForm">
-        <dc:Bounds x="350" y="135" width="130" height="70"/>
+        <dc:Bounds x="195" y="125" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_602_SaveToOutbox" bpmnElement="Task_602_SaveToOutbox">
-        <dc:Bounds x="520" y="135" width="130" height="70"/>
+        <dc:Bounds x="400" y="125" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_603_QueueEncryptedOutbox" bpmnElement="Task_603_QueueEncryptedOutbox">
-        <dc:Bounds x="180" y="315" width="130" height="70"/>
+        <dc:Bounds x="400" y="345" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Gw_601_NetworkAvailable" bpmnElement="Gw_601_NetworkAvailable">
-        <dc:Bounds x="350" y="325" width="50" height="50"/>
+        <dc:Bounds x="610" y="363" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="570" y="303" width="130" height="38"/>
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_604_SyncToNMRAServer" bpmnElement="Task_604_SyncToNMRAServer">
-        <dc:Bounds x="520" y="315" width="130" height="70"/>
+        <dc:Bounds x="740" y="345" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Task_605_DeliverConfirmation" bpmnElement="Task_605_DeliverConfirmation">
-        <dc:Bounds x="690" y="315" width="130" height="70"/>
+        <dc:Bounds x="945" y="345" width="155" height="86"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_SF_REP_006" bpmnElement="End_SF_REP_006">
-        <dc:Bounds x="860" y="332" width="36" height="36"/>
+        <dc:Bounds x="1145" y="370" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1110" y="414" width="105" height="38"/>
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Edge_Flow_601" bpmnElement="Flow_601">
-        <di:waypoint x="216" y="170"/>
-        <di:waypoint x="350" y="170"/>
+        <di:waypoint x="146" y="168"/>
+        <di:waypoint x="195" y="168"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_602" bpmnElement="Flow_602">
-        <di:waypoint x="480" y="170"/>
-        <di:waypoint x="520" y="170"/>
+        <di:waypoint x="350" y="168"/>
+        <di:waypoint x="400" y="168"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_603" bpmnElement="Flow_603">
-        <di:waypoint x="650" y="170"/>
-        <di:waypoint x="180" y="350"/>
+        <di:waypoint x="478" y="211"/>
+        <di:waypoint x="478" y="345"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_604" bpmnElement="Flow_604">
-        <di:waypoint x="310" y="350"/>
-        <di:waypoint x="350" y="350"/>
+        <di:waypoint x="555" y="388"/>
+        <di:waypoint x="610" y="388"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_605_Yes" bpmnElement="Flow_605_Yes">
-        <di:waypoint x="400" y="350"/>
-        <di:waypoint x="520" y="350"/>
+        <di:waypoint x="660" y="388"/>
+        <di:waypoint x="740" y="388"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="672" y="360" width="52" height="20"/>
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_605_Wait" bpmnElement="Flow_605_Wait">
-        <di:waypoint x="400" y="350"/>
-        <di:waypoint x="180" y="350"/>
+        <di:waypoint x="635" y="413"/>
+        <di:waypoint x="635" y="468"/>
+        <di:waypoint x="478" y="468"/>
+        <di:waypoint x="478" y="431"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="515" y="474" width="95" height="20"/>
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_606" bpmnElement="Flow_606">
-        <di:waypoint x="650" y="350"/>
-        <di:waypoint x="690" y="350"/>
+        <di:waypoint x="895" y="388"/>
+        <di:waypoint x="945" y="388"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_Flow_607" bpmnElement="Flow_607">
-        <di:waypoint x="820" y="350"/>
-        <di:waypoint x="860" y="350"/>
+        <di:waypoint x="1100" y="388"/>
+        <di:waypoint x="1145" y="388"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

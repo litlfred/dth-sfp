@@ -25,7 +25,19 @@
     "title": "SFP-R-05 — Laboratory Technician (ISCO-08: 3212)",
     "isco08": "3212",
     "personaType": "human",
-    "bpmnRoleId": "sfp-r-05",
+    "bpmnRoleId": "pers:sfp-r-05",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R05",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-003.bpmn",
+        "laneId": "Lane_SF_REP_003_Lab",
+        "processId": "SF-REP-003"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
     "sections": [
       "sec-022",

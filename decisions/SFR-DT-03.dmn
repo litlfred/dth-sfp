@@ -3,9 +3,9 @@
              xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
              xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
              id="Definitions_Decision_SFR_DT_03"
-             name="SFR.DT.03 — Reporter profile to assigned geographic region (SFR.FXNREQ.001)"
+             name="SFR.DT.03: Assigned reporter geographic region (SFR.FXNREQ.001)"
              namespace="https://litlfred.github.io/dth-sfp/decisions">
-  <decision id="Decision_SFR_DT_03" name="SFR.DT.03 — Reporter profile to assigned geographic region (SFR.FXNREQ.001)">
+  <decision id="Decision_SFR_DT_03" name="Assigned reporter geographic region">
     <description>Derives the geographic region of an SF report from the authenticated reporter&#x27;s profile or facility registration per Table 12 requirement SFR.FXNREQ.001 (p. 31 / PDF p. 43): &#x27;As a public health agency, I want to know the region where the reporter is located based on the user&#x27;s profile, so that I do not have to ask the user to enter that information in the report.&#x27;</description>
     <decisionTable id="DecisionTable_Decision_SFR_DT_03" hitPolicy="FIRST">
       <input id="In_HasProfile" label="Reporter authenticated with registered profile?">

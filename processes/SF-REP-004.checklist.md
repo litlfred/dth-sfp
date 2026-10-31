@@ -1,12 +1,59 @@
-# Take regulatory action on confirmed SF product (SF-REP-004) — BPMN 2.0 Verification Checklist
+<!-- GENERATED from dth-sfp/processes/SF-REP-004.bpmn by cat-harness-tools/scripts/bpmn-checklist.ts. Do not edit: change the diagram and regenerate (bun run cat bpmn:checklist). -->
 
-- **Process ID:** `Process_SF_REP_004` (`SF-REP-004`)
-- **L1 Source Sections:** `sec-004, sec-013, sec-014` (PDF pages 13, 27, 28)
-- **Swimlanes bound to DAK Personas / ArchiMate Roles:**
-  - `Lane_SF_REP_004_NMRA` → `pers:sfp-r-13` (`partitionElementRef="sfp-r-13"`) — NMRA Regulatory Enforcement Authority (SFP-R-13)
-  - `Lane_SF_REP_004_SupplyChain` → `pers:sfp-r-14` (`partitionElementRef="sfp-r-14"`) — Supply Chain Actors, Manufacturers & Dispensers (SFP-R-14, SFP-R-06)
-  - `Lane_SF_REP_004_LawEnforcement` → `pers:sfp-r-15` (`partitionElementRef="sfp-r-15"`) — Law Enforcement, Customs & Multisector Authorities (SFP-R-15)
+# Checklist — SF-REP-004: Execute recall, alert and enforcement
 
-## Narrative Summary
+> **Generated, and not the authority.** This is `dth-sfp/processes/SF-REP-004.bpmn` (process `Process_SF_REP_004`) walked as a state machine. The diagram and the workflow engine decide; this list only reads them. Follow the `next:` line of each step rather than the order on the page, and record each step with the call it names, so the engine's committed state — not this list — says which edge was taken.
 
-Workflow for regulatory response and enforcement when a medical product is confirmed as substandard, falsified, or unregistered: issuing alerts, quarantining and recalling affected batches across the supply chain (linked to dth-sc Recall capability id-a9c92f8fa2924d4180e8f5512b0d0097 and Traceability id-e88f6d077d31407bb1af5f2ecfd3b48a), applying regulatory sanctions, and referring criminal falsification cases to law enforcement and customs (Introduction p. 1, §2.1 p. 15, §2.2 p. 16).
+Workflow for national regulatory alerts, supply chain batch quarantine/recall, law enforcement referral for criminal falsification, and regulatory sanctions, formalised from Introduction (page 1 / PDF page 13), §2.1-2.2 (pages 14-15 / PDF pages 26-27), and Table 4 (page 12 / PDF page 24).
+
+## Begin — Confirmed SF product determination (`Start_SF_REP_004`)
+
+- Begin here: Triggered when investigation (SF-REP-003) confirms a substandard or falsified medical product.
+- Call `workflow_start` with `process: "Process_SF_REP_004"` and the subject this run is about; keep the instance id it returns.
+- next: → `Task_401_IssueRapidAlert` (Issue national alert & notify facilities)
+
+### 1. Issue national alert & notify facilities (`Task_401_IssueRapidAlert`)
+
+- Who: the `NMRA Enforcement Authority (SFP-R-13)` lane (role `pers:sfp-r-13`).
+- What: Publish rapid national safety/quality alert to health facilities, pharmacies, and the public.
+- Record it: `workflow_complete` with `node: "Task_401_IssueRapidAlert"`.
+- next: → `Task_402_OrderRecallWithdrawal` (Order batch quarantine or recall)
+
+### 2. Order batch quarantine or recall (`Task_402_OrderRecallWithdrawal`)
+
+- Who: the `NMRA Enforcement Authority (SFP-R-13)` lane (role `pers:sfp-r-13`).
+- What: Issue mandatory regulatory order for batch quarantine, recall, or market withdrawal.
+- Record it: `workflow_complete` with `node: "Task_402_OrderRecallWithdrawal"`.
+- next: → `Task_403_ExecuteSupplyChainRecall` (Trace batch (DE6), quarantine & remove stock)
+
+### 3. Trace batch (DE6), quarantine & remove stock (`Task_403_ExecuteSupplyChainRecall`)
+
+- Who: the `Supply Chain & Dispensers (SFP-R-14, R-06)` lane (role `pers:sfp-r-14`).
+- What: Trace affected batch/lot numbers (SFR.A1.DE6), quarantine inventory, and execute recall across distribution and dispensing points (dth-sc Recall).
+- Record it: `workflow_complete` with `node: "Task_403_ExecuteSupplyChainRecall"`.
+- next: → `Gw_401_CriminalFalsification` (Criminal falsification or trafficking?)
+
+### Decide — Criminal falsification or trafficking? (`Gw_401_CriminalFalsification`)
+
+- Determine whether the confirmed incident involves deliberate falsification, unlicensed manufacturing, or illicit trafficking.
+- Call `workflow_complete` with `node: "Gw_401_CriminalFalsification"` and `outcome` set to the label that holds:
+  - «Quality defect» → `Task_404_ApplySanctions` (Apply regulatory sanctions & close action)
+  - «Falsified / illicit» → `Task_405_LawEnforcementReferral` (Refer case to law enforcement & customs)
+
+### 4. Apply regulatory sanctions & close action (`Task_404_ApplySanctions`)
+
+- Who: the `NMRA Enforcement Authority (SFP-R-13)` lane (role `pers:sfp-r-13`).
+- What: Record enforcement outcome, apply regulatory sanctions, and close the national enforcement case.
+- Record it: `workflow_complete` with `node: "Task_404_ApplySanctions"`.
+- next: → `End_SF_REP_004` (Regulatory action completed)
+
+### 5. Refer case to law enforcement & customs (`Task_405_LawEnforcementReferral`)
+
+- Who: the `Law Enforcement & Customs (SFP-R-15)` lane (role `pers:sfp-r-15`).
+- What: Coordinate with law enforcement, customs, and justice authorities for seizure and criminal investigation (§2.1-2.2).
+- Record it: `workflow_complete` with `node: "Task_405_LawEnforcementReferral"`.
+- next: → `Task_404_ApplySanctions` (Apply regulatory sanctions & close action)
+
+## Done — Regulatory action completed (`End_SF_REP_004`)
+
+- The instance completes here: National recall and enforcement actions completed. `workflow_next` then reports nothing enabled — that, not this line, is the record of completion.

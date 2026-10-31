@@ -25,7 +25,19 @@
     "title": "SFP-R-07 — Dentist (ISCO-08: 2261)",
     "isco08": "2261",
     "personaType": "human",
-    "bpmnRoleId": "sfp-r-07",
+    "bpmnRoleId": "pers:sfp-r-07",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R07",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-002.bpmn",
+        "laneId": "Lane_SF_REP_002_R07",
+        "processId": "SF-REP-002"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
     "sections": [
       "sec-022",

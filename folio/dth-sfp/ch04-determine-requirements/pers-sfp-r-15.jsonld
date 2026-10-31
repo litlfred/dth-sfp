@@ -25,7 +25,19 @@
     "title": "SFP-R-15 — Governance, Law Enforcement, Customs & WHO GSMS Actor (ISCO-08: 1112)",
     "isco08": "1112",
     "personaType": "organisation",
-    "bpmnRoleId": "sfp-r-15",
+    "bpmnRoleId": "pers:sfp-r-15",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-004.bpmn",
+        "laneId": "Lane_SF_REP_004_LawEnforcement",
+        "processId": "SF-REP-004"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-005.bpmn",
+        "laneId": "Lane_SF_REP_005_GSMS",
+        "processId": "SF-REP-005"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-014-22-align-policy-with-stakeholders.md",
     "sections": [
       "sec-014",

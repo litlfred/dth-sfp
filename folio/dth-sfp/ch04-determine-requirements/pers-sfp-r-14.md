@@ -2,7 +2,7 @@
 
 - **Role ID:** `SFP-R-14` (`pers:sfp-r-14`)
 - **ISCO-08 Code(s):** `1321 / 3322`
-- **BPMN Resource ID:** `sfp-r-14`
+- **BPMN Resource ID:** `pers:sfp-r-14`
 - **ArchiMate Role / Actor:** `Manufacturer / Distributor` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-66d0f91175c154b48413d57e9f952a34.jsonld`)
 - **L1 Source Sections:** `sec-009, sec-025` (PDF pp. 21, 43)
 

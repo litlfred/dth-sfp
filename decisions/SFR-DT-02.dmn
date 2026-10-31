@@ -3,9 +3,9 @@
              xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
              xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
              id="Definitions_Decision_SFR_DT_02"
-             name="SFR.DT.02 — Selected product to applicable product type (SFR.A1.DE5)"
+             name="SFR.DT.02: Applicable medical product type (SFR.A1.DE5)"
              namespace="https://litlfred.github.io/dth-sfp/decisions">
-  <decision id="Decision_SFR_DT_02" name="SFR.DT.02 — Selected product to applicable product type (SFR.A1.DE5)">
+  <decision id="Decision_SFR_DT_02" name="Applicable medical product type">
     <description>Derives the applicable product type (SFR.A1.DE5) from the product selected by the reporter in the National Product Catalogue (dth-pc/national-product-catalogue), per Table 12 requirement 6 (assigned ID SFR.FXNREQ.006, p. 31 / PDF p. 43): &#x27;As a public health agency, I want the system to assign the applicable type of product after a user selects a specific product, so that I can minimize reporting errors.&#x27; Finding F4 noted: SFR.A1.DE5 in Table 11 has an empty description and data type; the WHO medical product categories come from the handbook glossary definition of &#x27;Medical product&#x27; (p. viii).</description>
     <decisionTable id="DecisionTable_Decision_SFR_DT_02" hitPolicy="FIRST">
       <input id="In_ProdId" label="Selected product identifier (SFR.A1.DE3)">

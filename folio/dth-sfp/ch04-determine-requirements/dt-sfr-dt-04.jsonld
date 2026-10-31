@@ -13,7 +13,7 @@
   ],
   "label": "dt:sfr-dt-04",
   "kind": "decision-table",
-  "title": "SFR.DT.04 — Capability area and horizon to digital investment roadmap milestone (Table 6)",
+  "title": "SFR.DT.04 — Digital capability roadmap milestone (Table 6)",
   "uses": [
     "papers/dth-sfp/blocks/prose-sec-019",
     "papers/dth-sfp/blocks/tbl-table-06"
@@ -22,7 +22,7 @@
   "meta": {
     "code": "SFR.DT.04",
     "decisionId": "Decision_SFR_DT_04",
-    "title": "SFR.DT.04 — Capability area and horizon to digital investment roadmap milestone (Table 6)",
+    "title": "SFR.DT.04 — Digital capability roadmap milestone (Table 6)",
     "canonicalDmn": "decisions/SFR-DT-04.dmn",
     "dmnFile": "dt-sfr-dt-04.dmn",
     "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",

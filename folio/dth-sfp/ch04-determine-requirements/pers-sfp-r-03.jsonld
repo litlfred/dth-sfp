@@ -25,7 +25,24 @@
     "title": "SFP-R-03 — Individual / Patient (ISCO-08: N/A)",
     "isco08": "N/A",
     "personaType": "human",
-    "bpmnRoleId": "sfp-r-03",
+    "bpmnRoleId": "pers:sfp-r-03",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R03",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-002.bpmn",
+        "laneId": "Lane_SF_REP_002_R03",
+        "processId": "SF-REP-002"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-003.bpmn",
+        "laneId": "Lane_SF_REP_003_R03",
+        "processId": "SF-REP-003"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
     "sections": [
       "sec-022",

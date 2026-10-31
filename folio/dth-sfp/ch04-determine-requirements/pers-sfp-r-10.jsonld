@@ -24,7 +24,19 @@
     "title": "SFP-R-10 — Pharmacy Technician (ISCO-08: 3213)",
     "isco08": "3213",
     "personaType": "human",
-    "bpmnRoleId": "sfp-r-10",
+    "bpmnRoleId": "pers:sfp-r-10",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_R10",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-004.bpmn",
+        "laneId": "Lane_SF_REP_004_R10",
+        "processId": "SF-REP-004"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
     "sections": [
       "sec-022"

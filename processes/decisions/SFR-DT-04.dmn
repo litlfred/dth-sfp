@@ -3,9 +3,9 @@
              xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
              xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
              id="Definitions_Decision_SFR_DT_04"
-             name="SFR.DT.04 — Capability area and maturity stage to digital investment roadmap milestone (Table 6)"
+             name="SFR.DT.04: Digital capability roadmap milestone (Table 6)"
              namespace="https://litlfred.github.io/dth-sfp/decisions">
-  <decision id="Decision_SFR_DT_04" name="SFR.DT.04 — Capability area and maturity stage to digital investment roadmap milestone (Table 6)">
+  <decision id="Decision_SFR_DT_04" name="Digital capability roadmap milestone">
     <description>Maps each SF reporting system capability domain and investment horizon (Short-term, Medium-term, Long-term) to the milestone activities defined in Table 6 (&#x27;Examples of short-, medium- and long-term milestones for developing an SF medical product reporting system&#x27;, §3.1, p. 20 / PDF p. 32).</description>
     <decisionTable id="DecisionTable_Decision_SFR_DT_04" hitPolicy="UNIQUE">
       <input id="In_Domain" label="Capability area (Table 6)">

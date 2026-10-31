@@ -13,7 +13,7 @@
   ],
   "label": "dt:sfr-dt-02",
   "kind": "decision-table",
-  "title": "SFR.DT.02 — Selected product to applicable product type (Table 12 SFR.FXNREQ.006, DE5)",
+  "title": "SFR.DT.02 — Applicable medical product type (Table 12 SFR.FXNREQ.006, DE5)",
   "uses": [
     "papers/dth-sfp/blocks/prose-sec-025",
     "papers/dth-sfp/blocks/prose-sec-026",
@@ -24,7 +24,7 @@
   "meta": {
     "code": "SFR.DT.02",
     "decisionId": "Decision_SFR_DT_02",
-    "title": "SFR.DT.02 — Selected product to applicable product type (Table 12 SFR.FXNREQ.006, DE5)",
+    "title": "SFR.DT.02 — Applicable medical product type (Table 12 SFR.FXNREQ.006, DE5)",
     "canonicalDmn": "decisions/SFR-DT-02.dmn",
     "dmnFile": "dt-sfr-dt-02.dmn",
     "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",

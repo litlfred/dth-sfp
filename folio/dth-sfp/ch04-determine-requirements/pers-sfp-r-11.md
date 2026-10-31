@@ -2,7 +2,7 @@
 
 - **Role ID:** `SFP-R-11` (`pers:sfp-r-11`)
 - **ISCO-08 Code(s):** `2269`
-- **BPMN Resource ID:** `sfp-r-11`
+- **BPMN Resource ID:** `pers:sfp-r-11`
 - **ArchiMate Role / Actor:** `Community Health` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-2bdc635e575f5ec59bb5d6cbff12de78.jsonld`)
 - **L1 Source Sections:** `sec-022` (PDF pp. 37)
 

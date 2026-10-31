@@ -1,13 +1,13 @@
 # Decision Tables (DMN 1.3) — `dth-sfp`
 
-Four DMN 1.3 decision tables extracted mechanically from the WHO *Digital Transformation Handbook for Substandard and Falsified Medical Product Reporting Systems* (`who-iris/library/9789240120747-eng`, `litlfred/dth-sfp#1` §2.4 Step P6c):
+Four DMN 1.3 decision tables extracted mechanically from the WHO *Digital Transformation Handbook for Substandard and Falsified Medical Product Reporting Systems* (`who-iris/library/9789240120747-eng`, `litlfred/dth-sfp#1` §2.4 Step P6c), titled as noun phrases naming the decision output (Silver, *DMN Method & Style*) with FEEL 1.3 input entries:
 
-| Decision ID | File | Decision | Source |
+| Decision ID | File | Decision (Noun Phrase) | Source |
 |---|---|---|---|
-| `SFR.DT.01` | [`SFR-DT-01.dmn`](SFR-DT-01.dmn) | Report type and registration status → Workflow path (substandard / falsified / unregistered F2 note) | Fig. 4 gateways (p. 30), `SFR.A1.DE8` (Table 11, p. 31) |
-| `SFR.DT.02` | [`SFR-DT-02.dmn`](SFR-DT-02.dmn) | Product selected → Applicable product type (`SFR.A1.DE5`) | Table 12 `SFR.FXNREQ.006` (p. 31), National Product Catalogue (`dth-pc`) |
-| `SFR.DT.03` | [`SFR-DT-03.dmn`](SFR-DT-03.dmn) | Reporter profile → Assigned geographic region | Table 12 `SFR.FXNREQ.001` (p. 31) |
-| `SFR.DT.04` | [`SFR-DT-04.dmn`](SFR-DT-04.dmn) | Capability area × horizon → Investment roadmap milestone | Table 6 (§3.1, p. 20) |
+| `SFR.DT.01` | [`SFR-DT-01.dmn`](SFR-DT-01.dmn) | Suspected product report classification and workflow path | Fig. 4 gateways (p. 30), `SFR.A1.DE8` (Table 11, p. 31) |
+| `SFR.DT.02` | [`SFR-DT-02.dmn`](SFR-DT-02.dmn) | Applicable medical product type | Table 12 `SFR.FXNREQ.006` (p. 31), National Product Catalogue (`dth-pc`) |
+| `SFR.DT.03` | [`SFR-DT-03.dmn`](SFR-DT-03.dmn) | Assigned reporter geographic region | Table 12 `SFR.FXNREQ.001` (p. 31) |
+| `SFR.DT.04` | [`SFR-DT-04.dmn`](SFR-DT-04.dmn) | Digital capability roadmap milestone | Table 6 (§3.1, p. 20) |
 
 ## Named Decision Points Without Rules in Source (Recorded, Not Inferred)
 

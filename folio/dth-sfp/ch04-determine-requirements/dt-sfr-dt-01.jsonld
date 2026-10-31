@@ -13,7 +13,7 @@
   ],
   "label": "dt:sfr-dt-01",
   "kind": "decision-table",
-  "title": "SFR.DT.01 — Report type and registration status to workflow path (Fig. 4, DE8)",
+  "title": "SFR.DT.01 — Suspected product report classification and workflow path (Fig. 4, DE8)",
   "uses": [
     "papers/dth-sfp/blocks/prose-sec-024",
     "papers/dth-sfp/blocks/prose-sec-025",
@@ -23,7 +23,7 @@
   "meta": {
     "code": "SFR.DT.01",
     "decisionId": "Decision_SFR_DT_01",
-    "title": "SFR.DT.01 — Report type and registration status to workflow path (Fig. 4, DE8)",
+    "title": "SFR.DT.01 — Suspected product report classification and workflow path (Fig. 4, DE8)",
     "canonicalDmn": "decisions/SFR-DT-01.dmn",
     "dmnFile": "dt-sfr-dt-01.dmn",
     "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",

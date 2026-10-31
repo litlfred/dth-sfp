@@ -25,7 +25,24 @@
     "title": "SFP-R-01 — Doctor (ISCO-08: 2211, 2212)",
     "isco08": "2211, 2212",
     "personaType": "human",
-    "bpmnRoleId": "sfp-r-01",
+    "bpmnRoleId": "pers:sfp-r-01",
+    "bpmnLanes": [
+      {
+        "bpmnFile": "processes/SF-REP-001.bpmn",
+        "laneId": "Lane_SF_REP_001_HCP",
+        "processId": "SF-REP-001"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-002.bpmn",
+        "laneId": "Lane_SF_REP_002_Reporter",
+        "processId": "SF-REP-002"
+      },
+      {
+        "bpmnFile": "processes/SF-REP-003.bpmn",
+        "laneId": "Lane_SF_REP_003_Reporter",
+        "processId": "SF-REP-003"
+      }
+    ],
     "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
     "sections": [
       "sec-022",

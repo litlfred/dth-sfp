@@ -1,4 +1,4 @@
-### SFR.DT.01 — Report type and registration status to workflow path (Fig. 4, DE8)
+### SFR.DT.01 — Suspected product report classification and workflow path (Fig. 4, DE8)
 
 - **Decision ID:** `Decision_SFR_DT_01` (`SFR.DT.01`)
 - **Canonical DMN 1.3 File:** [`decisions/SFR-DT-01.dmn`](../../../decisions/SFR-DT-01.dmn)
