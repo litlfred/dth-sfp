@@ -13,15 +13,34 @@
   ],
   "label": "fig:fig-02",
   "kind": "figure",
-  "title": "Fig. 2. Overview of the WHO SMART Guidelines layers L1–L5 (p. 5 / PDF p. 17)",
+  "title": "Fig. 2. WHO’s SMART Guidelines approach (p. 5 / PDF p. 17)",
   "uses": [
     "papers/dth-sfp/blocks/prose-sec-006"
   ],
   "text": "f-fig-02.md",
   "meta": {
-    "source": "who-iris/library/9789240120747-eng/media/figures/vfig-p017.png",
+    "source": {
+      "library": "9789240120747-eng",
+      "file": "who-iris/library/9789240120747-eng/figures/vfig-p017.png",
+      "page": 17,
+      "method": "generated",
+      "citation": "WHO. Digital transformation handbook for reporting substandard and falsified medical products. 2025. Fig. 2, adapted from WHO SMART Guidelines (Mehl et al., 2021)",
+      "issue": "litlfred/dth-sfp#1",
+      "generated": {
+        "repo": "https://github.com/litlfred/who-iris",
+        "commit": "3ecd60367222d7cc8eb0960061bcc06eb7a985dd",
+        "data": "https://github.com/litlfred/who-iris/blob/3ecd60367222d7cc8eb0960061bcc06eb7a985dd/library/9789240116191-eng/figure-data/fig-5-smart-guidelines-approach.json",
+        "generator": "https://github.com/litlfred/folio-assistant-core/blob/aeef4ea569c25cff8649d7365e69554eadab6027/scripts/smart-approach-svg.ts",
+        "tool": "smart-approach-svg",
+        "pr": [
+          "https://github.com/litlfred/who-iris/pull/149",
+          "https://github.com/litlfred/folio-assistant-core/pull/405"
+        ],
+        "output": "fig-2-smart-guidelines-approach.svg"
+      }
+    },
     "pdfPage": 17,
-    "figureFile": "media/vfig-p017.png",
+    "figureFile": "media/fig-2-smart-guidelines-approach.svg",
     "glossary": [
       {
         "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
@@ -122,7 +141,7 @@
       ],
       "figures": [
         {
-          "figure": "media/vfig-p017.png",
+          "figure": "media/fig-2-smart-guidelines-approach.svg",
           "model": "0.3.0-draft.1",
           "view": "id-8c5dd12b8d4e425184f6003d0513d569",
           "viewName": "Interoperability Layer"
