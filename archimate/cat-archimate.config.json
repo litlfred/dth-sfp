@@ -1,0 +1,13 @@
+{
+  "$schema": "cat-archimate-config/v1",
+  "directory": "archimate",
+  "models": [
+    {
+      "id": "0.1.0-draft.1",
+      "file": "0.1.0-draft.1/dth-sfp-overlay.archimate",
+      "title": "DTH-SFP overlay 0.1.0-draft.1",
+      "description": "The dth-sfp overlay on the smart-ra (DPI-H RA) ArchiMate model 0.3.0-draft.1: the four substandard and falsified (SF) medical product reporting views (DIIG enterprise architecture, business process with SF-REP-001..006, application cooperation, regulatory governance). Elements tagged overlay:base copy a smart-ra element and name it by IRI; elements tagged overlay:dth copy a dth-phc overlay element; elements tagged overlay:owner=dth-sfp are this DTH's own."
+    }
+  ],
+  "figures": []
+}

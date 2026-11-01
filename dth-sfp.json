@@ -55,6 +55,26 @@
       }
     },
     {
+      "id": "archimate",
+      "path": "archimate/",
+      "graphTypologies": [
+        "archimate"
+      ],
+      "served": true,
+      "description": "The dth-sfp ArchiMate overlay on the smart-ra (DPI-H RA) model, one folder per SemVer version, named by archimate/cat-archimate.config.json. A DTH builds an overlay and does not add to smart-ra (owner, 2026-11-01, Q-RA1 A; dth-sfp#7): elements tagged overlay:base copy a smart-ra element, elements tagged overlay:dth copy a dth-phc overlay element, elements tagged overlay:owner=dth-sfp are this DTH's own. scripts/archimate/extract_overlay.py built 0.1.0-draft.1 from the SFP work once in smart-ra#182.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/dth-sfp/archimate/index.html",
+            "title": "ArchiMate overlay",
+            "writer": [
+              "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "uploads",
       "path": "uploads/",
       "graphTypologies": [
@@ -98,5 +118,14 @@
     "smart-base",
     "who-iris"
   ],
-  "_needs_comment": "An L2 DTH on smart-ra, dth-sc, dth-pc, dth-hrh, smart-base, and who-iris (owner, 2026-10-31, dth-sfp#1 \u00a72.0\u2013\u00a72.4): its glossary terms, personas, data elements, BPMN processes, DMN decision tables, and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate 0.3.0-draft.1 elements/views, dth-sc supply chain terms, dth-pc product catalogue terms, dth-hrh health workforce occupation terms, smart-base DAK block kinds, and who-iris L1 source 9789240120747-eng."
+  "_needs_comment": "An L2 DTH on smart-ra, dth-sc, dth-pc, dth-hrh, smart-base, and who-iris (owner, 2026-10-31, dth-sfp#1 \u00a72.0\u2013\u00a72.4): its glossary terms, personas, data elements, BPMN processes, DMN decision tables, and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate 0.3.0-draft.1 elements/views, dth-sc supply chain terms, dth-pc product catalogue terms, dth-hrh health workforce occupation terms, smart-base DAK block kinds, and who-iris L1 source 9789240120747-eng.",
+  "visualisers": [
+    {
+      "id": "archimate",
+      "renderedBy": "archimate-pages",
+      "covers": [
+        "archimate"
+      ]
+    }
+  ]
 }
