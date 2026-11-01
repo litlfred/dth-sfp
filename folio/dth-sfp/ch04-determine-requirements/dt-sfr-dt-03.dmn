@@ -37,6 +37,21 @@
         <outputEntry id="Rule_DT03_3_out_1"><text>&quot;Anonymous or unauthenticated submission; region optional or selected manually&quot;</text></outputEntry>
         <outputEntry id="Rule_DT03_3_out_2"><text>true</text></outputEntry>
       </rule>
+      <rule id="Rule_DT03_Unknown">
+        <description>The facts do not settle the case: an input is not known, or a value the handbook does not list. Returns &quot;unknown&quot; rather than guessing (dmn-authoring, &quot;Three states belong in the table&quot;).</description>
+        <inputEntry id="Rule_DT03_Unknown_in_1">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="Rule_DT03_Unknown_in_2">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="Rule_DT03_Unknown_out_1">
+          <text>&quot;unknown&quot;</text>
+        </outputEntry>
+        <outputEntry id="Rule_DT03_Unknown_out_2">
+          <text>&quot;unknown&quot;</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
 </definitions>

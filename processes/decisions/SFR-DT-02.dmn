@@ -51,6 +51,21 @@
         <outputEntry id="Rule_DT02_5_out_1"><text>&quot;Unclassified / manual entry&quot;</text></outputEntry>
         <outputEntry id="Rule_DT02_5_out_2"><text>&quot;Product not matched in catalogue; reporter enters product description manually (Finding F4: DE5 value set not specified in Table 11)&quot;</text></outputEntry>
       </rule>
+      <rule id="Rule_DT02_Unknown">
+        <description>The facts do not settle the case: an input is not known, or a value the handbook does not list. Returns &quot;unknown&quot; rather than guessing (dmn-authoring, &quot;Three states belong in the table&quot;).</description>
+        <inputEntry id="Rule_DT02_Unknown_in_1">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="Rule_DT02_Unknown_in_2">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="Rule_DT02_Unknown_out_1">
+          <text>&quot;unknown&quot;</text>
+        </outputEntry>
+        <outputEntry id="Rule_DT02_Unknown_out_2">
+          <text>&quot;unknown&quot;</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
 </definitions>

@@ -7,7 +7,7 @@
              namespace="https://litlfred.github.io/dth-sfp/decisions">
   <decision id="Decision_SFR_DT_04" name="Digital capability roadmap milestone">
     <description>Maps each SF reporting system capability domain and investment horizon (Short-term, Medium-term, Long-term) to the milestone activities defined in Table 6 (&#x27;Examples of short-, medium- and long-term milestones for developing an SF medical product reporting system&#x27;, §3.1, p. 20 / PDF p. 32).</description>
-    <decisionTable id="DecisionTable_Decision_SFR_DT_04" hitPolicy="UNIQUE">
+    <decisionTable id="DecisionTable_Decision_SFR_DT_04" hitPolicy="FIRST">
       <input id="In_Domain" label="Capability area (Table 6)">
         <inputExpression id="Expr_In_Domain" typeRef="string"><text>capabilityArea</text></inputExpression>
       </input>
@@ -104,6 +104,18 @@
         <inputEntry id="Rule_DT04_15_in_1"><text>&quot;Technology and applications&quot;</text></inputEntry>
         <inputEntry id="Rule_DT04_15_in_2"><text>&quot;Long-term&quot;</text></inputEntry>
         <outputEntry id="Rule_DT04_15_out_1"><text>&quot;Operate high-availability national surveillance platform with advanced risk-based post-market surveillance analytics&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT04_Unknown">
+        <description>The facts do not settle the case: an input is not known, or a value the handbook does not list. Returns &quot;unknown&quot; rather than guessing (dmn-authoring, &quot;Three states belong in the table&quot;).</description>
+        <inputEntry id="Rule_DT04_Unknown_in_1">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="Rule_DT04_Unknown_in_2">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="Rule_DT04_Unknown_out_1">
+          <text>&quot;unknown&quot;</text>
+        </outputEntry>
       </rule>
     </decisionTable>
   </decision>
