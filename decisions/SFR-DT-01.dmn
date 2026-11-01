@@ -7,7 +7,7 @@
              namespace="https://litlfred.github.io/dth-sfp/decisions">
   <decision id="Decision_SFR_DT_01" name="Suspected product report classification and workflow path">
     <description>Routes an SF report submission based on product registration status in the national product catalogue and suspected SF category (Fig. 4 gateways, p. 30 / PDF p. 42; SFR.A1.DE2 &amp; SFR.A1.DE8, Table 11, p. 31 / PDF p. 43). Finding F2 recorded: the handbook glossary (p. ix) and Introduction (p. 1) define unregistered/unlicensed medical products as the third WHO category, but Fig. 4 and SFR.A1.DE8 provide only substandard and falsified options.</description>
-    <decisionTable id="DecisionTable_Decision_SFR_DT_01" hitPolicy="UNIQUE">
+    <decisionTable id="DecisionTable_Decision_SFR_DT_01" hitPolicy="FIRST">
       <input id="In_Registered" label="Product registered in national catalogue?">
         <inputExpression id="Expr_In_Registered" typeRef="boolean"><text>isProductRegistered</text></inputExpression>
       </input>
@@ -74,6 +74,24 @@
         <inputEntry id="Rule_DT01_7_in_3"><text>-</text></inputEntry>
         <outputEntry id="Rule_DT01_7_out_1"><text>&quot;unregistered-or-falsified-branch&quot;</text></outputEntry>
         <outputEntry id="Rule_DT01_7_out_2"><text>&quot;Finding F2/F5: Product not in national product catalogue; capture unregistered/unlicensed product details and route for regulatory verification&quot;</text></outputEntry>
+      </rule>
+      <rule id="Rule_DT01_Unknown">
+        <description>The facts do not settle the case: an input is not known, or a value the handbook does not list. Returns &quot;unknown&quot; rather than guessing (dmn-authoring, &quot;Three states belong in the table&quot;).</description>
+        <inputEntry id="Rule_DT01_Unknown_in_1">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="Rule_DT01_Unknown_in_2">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="Rule_DT01_Unknown_in_3">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="Rule_DT01_Unknown_out_1">
+          <text>&quot;unknown&quot;</text>
+        </outputEntry>
+        <outputEntry id="Rule_DT01_Unknown_out_2">
+          <text>&quot;unknown&quot;</text>
+        </outputEntry>
       </rule>
     </decisionTable>
   </decision>
