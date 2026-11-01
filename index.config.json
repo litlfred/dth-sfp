@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
+          "ref": "6ab534a7beb70efd8ff0819baa368af0a3071c6a",
           "overrides": {
             "who-iris": {
               "directories": [
@@ -40,9 +40,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
-              "evidence": "litlfred, 2026-10-31 01:55Z, dth-sfp#1: L1 source litlfred/who-iris library/9789240120747-eng mounted read-only; initial pins aligned with dth-sc and dth-pc."
+              "on": "2026-11-01",
+              "ref": "6ab534a7beb70efd8ff0819baa368af0a3071c6a",
+              "evidence": "owner, 2026-11-01T20:43:42Z, card Q-S8-1 \"B: merge all four\" (merge who-iris#154, the falsified products L1 re-ingest) and 20:40:15Z \"merge all green and ready (not content) + 6hrs\" (cmsg_017WNUkNK8kdDziPK58Pv6G9NdqkvnprnzAj2kus7uVRD1); re-pin to the merged 6ab534a per who-iris#153"
             }
           }
         }
