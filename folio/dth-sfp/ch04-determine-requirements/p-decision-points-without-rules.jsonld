@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/prose-decision-points-without-rules",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:decision-points-without-rules",
+  "kind": "prose",
+  "title": "Named Decision Points Without Rules in the Handbook (PV Routing & Annex 7 Risk Scoring)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-011",
+    "papers/dth-sfp/blocks/prose-sec-013",
+    "papers/dth-sfp/blocks/prose-sec-025",
+    "papers/dth-sfp/blocks/prose-sec-041"
+  ],
+  "text": "p-decision-points-without-rules.md",
+  "meta": {
+    "source": "who-iris/library/9789240120747-eng/sections/sec-025-44-outline-data-requirements.md",
+    "pdfPage": 43,
+    "reviewNotes": [
+      "Named decision point without rule 1: Adverse reaction (SFR.A1.DE9) -> Pharmacovigilance co-routing (§1.3, §2.1, DE9).",
+      "Named decision point without rule 2: Risk impact x probability -> priority matrix (Annex 7, p. 59)."
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction",
+        "term": "adverse-drug-reaction"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance",
+        "term": "pharmacovigilance"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/adverse-drug-reaction",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1555c26cfbcd57f49b6e63fed8491d80.jsonld",
+          "name": "Quality Systems",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

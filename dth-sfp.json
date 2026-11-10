@@ -1,0 +1,102 @@
+{
+  "$schema": "cat-harness-declaration/1.0.0",
+  "name": "dth-sfp",
+  "title": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "version": "0.1.0",
+  "iriBase": "https://litlfred.github.io/dth-sfp/",
+  "mountApprovers": [
+    "litlfred"
+  ],
+  "directories": [
+    {
+      "id": "folio",
+      "path": "folio/",
+      "graphTypologies": [
+        "folio"
+      ],
+      "description": "The working document of the DTH on reporting substandard and falsified medical products: its document, chapters and blocks (prose, figures, tables, personas, user scenarios, business processes, data elements, functional and non-functional requirements, indicators, and decision tables), seeded from the L1 entry who-iris/library/9789240120747-eng by its contents-page outline.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/dth-sfp/index.html",
+            "title": "Working document",
+            "writer": [
+              "folio-assistant-core/scripts/build-document-site.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "processes",
+      "path": "processes/",
+      "graphTypologies": [
+        "processes"
+      ],
+      "description": "The six executable BPMN 2.0 workflows (SF-REP-001 through SF-REP-006) for reporting, acknowledging, investigating, taking regulatory action, reporting to WHO GSMS, and offline synchronisation of suspected substandard and falsified medical products."
+    },
+    {
+      "id": "glossary",
+      "path": "glossary/",
+      "graphTypologies": [
+        "glossary"
+      ],
+      "description": "The handbook's own substandard and falsified medical product reporting terms (Cluster C of dth-sfp#1 \u00a72.1) as a folio-glossary/v1 SKOS scheme. Each term quotes the handbook's definition or passage with its L1 page, and links via SKOS broader/closeMatch/broadMatch/related to the smart-ra (dpi-h-ra), dth-sc, dth-pc, or dth-hrh concept it narrows or relates to.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/folio-assistant-core/glossary/instance/dth-sfp/index.html",
+            "title": "Glossary",
+            "writer": [
+              "folio-assistant-core/scripts/glossary-page.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "uploads",
+      "path": "uploads/",
+      "graphTypologies": [
+        "uploads"
+      ],
+      "description": "Inbox for material not yet ingested."
+    },
+    {
+      "id": "beans",
+      "path": "beans/",
+      "graphTypologies": [
+        "beans"
+      ],
+      "source": {
+        "kind": "branch",
+        "branch": "cat/dth-sfp/beans",
+        "keyedBy": "tip"
+      },
+      "description": "This instance's work plan \u2014 one Markdown file per bean, managed with the `beans` CLI (`.beans.yml`)."
+    },
+    {
+      "id": "todos",
+      "path": "todos/",
+      "graphTypologies": [
+        "todos"
+      ],
+      "source": {
+        "kind": "branch",
+        "branch": "cat/dth-sfp/todos",
+        "keyedBy": "tip"
+      },
+      "description": "People's outstanding items and the feedback raised against blocks; its inner directories are declared by `todos/todos.json`."
+    }
+  ],
+  "description": "WHO Digital transformation handbook for reporting substandard and falsified medical products (2026, ISBN 9789240120747, IRIS 187cabc7), as an L2 DTH on smart-ra, dth-sc, dth-pc, dth-hrh, and smart-base: the working document folio seeded from its L1 entry in who-iris (9789240120747-eng), DAK components (personas, user scenarios, BPMN 2.0 workflows, DMN 1.3 decision tables, core data elements, requirements, and indicators), and its Cluster C domain glossary linked to smart-ra, dth-sc, dth-pc, and dth-hrh.",
+  "needs": [
+    "dpi-h-ra",
+    "dth-sc",
+    "dth-pc",
+    "dth-hrh",
+    "smart-base",
+    "who-iris"
+  ],
+  "_needs_comment": "An L2 DTH on smart-ra, dth-sc, dth-pc, dth-hrh, smart-base, and who-iris (owner, 2026-10-31, dth-sfp#1 \u00a72.0\u2013\u00a72.4): its glossary terms, personas, data elements, BPMN processes, DMN decision tables, and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate 0.3.0-draft.1 elements/views, dth-sc supply chain terms, dth-pc product catalogue terms, dth-hrh health workforce occupation terms, smart-base DAK block kinds, and who-iris L1 source 9789240120747-eng."
+}

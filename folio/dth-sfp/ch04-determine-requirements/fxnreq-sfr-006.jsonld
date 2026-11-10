@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/freq-sfr-006",
+  "@type": [
+    "smart-base:FunctionalRequirement"
+  ],
+  "label": "freq:sfr-006",
+  "kind": "functional-requirement",
+  "title": "SFR.FXNREQ.006 [assigned ID — F4] — As a Public health agency, I want to have the system assign the applicable type of pr... (Table 12, p. 31)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-026",
+    "papers/dth-sfp/blocks/tbl-table-12"
+  ],
+  "text": "fxnreq-sfr-006.md",
+  "meta": {
+    "requirementId": "SFR.FXNREQ.006",
+    "idAssignedInL2": true,
+    "actor": "pers:sfp-r-13",
+    "asA": "Public health agency",
+    "iWant": "have the system assign the applicable type of product after a user selects a specific product",
+    "soThat": "I can minimize reporting errors",
+    "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
+    "pdfPage": 43,
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/functional-requirements",
+        "term": "functional-requirements"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-story",
+        "term": "user-story"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number",
+        "term": "tracking-number"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/functional-requirements",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-story",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/tracking-number"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority",
+          "type": "BusinessRole"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-6b78a242e71a428c87434e2fe5891ee2.jsonld",
+          "name": "Update Subscription/Notification",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "name": "Components"
+        }
+      ]
+    },
+    "reviewNotes": [
+      "F4: Requirement ID omitted in source Table 12 (p. 31 / PDF p. 43); assigned ID SFR.FXNREQ.006 in L2."
+    ],
+    "relatedBlocks": [
+      "pers:sfp-r-13"
+    ]
+  },
+  "provenance": "authored"
+}

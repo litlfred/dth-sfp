@@ -1,0 +1,1862 @@
+{
+ "$schema": "folio-review-anchors/v1",
+ "document": "dth-sfp",
+ "library": "9789240120747-eng",
+ "sourceLabel": "the WHO handbook (2025, ISBN 9789240120747) it was seeded from",
+ "source": {
+  "docx": {
+   "file": "who-iris/uploads/9789240120747-eng/9789240120747-eng.pdf",
+   "sha256": "c710f7cf4a432221b30d7db9272f10e17250c59b14ed33c5405e86695b2edec8"
+  },
+  "pdf": {
+   "file": "",
+   "sha256": "",
+   "pages": 0
+  }
+ },
+ "note": "Generated from the working document by folio-assistant-core/scripts/review-anchors-from-folio.ts (no frozen review version yet).",
+ "chapters": [
+  {
+   "dir": "00-front-matter",
+   "title": "Front matter (Imprint, Acknowledgements, Abbreviations and Glossary)",
+   "label": "chap:00-front-matter"
+  },
+  {
+   "dir": "00-introduction",
+   "title": "Introduction",
+   "label": "chap:00-introduction"
+  },
+  {
+   "dir": "ch01-assess-current-state",
+   "title": "1. Assess the current state and enabling environment",
+   "label": "chap:ch01-assess-current-state"
+  },
+  {
+   "dir": "ch02-shared-understanding-governance",
+   "title": "2. Establish a shared understanding and governance framework",
+   "label": "chap:ch02-shared-understanding-governance"
+  },
+  {
+   "dir": "ch03-future-state",
+   "title": "3. Define the future state",
+   "label": "chap:ch03-future-state"
+  },
+  {
+   "dir": "ch04-determine-requirements",
+   "title": "4. Determine the requirements",
+   "label": "chap:ch04-determine-requirements"
+  },
+  {
+   "dir": "ch05-plan-implementation",
+   "title": "5. Plan the implementation",
+   "label": "chap:ch05-plan-implementation"
+  },
+  {
+   "dir": "ch06-monitor-evaluate-scale",
+   "title": "6. Monitor, evaluate and scale",
+   "label": "chap:ch06-monitor-evaluate-scale"
+  },
+  {
+   "dir": "ch07-share-experiences",
+   "title": "7. Share implementation experiences",
+   "label": "chap:ch07-share-experiences"
+  },
+  {
+   "dir": "references-resources",
+   "title": "References and resources",
+   "label": "chap:references-resources"
+  },
+  {
+   "dir": "annexes",
+   "title": "Annexes 1–7",
+   "label": "chap:annexes"
+  }
+ ],
+ "sections": [
+  {
+   "label": "sec:00-front-matter",
+   "title": "Front matter (Imprint, Acknowledgements, Abbreviations and Glossary)",
+   "chapter": "00-front-matter"
+  },
+  {
+   "label": "sec:00-introduction",
+   "title": "Introduction",
+   "chapter": "00-introduction"
+  },
+  {
+   "label": "sec:ch01-assess-current-state",
+   "title": "1. Assess the current state and enabling environment",
+   "chapter": "ch01-assess-current-state"
+  },
+  {
+   "label": "sec:ch02-shared-understanding-governance",
+   "title": "2. Establish a shared understanding and governance framework",
+   "chapter": "ch02-shared-understanding-governance"
+  },
+  {
+   "label": "sec:ch03-future-state",
+   "title": "3. Define the future state",
+   "chapter": "ch03-future-state"
+  },
+  {
+   "label": "sec:ch04-determine-requirements",
+   "title": "4. Determine the requirements",
+   "chapter": "ch04-determine-requirements"
+  },
+  {
+   "label": "sec:ch05-plan-implementation",
+   "title": "5. Plan the implementation",
+   "chapter": "ch05-plan-implementation"
+  },
+  {
+   "label": "sec:ch06-monitor-evaluate-scale",
+   "title": "6. Monitor, evaluate and scale",
+   "chapter": "ch06-monitor-evaluate-scale"
+  },
+  {
+   "label": "sec:ch07-share-experiences",
+   "title": "7. Share implementation experiences",
+   "chapter": "ch07-share-experiences"
+  },
+  {
+   "label": "sec:references-resources",
+   "title": "References and resources",
+   "chapter": "references-resources"
+  },
+  {
+   "label": "sec:annexes",
+   "title": "Annexes 1–7",
+   "chapter": "annexes"
+  }
+ ],
+ "blocks": [
+  {
+   "label": "prose:sec-000",
+   "kind": "prose",
+   "chapter": "00-front-matter",
+   "root": "p-sec-000",
+   "sections": [
+    "sec:00-front-matter"
+   ],
+   "hash": "8b80793ee033",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-000-acknowle",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-001",
+   "kind": "prose",
+   "chapter": "00-front-matter",
+   "root": "p-sec-001",
+   "sections": [
+    "sec:00-front-matter"
+   ],
+   "hash": "f54d27b2b019",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-001-abbrevia",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-002",
+   "kind": "prose",
+   "chapter": "00-front-matter",
+   "root": "p-sec-002",
+   "sections": [
+    "sec:00-front-matter"
+   ],
+   "hash": "c409de008166",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-002-glossary",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-front-matter",
+   "kind": "prose",
+   "chapter": "00-front-matter",
+   "root": "p-sec-front-matter",
+   "sections": [
+    "sec:00-front-matter"
+   ],
+   "hash": "f11635cb476c",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-front-matter",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:abbreviations",
+   "kind": "table",
+   "chapter": "00-front-matter",
+   "root": "t-abbreviations",
+   "sections": [
+    "sec:00-front-matter"
+   ],
+   "hash": "4fb8433cf158",
+   "excerpt": "Abbreviations and acronyms (19 entries, p. vi / PDF p. 8) Abbreviation Definition --- --- BPMN Business Process Model and Notation DIIG Digital implementation i",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:glossary",
+   "kind": "table",
+   "chapter": "00-front-matter",
+   "root": "t-glossary",
+   "sections": [
+    "sec:00-front-matter"
+   ],
+   "hash": "045908b2a246",
+   "excerpt": "Handbook Glossary (35 entries, pp. vii–ix / PDF pp. 9–11) Term Definition --- --- Active pharmacovigilance Proactive measures that are taken to detect adverse e",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:fig-01",
+   "kind": "figure",
+   "chapter": "00-introduction",
+   "root": "f-fig-01",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "af97466f2b0a",
+   "excerpt": "Source: adapted from WHO Digital transformation handbook for health product catalogue, 2025, Fig. 4, itself adapted from the 2020 WHO Digital implementation inv",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:fig-02",
+   "kind": "figure",
+   "chapter": "00-introduction",
+   "root": "f-fig-02",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "450d6076d1fb",
+   "excerpt": "Source: WHO, Digital transformation handbook for reporting substandard and falsified medical products, 2025, Fig. 2 ( who-iris/library/9789240120747-eng/figures",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-003",
+   "kind": "prose",
+   "chapter": "00-introduction",
+   "root": "p-sec-003",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "4d335cc484ee",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-003-introduc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-004",
+   "kind": "prose",
+   "chapter": "00-introduction",
+   "root": "p-sec-004",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "0fb4592d79d5",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-004-reportin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-005",
+   "kind": "prose",
+   "chapter": "00-introduction",
+   "root": "p-sec-005",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "8896d3536df1",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-005-who-this",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-006",
+   "kind": "prose",
+   "chapter": "00-introduction",
+   "root": "p-sec-006",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "d1f55f237501",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-006-how-to-u",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-007",
+   "kind": "prose",
+   "chapter": "00-introduction",
+   "root": "p-sec-007",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "54065c27516e",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-007-how-this",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-01",
+   "kind": "table",
+   "chapter": "00-introduction",
+   "root": "t-table-01",
+   "sections": [
+    "sec:00-introduction"
+   ],
+   "hash": "db44684a1325",
+   "excerpt": "Table 1. Target audience and how to use this handbook (p. 2 / PDF p. 14) Handbook section – phases Illustrative target organizations Illustrative target user te",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-008",
+   "kind": "prose",
+   "chapter": "ch01-assess-current-state",
+   "root": "p-sec-008",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "bfb7d38e2c34",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-008-1-assess",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-009",
+   "kind": "prose",
+   "chapter": "ch01-assess-current-state",
+   "root": "p-sec-009",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "9c3962b42e64",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-009-11-analy",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-010",
+   "kind": "prose",
+   "chapter": "ch01-assess-current-state",
+   "root": "p-sec-010",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "ed2c99cfde74",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-010-12-asses",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-011",
+   "kind": "prose",
+   "chapter": "ch01-assess-current-state",
+   "root": "p-sec-011",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "d14d34fedd78",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-011-13-asses",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-02",
+   "kind": "table",
+   "chapter": "ch01-assess-current-state",
+   "root": "t-table-02",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "1374c499b3b0",
+   "excerpt": "Table 2. Stakeholder analysis for SF medical product reporting (p. 9 / PDF p. 21) Dimension Sample questions --- --- Roles and responsibilities • What is this s",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-03",
+   "kind": "table",
+   "chapter": "ch01-assess-current-state",
+   "root": "t-table-03",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "cdf3f00f87b3",
+   "excerpt": "Table 3. Assessing digital readiness and enabling environment (p. 11 / PDF p. 23) Area Actions and guiding questions --- --- Assessing network coverage, connect",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-04",
+   "kind": "table",
+   "chapter": "ch01-assess-current-state",
+   "root": "t-table-04",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "a58bef18cadd",
+   "excerpt": "Table 4. Questions for assessing current SF and PV reporting practices (p. 12 / PDF p. 24) Area Actions and guiding questions --- --- Assessing data collection ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-05",
+   "kind": "table",
+   "chapter": "ch01-assess-current-state",
+   "root": "t-table-05",
+   "sections": [
+    "sec:ch01-assess-current-state"
+   ],
+   "hash": "9f5536125335",
+   "excerpt": "Table 5. Common barriers to reporting SF medical products and potential digital solutions (pp. 12–13 / PDF pp. 24–25) Category Challenges and barriers Potential",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-012",
+   "kind": "prose",
+   "chapter": "ch02-shared-understanding-governance",
+   "root": "p-sec-012",
+   "sections": [
+    "sec:ch02-shared-understanding-governance"
+   ],
+   "hash": "4371c42fad06",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-012-2-establ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-013",
+   "kind": "prose",
+   "chapter": "ch02-shared-understanding-governance",
+   "root": "p-sec-013",
+   "sections": [
+    "sec:ch02-shared-understanding-governance"
+   ],
+   "hash": "9a75926ace5a",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-013-21-revie",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-014",
+   "kind": "prose",
+   "chapter": "ch02-shared-understanding-governance",
+   "root": "p-sec-014",
+   "sections": [
+    "sec:ch02-shared-understanding-governance"
+   ],
+   "hash": "da50fb898d8d",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-014-22-align",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-015",
+   "kind": "prose",
+   "chapter": "ch02-shared-understanding-governance",
+   "root": "p-sec-015",
+   "sections": [
+    "sec:ch02-shared-understanding-governance"
+   ],
+   "hash": "9c3453663b53",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-015-23-estab",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-016",
+   "kind": "prose",
+   "chapter": "ch02-shared-understanding-governance",
+   "root": "p-sec-016",
+   "sections": [
+    "sec:ch02-shared-understanding-governance"
+   ],
+   "hash": "3af533e32008",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-016-24-set-t",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-017",
+   "kind": "prose",
+   "chapter": "ch02-shared-understanding-governance",
+   "root": "p-sec-017",
+   "sections": [
+    "sec:ch02-shared-understanding-governance"
+   ],
+   "hash": "96f7a6343f3b",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-017-25-analy",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:fig-03",
+   "kind": "figure",
+   "chapter": "ch03-future-state",
+   "root": "f-fig-03",
+   "sections": [
+    "sec:ch03-future-state"
+   ],
+   "hash": "9bb69d16dfbe",
+   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p034.png (PDF page 34). Mapped to dpi-h-ra ArchiMate view DHSC Architecture Framework (DTH SC Fig.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-018",
+   "kind": "prose",
+   "chapter": "ch03-future-state",
+   "root": "p-sec-018",
+   "sections": [
+    "sec:ch03-future-state"
+   ],
+   "hash": "01a1ce55f94d",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-018-3-define",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-019",
+   "kind": "prose",
+   "chapter": "ch03-future-state",
+   "root": "p-sec-019",
+   "sections": [
+    "sec:ch03-future-state"
+   ],
+   "hash": "39a44babb81c",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-019-31-devel",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-020",
+   "kind": "prose",
+   "chapter": "ch03-future-state",
+   "root": "p-sec-020",
+   "sections": [
+    "sec:ch03-future-state"
+   ],
+   "hash": "41d6fe19b2ca",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-020-32-link-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-06",
+   "kind": "table",
+   "chapter": "ch03-future-state",
+   "root": "t-table-06",
+   "sections": [
+    "sec:ch03-future-state"
+   ],
+   "hash": "6aae1664d78e",
+   "excerpt": "Table 6. Short-, medium- and long-term milestones for an SF reporting system (p. 20 / PDF p. 32) Category Attribute Short-term priority (initial implementation)",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:sf-rep-001",
+   "kind": "business-process",
+   "chapter": "ch04-determine-requirements",
+   "root": "bp-sf-rep-001",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "a06e87235202",
+   "excerpt": "<!-- GENERATED from dth-sfp/processes/SF-REP-001.bpmn by cat-harness-tools/scripts/bpmn-checklist.ts. Do not edit: change the diagram and regenerate (bun run ca",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:sf-rep-002",
+   "kind": "business-process",
+   "chapter": "ch04-determine-requirements",
+   "root": "bp-sf-rep-002",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "37c1427e0519",
+   "excerpt": "<!-- GENERATED from dth-sfp/processes/SF-REP-002.bpmn by cat-harness-tools/scripts/bpmn-checklist.ts. Do not edit: change the diagram and regenerate (bun run ca",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:sf-rep-003",
+   "kind": "business-process",
+   "chapter": "ch04-determine-requirements",
+   "root": "bp-sf-rep-003",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "b8cf6c86f734",
+   "excerpt": "<!-- GENERATED from dth-sfp/processes/SF-REP-003.bpmn by cat-harness-tools/scripts/bpmn-checklist.ts. Do not edit: change the diagram and regenerate (bun run ca",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:sf-rep-004",
+   "kind": "business-process",
+   "chapter": "ch04-determine-requirements",
+   "root": "bp-sf-rep-004",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "055a2c85b9a4",
+   "excerpt": "<!-- GENERATED from dth-sfp/processes/SF-REP-004.bpmn by cat-harness-tools/scripts/bpmn-checklist.ts. Do not edit: change the diagram and regenerate (bun run ca",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:sf-rep-005",
+   "kind": "business-process",
+   "chapter": "ch04-determine-requirements",
+   "root": "bp-sf-rep-005",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "2d003be29089",
+   "excerpt": "<!-- GENERATED from dth-sfp/processes/SF-REP-005.bpmn by cat-harness-tools/scripts/bpmn-checklist.ts. Do not edit: change the diagram and regenerate (bun run ca",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:sf-rep-006",
+   "kind": "business-process",
+   "chapter": "ch04-determine-requirements",
+   "root": "bp-sf-rep-006",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "fe75e8e1f6ee",
+   "excerpt": "<!-- GENERATED from dth-sfp/processes/SF-REP-006.bpmn by cat-harness-tools/scripts/bpmn-checklist.ts. Do not edit: change the diagram and regenerate (bun run ca",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de01",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de01",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "0a3144e700c8",
+   "excerpt": "SFR.A1.DE1 — Product name (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE1 - Data Element Name: Product name - Description (Table 11): The brand or g",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de02",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de02",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "69e1f06fce27",
+   "excerpt": "SFR.A1.DE2 — Type of report (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE2 - Data Element Name: Type of report - Description (Table 11): (Empty in ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de03",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de03",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "fea486437d5e",
+   "excerpt": "SFR.A1.DE3 — Product ID (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE3 - Data Element Name: Product ID - Description (Table 11): A unique number or",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de04",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de04",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "244b9297c4fc",
+   "excerpt": "SFR.A1.DE4 — Manufacturer (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE4 - Data Element Name: Manufacturer - Description (Table 11): The name of th",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de05",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de05",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "cf239db2565e",
+   "excerpt": "SFR.A1.DE5 — Type of product (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE5 - Data Element Name: Type of product - Description (Table 11): (Empty i",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de06",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de06",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "e3ef416f07ac",
+   "excerpt": "SFR.A1.DE6 — Batch number (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE6 - Data Element Name: Batch number - Description (Table 11): The number ass",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de07",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de07",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "555d1b15ce7f",
+   "excerpt": "SFR.A1.DE7 — Expiry date (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE7 - Data Element Name: Expiry date - Description (Table 11): The date after w",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de08",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de08",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "f31f10e18b85",
+   "excerpt": "SFR.A1.DE8 — Type of report (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE8 - Data Element Name: Type of report - Description (Table 11): Indicates ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de09",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de09",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "0d6ab90e49a9",
+   "excerpt": "SFR.A1.DE9 — Adverse reaction details (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE9 - Data Element Name: Adverse reaction details - Description (T",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "de:sfr-a1-de10",
+   "kind": "data-element",
+   "chapter": "ch04-determine-requirements",
+   "root": "de-sfr-a1-de10",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "63476f87dbdb",
+   "excerpt": "SFR.A1.DE10 — Contact information (Table 11, p. 31 / PDF p. 43) - Data Element ID: SFR.A1.DE10 - Data Element Name: Contact information - Description (Table 11)",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:sfr-dt-01",
+   "kind": "decision-table",
+   "chapter": "ch04-determine-requirements",
+   "root": "dt-sfr-dt-01",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "723f809f09d8",
+   "excerpt": "SFR.DT.01 — Suspected product report classification and workflow path (Fig. 4, DE8) - Decision ID: Decision SFR DT 01 ( SFR.DT.01 ) - Canonical DMN 1.3 File: [ ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:sfr-dt-02",
+   "kind": "decision-table",
+   "chapter": "ch04-determine-requirements",
+   "root": "dt-sfr-dt-02",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "5227756eb01b",
+   "excerpt": "SFR.DT.02 — Applicable medical product type (Table 12 SFR.FXNREQ.006, DE5) - Decision ID: Decision SFR DT 02 ( SFR.DT.02 ) - Canonical DMN 1.3 File: [ decisions",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:sfr-dt-03",
+   "kind": "decision-table",
+   "chapter": "ch04-determine-requirements",
+   "root": "dt-sfr-dt-03",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "4bf3aa068d84",
+   "excerpt": "SFR.DT.03 — Assigned reporter geographic region (Table 12 SFR.FXNREQ.001) - Decision ID: Decision SFR DT 03 ( SFR.DT.03 ) - Canonical DMN 1.3 File: [ decisions/",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:sfr-dt-04",
+   "kind": "decision-table",
+   "chapter": "ch04-determine-requirements",
+   "root": "dt-sfr-dt-04",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "2dc17276ddfc",
+   "excerpt": "SFR.DT.04 — Digital capability roadmap milestone (Table 6) - Decision ID: Decision SFR DT 04 ( SFR.DT.04 ) - Canonical DMN 1.3 File: [ decisions/SFR-DT-04.dmn ]",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:fig-04",
+   "kind": "figure",
+   "chapter": "ch04-determine-requirements",
+   "root": "f-fig-04",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "e54578f517e6",
+   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p042.png (PDF page 42). Mapped to dpi-h-ra ArchiMate view Track and Trace through DHSC Components ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:sfr-001",
+   "kind": "functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "fxnreq-sfr-001",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "a6ac45731690",
+   "excerpt": "SFR.FXNREQ.001 - Requirement ID: SFR.FXNREQ.001 (Printed in source Table 12) - Actor / Persona: pers:sfp-r-13 (Public health agency) - As a: Public health agenc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:sfr-002",
+   "kind": "functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "fxnreq-sfr-002",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "bb7503713ff4",
+   "excerpt": "SFR.FXNREQ.002 - Requirement ID: SFR.FXNREQ.002 (Printed in source Table 12) - Actor / Persona: pers:sfp-r-13 (Public health agency) - As a: Public health agenc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:sfr-003",
+   "kind": "functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "fxnreq-sfr-003",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "023f1815c127",
+   "excerpt": "SFR.FXNREQ.003 [assigned ID — F4] - Requirement ID: SFR.FXNREQ.003 (Assigned in L2 per Finding F4 — blank in source Table 12) - Actor / Persona: pers:sfp-r-01 (",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:sfr-004",
+   "kind": "functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "fxnreq-sfr-004",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "0fb5aa12f433",
+   "excerpt": "SFR.FXNREQ.004 [assigned ID — F4] - Requirement ID: SFR.FXNREQ.004 (Assigned in L2 per Finding F4 — blank in source Table 12) - Actor / Persona: pers:sfp-r-01 (",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:sfr-005",
+   "kind": "functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "fxnreq-sfr-005",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "e432cbe76ddf",
+   "excerpt": "SFR.FXNREQ.005 [assigned ID — F4] - Requirement ID: SFR.FXNREQ.005 (Assigned in L2 per Finding F4 — blank in source Table 12) - Actor / Persona: pers:sfp-r-13 (",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:sfr-006",
+   "kind": "functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "fxnreq-sfr-006",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "68eed9d59146",
+   "excerpt": "SFR.FXNREQ.006 [assigned ID — F4] - Requirement ID: SFR.FXNREQ.006 (Assigned in L2 per Finding F4 — blank in source Table 12) - Actor / Persona: pers:sfp-r-13 (",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "freq:sfr-007",
+   "kind": "functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "fxnreq-sfr-007",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "15d13bbc8ff8",
+   "excerpt": "SFR.FXNREQ.007 [assigned ID — F4] - Requirement ID: SFR.FXNREQ.007 (Assigned in L2 per Finding F4 — blank in source Table 12) - Actor / Persona: pers:sfp-r-13 (",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-01",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-01",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "60c01840eb59",
+   "excerpt": "SFR.NFXNREQ.CAT.01 — Non-functional requirements: Security and confidentiality (Table 13, PDF p. 44) - Category: Security and confidentiality ( security ) - Tab",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-02",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-02",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "39f057aa69a3",
+   "excerpt": "SFR.NFXNREQ.CAT.02 — Non-functional requirements: Interoperability (Table 13, PDF p. 44) - Category: Interoperability ( interoperability ) - Table 13 Source Pag",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-03",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-03",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "eebca1d07424",
+   "excerpt": "SFR.NFXNREQ.CAT.03 — Non-functional requirements: System performance and availability (Table 13, PDF p. 45) - Category: System performance and availability ( pe",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-04",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-04",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "03570e6a8a8d",
+   "excerpt": "SFR.NFXNREQ.CAT.04 — Non-functional requirements: Usability and accessibility (Table 13, PDF p. 45) - Category: Usability and accessibility ( usability ) - Tabl",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-05",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-05",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "970a4d542c7a",
+   "excerpt": "SFR.NFXNREQ.CAT.05 — Non-functional requirements: Scalability (Table 13, PDF p. 45) - Category: Scalability ( scalability ) - Table 13 Source Page: PDF p. 45 ( ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-06",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-06",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "943c140efd0b",
+   "excerpt": "SFR.NFXNREQ.CAT.06 — Non-functional requirements: Maintainability and support (Table 13, PDF p. 46) - Category: Maintainability and support ( maintainability ) ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-07",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-07",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "61c33b535db4",
+   "excerpt": "SFR.NFXNREQ.CAT.07 — Non-functional requirements: Data backup and recovery (Table 13, PDF p. 46) - Category: Data backup and recovery ( reliability ) - Table 13",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-08",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-08",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "a32026b418c1",
+   "excerpt": "SFR.NFXNREQ.CAT.08 — Non-functional requirements: Offline capability (Table 13, PDF p. 46) - Category: Offline capability ( offline ) - Table 13 Source Page: PD",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-09",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-09",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "a1ab12cbe523",
+   "excerpt": "SFR.NFXNREQ.CAT.09 — Non-functional requirements: Compliance and legal (Table 13, PDF p. 46) - Category: Compliance and legal ( compliance ) - Table 13 Source P",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-10",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-10",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "2dc5345c0d5f",
+   "excerpt": "SFR.NFXNREQ.CAT.10 — Non-functional requirements: Localization and language support (Table 13, PDF p. 47) - Category: Localization and language support ( locali",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "nfreq:sfr-11",
+   "kind": "non-functional-requirement",
+   "chapter": "ch04-determine-requirements",
+   "root": "nfxnreq-sfr-11",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "b937ea6a9ddf",
+   "excerpt": "SFR.NFXNREQ.CAT.11 — Non-functional requirements: Audit trail and logging (Table 13, PDF p. 47) - Category: Audit trail and logging ( audit ) - Table 13 Source ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:decision-points-without-rules",
+   "kind": "prose",
+   "chapter": "ch04-determine-requirements",
+   "root": "p-decision-points-without-rules",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "0cb17b1c0a7e",
+   "excerpt": "Named Decision Points Without Rules in the Handbook ( litlfred/dth-sfp 1 §2.4) Per owner rule ( litlfred/dth-sfp 1 §2.4), decision logic is extracted into DMN t",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-021",
+   "kind": "prose",
+   "chapter": "ch04-determine-requirements",
+   "root": "p-sec-021",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "80f32e22246a",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-021-4-determ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-022",
+   "kind": "prose",
+   "chapter": "ch04-determine-requirements",
+   "root": "p-sec-022",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "8ce25b2c13c8",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-022-41-ident",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-023",
+   "kind": "prose",
+   "chapter": "ch04-determine-requirements",
+   "root": "p-sec-023",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "a19ce0a1f851",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-023-42-defin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-024",
+   "kind": "prose",
+   "chapter": "ch04-determine-requirements",
+   "root": "p-sec-024",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "eb098e751769",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-024-43-devel",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-025",
+   "kind": "prose",
+   "chapter": "ch04-determine-requirements",
+   "root": "p-sec-025",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "9e2a63c34849",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-025-44-outli",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-026",
+   "kind": "prose",
+   "chapter": "ch04-determine-requirements",
+   "root": "p-sec-026",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "775ab111f080",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-026-45-gathe",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-01",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-01",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "28b66b3e4fe9",
+   "excerpt": "SFP-R-01 — Doctor (ISCO-08: 2211, 2212) - Role ID: SFP-R-01 ( pers:sfp-r-01 ) - ISCO-08 Code(s): 2211, 2212 - BPMN Resource ID: pers:sfp-r-01 - ArchiMate Role /",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-02",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-02",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "3299a533d907",
+   "excerpt": "SFP-R-02 — Nurse (ISCO-08: 2221) - Role ID: SFP-R-02 ( pers:sfp-r-02 ) - ISCO-08 Code(s): 2221 - BPMN Resource ID: pers:sfp-r-02 - ArchiMate Role / Actor: Healt",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-03",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-03",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "b5fd6a8582f0",
+   "excerpt": "SFP-R-03 — Individual / Patient (ISCO-08: N/A) - Role ID: SFP-R-03 ( pers:sfp-r-03 ) - ISCO-08 Code(s): N/A - BPMN Resource ID: pers:sfp-r-03 - ArchiMate Role /",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-04",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-04",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "eff1a75fe5a9",
+   "excerpt": "SFP-R-04 — Community Health Worker (ISCO-08: 3253 (Table 8 lists 3259)) - Role ID: SFP-R-04 ( pers:sfp-r-04 ) - ISCO-08 Code(s): 3253 (Table 8 lists 3259) - BPM",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-05",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-05",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "703433a26ef5",
+   "excerpt": "SFP-R-05 — Laboratory Technician (ISCO-08: 3212) - Role ID: SFP-R-05 ( pers:sfp-r-05 ) - ISCO-08 Code(s): 3212 - BPMN Resource ID: pers:sfp-r-05 - ArchiMate Rol",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-06",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-06",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "4e256c2caa50",
+   "excerpt": "SFP-R-06 — Pharmacist (ISCO-08: 2262) - Role ID: SFP-R-06 ( pers:sfp-r-06 ) - ISCO-08 Code(s): 2262 - BPMN Resource ID: pers:sfp-r-06 - ArchiMate Role / Actor: ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-07",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-07",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "1aedf2532215",
+   "excerpt": "SFP-R-07 — Dentist (ISCO-08: 2261) - Role ID: SFP-R-07 ( pers:sfp-r-07 ) - ISCO-08 Code(s): 2261 - BPMN Resource ID: pers:sfp-r-07 - ArchiMate Role / Actor: Hea",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-08",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-08",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "ec7c2be378df",
+   "excerpt": "SFP-R-08 — Midwife (ISCO-08: 2222) - Role ID: SFP-R-08 ( pers:sfp-r-08 ) - ISCO-08 Code(s): 2222 - BPMN Resource ID: pers:sfp-r-08 - ArchiMate Role / Actor: Hea",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-09",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-09",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "957e1904abaf",
+   "excerpt": "SFP-R-09 — Paramedic (ISCO-08: 2240, 3258) - Role ID: SFP-R-09 ( pers:sfp-r-09 ) - ISCO-08 Code(s): 2240, 3258 - BPMN Resource ID: pers:sfp-r-09 - ArchiMate Rol",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-10",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-10",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "fa173a121152",
+   "excerpt": "SFP-R-10 — Pharmacy Technician (ISCO-08: 3213) - Role ID: SFP-R-10 ( pers:sfp-r-10 ) - ISCO-08 Code(s): 3213 - BPMN Resource ID: pers:sfp-r-10 - ArchiMate Role ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-11",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-11",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "ccf8e80ddd4f",
+   "excerpt": "SFP-R-11 — Public Health Worker (ISCO-08: 2269) - Role ID: SFP-R-11 ( pers:sfp-r-11 ) - ISCO-08 Code(s): 2269 - BPMN Resource ID: pers:sfp-r-11 - ArchiMate Role",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-12",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-12",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "7429321fd55a",
+   "excerpt": "SFP-R-12 — Veterinarian (ISCO-08: 2250) - Role ID: SFP-R-12 ( pers:sfp-r-12 ) - ISCO-08 Code(s): 2250 - BPMN Resource ID: pers:sfp-r-12 - ArchiMate Role / Actor",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-13",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-13",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "57284625bb9c",
+   "excerpt": "SFP-R-13 — NMRA Reviewer, Inspectorate & Case System (ISCO-08: 2269 / Regulatory Authority) - Role ID: SFP-R-13 ( pers:sfp-r-13 ) - ISCO-08 Code(s): 2269 / Regu",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-14",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-14",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "9eb1f92709f6",
+   "excerpt": "SFP-R-14 — Pharmaceutical Manufacturer, Importer & Supply Chain Actor (ISCO-08: 1321 / 3322) - Role ID: SFP-R-14 ( pers:sfp-r-14 ) - ISCO-08 Code(s): 1321 / 332",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:sfp-r-15",
+   "kind": "persona",
+   "chapter": "ch04-determine-requirements",
+   "root": "pers-sfp-r-15",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "f3a9b7f14f99",
+   "excerpt": "SFP-R-15 — Governance, Law Enforcement, Customs & WHO GSMS Actor (ISCO-08: 1112) - Role ID: SFP-R-15 ( pers:sfp-r-15 ) - ISCO-08 Code(s): 1112 - BPMN Resource I",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-07",
+   "kind": "table",
+   "chapter": "ch04-determine-requirements",
+   "root": "t-table-07",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "84ce84b44298",
+   "excerpt": "Table 7. Examples of user personas: Doctor, Nurse, and Individual (pp. 25–26 / PDF pp. 37–38) Occupational title Description Different names ISCO code --- --- -",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-08",
+   "kind": "table",
+   "chapter": "ch04-determine-requirements",
+   "root": "t-table-08",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "57c88fbdc3f9",
+   "excerpt": "Table 8. Additional user personas: Community health worker, Laboratory technician, and Pharmacist (p. 26 / PDF p. 38) Occupational title Description Different n",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-09",
+   "kind": "table",
+   "chapter": "ch04-determine-requirements",
+   "root": "t-table-09",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "335403e042c7",
+   "excerpt": "Table 9. User scenarios across 9 reporting personas and 6 workflow stages (pp. 27–28 / PDF pp. 39–40) Professional Discovery Initial action Accessing reporting ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-10",
+   "kind": "table",
+   "chapter": "ch04-determine-requirements",
+   "root": "t-table-10",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "c1a84de5b392",
+   "excerpt": "Table 10. Business process matrix SF-REP-001 (p. 29 / PDF p. 41) Process name Process ID Personas Objectives Task set --- --- --- --- --- Title ID used to refer",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-11",
+   "kind": "table",
+   "chapter": "ch04-determine-requirements",
+   "root": "t-table-11",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "64140ce02b60",
+   "excerpt": "Table 11. Core data dictionary for SF medical product reporting (SFR.A1.DE1–DE10, p. 31 / PDF p. 43) Activity ID and name Data element ID Data element name Desc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-12",
+   "kind": "table",
+   "chapter": "ch04-determine-requirements",
+   "root": "t-table-12",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "cae395ea97c5",
+   "excerpt": "Table 12. Functional requirements for an SF reporting system (SFR.FXNREQ.001–007, p. 31 / PDF p. 43) Requirement ID Activity description As a … I want … So that",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-13",
+   "kind": "table",
+   "chapter": "ch04-determine-requirements",
+   "root": "t-table-13",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "94a5753cf32b",
+   "excerpt": "Table 13. Non-functional requirements across 11 categories (pp. 32–35 / PDF pp. 44–47) Requirement ID Category Non-functional requirement --- --- --- SFR.NFXNRE",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-01",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-01",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "8e371d977ea9",
+   "excerpt": "Scenario 1: Doctor reporting a suspected SF medical product (Table 9, PDF p. 39) - Actor / Persona: pers:sfp-r-01 (Doctor) - Workflow: bp:sf-rep-001 ( SF-REP-00",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-02",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-02",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "484f725988fc",
+   "excerpt": "Scenario 2: Nurse reporting a suspected SF medical product (Table 9, PDF p. 39) - Actor / Persona: pers:sfp-r-02 (Nurse) - Workflow: bp:sf-rep-001 ( SF-REP-001 ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-03",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-03",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "8f5416cfbaad",
+   "excerpt": "Scenario 3: Individual / Patient reporting a suspected SF medical product (Table 9, PDF p. 39) - Actor / Persona: pers:sfp-r-03 (Individual / Patient) - Workflo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-04",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-04",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "6899b23204ea",
+   "excerpt": "Scenario 4: Community Health Worker reporting a suspected SF medical product (Table 9, PDF p. 39) - Actor / Persona: pers:sfp-r-04 (Community Health Worker) - W",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-05",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-05",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "0fc799f2906c",
+   "excerpt": "Scenario 5: Laboratory Technician reporting a suspected SF medical product (Table 9, PDF p. 39) - Actor / Persona: pers:sfp-r-05 (Laboratory Technician) - Workf",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-06",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-06",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "678368409e87",
+   "excerpt": "Scenario 6: Pharmacist reporting a suspected SF medical product (Table 9, PDF p. 40) - Actor / Persona: pers:sfp-r-06 (Pharmacist) - Workflow: bp:sf-rep-001 ( S",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-07",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-07",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "741ffa2cede7",
+   "excerpt": "Scenario 7: Dentist reporting a suspected SF medical product (Table 9, PDF p. 40) - Actor / Persona: pers:sfp-r-07 (Dentist) - Workflow: bp:sf-rep-001 ( SF-REP-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-08",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-08",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "e743d8bc96db",
+   "excerpt": "Scenario 8: Midwife reporting a suspected SF medical product (Table 9, PDF p. 40) - Actor / Persona: pers:sfp-r-08 (Midwife) - Workflow: bp:sf-rep-001 ( SF-REP-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "scen:sfp-scen-09",
+   "kind": "user-scenario",
+   "chapter": "ch04-determine-requirements",
+   "root": "us-sfp-scen-09",
+   "sections": [
+    "sec:ch04-determine-requirements"
+   ],
+   "hash": "808095a7d434",
+   "excerpt": "Scenario 9: Paramedic reporting a suspected SF medical product (Table 9, PDF p. 40) - Actor / Persona: pers:sfp-r-09 (Paramedic) - Workflow: bp:sf-rep-001 ( SF-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-027",
+   "kind": "prose",
+   "chapter": "ch05-plan-implementation",
+   "root": "p-sec-027",
+   "sections": [
+    "sec:ch05-plan-implementation"
+   ],
+   "hash": "cf169499b7dc",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-027-5-plan-t",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-14",
+   "kind": "table",
+   "chapter": "ch05-plan-implementation",
+   "root": "t-table-14",
+   "sections": [
+    "sec:ch05-plan-implementation"
+   ],
+   "hash": "c41cbf45065f",
+   "excerpt": "Table 14. Key implementation planning steps and considerations (p. 37 / PDF p. 49) Inputs Outputs Resources (see page 50) --- --- --- • Requirements documentati",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-15",
+   "kind": "table",
+   "chapter": "ch05-plan-implementation",
+   "root": "t-table-15",
+   "sections": [
+    "sec:ch05-plan-implementation"
+   ],
+   "hash": "2f6ca79c77ce",
+   "excerpt": "Table 15. Software development and procurement options (p. 38 / PDF p. 50) Develop implementation plan Develop budget Implement --- --- --- • Develop project ch",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:fig-05",
+   "kind": "figure",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "f-fig-05",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "a330a3359dbd",
+   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p052.png (PDF page 52). Mapped to dpi-h-ra ArchiMate view Capabilities-Goals ( id-4e6e25746e8d4398",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:fig-06",
+   "kind": "figure",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "f-fig-06",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "491bb1f2e121",
+   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p053.png (PDF page 53). Mapped to dpi-h-ra ArchiMate view Capabilities-Goals ( id-4e6e25746e8d4398",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:sfp-01",
+   "kind": "indicator",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "ind-sfp-01",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "c1c4f9857e33",
+   "excerpt": "SFP.IND.01 — Quality measures (completeness, accuracy and timeliness of SF reports) (Table 18, p. 44 / PDF p. 56) - Indicator ID: SFP.IND.01 - Description: Prop",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:sfp-02",
+   "kind": "indicator",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "ind-sfp-02",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "26ec155389b0",
+   "excerpt": "SFP.IND.02 — Fidelity measures (adherence to reporting workflows and detection-to-notification time) (Table 18, p. 44 / PDF p. 56) - Indicator ID: SFP.IND.02 - ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:sfp-03",
+   "kind": "indicator",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "ind-sfp-03",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "d3a1283d3169",
+   "excerpt": "SFP.IND.03 — Stability measures (system uptime, crash rate and offline sync reliability) (Table 18, p. 44 / PDF p. 56) - Indicator ID: SFP.IND.03 - Description:",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:sfp-04",
+   "kind": "indicator",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "ind-sfp-04",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "aa899e4b47c1",
+   "excerpt": "SFP.IND.04 — Functionality measures (feature utilization and interoperability performance) (Table 18, p. 44 / PDF p. 56) - Indicator ID: SFP.IND.04 - Descriptio",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "ind:sfp-05",
+   "kind": "indicator",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "ind-sfp-05",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "d20ce581891e",
+   "excerpt": "SFP.IND.05 — Investment and sustainability measures (cost efficiency and scale-up coverage) (Table 18, p. 44 / PDF p. 56) - Indicator ID: SFP.IND.05 - Descripti",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-028",
+   "kind": "prose",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "p-sec-028",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "d0e9d103cdb9",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-028-6-monito",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-029",
+   "kind": "prose",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "p-sec-029",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "78556833d31a",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-029-61-devel",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-030",
+   "kind": "prose",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "p-sec-030",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "ed9ba1191ece",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-030-62-devel",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-16",
+   "kind": "table",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "t-table-16",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "ba463cb5718e",
+   "excerpt": "Table 16. Illustrative evaluation questions for an SF reporting system (p. 42 / PDF p. 54) Attribute 1 & 2: Pre-prototype/prototype 3: Pilot 4: Demonstration 5:",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-17",
+   "kind": "table",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "t-table-17",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "3e57282787a5",
+   "excerpt": "Table 17. Key steps for developing an M&E plan (p. 43 / PDF p. 55) Evaluation domain Sample questions --- --- Usability • Is the substandard and falsified repor",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:table-18",
+   "kind": "table",
+   "chapter": "ch06-monitor-evaluate-scale",
+   "root": "t-table-18",
+   "sections": [
+    "sec:ch06-monitor-evaluate-scale"
+   ],
+   "hash": "24aed794e562",
+   "excerpt": "Table 18. M&E measures across Quality, Fidelity, Stability, Functionality and Investment (p. 44 / PDF p. 56) Step Description --- --- Step 1 Establish an underl",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-031",
+   "kind": "prose",
+   "chapter": "ch07-share-experiences",
+   "root": "p-sec-031",
+   "sections": [
+    "sec:ch07-share-experiences"
+   ],
+   "hash": "d15bc8479999",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-031-7-share-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-032",
+   "kind": "prose",
+   "chapter": "references-resources",
+   "root": "p-sec-032",
+   "sections": [
+    "sec:references-resources"
+   ],
+   "hash": "84aa5b36baed",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-032-referenc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-033",
+   "kind": "prose",
+   "chapter": "references-resources",
+   "root": "p-sec-033",
+   "sections": [
+    "sec:references-resources"
+   ],
+   "hash": "f7ee8d5840e1",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-033-resource",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-034",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-034",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "d35ac74fa724",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-034-annexes ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-035",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-035",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "740a7767ac59",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-035-annex-1-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-036",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-036",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "433454454115",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-036-annex-2-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-037",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-037",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "ac24721ecaf8",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-037-annex-3-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-038",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-038",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "d35197ef02dd",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-038-annex-4-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-039",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-039",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "c6575ba65736",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-039-annex-5-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-040",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-040",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "6a3e586245c1",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-040-annex-6-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:sec-041",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-sec-041",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "cf829a95d62c",
+   "excerpt": "--- doc id: 9789240120747-eng doc title: \"Digital transformation handbook for reporting substandard and falsified medical products\" section id: sec-041-annex-7-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-01",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annex-01",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "77c5133ad224",
+   "excerpt": "Annex 1. Principles for Digital Development applied to SF reporting (p. 52 / PDF p. 64) Principle Description --- --- Understand the existing ecosystem Trust st",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-02",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annex-02",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "78909fa34814",
+   "excerpt": "Annex 2. User persona template (p. 53 / PDF p. 65) Section Prompts and sample entries --- --- Persona occupation (e.g. nurse) — Demographics • Gender<br • Age<b",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-03",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annex-03",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "75575edea81e",
+   "excerpt": "Annex 3. Business Process Model and Notation (BPMN) symbols (pp. 54–55 / PDF pp. 66–67) Symbol Symbol name Description --- --- --- Pool (Lane 1, Lane 2, Lane 3)",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-04",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annex-04",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "3a51099859be",
+   "excerpt": "Annex 4. Stakeholder RACI matrix template (p. 56 / PDF p. 68) Activities NMRA Ministry of health Implementation partner Medical product industry Health care pro",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-05",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annex-05",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "7e06304fde13",
+   "excerpt": "Annex 5. Template for assessing current software applications (p. 57 / PDF p. 69) Domain / Function Ministry of health Regulatory authority Central warehouse Br",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-06",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annex-06",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "d758e80e0890",
+   "excerpt": "Annex 6. Barriers to reporting mapping template (p. 58 / PDF p. 70) Barrier category Barrier Affected stakeholders --- --- --- Health care barrier Self-medicati",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-07",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annex-07",
+   "sections": [
+    "sec:annexes"
+   ],
+   "hash": "cc1f50ee12ce",
+   "excerpt": "Annex 7. Risk management template (p. 59 / PDF p. 71) Risk title Description Priority Impact Probability Status --- --- --- --- --- --- Inadequate training IF s",
+   "method": "folio-snapshot"
+  }
+ ]
+}

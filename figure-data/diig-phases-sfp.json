@@ -1,0 +1,32 @@
+{
+  "$schema": "diig-phases-adaptation/v1",
+  "adapts": "who-iris/library/9789240116191-eng/figure-data/fig-4-diig-phases.json",
+  "title": "Planning and implementing a digital health enterprise: phases, steps and resources",
+  "resources": [
+    {
+      "id": "digital-transformation-handbook-for-reporting-substandard-and-falsified-medical-products",
+      "label": [
+        "Digital transformation",
+        "handbook for reporting",
+        "substandard and falsified",
+        "medical products"
+      ],
+      "icons": ["d"]
+    }
+  ],
+  "tiles": [
+    {
+      "resource": "digital-transformation-handbook-for-reporting-substandard-and-falsified-medical-products",
+      "columns": [4, 5],
+      "rows": [6, 6],
+      "outlinePhase": "05"
+    }
+  ],
+  "thisDocument": {
+    "resource": "digital-transformation-handbook-for-reporting-substandard-and-falsified-medical-products",
+    "style": "dashed",
+    "color": "#1A8FD6",
+    "fill": "#E8F3FB",
+    "note": "(this document)"
+  }
+}

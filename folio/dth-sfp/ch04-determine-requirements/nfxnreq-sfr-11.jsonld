@@ -1,0 +1,85 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-sfp/blocks/nfreq-sfr-11",
+  "@type": [
+    "smart-base:NonFunctionalRequirement"
+  ],
+  "label": "nfreq:sfr-11",
+  "kind": "non-functional-requirement",
+  "title": "SFR.NFXNREQ.CAT.11 — Non-functional requirements: Audit trail and logging (Table 13, PDF p. 47)",
+  "uses": [
+    "papers/dth-sfp/blocks/prose-sec-026",
+    "papers/dth-sfp/blocks/tbl-table-13"
+  ],
+  "text": "nfxnreq-sfr-11.md",
+  "meta": {
+    "requirementId": "SFR.NFXNREQ.CAT.11",
+    "category": "Audit trail and logging",
+    "categoryCode": "audit",
+    "items": [
+      "SFR.NFXNREQ.073–078 (assigned IDs, F4): Record tamper-evident audit logs of all report creations, edits, status transitions, user logins, and regulatory actions."
+    ],
+    "source": "who-iris/library/9789240120747-eng/sections/sec-026-45-gather-requirements.md",
+    "pdfPage": 47,
+    "reviewNotes": [
+      "F4: All rows in Audit trail and logging have blank ID cells in Table 13; assigned SFR.NFXNREQ.073–078."
+    ],
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/non-functional-requirements",
+        "term": "non-functional-requirements"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+        "term": "interoperability"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
+        "term": "sf-report"
+      }
+    ],
+    "glossaryTerms": [
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/non-functional-requirements",
+      "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+      "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
+    ],
+    "archimate": {
+      "model": "0.3.0-draft.1",
+      "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-d79aa0eec0584b0792b44bca408afeb6.jsonld",
+          "name": "DPI-F Security & Consent Module",
+          "type": "ApplicationComponent"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld",
+          "name": "DPI-F Information Mediator",
+          "type": "ApplicationComponent"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-8c5dd12b8d4e425184f6003d0513d569.jsonld",
+          "name": "Interoperability Layer"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "name": "Components"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}
