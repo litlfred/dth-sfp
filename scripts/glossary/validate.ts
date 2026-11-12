@@ -11,7 +11,10 @@
  * - every glossary concept a block names in `meta.glossary` exists in this
  *   instance's glossary or a mounted instance's glossary;
  * - every ArchiMate element or view a block names in `meta.archimate` exists
- *   in the mounted dpi-h-ra model.
+ *   in the mounted dpi-h-ra model or in this DTH's own overlay (`archimate/`);
+ * - the overlay adds nothing to smart-ra: each `overlay:base` copy names an item
+ *   the pinned smart-ra model holds under the same id, and no item tagged
+ *   `overlay:owner=dth-sfp` is already in smart-ra (owner, 2026-11-01, Q-RA1 A).
  *
  *   bun run scripts/glossary/validate.ts
  */
@@ -123,19 +126,65 @@ for (const { f, g } of here.docs) {
 // ── Glossary and ArchiMate links in block manifests ────────────────
 const ra = mounted.find((m) => m.name === "dpi-h-ra");
 if (ra && existsSync("folio/dth-sfp")) {
+  const fail = (msg: string) => {
+    console.error(`✗ ${msg}`);
+    bad++;
+  };
   const { readArchimate } = await import("../../cat-harness-tools/archimate/schemas/archimate.ts");
-  const cfg = JSON.parse(readFileSync(join(ra.root, "archimate/cat-archimate.config.json"), "utf-8"));
-  const ids = new Map<string, { elements: Set<string>; views: Set<string> }>();
-  for (const cm of cfg.models) {
-    const p = join(ra.root, "archimate", cm.file);
-    if (!existsSync(p)) continue;
-    const model = readArchimate(readFileSync(p));
-    ids.set(cm.id, {
-      elements: new Set(model.elements.map((e: { id: string }) => e.id)),
-      views: new Set(model.views.map((v: { id: string }) => v.id)),
-    });
+  type Loaded = { elements: Set<string>; views: Set<string>; all: Set<string>; model: ReturnType<typeof readArchimate> };
+  const loadModels = (dir: string): Map<string, Loaded> => {
+    const out = new Map<string, Loaded>();
+    const cfgPath = join(dir, "cat-archimate.config.json");
+    if (!existsSync(cfgPath)) return out;
+    for (const cm of JSON.parse(readFileSync(cfgPath, "utf-8")).models ?? []) {
+      const p = join(dir, cm.file);
+      if (!existsSync(p)) continue;
+      const model = readArchimate(readFileSync(p));
+      const elements = new Set<string>(model.elements.map((e: { id: string }) => e.id));
+      const views = new Set<string>(model.views.map((v: { id: string }) => v.id));
+      const all = new Set<string>([...elements, ...views, ...model.relationships.map((r: { id: string }) => r.id)]);
+      out.set(cm.id, { elements, views, all, model });
+    }
+    return out;
+  };
+  // ArchiMate models by owner: smart-ra's (mounted as dpi-h-ra) and this DTH's
+  // own overlay (archimate/). A DTH builds an overlay and does not add to smart-ra.
+  const byOwner: Record<string, Map<string, Loaded>> = {
+    "smart-ra": loadModels(join(ra.root, "archimate")),
+    "dth-sfp": loadModels("archimate"),
+  };
+  const ids = byOwner["smart-ra"];
+
+  const raIriRe = /^https:\/\/litlfred\.github\.io\/smart-ra\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
+  const dthIriRe = /^https:\/\/litlfred\.github\.io\/(dth-[a-z]+)\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
+  const overlay = { owned: 0, base: 0, dth: 0 };
+  for (const [ver, { model }] of byOwner["dth-sfp"]) {
+    for (const e of [...model.elements, ...model.relationships, ...model.views]) {
+      const prop = (k: string) => e.properties?.find((p: { key: string }) => p.key === k)?.value;
+      const label = `archimate ${ver}: '${e.name || e.id}'`;
+      const base = prop("overlay:base");
+      const dth = prop("overlay:dth");
+      if (base) {
+        const m = base.match(raIriRe);
+        if (!m) fail(`${label} has an overlay:base that is not a smart-ra ArchiMate IRI: ${base}`);
+        else if (!ids.has(m[1])) fail(`${label} names smart-ra model ${m[1]}, which the pinned dpi-h-ra does not hold`);
+        else if (m[3] !== e.id || !ids.get(m[1])!.all.has(m[3])) fail(`${label} copies ${m[3]}, which smart-ra ${m[1]} does not hold under this id`);
+        else overlay.base++;
+      } else if (dth) {
+        const m = dth.match(dthIriRe);
+        if (!m || m[1] === "dth-sfp" || m[4] !== e.id) fail(`${label} has an overlay:dth that is not another DTH's ArchiMate IRI for this id: ${dth}`);
+        else overlay.dth++;
+      } else if (prop("overlay:owner") === "dth-sfp") {
+        for (const [rv, { all }] of ids) {
+          if (all.has(e.id)) fail(`${label} (${e.id}) is owned by the overlay but smart-ra ${rv} already holds it; tag it overlay:base`);
+        }
+        overlay.owned++;
+      } else {
+        fail(`${label} (${e.id}) has none of overlay:base, overlay:dth, overlay:owner=dth-sfp`);
+      }
+    }
   }
-  const iriRe = /\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
+  const iriRe = /^https:\/\/litlfred\.github\.io\/(smart-ra|dth-sfp)\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
   let archBlocks = 0;
   let archLinks = 0;
   let figMappings = 0;
@@ -168,18 +217,15 @@ if (ra && existsSync("folio/dth-sfp")) {
       for (const x of [...(a.elements ?? []), ...(a.views ?? [])]) {
         archLinks++;
         const hit = String(x.iri).match(iriRe);
-        const ok =
-          hit &&
-          String(x.iri).startsWith("https://litlfred.github.io/smart-ra/") &&
-          ids.get(hit[1])?.[hit[2] as "elements" | "views"].has(hit[3]);
+        const ok = hit && byOwner[hit[1]].get(hit[2])?.[hit[3] as "elements" | "views"].has(hit[4]);
         if (!ok) {
-          console.error(`✗ ${file}: ${x.iri} (${x.name}) is not in the mounted dpi-h-ra ArchiMate model`);
+          console.error(`✗ ${file}: ${x.iri} (${x.name}) is not in the mounted dpi-h-ra ArchiMate model or the dth-sfp overlay`);
           bad++;
         }
       }
       for (const fm of a.figures ?? []) {
         figMappings++;
-        const ok = ids.get(String(fm.model))?.views.has(String(fm.view));
+        const ok = [ids, byOwner["dth-sfp"]].some((o) => o.get(String(fm.model))?.views.has(String(fm.view)));
         if (!ok) {
           console.error(`✗ ${file}: figure ${fm.figure} view ${fm.view} is not in dpi-h-ra ArchiMate model ${fm.model}`);
           bad++;
@@ -189,7 +235,7 @@ if (ra && existsSync("folio/dth-sfp")) {
   }
   console.log(`✓ Glossary links: ${glosLinks} link(s) from ${glosBlocks} block(s) to dth-sfp / dpi-h-ra / dth-sc / dth-pc / dth-hrh checked`);
   console.log(
-    `✓ ArchiMate: ${archLinks} link(s) and ${figMappings} figure-view mapping(s) from ${archBlocks} block(s) to dpi-h-ra checked`,
+    `✓ ArchiMate: ${archLinks} link(s) and ${figMappings} figure-view mapping(s) from ${archBlocks} block(s) to dpi-h-ra and the dth-sfp overlay checked; overlay: ${overlay.owned} owned, ${overlay.base} smart-ra and ${overlay.dth} dth-phc reference copies`,
   );
 } else {
   console.log("· dpi-h-ra or folio/dth-sfp is not present yet: ArchiMate and block glossary links not checked");

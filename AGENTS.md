@@ -21,11 +21,13 @@ This file is the **agent-generic** source of truth, read natively by Claude Code
 
 | goes in | what |
 |---|---|
-| **`smart-ra` (`dpi-h-ra`)** | shared digital health & enterprise architecture glossary (`dpi-h-ra` / `full-stac`); every ArchiMate element and view |
+| **`smart-ra` (`dpi-h-ra`)** | shared digital health & enterprise architecture glossary (`dpi-h-ra` / `full-stac`); the shared ArchiMate model, which a DTH never adds to |
 | **`dth-sc` / `dth-pc` / `dth-hrh`** | supply chain & traceability terms (`dth-sc`), medical product quality/safety & product catalogue terms (`dth-pc`), and health workforce / ISCO-08 occupation terms (`dth-hrh`) |
-| **here (`dth-sfp`)** | the L2 narrative folio (`folio/dth-sfp/`); SF reporting domain terms (`glossary/dth-sfp.glossary.json`); DAK personas, user scenarios, data elements (`SFR.A1.DE1`–`DE10`), functional & non-functional requirements (`SFR.FXNREQ.001`–`007`, `SFR.NFXNREQ.*`), indicators, 6 BPMN 2.0 processes (`processes/SF-REP-001.bpmn`..`SF-REP-006.bpmn`), 4 DMN 1.3 decision tables (`decisions/SFR-DT-01.dmn`..`SFR-DT-04.dmn`), and 100% L1 normative coverage (`folio/dth-sfp/l1-coverage.json`) |
+| **here (`dth-sfp`)** | the L2 narrative folio (`folio/dth-sfp/`); SF reporting domain terms (`glossary/dth-sfp.glossary.json`); DAK personas, user scenarios, data elements (`SFR.A1.DE1`–`DE10`), functional & non-functional requirements (`SFR.FXNREQ.001`–`007`, `SFR.NFXNREQ.*`), indicators, 6 BPMN 2.0 processes (`processes/SF-REP-001.bpmn`..`SF-REP-006.bpmn`), 4 DMN 1.3 decision tables (`decisions/SFR-DT-01.dmn`..`SFR-DT-04.dmn`), and 100% L1 normative coverage (`folio/dth-sfp/l1-coverage.json`); the SF reporting ArchiMate overlay on smart-ra (`archimate/`) |
 
 **No empirical claims in formal content.** Country pilot vignettes (Chapter 7: Indonesia and United Republic of Tanzania) stay as cited L1 source text (`meta.sourceOnly: true`) and never become formal requirements, decision rules, or indicator targets.
+
+**ArchiMate overlay, not model additions (`archimate/`).** dth-sfp builds an overlay on smart-ra's ArchiMate model and never adds elements to smart-ra (owner, 2026-11-01, Q-RA1 A). Its own elements are tagged `overlay:owner=dth-sfp` and are linked with `https://litlfred.github.io/dth-sfp/archimate/<version>/…` IRIs. A smart-ra element the overlay draws is a reference copy tagged `overlay:base`; a dth-phc overlay element it draws is a reference copy tagged `overlay:dth`. A real conflict with a smart-ra term or model goes to an issue on smart-ra AND on dth-sfp. See [`archimate/README.md`](archimate/README.md).
 
 **Never push to or open PRs on `WorldHealthOrganization/*`.** Work happens in `litlfred/dth-sfp`.
 
