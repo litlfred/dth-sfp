@@ -77,8 +77,9 @@ for top in src.findall("folder"):
                                                                "id": top.get("id") + "-base"}),
                                 ET.SubElement(f, "folder", {"name": "dth-phc (overlay, reference copies)",
                                                             "id": top.get("id") + "-dth-phc"}))
+# Slash IRIs, …/archimate/<model>/<kind>/<id> (cat-harness-tools Q-THIN-2 A; owner Q-RAL-2 C).
 iri = lambda repo, ver, e: (f"https://litlfred.github.io/{repo}/archimate/{ver}/"
-                            f"{'views' if e.get(T).endswith('DiagramModel') else 'elements'}/{e.get('id')}.jsonld")
+                            f"{'view' if e.get(T).endswith('DiagramModel') else 'relationship' if e.get(T).endswith('Relationship') else 'element'}/{e.get('id')}")
 counts = {"owned": 0, "base": 0, "dth": 0}
 for i in sorted(want, key=lambda i: (by_id[i].get(T), by_id[i].get("name") or "", i)):
     e = copy.deepcopy(by_id[i])
