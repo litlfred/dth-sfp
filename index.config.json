@@ -222,7 +222,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "14c90e1fe3a73b423ac57e16a91e349473f41beb",
+          "ref": "95d4ebf78b0f7d5b563dbd5c1231762a0a422c14",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -241,7 +241,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "14c90e1fe3a73b423ac57e16a91e349473f41beb",
+              "ref": "95d4ebf78b0f7d5b563dbd5c1231762a0a422c14",
               "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); cat-harness-tools >=14c90e1 (cat-harness-tools#2377) re-pin requested by coordinator session_01EucfRma19tJrg21PkQeXaF"
             }
           }
@@ -349,7 +349,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "6327e275f4e9c3d0826176afdcc9023a2e51c12c",
+          "ref": "e30cbe6705ea8078e4b415c9c49bf4d80ee97c76",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -388,7 +388,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "6327e275f4e9c3d0826176afdcc9023a2e51c12c",
+              "ref": "e30cbe6705ea8078e4b415c9c49bf4d80ee97c76",
               "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); cat-harness-tools >=14c90e1 (cat-harness-tools#2377) re-pin requested by coordinator session_01EucfRma19tJrg21PkQeXaF"
             }
           }
@@ -400,7 +400,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "050d5dc5a7863b91a259ea8460837c32f0419b92",
+          "ref": "5624ca868700cdd36f4b6a82f5d99396102e584c",
           "overrides": {
             "dth-pc": {
               "directories": [
@@ -442,7 +442,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "050d5dc5a7863b91a259ea8460837c32f0419b92",
+              "ref": "5624ca868700cdd36f4b6a82f5d99396102e584c",
               "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); cat-harness-tools >=14c90e1 (cat-harness-tools#2377) re-pin requested by coordinator session_01EucfRma19tJrg21PkQeXaF"
             }
           }
