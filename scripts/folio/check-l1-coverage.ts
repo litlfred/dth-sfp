@@ -21,9 +21,15 @@ import {
   type Exclusion,
   type Page,
 } from "../../folio-assistant-core/scripts/l1-coverage.ts";
+import { explainFailure, resolveLibraryRef } from "../../folio-assistant-core/schemas/library-ref.ts";
 
 const ROOT = resolve(import.meta.dir, "../..");
-const SEC_DIR = join(ROOT, "who-iris/library/9789240120747-eng/sections");
+// The L1 entry is found through who-iris's declared library directory, by the
+// instance's name, not a spelled path into its mount (check:foreign-paths).
+const L1_REF = { instance: "who-iris", libraryId: "9789240120747-eng" };
+const l1 = resolveLibraryRef(L1_REF, ROOT, ROOT);
+const SEC_DIR = l1.ok ? join(l1.libraryDir, L1_REF.libraryId, "sections") : undefined;
+if (!l1.ok) console.error(`note: ${explainFailure(l1.failure)}; falling back to folio/dth-sfp/l1-pages.json`);
 const FOLIO_DIR = join(ROOT, "folio/dth-sfp");
 const PAGES_PATH = join(FOLIO_DIR, "l1-pages.json");
 const CAPTURED_PATH = join(FOLIO_DIR, "l1-captured.json");
@@ -47,7 +53,7 @@ function walkTs(dir: string): string[] {
 
 // 1. Build page-tagged body text from who-iris (excluding sec-032-references.md per l1-coverage §1)
 let pagesMeta: Array<{ page: number; section: string; text: string }> = [];
-if (existsSync(SEC_DIR)) {
+if (SEC_DIR !== undefined && existsSync(SEC_DIR)) {
   const secFiles = readdirSync(SEC_DIR)
     .filter((f) => f.endsWith(".md") && f !== "sec-032-references.md")
     .sort();

@@ -1,5 +1,7 @@
 import { table } from "../../schema/builders";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:annex-07",
   title: "Annex 7. Risk management template (p. 59 / PDF p. 71)",

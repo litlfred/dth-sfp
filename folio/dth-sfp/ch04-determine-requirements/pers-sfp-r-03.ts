@@ -1,5 +1,7 @@
 import { persona } from "../../schema/dak";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default persona({
   label: "pers:sfp-r-03",
   title: "SFP-R-03 \u2014 Individual / Patient (ISCO-08: N/A)",

@@ -1,5 +1,7 @@
 import { prose } from "../../schema/builders";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default prose({
   label: "prose:sec-013",
   title: "Review regulatory policies for substandard and falsified medical products reporting (PDF pp. 27\u201327)",

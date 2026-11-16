@@ -1,5 +1,7 @@
 import { table } from "../../schema/builders";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:table-11",
   title: "Table 11. Core data dictionary for SF medical product reporting (SFR.A1.DE1\u2013DE10, p. 31 / PDF p. 43)",

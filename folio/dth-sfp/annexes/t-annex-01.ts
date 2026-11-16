@@ -1,5 +1,7 @@
 import { table } from "../../schema/builders";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:annex-01",
   title: "Annex 1. Principles for Digital Development applied to SF reporting (p. 52 / PDF p. 64)",

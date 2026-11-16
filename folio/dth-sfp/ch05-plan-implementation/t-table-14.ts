@@ -1,5 +1,7 @@
 import { table } from "../../schema/builders";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:table-14",
   title: "Table 14. Key implementation planning steps and considerations (p. 37 / PDF p. 49)",

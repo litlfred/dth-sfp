@@ -1,5 +1,7 @@
 import { userScenario } from "../../schema/dak";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default userScenario({
   label: "scen:sfp-scen-01",
   title: "Scenario 1: Doctor reporting a suspected SF medical product (Table 9, PDF p. 39)",

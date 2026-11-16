@@ -1,5 +1,7 @@
 import { figure } from "../../schema/builders";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default figure({
   label: "fig:fig-05",
   title: "Fig. 5. Intervention maturity over time (p. 41 / PDF p. 53)",

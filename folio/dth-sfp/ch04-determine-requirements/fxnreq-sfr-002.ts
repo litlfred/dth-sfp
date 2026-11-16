@@ -1,5 +1,7 @@
 import { functionalRequirement } from "../../schema/dak";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default functionalRequirement({
   label: "freq:sfr-002",
   title: "SFR.FXNREQ.002 \u2014 As a Public health agency, I want to know the user's profession based on their user p... (Table 12, p. 31)",

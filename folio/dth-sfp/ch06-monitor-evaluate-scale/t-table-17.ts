@@ -1,5 +1,7 @@
 import { table } from "../../schema/builders";
 
+// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
+// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:table-17",
   title: "Table 17. Key steps for developing an M&E plan (p. 43 / PDF p. 55)",
