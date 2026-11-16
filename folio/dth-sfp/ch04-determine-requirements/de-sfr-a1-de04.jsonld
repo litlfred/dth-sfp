@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-sfp/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-sfp/blocks/de-sfr-a1-de04",

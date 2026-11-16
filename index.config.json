@@ -7,7 +7,54 @@
         "local": {
           "at": "."
         }
-      }
+      },
+      "contentType": "document",
+      "adapter": "document",
+      "adapterModule": "./folio-assistant-core/adapters/document/index.ts",
+      "dependencies": {
+        "folioAssistant": [
+          {
+            "name": "folio-assistant-core",
+            "path": "folio-assistant-core"
+          },
+          {
+            "name": "smart-base",
+            "path": "smart-base"
+          }
+        ]
+      },
+      "feedbackDir": ".folio-feedback",
+      "skills": ".claude/skills/local",
+      "viewer": {
+        "dir": "cat-harness-tools/viewer",
+        "port": 8080
+      },
+      "readme": {
+        "linkStyle": "blob",
+        "publishRef": "gh-pages"
+      },
+      "site": {
+        "build": {
+          "sourceSteps": [
+            "site:document",
+            "site:library",
+            "site:glossary"
+          ],
+          "siteSteps": [
+            "site:node-kinds"
+          ],
+          "pre": [
+            "check:dth-glossary",
+            "check:kg-blocks",
+            "check:library-kg",
+            "check:l1-coverage"
+          ],
+          "keep": [
+            "ns"
+          ]
+        }
+      },
+      "_site_comment": "`site.build.pre` runs check:dth-glossary, check:kg-blocks, check:library-kg, and check:l1-coverage. `site.build.keep`: `ns`, the JSON-LD context the block KG nodes name."
     },
     {
       "name": "who-iris",
@@ -17,9 +64,7 @@
           "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
           "overrides": {
             "who-iris": {
-              "directories": [
-                "library"
-              ]
+              "whole": true
             },
             "folio-assistant-core": {
               "skip": true
@@ -78,7 +123,8 @@
                 "smart-base-scenarios",
                 "smart-base-code-lists",
                 "smart-base-typologies",
-                "smart-base-validators"
+                "smart-base-validators",
+                "l1-extraction-9789240116191-eng"
               ]
             }
           },

@@ -544,6 +544,13 @@
           "upstreamPath": "smart-base/validators",
           "treeDigest": "7f32e9ab086ed0cae16960676dec8fe37a66841d3fa6e2c9f5d9b92ee9d1b8f3",
           "files": 3
+        },
+        {
+          "id": "l1-extraction-9789240116191-eng",
+          "path": "smart-base/l1-extractions/9789240116191-eng",
+          "upstreamPath": "smart-base/l1-extractions/9789240116191-eng",
+          "treeDigest": "ca78b10bb6eba9d85c109b3c4e77a2bee98276ec1f7c53b974bf6ac53f70b398",
+          "files": 12
         }
       ],
       "assets": [
@@ -582,21 +589,11 @@
       },
       "directories": [
         {
-          "id": "library",
-          "path": "who-iris/library",
-          "upstreamPath": "library",
-          "treeDigest": "5fecb0bbe150f1a6ae4503862a0b7adfcf28cc54906faa03b33bffbe39924c43",
-          "files": 35631
-        }
-      ],
-      "assets": [
-        {
-          "src": "AGENTS.md",
-          "sha256": "04d8c87f1bfe5c1e2ff0d2445482e6ca6f190b2c726eeddbaa18baf5acafb438"
-        },
-        {
-          "src": "README.md",
-          "sha256": "b26dbe555ce55eedb0d93c4305c16c176a455284e554d4449e0b27069577425a"
+          "id": "*",
+          "path": "who-iris",
+          "upstreamPath": ".",
+          "treeDigest": "b7acdd2e22b7351d0167419803ab631525d2e0ade815f0f379123eb7c153be1c",
+          "files": 44000
         }
       ],
       "trust": {
