@@ -1,7 +1,5 @@
 import { businessProcess } from "../../schema/dak";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default businessProcess({
   label: "bp:sf-rep-002",
   title: "SF-REP-002 \u2014 Receive, acknowledge and track SF report (Table 9, Table 12)",

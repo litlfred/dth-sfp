@@ -1,7 +1,5 @@
 import { prose } from "../../schema/builders";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default prose({
   label: "prose:sec-020",
   title: "Link to the enterprise architecture (PDF pp. 33\u201334)",

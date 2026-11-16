@@ -5,14 +5,6 @@ import re
 import shutil
 from pathlib import Path
 
-# cat-harness-tools check:foreign-paths: a block's meta cites one artefact of the
-# frozen L1 source by its who-iris path. The marker covers its line and every
-# line below it down to the next blank line, so it sits right above `export default`.
-L1_PATH_MARKER = (
-    "// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,\n"
-    "// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.\n"
-)
-
 ROOT = Path(__file__).resolve().parents[2]
 L1_DIR = ROOT / "who-iris" / "library" / "9789240120747-eng"
 SEC_DIR = L1_DIR / "sections"
@@ -324,7 +316,6 @@ def write_block(chapter_dir: Path, filename: str, builder: str, builder_import: 
     meta_json = json.dumps(meta, ensure_ascii=False)
     ts_content = (
         f'import {{ {builder} }} from "../../schema/{builder_import}";\n\n'
-        f"{L1_PATH_MARKER}"
         f"export default {builder}({{\n"
         f'  label: {json.dumps(label)},\n'
         f'  title: {json.dumps(title)},\n'

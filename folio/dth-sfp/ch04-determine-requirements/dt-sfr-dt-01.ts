@@ -1,7 +1,5 @@
 import { decisionTable } from "../../schema/dak";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default decisionTable({
   label: "dt:sfr-dt-01",
   title: "SFR.DT.01 \u2014 Suspected product report classification and workflow path (Fig. 4, DE8)",

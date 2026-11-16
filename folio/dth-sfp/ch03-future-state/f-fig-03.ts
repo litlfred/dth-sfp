@@ -1,7 +1,5 @@
 import { figure } from "../../schema/builders";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default figure({
   label: "fig:fig-03",
   title: "Fig. 3. DIIG digital health enterprise architecture framework (p. 22 / PDF p. 34)",

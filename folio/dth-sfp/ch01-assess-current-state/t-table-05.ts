@@ -1,7 +1,5 @@
 import { table } from "../../schema/builders";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:table-05",
   title: "Table 5. Common barriers to reporting SF medical products and potential digital solutions (pp. 12\u201313 / PDF pp. 24\u201325)",

@@ -1,7 +1,5 @@
 import { dataElement } from "../../schema/dak";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default dataElement({
   label: "de:sfr-a1-de03",
   title: "SFR.A1.DE3 \u2014 Product ID (Table 11, p. 31 / PDF p. 43)",

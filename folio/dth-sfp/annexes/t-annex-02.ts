@@ -1,7 +1,5 @@
 import { table } from "../../schema/builders";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:annex-02",
   title: "Annex 2. User persona template (p. 53 / PDF p. 65)",

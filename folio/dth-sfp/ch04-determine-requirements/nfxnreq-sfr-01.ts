@@ -1,7 +1,5 @@
 import { nonFunctionalRequirement } from "../../schema/dak";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default nonFunctionalRequirement({
   label: "nfreq:sfr-01",
   title: "SFR.NFXNREQ.CAT.01 \u2014 Non-functional requirements: Security and confidentiality (Table 13, PDF p. 44)",

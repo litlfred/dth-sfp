@@ -1,7 +1,5 @@
 import { indicator } from "../../schema/dak";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default indicator({
   label: "ind:sfp-04",
   title: "SFP.IND.04 \u2014 Functionality measures (feature utilization and interoperability performance) (Table 18, p. 44 / PDF p. 56)",

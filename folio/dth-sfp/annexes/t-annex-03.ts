@@ -1,7 +1,5 @@
 import { table } from "../../schema/builders";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default table({
   label: "tbl:annex-03",
   title: "Annex 3. Business Process Model and Notation (BPMN) symbols (pp. 54\u201355 / PDF pp. 66\u201367)",

@@ -1,7 +1,5 @@
 import { figure } from "../../schema/builders";
 
-// declared-path-literal: cites one artefact of the frozen L1 source (a who-iris library section,
-// page or figure crop) by its path in the read-only who-iris mount; a citation, not a directory lookup.
 export default figure({
   label: "fig:fig-02",
   title: "Fig. 2. WHO’s SMART Guidelines approach (p. 5 / PDF p. 17)",
