@@ -19,7 +19,7 @@
     {
       "harness": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "ref": "ff45c94570075215bb128d386ef00feacf0bbd61"
+      "ref": "08a4c3ea648a5731135850bf9844638985791267"
     },
     {
       "harness": "cat-harness",
@@ -29,7 +29,7 @@
     {
       "harness": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "ref": "777d5c7f4acf6a590f576c4475234d0adfb53779"
+      "ref": "17a9da7fc47c6b6f43853891c828ac8f69d62929"
     },
     {
       "harness": "bootstrap",
@@ -49,17 +49,17 @@
     {
       "harness": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "ref": "1b98052cc4eaad2d0b788b428dec9e1587ee3b09"
+      "ref": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d"
     },
     {
       "harness": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "ref": "5624ca868700cdd36f4b6a82f5d99396102e584c"
+      "ref": "9c518ba98682510a0a96048e59e0d9b70fc86366"
     },
     {
       "harness": "dth-hrh",
       "repository": "litlfred/dth-hrh",
-      "ref": "a1de67a6d1d7734a1d1790dac6dc49af3fb69e74"
+      "ref": "f8864bae0dd94b72c6f29fe4682fd902b7747e5c"
     }
   ],
   "instances": [
@@ -162,29 +162,29 @@
     {
       "instance": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "sha": "777d5c7f4acf6a590f576c4475234d0adfb53779",
+      "sha": "17a9da7fc47c6b6f43853891c828ac8f69d62929",
       "upstreamRoot": "",
       "path": "cat-harness-tools",
       "via": "cat-harness-tools",
       "pinnedBy": "declared",
       "declaration": {
         "file": "cat-harness-tools.json",
-        "sha256": "a2baa5b04b69a3063fd1bb043348233b854d2b83eea22a0520249b96e8b19c86"
+        "sha256": "a90c338784cf7552501275b2e5c9bf6bd1e469cba38e0172728dece7a25c2051"
       },
       "directories": [
         {
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "4c1e1d9cad7531898de5cf6eb84990e87411463476c7ab349656590158630780",
-          "files": 4979
+          "treeDigest": "95454fe95db186b6241ac864a6d4c723c454f8bb11715583a683f07d7532fe42",
+          "files": 4999
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "777d5c7f4acf6a590f576c4475234d0adfb53779",
+        "ref": "17a9da7fc47c6b6f43853891c828ac8f69d62929",
         "approver": "declared"
       }
     },
@@ -237,14 +237,14 @@
     {
       "instance": "dth-hrh",
       "repository": "litlfred/dth-hrh",
-      "sha": "a1de67a6d1d7734a1d1790dac6dc49af3fb69e74",
+      "sha": "f8864bae0dd94b72c6f29fe4682fd902b7747e5c",
       "upstreamRoot": "",
       "path": "dth-hrh",
       "via": "dth-hrh",
       "pinnedBy": "declared",
       "declaration": {
         "file": "dth-hrh.json",
-        "sha256": "de7434c223cbed77479c3f3eeb1527475d86e419e03aef23a0f73a20cc5a2896"
+        "sha256": "836421d7d1fd61fb4200125b88222a2c8cd12b7441cc2a45d1d9fa21039c2f33"
       },
       "directories": [
         {
@@ -259,21 +259,21 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "a1de67a6d1d7734a1d1790dac6dc49af3fb69e74",
+        "ref": "f8864bae0dd94b72c6f29fe4682fd902b7747e5c",
         "approver": "declared"
       }
     },
     {
       "instance": "dth-pc",
       "repository": "litlfred/dth-pc",
-      "sha": "5624ca868700cdd36f4b6a82f5d99396102e584c",
+      "sha": "9c518ba98682510a0a96048e59e0d9b70fc86366",
       "upstreamRoot": "",
       "path": "dth-pc",
       "via": "dth-pc",
       "pinnedBy": "declared",
       "declaration": {
         "file": "dth-pc.json",
-        "sha256": "f76eb6c282054e1c2860c5c864982e2bde70e7a0d61d0ab8eb2e4788be07652d"
+        "sha256": "e8dc2c165edc038da1298b4e69de98670012424e77235e2edd85aab5b60b2eaf"
       },
       "directories": [
         {
@@ -287,22 +287,22 @@
       "trust": {
         "basis": "consent",
         "by": "litlfred",
-        "on": "2026-11-16",
-        "ref": "5624ca868700cdd36f4b6a82f5d99396102e584c",
+        "on": "2026-11-17",
+        "ref": "9c518ba98682510a0a96048e59e0d9b70fc86366",
         "approver": "declared"
       }
     },
     {
       "instance": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "sha": "1b98052cc4eaad2d0b788b428dec9e1587ee3b09",
+      "sha": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d",
       "upstreamRoot": "",
       "path": "dth-sc",
       "via": "dth-sc",
       "pinnedBy": "declared",
       "declaration": {
         "file": "dth-sc.json",
-        "sha256": "ce69f1d66522dbb87255c6beb3e038e8c66ef924d599ffe2208974f16c1feba9"
+        "sha256": "10fd4c20251672230267d0b9de58bd17ab0688c4c03efb4b84566b75b2f3fc58"
       },
       "directories": [
         {
@@ -317,7 +317,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "1b98052cc4eaad2d0b788b428dec9e1587ee3b09",
+        "ref": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d",
         "approver": "declared"
       }
     },
@@ -356,7 +356,7 @@
     {
       "instance": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "sha": "ff45c94570075215bb128d386ef00feacf0bbd61",
+      "sha": "08a4c3ea648a5731135850bf9844638985791267",
       "upstreamRoot": "",
       "path": "folio-assistant-core",
       "via": "folio-assistant-core",
@@ -370,7 +370,7 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "b00a825db7567a5b62e6b6e7e30ea027161a8023147f63893b362b6000b3d5f4",
+          "treeDigest": "670dca23e7cd1a4c6f1e336caa90607e3fc6ba7faae23b61c3eb1ab7de59dc7b",
           "files": 1620,
           "except": [
             "board",
@@ -384,7 +384,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "ff45c94570075215bb128d386ef00feacf0bbd61",
+        "ref": "08a4c3ea648a5731135850bf9844638985791267",
         "approver": "declared"
       }
     },
@@ -547,6 +547,34 @@
           "upstreamPath": "smart-base/l1-extractions/9789240116191-eng",
           "treeDigest": "ca78b10bb6eba9d85c109b3c4e77a2bee98276ec1f7c53b974bf6ac53f70b398",
           "files": 12
+        },
+        {
+          "id": "collab",
+          "path": "smart-base/collab",
+          "upstreamPath": "smart-base/collab",
+          "treeDigest": "5c1677ad79301dff06e680a841858b37e944bb59111c26eec11bf758a5c3477f",
+          "files": 12
+        },
+        {
+          "id": "smart-base-L1",
+          "path": "smart-base/L1",
+          "upstreamPath": "smart-base/L1",
+          "treeDigest": "06dd060898f5fb5267f371ee4d0438b85801b1691af160bcad521dc616cd858a",
+          "files": 111
+        },
+        {
+          "id": "smart-base-L2",
+          "path": "smart-base/L2",
+          "upstreamPath": "smart-base/L2",
+          "treeDigest": "dde470de1e7b0b89775a463c41c0a686c27b622b954e9840e66f251b80c480ac",
+          "files": 50
+        },
+        {
+          "id": "smart-base-L3",
+          "path": "smart-base/L3",
+          "upstreamPath": "smart-base/L3",
+          "treeDigest": "ba49d5eb629dc4ab540011e7f7301ab76270f724c961afdb1f292d4f5d36407e",
+          "files": 32
         }
       ],
       "assets": [
