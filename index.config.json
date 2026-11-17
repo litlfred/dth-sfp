@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "54a22454274f345ea0b4117aa5862f7e071b927e",
+          "ref": "763b8b59dce5a32e7e37d133271abbf64fa47f84",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -184,8 +184,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "54a22454274f345ea0b4117aa5862f7e071b927e",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "ref": "763b8b59dce5a32e7e37d133271abbf64fa47f84",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up folio-assistant-core#840 (DIIG figure) and absorbs dth-sfp#13, as lock:freshness requires"
             }
           }
         }
@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "e41f9fe092fe3553a3befd5316e45dc14b0ba49f",
+          "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -243,8 +243,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "e41f9fe092fe3553a3befd5316e45dc14b0ba49f",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
+              "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up folio-assistant-core#840 (DIIG figure) and absorbs dth-sfp#13, as lock:freshness requires"
             }
           }
         }
@@ -351,7 +351,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
+          "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -390,8 +390,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
+              "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up folio-assistant-core#840 (DIIG figure) and absorbs dth-sfp#13, as lock:freshness requires"
             }
           }
         }

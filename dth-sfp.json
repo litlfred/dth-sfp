@@ -162,5 +162,8 @@
         "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
       ]
     }
+  ],
+  "enableSubgraphs": [
+    "folio-assistant-core.collab"
   ]
 }
