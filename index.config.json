@@ -124,7 +124,9 @@
                 "smart-base-scenarios",
                 "smart-base-code-lists",
                 "smart-base-typologies",
-                "smart-base-validators"
+                "smart-base-validators",
+                "smart-base-L2",
+                "smart-base-L3"
               ]
             }
           },

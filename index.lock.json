@@ -1,5 +1,6 @@
 {
   "$schema": "cat-harness-mount-lock/v1",
+  "pinnedAt": "2026-11-17T19:40:22Z",
   "mounts": [
     {
       "harness": "who-iris",
@@ -551,6 +552,20 @@
           "upstreamPath": "smart-base/validators",
           "treeDigest": "7f32e9ab086ed0cae16960676dec8fe37a66841d3fa6e2c9f5d9b92ee9d1b8f3",
           "files": 3
+        },
+        {
+          "id": "smart-base-L2",
+          "path": "smart-base/L2",
+          "upstreamPath": "smart-base/L2",
+          "treeDigest": "dde470de1e7b0b89775a463c41c0a686c27b622b954e9840e66f251b80c480ac",
+          "files": 50
+        },
+        {
+          "id": "smart-base-L3",
+          "path": "smart-base/L3",
+          "upstreamPath": "smart-base/L3",
+          "treeDigest": "ba49d5eb629dc4ab540011e7f7301ab76270f724c961afdb1f292d4f5d36407e",
+          "files": 32
         }
       ],
       "assets": [
