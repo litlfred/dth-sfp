@@ -1,6 +1,6 @@
 {
   "$schema": "cat-harness-mount-lock/v1",
-  "pinnedAt": "2026-11-17T20:31:33Z",
+  "pinnedAt": "2026-11-17T23:38:36Z",
   "mounts": [
     {
       "harness": "who-iris",
@@ -139,8 +139,8 @@
           "id": "*",
           "path": "cat-harness",
           "upstreamPath": ".",
-          "treeDigest": "9e965c2bbf5eec535fca5aaa3a364d1040ac6836a1e7280e5b961216a0e2087d",
-          "files": 2622,
+          "treeDigest": "13b6e6d9a414c5120f6fdb7a64e9d23da6097a9bdde0bab9ae0e9210fe4b8617",
+          "files": 2937,
           "except": [
             "docs/proposals",
             "docs/wireframes",
@@ -148,10 +148,7 @@
             "integrations",
             "kg-ops",
             "library/corpus",
-            "platform-ui",
-            "research",
-            "sdlc",
-            "work-plan"
+            "research"
           ]
         }
       ],
@@ -374,11 +371,10 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "ae5f3024e5341341e646efed3cc19cdeab1f68c3131b86ce680a695b5bc18efe",
-          "files": 1569,
+          "treeDigest": "e9465bc85912b84d21d61205d399192ccd64d351ff4f2a32d22f690094f0605f",
+          "files": 1625,
           "except": [
             "board",
-            "collab",
             "dsa",
             "library-extras",
             "library/corpus"
