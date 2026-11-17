@@ -21,11 +21,10 @@ name: Site publish
 
 on:
   push:
-    # `master` is for the repositories whose default branch is still master
-    # (smart-anc, smart-fp): without it their merges published nothing. The
-    # shared workflow publishes the gh-pages root only from the repository's
-    # default branch, so either name is safe here.
-    branches: [main, master]
+    # main only: the owner ruled "never use master" (2026-11-15). The canonical
+    # caller still lists master until cat-harness-tools#2339 lands, so
+    # check:site-publish-caller reports this one line until then.
+    branches: [main]
   workflow_dispatch:
     inputs:
       plan:
