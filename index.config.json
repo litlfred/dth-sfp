@@ -17,9 +17,7 @@
           "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
           "overrides": {
             "who-iris": {
-              "directories": [
-                "library"
-              ]
+              "whole": true
             },
             "folio-assistant-core": {
               "skip": true
@@ -63,6 +61,7 @@
                 "smart-base-content-adapters",
                 "smart-base-translations",
                 "library",
+                "l1-extraction-9789240116191-eng",
                 "methodologies",
                 "smart-base-artifact-index",
                 "tools",
