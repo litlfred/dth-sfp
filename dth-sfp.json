@@ -125,6 +125,9 @@
       "renderedBy": "archimate-pages",
       "covers": [
         "archimate"
+      ],
+      "writer": [
+        "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
       ]
     }
   ]
