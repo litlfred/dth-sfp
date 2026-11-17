@@ -15,14 +15,16 @@
       "label": "Fig. 3",
       "model": "0.1.0-draft.1",
       "view": "id-6665684387505f2a8129f914b7e5717b",
-      "basis": "by-eye"
+      "basis": "by-eye",
+      "asDrawn": "folio/dth-sfp/media/fig-3-diig-enterprise-architecture.svg"
     },
     {
       "block": "folio/dth-sfp/ch04-determine-requirements/f-fig-04.md",
       "label": "Fig. 4",
       "model": "0.1.0-draft.1",
       "view": "id-9d535a5ce08f5782b9738801ab04da26",
-      "basis": "by-eye"
+      "basis": "by-eye",
+      "asDrawn": "folio/dth-sfp/media/fig-4-sf-reporting-workflow.svg"
     }
   ]
 }
