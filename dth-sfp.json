@@ -4,6 +4,30 @@
   "title": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
   "version": "0.1.0",
   "iriBase": "https://litlfred.github.io/dth-sfp/",
+  "avatar": {
+    "glyph": "M3 5h6a3 3 0 013 3v11a2 2 0 00-2-2H3zM21 5h-6a3 3 0 00-3 3v11a2 2 0 012-2h7zM16.5 8v3.5M16.5 14h.01",
+    "tone": 198,
+    "reads": "an open handbook with an exclamation mark on its page, in WHO blue \u2014 a report of a suspect product; the glyph behind the cover, for a surface that draws marks rather than images"
+  },
+  "_avatar_comment": "The handbook's front page is this layer's avatar (owner, 2026-11-17: \"Use the front page of the handbook\"). `icon` names the cover, page 1 of the published WHO handbook (ISBN 9789240120747, iris.who.int handle 10665/386358) rendered at 400 px wide; `avatarRegion` is a square of its illustration. `avatar` is the glyph that check:avatar-instances reads and that a glyph-only surface draws.",
+  "images": [
+    {
+      "id": "cover",
+      "src": "docs/assets/img/cover.jpg",
+      "role": "cover",
+      "width": 400,
+      "height": 566,
+      "avatarRegion": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.7067
+      },
+      "title": "Digital transformation handbook for reporting substandard and falsified medical products: a practical handbook: cover",
+      "description": "Page 1 of Digital transformation handbook for reporting substandard and falsified medical products: a practical handbook. Geneva: World Health Organization; 2026. Licence: CC BY-NC-SA 3.0 IGO (https://creativecommons.org/licenses/by-nc-sa/3.0/igo). Rendered from the PDF at iris.who.int (handle 10665/386358), unaltered apart from scaling."
+    }
+  ],
+  "icon": "cover",
   "mountApprovers": [
     "litlfred"
   ],
@@ -107,6 +131,14 @@
         "keyedBy": "tip"
       },
       "description": "People's outstanding items and the feedback raised against blocks; its inner directories are declared by `todos/todos.json`."
+    },
+    {
+      "id": "docs",
+      "path": "docs/",
+      "graphTypologies": [
+        "docs"
+      ],
+      "description": "This layer's site directory, and under assets/img/ the handbook's cover, which `icon` names as the layer's avatar. Declaring it is what gives the cover a published path."
     }
   ],
   "description": "WHO Digital transformation handbook for reporting substandard and falsified medical products (2026, ISBN 9789240120747, IRIS 187cabc7), as an L2 DTH on smart-ra, dth-sc, dth-pc, dth-hrh, and smart-base: the working document folio seeded from its L1 entry in who-iris (9789240120747-eng), DAK components (personas, user scenarios, BPMN 2.0 workflows, DMN 1.3 decision tables, core data elements, requirements, and indicators), and its Cluster C domain glossary linked to smart-ra, dth-sc, dth-pc, and dth-hrh.",
