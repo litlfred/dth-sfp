@@ -144,7 +144,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "4f1a2ade78a923fedcd6a9b38b907891ee7395d4",
+          "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -154,8 +154,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "4f1a2ade78a923fedcd6a9b38b907891ee7395d4",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }
@@ -194,7 +194,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "e3e7b2dd2b6d2e2f7a547fbb7fc6141443e1ae81",
+          "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -210,8 +210,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "e3e7b2dd2b6d2e2f7a547fbb7fc6141443e1ae81",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }
@@ -222,7 +222,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "73e1c9a8f80fa706e7fcaf20a1189e44434f6224",
+          "ref": "e41f9fe092fe3553a3befd5316e45dc14b0ba49f",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -241,8 +241,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "73e1c9a8f80fa706e7fcaf20a1189e44434f6224",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "ref": "e41f9fe092fe3553a3befd5316e45dc14b0ba49f",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }
@@ -349,7 +349,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "efb6dbb5d4729015bc2af963aa8a65387dada4ab",
+          "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -388,8 +388,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "efb6dbb5d4729015bc2af963aa8a65387dada4ab",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }

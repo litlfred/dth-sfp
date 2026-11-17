@@ -14,7 +14,7 @@
     {
       "harness": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "ref": "4f1a2ade78a923fedcd6a9b38b907891ee7395d4"
+      "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00"
     },
     {
       "harness": "folio-assistant-core",
@@ -24,12 +24,12 @@
     {
       "harness": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "ref": "e3e7b2dd2b6d2e2f7a547fbb7fc6141443e1ae81"
+      "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb"
     },
     {
       "harness": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "ref": "73e1c9a8f80fa706e7fcaf20a1189e44434f6224"
+      "ref": "e41f9fe092fe3553a3befd5316e45dc14b0ba49f"
     },
     {
       "harness": "bootstrap",
@@ -49,7 +49,7 @@
     {
       "harness": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "ref": "efb6dbb5d4729015bc2af963aa8a65387dada4ab"
+      "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa"
     },
     {
       "harness": "dth-pc",
@@ -124,7 +124,7 @@
     {
       "instance": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "sha": "e3e7b2dd2b6d2e2f7a547fbb7fc6141443e1ae81",
+      "sha": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
       "upstreamRoot": "",
       "path": "cat-harness",
       "via": "cat-harness",
@@ -138,7 +138,7 @@
           "id": "*",
           "path": "cat-harness",
           "upstreamPath": ".",
-          "treeDigest": "3217662ecb99a3ef806bc5d51f9ec19232c4ec3dde869e56ab85f3bd1ed32117",
+          "treeDigest": "9e965c2bbf5eec535fca5aaa3a364d1040ac6836a1e7280e5b961216a0e2087d",
           "files": 2622,
           "except": [
             "docs/proposals",
@@ -158,14 +158,14 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "e3e7b2dd2b6d2e2f7a547fbb7fc6141443e1ae81",
+        "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
         "approver": "declared"
       }
     },
     {
       "instance": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "sha": "73e1c9a8f80fa706e7fcaf20a1189e44434f6224",
+      "sha": "e41f9fe092fe3553a3befd5316e45dc14b0ba49f",
       "upstreamRoot": "",
       "path": "cat-harness-tools",
       "via": "cat-harness-tools",
@@ -179,15 +179,15 @@
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "1b3f4b2a41693e1018c5f7c7f8ea0b988d491929d572f103bf17ad7587b7c5e5",
-          "files": 5007
+          "treeDigest": "a67367aceaaa92fdc8c115c52c7cf0021af5bf0b6f1a029244fb09288a871c21",
+          "files": 5011
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "73e1c9a8f80fa706e7fcaf20a1189e44434f6224",
+        "ref": "e41f9fe092fe3553a3befd5316e45dc14b0ba49f",
         "approver": "declared"
       }
     },
@@ -298,7 +298,7 @@
     {
       "instance": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "sha": "efb6dbb5d4729015bc2af963aa8a65387dada4ab",
+      "sha": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
       "upstreamRoot": "",
       "path": "dth-sc",
       "via": "dth-sc",
@@ -320,14 +320,14 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "efb6dbb5d4729015bc2af963aa8a65387dada4ab",
+        "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
         "approver": "declared"
       }
     },
     {
       "instance": "fhir-harness",
       "repository": "litlfred/fhir-harness",
-      "sha": "4f1a2ade78a923fedcd6a9b38b907891ee7395d4",
+      "sha": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
       "upstreamRoot": "",
       "path": "fhir-harness",
       "via": "fhir-harness",
@@ -341,7 +341,7 @@
           "id": "*",
           "path": "fhir-harness",
           "upstreamPath": ".",
-          "treeDigest": "03ccc988d58d1f7121c277996e0d2970ac85da6f08585b5e99c2e08d727ec8ae",
+          "treeDigest": "90d4751dcca8d27d192441ff3e9cfbc21e3455359afd6c567190a55ffdbfc3b4",
           "files": 985,
           "except": [
             "collab"
@@ -352,7 +352,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "4f1a2ade78a923fedcd6a9b38b907891ee7395d4",
+        "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
         "approver": "declared"
       }
     },
