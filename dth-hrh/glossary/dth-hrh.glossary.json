@@ -1,0 +1,1059 @@
+{
+  "$schema": "folio-glossary/v1",
+  "id": "dth-hrh",
+  "title": "Glossary of the Digital Transformation Handbook for Human Resources for Health and Health Worker Registries",
+  "description": "The handbook's health workforce terms (digital terms are addressed separately). One concept per term, each related to the candidate definitions in twg-candidates.glossary.json. A term becomes 'authored' only when the working group adopts a definition: a person sets `definition` and `status`, citing the change set that decided it in `scopeNote`. Re-running scripts/glossary/build_glossary.py keeps authored terms. Organizations several handbooks name live once in smart-ra's organizations scheme (litlfred/smart-ra#198) and are listed under members; organization terms here carry a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
+  "modified": "2026-10-14",
+  "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "terms": [
+    {
+      "id": "accreditation",
+      "prefLabel": "Accreditation",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/accreditation--who-hpr-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "active-health-worker",
+      "prefLabel": "Active health worker",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/active-health-worker--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "activity-level",
+      "prefLabel": "Activity level",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/activity-level--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "attrition",
+      "prefLabel": "Attrition",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/attrition--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "certification",
+      "prefLabel": "Certification",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/certification--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "community-health-workers",
+      "prefLabel": "Community health workers",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/community-health-workers--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "CHW",
+      "altLabel": [
+        "CHW",
+        "CHWs"
+      ]
+    },
+    {
+      "id": "competence",
+      "prefLabel": "Competence",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/competence--who-hpr-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "competencies",
+      "prefLabel": "Competencies",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/competencies--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "continuing-professional-development",
+      "prefLabel": "Continuing professional development (CPD)",
+      "altLabel": [
+        "CPD"
+      ],
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/continuing-professional-development--who-nhwa-2023",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/continuing-professional-development--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "CPD"
+    },
+    {
+      "id": "contract-type",
+      "prefLabel": "Contract type",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/contract-type--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "deployment",
+      "prefLabel": "Deployment",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/deployment--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "distribution",
+      "prefLabel": "Distribution",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/distribution--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "dual-practice",
+      "prefLabel": "Dual practice",
+      "scopeNote": "Open for working-group review: 3 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/dual-practice--who-hpr-2024",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/dual-practice--who-nhwa-2023",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/dual-practice--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "education",
+      "prefLabel": "Education (for health workers)",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/education--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "educational-institution",
+      "prefLabel": "Educational institution",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/educational-institution--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "education-and-training-institution",
+      "prefLabel": "Education and training institution (Health workforce)",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/education-and-training-institution--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "employment-status-full-time-part-time-temporary-permanent",
+      "prefLabel": "Employment status: full-time, part-time, temporary, permanent",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/employment-status-full-time-part-time-temporary-permanent--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "health-labour-market",
+      "prefLabel": "Health labour market",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-labour-market--who-afro-hwf-charter"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "HLM",
+      "altLabel": [
+        "HLM",
+        "HLMA"
+      ]
+    },
+    {
+      "id": "health-practitioner",
+      "prefLabel": "Health practitioner",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-practitioner--who-hpr-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "health-professional",
+      "prefLabel": "Health professional",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-professional--who-hpr-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "health-professions-education-accreditation-agency",
+      "prefLabel": "Health Professions Education Accreditation Agency",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-professions-education-accreditation-agency--who-gdhcn-framework-2026"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "health-services-licensing-agency",
+      "prefLabel": "Health Services Licensing Agency",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-services-licensing-agency--who-gdhcn-framework-2026"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "health-workers",
+      "prefLabel": "Health workers",
+      "altLabel": [
+        "health workforce",
+        "human resources for health (HRH)",
+        "HRH"
+      ],
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workers--who-wpro-hwf-framework-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "HRH"
+    },
+    {
+      "id": "health-workforce-planning",
+      "prefLabel": "Health workforce planning",
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-planning--who-nhwa-2023",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-planning--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "health-workforce",
+      "prefLabel": "Health workforce (HWF)",
+      "altLabel": [
+        "HWF",
+        "HCWF"
+      ],
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce--who-afro-hwf-charter"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "HWF"
+    },
+    {
+      "id": "health-workforce-registry",
+      "prefLabel": "Health workforce registry",
+      "altLabel": [
+        "Health worker registry",
+        "Provider registry",
+        "HWR",
+        "PR"
+      ],
+      "scopeNote": "Open for working-group review: 12 candidate definitions, none adopted. TWG priority term (workbook instructions). Must stay consistent with the final DPI-H reference architecture definition.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-itu-dpi-h-ra-draft-2026",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-itu-dpi-h-ra-draft-2026-2",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-hrhis-mds-2015",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-hpr-2024",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-hwf-data-handbook-2022",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--joachim-hwf-forecasting",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--intrahealth-hwis-2013",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--openhie-hwr-ig-2016",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--intrahealth-2015",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--chibuzor-hwfis-review",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--dhe-planning-deck",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-registry--who-mds-crosswalk"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry"
+      ],
+      "notation": "HWR"
+    },
+    {
+      "id": "health-workforce-observatory",
+      "prefLabel": "Health workforce observatory",
+      "altLabel": [
+        "HRH observatory (national)"
+      ],
+      "scopeNote": "Open for working-group review: 4 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--who-afro-workforce2030-2020",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--who-hwf-data-handbook-2022",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--who-hrh-observatories-2012",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/health-workforce-observatory--openhie-hwr-ig-2016"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "human-resources-management",
+      "prefLabel": "Human resources management",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-management--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "HRM",
+      "altLabel": [
+        "HRM",
+        "HR"
+      ]
+    },
+    {
+      "id": "human-resources-for-health-information-system",
+      "prefLabel": "Human resources for health information system",
+      "altLabel": [
+        "HRH-IS",
+        "Health workforce information system",
+        "human resources information systems for health",
+        "HRIS",
+        "HRHIS",
+        "Information Systems for Human Resources for Health (ISHRH)",
+        "ISHRH",
+        "HWIS"
+      ],
+      "scopeNote": "Open for working-group review: 12 candidate definitions, none adopted. TWG priority term (workbook instructions).",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hlma-2021",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hlma-2021-2",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--who-hwf-data-handbook-2022",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--eurohealth-2022",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--riley-hrhis-review-2012",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--intrahealth-hwis-2013",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--ishijima-hrhis-tanzania",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--were-south-south-hris",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--chibuzor-hwfis-review",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--measure-evaluation-m3-2018",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--waters-zhris",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/human-resources-for-health-information-system--wikipedia-hrhis"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "HRIS"
+    },
+    {
+      "id": "in-service-training",
+      "prefLabel": "In-service training",
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/in-service-training--who-nhwa-2023",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/in-service-training--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "international-standard-classification-of-occupations",
+      "prefLabel": "International Standard Classification of Occupations (ISCO)",
+      "altLabel": [
+        "ISCO",
+        "ISCO-08"
+      ],
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/international-standard-classification-of-occupations--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "ISCO"
+    },
+    {
+      "id": "labour-force-survey",
+      "prefLabel": "Labour force survey",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/labour-force-survey--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "licensing",
+      "prefLabel": "Licensing",
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/licensing--who-wpro-hwf-framework-2024",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/licensing--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "migration",
+      "prefLabel": "Migration",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/migration--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "mobility-flow",
+      "prefLabel": "Mobility flow",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/mobility-flow--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "national-health-workforce-accounts",
+      "prefLabel": "National Health Workforce Accounts (NHWA)",
+      "altLabel": [
+        "NHWA"
+      ],
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/national-health-workforce-accounts--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate",
+      "notation": "NHWA"
+    },
+    {
+      "id": "occupation",
+      "prefLabel": "Occupation",
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/occupation--who-hpr-2024",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/occupation--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "place-of-training",
+      "prefLabel": "Place of training",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/place-of-training--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "pre-service-education",
+      "prefLabel": "Pre-service education",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/pre-service-education--who-nhwa-2023"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "professional-council",
+      "prefLabel": "Professional council",
+      "altLabel": [
+        "professional regulatory/licensing authority/body",
+        "medical council/board",
+        "nursing council/board"
+      ],
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted. TWG priority term (workbook instructions).",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/professional-council--who-hlma-2021",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/professional-council--openhie-hwr-ig-2016",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-professional-council-examples"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "qualification",
+      "prefLabel": "Qualification",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/qualification--who-hpr-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "recruitment",
+      "prefLabel": "Recruitment",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/recruitment--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "registration",
+      "prefLabel": "Registration",
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/registration--who-hlma-2021",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/registration--who-hpr-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "regulation",
+      "prefLabel": "Regulation",
+      "scopeNote": "Open for working-group review: 4 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-hpr-2024",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-rural-retention-2021",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-wpro-hwf-framework-2024",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/regulation--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "retention",
+      "prefLabel": "Retention (of health workers)",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/retention--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "scope-of-practice",
+      "prefLabel": "Scope of practice",
+      "scopeNote": "Open for working-group review: 2 candidate definitions, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/scope-of-practice--who-hlma-2021",
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/scope-of-practice--who-rural-retention-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "stewardship",
+      "prefLabel": "Stewardship",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/stewardship--who-wpro-hwf-framework-2024"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "stock",
+      "prefLabel": "Stock (of health workers)",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/stock--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "supply",
+      "prefLabel": "Supply (of health workers)",
+      "scopeNote": "Open for working-group review: 1 candidate definition, none adopted.",
+      "related": [
+        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/twg-candidates/supply--who-hlma-2021"
+      ],
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "world-health-organization",
+      "prefLabel": "World Health Organization",
+      "altLabel": [
+        "WHO",
+        "AFRO",
+        "WPRO",
+        "AFR",
+        "AMR",
+        "EUR",
+        "SEAR",
+        "WPR"
+      ],
+      "notation": "WHO",
+      "scopeNote": "Named throughout the handbook outline and glossary workbook, including its six regional offices (AFRO, WPRO, AFR, AMR, EUR, SEAR, WPR). A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-public-infrastructure-for-health",
+      "prefLabel": "Digital public infrastructure for health",
+      "altLabel": [
+        "DPI-H"
+      ],
+      "notation": "DPI-H",
+      "scopeNote": "Expanded in Chapter 1 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "business-process-model-and-notation",
+      "prefLabel": "Business Process Model and Notation",
+      "altLabel": [
+        "BPMN"
+      ],
+      "notation": "BPMN",
+      "scopeNote": "Used in Chapters 4 and 5 for business process workflows; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-implementation-investment-guide",
+      "prefLabel": "Digital implementation investment guide",
+      "altLabel": [
+        "DIIG"
+      ],
+      "notation": "DIIG",
+      "scopeNote": "Expanded in Chapter 3 of the handbook outline, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "electronic-medical-record",
+      "prefLabel": "Electronic medical record",
+      "altLabel": [
+        "EMR"
+      ],
+      "notation": "EMR",
+      "scopeNote": "Used in Chapter 5 and Chapter 10 for point-of-care clinical systems; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "smart-guidelines",
+      "prefLabel": "Standards-based, machine-readable, adaptive, requirements-based and testable",
+      "altLabel": [
+        "SMART",
+        "SMART Guidelines"
+      ],
+      "notation": "SMART",
+      "scopeNote": "Used in Chapter 3 of the handbook outline; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "technical-working-group",
+      "prefLabel": "Technical working group",
+      "altLabel": [
+        "TWG"
+      ],
+      "notation": "TWG",
+      "scopeNote": "Expanded in the handbook front matter and glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-telecommunication-union",
+      "prefLabel": "International Telecommunication Union",
+      "altLabel": [
+        "ITU"
+      ],
+      "notation": "ITU",
+      "scopeNote": "Named in Chapter 1 (WHO/ITU DPI-H reference architecture); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "minimum-data-set",
+      "prefLabel": "Minimum Data Set",
+      "altLabel": [
+        "MDS"
+      ],
+      "notation": "MDS",
+      "scopeNote": "Expanded in Chapter 11 and the glossary workbook (WHO Minimum Data Set for Health Workforce Registry), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "open-health-information-exchange",
+      "prefLabel": "Open Health Information Exchange",
+      "altLabel": [
+        "OpenHIE"
+      ],
+      "notation": "OpenHIE",
+      "scopeNote": "Named in Chapter 10 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "health-information-system",
+      "prefLabel": "Health information system",
+      "altLabel": [
+        "HIS"
+      ],
+      "notation": "HIS",
+      "scopeNote": "Expanded in the glossary workbook and Chapter 10, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "decision-model-and-notation",
+      "prefLabel": "Decision Model and Notation",
+      "altLabel": [
+        "DMN"
+      ],
+      "notation": "DMN",
+      "scopeNote": "Used in Chapter 7 for decision-support logic tables; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "electronic-health-record",
+      "prefLabel": "Electronic health record",
+      "altLabel": [
+        "EHR"
+      ],
+      "notation": "EHR",
+      "scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "application-programming-interface",
+      "prefLabel": "Application programming interface",
+      "altLabel": [
+        "API"
+      ],
+      "notation": "API",
+      "scopeNote": "Used in the handbook outline and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "education-management-information-system",
+      "prefLabel": "Education management information system",
+      "altLabel": [
+        "EMIS"
+      ],
+      "notation": "EMIS",
+      "scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "global-digital-health-certification-network",
+      "prefLabel": "Global Digital Health Certification Network",
+      "altLabel": [
+        "GDHCN"
+      ],
+      "notation": "GDHCN",
+      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "health-level-seven",
+      "prefLabel": "Health Level Seven",
+      "altLabel": [
+        "HL7"
+      ],
+      "notation": "HL7",
+      "scopeNote": "Named in Chapter 10 (HL7 FHIR); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "health-management-information-system",
+      "prefLabel": "Health management information system",
+      "altLabel": [
+        "HMIS"
+      ],
+      "notation": "HMIS",
+      "scopeNote": "Used in Chapter 5 and Chapter 10; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "healthcare-provider-directory",
+      "prefLabel": "Healthcare Provider Directory",
+      "altLabel": [
+        "HPD"
+      ],
+      "notation": "HPD",
+      "scopeNote": "Expanded in the glossary workbook (IHE Healthcare Provider Directory), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "integrating-the-healthcare-enterprise",
+      "prefLabel": "Integrating the Healthcare Enterprise",
+      "altLabel": [
+        "IHE"
+      ],
+      "notation": "IHE",
+      "scopeNote": "Named in Chapter 10 (IHE mCSD and HPD profiles); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "ihris",
+      "prefLabel": "iHRIS",
+      "altLabel": [
+        "iHRIS"
+      ],
+      "notation": "iHRIS",
+      "scopeNote": "Named in the glossary workbook (open-source human resources for health information system software). A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "international-standard-classification-of-education",
+      "prefLabel": "International Standard Classification of Education",
+      "altLabel": [
+        "ISCED"
+      ],
+      "notation": "ISCED",
+      "scopeNote": "Expanded in Chapter 11, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-organization-for-standardization",
+      "prefLabel": "International Organization for Standardization",
+      "altLabel": [
+        "ISO"
+      ],
+      "notation": "ISO",
+      "scopeNote": "Named in Chapter 11; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "learning-management-system",
+      "prefLabel": "Learning management system",
+      "altLabel": [
+        "LMS"
+      ],
+      "notation": "LMS",
+      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "mobile-care-services-discovery",
+      "prefLabel": "Mobile Care Services Discovery",
+      "altLabel": [
+        "mCSD"
+      ],
+      "notation": "mCSD",
+      "scopeNote": "Expanded in Chapter 10 (IHE mCSD profile), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "training-institution-information-system",
+      "prefLabel": "Training institution information system",
+      "altLabel": [
+        "TIIS"
+      ],
+      "notation": "TIIS",
+      "scopeNote": "Used in the glossary workbook (HRHIS candidates); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "zimbabwe-human-resources-information-system",
+      "prefLabel": "Zimbabwe Human Resources Information System",
+      "altLabel": [
+        "ZHRIS"
+      ],
+      "notation": "ZHRIS",
+      "scopeNote": "Expanded in the glossary workbook (HRHIS candidates), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "artificial-intelligence",
+      "prefLabel": "Artificial intelligence",
+      "altLabel": [
+        "AI"
+      ],
+      "notation": "AI",
+      "scopeNote": "Used in Chapter 3 and the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-labour-organization",
+      "prefLabel": "International Labour Organization",
+      "altLabel": [
+        "ILO"
+      ],
+      "notation": "ILO",
+      "scopeNote": "Named in Chapter 11 and references (ISCO-08 custodian); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "key-performance-indicator",
+      "prefLabel": "Key performance indicator",
+      "altLabel": [
+        "KPI",
+        "KPIs"
+      ],
+      "notation": "KPI",
+      "scopeNote": "Used in the handbook outline; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "monitoring-and-evaluation",
+      "prefLabel": "Monitoring and evaluation",
+      "altLabel": [
+        "M&E"
+      ],
+      "notation": "M&E",
+      "scopeNote": "Used in Chapter 3 (DIIG mapping); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "ministry-of-health",
+      "prefLabel": "Ministry of Health",
+      "altLabel": [
+        "MoH",
+        "MOH"
+      ],
+      "notation": "MoH",
+      "scopeNote": "Used in the handbook outline and glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "organisation-for-economic-co-operation-and-development",
+      "prefLabel": "Organisation for Economic Co-operation and Development",
+      "altLabel": [
+        "OECD"
+      ],
+      "notation": "OECD",
+      "scopeNote": "Named in the glossary workbook (Joint Questionnaire on non-monetary health care statistics); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "service-oriented-architecture",
+      "prefLabel": "Service-oriented architecture",
+      "altLabel": [
+        "SOA"
+      ],
+      "notation": "SOA",
+      "scopeNote": "Expanded in the glossary workbook, which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "single-sign-on",
+      "prefLabel": "Single sign-on",
+      "altLabel": [
+        "SSO"
+      ],
+      "notation": "SSO",
+      "scopeNote": "Used in the glossary workbook; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "united-nations",
+      "prefLabel": "United Nations",
+      "altLabel": [
+        "UN"
+      ],
+      "notation": "UN",
+      "scopeNote": "Used in Chapter 3; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "unesco",
+      "prefLabel": "United Nations Educational, Scientific and Cultural Organization",
+      "altLabel": [
+        "UNESCO"
+      ],
+      "notation": "UNESCO",
+      "scopeNote": "Named in Chapter 11 and references (ISCED custodian); expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-outline-2026-10-02/HWF_Registry_DTH_Outline.md",
+      "status": "candidate"
+    },
+    {
+      "id": "simple-knowledge-organization-system",
+      "prefLabel": "Simple Knowledge Organization System",
+      "altLabel": [
+        "SKOS"
+      ],
+      "notation": "SKOS",
+      "scopeNote": "Used in the glossary introduction; expansion supplied for review. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    },
+    {
+      "id": "registered-nurse",
+      "prefLabel": "Registered nurse",
+      "altLabel": [
+        "RN",
+        "RNs",
+        "RPN",
+        "APN",
+        "LHV"
+      ],
+      "notation": "RN",
+      "scopeNote": "Expanded in the professional council examples sheet (RN, RPN, APN, LHV nursing cadres), which gives the expansion used as prefLabel. A candidate: no definition has been written. Working draft, subject to finalization of terms (CS-018).",
+      "source": "library/twg-glossary-2026-09-29/HWF_registry_DTH_Glossary_DRAFT.xlsx",
+      "status": "candidate"
+    }
+  ],
+  "members": [
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/un",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/who",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/itu",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/hl7",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/openhie"
+  ]
+}
