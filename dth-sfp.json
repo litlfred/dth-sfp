@@ -133,7 +133,7 @@
       "description": "People's outstanding items and the feedback raised against blocks; its inner directories are declared by `todos/todos.json`."
     },
     {
-      "id": "docs",
+      "id": "dth-sfp-docs",
       "path": "docs/",
       "graphTypologies": [
         "docs"
