@@ -1,0 +1,879 @@
+{
+  "$schema": "folio-glossary/v1",
+  "id": "dth-pc",
+  "title": "Glossary of the Digital Transformation Handbook for Health Product Catalogue",
+  "description": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4). Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless smart-ra or dth-sc already holds it (FHIR, DHSC, WMS). Organizations several handbooks name live once in smart-ra's organizations scheme and are listed under members; organizations only this handbook names (Rwanda FDA, NAFDAC, ZAMRA, ZAMMSA, RMS, GHSC-PSM) are terms here with a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
+  "modified": "2026-10-31",
+  "source": "folio/dth-pc",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "terms": [
+    {
+      "id": "product-master-data",
+      "prefLabel": "Product Master Data",
+      "altLabel": [
+        "product master data",
+        "PMD"
+      ],
+      "definition": "Product master data consists of standardized information that accurately describes a health product’s characteristics. This data remains consistent across all instances of a product.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Examples the handbook gives: product description, dosage, pharmaceutical strength, manufacturer details, shelf life. Owner, 2026-10-31: one concept, no homonym split with the RA's 'Product'. Not defined in dth-sc; this handbook is its source.",
+      "related": [
+        "transactional-data",
+        "national-product-catalogue",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-010.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ]
+    },
+    {
+      "id": "transactional-data",
+      "prefLabel": "Transactional Data",
+      "definition": "In contrast, transactional data—such as batch numbers, manufacturing dates, and serial numbers—varies with each specific instance of the product.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by contrast with Product Master Data.",
+      "related": [
+        "product-master-data",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-010.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ]
+    },
+    {
+      "id": "generic-product",
+      "prefLabel": "Generic Product",
+      "altLabel": [
+        "product",
+        "product information",
+        "generic national product code"
+      ],
+      "definition": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Alternative wording in Ch 2 (page 28): 'Generic products can be described as generic items that conceal the brand or manufacturer information.' Countries identify them with generic national product codes.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-008.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "product-master-data",
+        "trade-item",
+        "product-classification",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product"
+      ]
+    },
+    {
+      "id": "trade-item",
+      "prefLabel": "Trade Item",
+      "definition": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer.",
+      "scopeNote": "Handbook wording, quoted (Ch 2, page 28). A candidate: not adopted. Owner ruling 2026-10-31: Trade Item is the WHO concept, with this narrow sense; the GS1 trade item is a separate external concept and the WHO term's broadMatch (every WHO Trade Item is a GS1 trade item, not the reverse: GS1's also covers services). The handbook's glossary (page 9) prints the GS1 wording, 'Products or services that are priced, ordered or invoiced at any point in the supply chain', citing GS1 (its reference 13); that sentence is GS1's definition, recorded here as a note, not as this concept's. litlfred/smart-ra#142 item 1.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-028.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://www.gs1.org/standards/id-keys/gtin",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "generic-product",
+        "regulated-trade-item",
+        "country-trade-item-identifier",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
+      ]
+    },
+    {
+      "id": "regulated-trade-item",
+      "prefLabel": "Regulated Trade Item",
+      "definition": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Its attributes and cardinalities are in Fig 9 (page 29): identifier 1..*, jurisdiction 1..*, authorisationHolder 1..1, authorisedTradeItem 1..1.",
+      "broader": [
+        "trade-item"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-028.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "product-master-data",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
+      ]
+    },
+    {
+      "id": "product-classification",
+      "prefLabel": "Product Classification",
+      "altLabel": [
+        "classification"
+      ],
+      "definition": "Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by example. Fig 8 places it above Generic Product and Trade Item (strategic, tactical, operational use).",
+      "source": "who-iris/library/9789240116191-eng/sections/page-028.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "generic-product",
+        "trade-item",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/snomed-ct"
+      ]
+    },
+    {
+      "id": "national-product-catalogue",
+      "prefLabel": "National Product Catalogue",
+      "altLabel": [
+        "NPC",
+        "national product catalog"
+      ],
+      "definition": "Adopting a suitable technology tool supports the ongoing management of product master data while maintaining consistent quality and compliance with defined standards. A widely used term for such a tool is the NPC, which many countries implement to oversee product master data.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. The handbook names the TOOL the NPC; it realises the Product Registry foundational component of the dth-sc DHSC architecture (page 16). Link target in smart-ra: Product Catalog Management System / Product Registry.",
+      "related": [
+        "product-master-data",
+        "product-catalogue-management-tool",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-035.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+      ]
+    },
+    {
+      "id": "country-trade-item-identifier",
+      "prefLabel": "Country Trade Item Identifier",
+      "definition": "This attribute is designed to default to GTINs when they are available. In the absence of GTINs, the attribute generates and maintains a local identifier, which can be replaced with a GTIN once it is assigned to the trade item.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. A local identifier attribute for Trade Items without a GTIN (Fig 13, page 40).",
+      "related": [
+        "trade-item",
+        "national-product-catalogue"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-039.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ]
+    },
+    {
+      "id": "data-owner",
+      "prefLabel": "Data Owner",
+      "definition": "Data owner: responsible for the overall strategy, governance, and quality of the product master data.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-026.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "data-custodian",
+        "data-steward",
+        "master-data-governance-group",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
+      ]
+    },
+    {
+      "id": "data-custodian",
+      "prefLabel": "Data Custodian",
+      "definition": "Data custodian: responsible for the technical management and security of product master data.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-026.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "data-owner",
+        "data-steward",
+        "master-data-governance-group",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
+      ]
+    },
+    {
+      "id": "data-steward",
+      "prefLabel": "Data Steward",
+      "definition": "Data steward: responsible for the day-to-day management, maintenance, and quality control of the product master data.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-026.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "data-owner",
+        "data-custodian",
+        "master-data-governance-group",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
+      ]
+    },
+    {
+      "id": "master-data-governance-group",
+      "prefLabel": "Master Data Governance Group",
+      "definition": "Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes.",
+      "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Worded as an instruction; the group is what it creates.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-032.md",
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
+      ],
+      "related": [
+        "data-owner",
+        "data-custodian",
+        "data-steward",
+        "product-master-data"
+      ]
+    },
+    {
+      "id": "catalogue-manager",
+      "prefLabel": "Catalogue Manager",
+      "altLabel": [
+        "catalog manager"
+      ],
+      "scopeNote": "Named as an example role ('Catalogue Manager, NPC System Administrator') with a role description listed as a resource; the handbook prints no definition.",
+      "reason": "Named only; the role description is a resource the handbook lists but does not print.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-043.md",
+      "status": "could-not-extract",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "national-product-catalogue",
+        "data-steward"
+      ]
+    },
+    {
+      "id": "packaging-hierarchy",
+      "prefLabel": "Packaging Hierarchy",
+      "scopeNote": "Used with Fig 10 (primary, secondary, tertiary levels, from GS1) and Fig 11–12 (pack configurations across manufacturers); the handbook gives no defining sentence.",
+      "reason": "Shown in figures, never defined in text.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "status": "could-not-extract",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "trade-item",
+        "generic-product",
+        "unit-of-use"
+      ]
+    },
+    {
+      "id": "product-catalogue-management-tool",
+      "prefLabel": "Product Catalogue Management Tool",
+      "altLabel": [
+        "PCMT",
+        "product catalog management tool"
+      ],
+      "scopeNote": "An open-source tool (PCMT) the handbook recommends considering for the NPC, with a WHO-hosted instance (Ch 6). A named product, so not defined here; smart-pcmt is downstream of dth-pc.",
+      "reason": "A named software product, not a concept the handbook defines.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-017.md",
+      "status": "could-not-extract",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+      ],
+      "related": [
+        "national-product-catalogue",
+        "product-master-data"
+      ]
+    },
+    {
+      "id": "unit-of-use",
+      "prefLabel": "Unit of Use",
+      "scopeNote": "Used in Fig 8 and Fig 9 (generic product attribute unitOfUse 1..1) and Fig 14 ('Unit of use'), never defined in text. smart-pcmt's PCMTGlossary has '#unitOfUse \"The base unit to count by\"'; that CodeSystem is to be retired in favour of this term (litlfred/smart-ra#145).",
+      "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "status": "could-not-extract",
+      "reason": "Shown only as a model attribute; the handbook gives no defining sentence.",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "generic-product",
+        "packaging-hierarchy"
+      ]
+    },
+    {
+      "id": "adverse-events-following-immunization",
+      "prefLabel": "Adverse effects following immunisation",
+      "altLabel": [
+        "AEFI"
+      ],
+      "notation": "AEFI",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "automatic-identification-and-data-capture",
+      "prefLabel": "Automatic identification and data capture",
+      "altLabel": [
+        "AIDC"
+      ],
+      "notation": "AIDC",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "anatomical-therapeutic-chemical-classification",
+      "prefLabel": "Anatomical therapeutic chemical classification system",
+      "altLabel": [
+        "ATC"
+      ],
+      "notation": "ATC",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-adaptation-kit",
+      "prefLabel": "Digital adaptation kit",
+      "altLabel": [
+        "DAK"
+      ],
+      "notation": "DAK",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-health-and-interoperability",
+      "prefLabel": "Digital health and interoperability",
+      "altLabel": [
+        "DH&I"
+      ],
+      "notation": "DH&I",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-implementation-investment-guide",
+      "prefLabel": "Digital implementation investment guide",
+      "altLabel": [
+        "DIIG"
+      ],
+      "notation": "DIIG",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "electronic-logistics-management-information-system",
+      "prefLabel": "Electronic logistic management information system",
+      "altLabel": [
+        "eLMIS"
+      ],
+      "notation": "eLMIS",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. dth-sc's Health Supply Chain Information System lists 'electronic logistics management information system' as an alternative label; linked as closeMatch, not merged.",
+      "closeMatch": [
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "global-data-synchronisation-network",
+      "prefLabel": "Global Data Synchronisation Network",
+      "altLabel": [
+        "GDSN"
+      ],
+      "notation": "GDSN",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "global-trade-item-number"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "global-trade-item-number",
+      "prefLabel": "Global trade item number",
+      "altLabel": [
+        "GTIN"
+      ],
+      "notation": "GTIN",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "trade-item"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-classification-of-diseases-11",
+      "prefLabel": "International classification of diseases, 11th Revision",
+      "altLabel": [
+        "ICD-11"
+      ],
+      "notation": "ICD-11",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-classification-of-health-interventions",
+      "prefLabel": "International classification of health interventions",
+      "altLabel": [
+        "ICHI"
+      ],
+      "notation": "ICHI",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "identification-of-medicinal-products",
+      "prefLabel": "Identification of medicinal products",
+      "altLabel": [
+        "IDMP"
+      ],
+      "notation": "IDMP",
+      "scopeNote": "The abbreviations table expands it as 'a suite of five standards developed within the International Organization for Standardization (ISO) to facilitate the unique identification of medicinal products'. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-non-proprietary-name",
+      "prefLabel": "International non-proprietary name",
+      "altLabel": [
+        "INN"
+      ],
+      "notation": "INN",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "information-technology",
+      "prefLabel": "Information technology",
+      "altLabel": [
+        "IT"
+      ],
+      "notation": "IT",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "non-governmental-organization",
+      "prefLabel": "Non-governmental organisation",
+      "altLabel": [
+        "NGO"
+      ],
+      "notation": "NGO",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "national-regulatory-authority",
+      "prefLabel": "National Regulatory Authority",
+      "altLabel": [
+        "NRA"
+      ],
+      "notation": "NRA",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A kind of organization, not one organization, so it has no focus; Rwanda FDA, NAFDAC and ZAMRA are instances.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "request-for-proposal",
+      "prefLabel": "Request for proposal",
+      "altLabel": [
+        "RFP"
+      ],
+      "notation": "RFP",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "request-for-quote",
+      "prefLabel": "Request for quote",
+      "altLabel": [
+        "RFQ"
+      ],
+      "notation": "RFQ",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "supply-chain-information-systems-maturity-model",
+      "prefLabel": "Supply chain information systems maturity model",
+      "altLabel": [
+        "SCISMM"
+      ],
+      "notation": "SCISMM",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "smart",
+      "prefLabel": "Standards-based, machine-readable, adaptive, requirements-based and testable",
+      "altLabel": [
+        "SMART"
+      ],
+      "notation": "SMART",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "standard-operating-procedure",
+      "prefLabel": "Standard operating procedure",
+      "altLabel": [
+        "SOP"
+      ],
+      "notation": "SOP",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "small-working-group",
+      "prefLabel": "Small working group",
+      "altLabel": [
+        "SWG"
+      ],
+      "notation": "SWG",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "terms-of-reference",
+      "prefLabel": "Terms of reference",
+      "altLabel": [
+        "TOR"
+      ],
+      "notation": "TOR",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "target-software-standards",
+      "prefLabel": "Target Software Standards",
+      "altLabel": [
+        "TSS"
+      ],
+      "notation": "TSS",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "user-acceptance-testing",
+      "prefLabel": "User acceptance testing",
+      "altLabel": [
+        "UAT"
+      ],
+      "notation": "UAT",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "whodrug",
+      "prefLabel": "WHODrug",
+      "notation": "WHODrug",
+      "scopeNote": "The abbreviations table describes it as the 'International reference for medicinal product information, maintained by the Swedish foundation, UMC'. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/umc"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "responsibility-assignment-matrix",
+      "prefLabel": "Responsibility Assignment Matrix",
+      "altLabel": [
+        "RAM"
+      ],
+      "notation": "RAM",
+      "scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-021.md",
+      "status": "candidate"
+    },
+    {
+      "id": "raci",
+      "prefLabel": "Responsible, Accountable, Consulted, and Informed",
+      "altLabel": [
+        "RACI"
+      ],
+      "notation": "RACI",
+      "scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-021.md",
+      "status": "candidate"
+    },
+    {
+      "id": "request-for-information",
+      "prefLabel": "Request for information",
+      "altLabel": [
+        "RFI"
+      ],
+      "notation": "RFI",
+      "scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-036.md",
+      "status": "candidate"
+    },
+    {
+      "id": "traceability-information-system",
+      "prefLabel": "Traceability Information System",
+      "altLabel": [
+        "TIS"
+      ],
+      "notation": "TIS",
+      "scopeNote": "Expanded in the Nigeria country experience. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-054.md",
+      "status": "candidate"
+    },
+    {
+      "id": "monitoring-and-evaluation",
+      "prefLabel": "Monitoring and evaluation",
+      "altLabel": [
+        "M&E"
+      ],
+      "notation": "M&E",
+      "scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-013.md",
+      "status": "candidate"
+    },
+    {
+      "id": "information-and-communications-technology",
+      "prefLabel": "Information and communications technology",
+      "altLabel": [
+        "ICT"
+      ],
+      "notation": "ICT",
+      "scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-013.md",
+      "status": "candidate"
+    },
+    {
+      "id": "global-medical-device-nomenclature",
+      "prefLabel": "Global Medical Device Nomenclature",
+      "altLabel": [
+        "GMDN"
+      ],
+      "notation": "GMDN",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model; the handbook does not cover medical devices (page 16).",
+      "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "status": "candidate"
+    },
+    {
+      "id": "unspsc",
+      "prefLabel": "United Nations Standard Products and Services Code",
+      "altLabel": [
+        "UNSPSC"
+      ],
+      "notation": "UNSPSC",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "status": "candidate"
+    },
+    {
+      "id": "marketing-authorization-holder",
+      "prefLabel": "Marketing authorization holder",
+      "altLabel": [
+        "MAH"
+      ],
+      "notation": "MAH",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-054.md",
+      "status": "candidate"
+    },
+    {
+      "id": "stock-keeping-unit",
+      "prefLabel": "Stock keeping unit",
+      "altLabel": [
+        "SKU"
+      ],
+      "notation": "SKU",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-040.md",
+      "status": "candidate"
+    },
+    {
+      "id": "technical-working-group",
+      "prefLabel": "Technical working group",
+      "altLabel": [
+        "TWG"
+      ],
+      "notation": "TWG",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-052.md",
+      "status": "candidate"
+    },
+    {
+      "id": "ministry-of-health",
+      "prefLabel": "Ministry of Health",
+      "altLabel": [
+        "MoH"
+      ],
+      "notation": "MoH",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. A kind of organization (each country has one), so it has no focus.",
+      "status": "candidate"
+    },
+    {
+      "id": "quality-assurance",
+      "prefLabel": "Quality assurance",
+      "altLabel": [
+        "QA"
+      ],
+      "notation": "QA",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-058.md",
+      "status": "candidate"
+    },
+    {
+      "id": "human-resources",
+      "prefLabel": "Human resources",
+      "altLabel": [
+        "HR"
+      ],
+      "notation": "HR",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-053.md",
+      "status": "candidate"
+    },
+    {
+      "id": "rwanda-food-and-drugs-authority",
+      "prefLabel": "Rwanda Food and Drugs Authority",
+      "altLabel": [
+        "FDA",
+        "Rwanda FDA",
+        "Food and Drugs Authority"
+      ],
+      "notation": "FDA",
+      "scopeNote": "The handbook abbreviates it 'FDA' and expands it as 'Food and Drugs Authority'. The acknowledgements (page 5) and the Rwanda country experience (page 52) show it is Rwanda's regulator, not the US Food and Drug Administration. This misleading acronym is raised in the DTH-PC Contributor Log for an Editor to resolve; the quoted text is unchanged.",
+      "broader": [
+        "national-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.rwandafda.gov.rw/"
+      }
+    },
+    {
+      "id": "nafdac",
+      "prefLabel": "National Agency for Food and Drug Administration and Control",
+      "altLabel": [
+        "NAFDAC"
+      ],
+      "notation": "NAFDAC",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. Nigeria's regulator (country experience, page 54).",
+      "broader": [
+        "national-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.nafdac.gov.ng/"
+      }
+    },
+    {
+      "id": "zamra",
+      "prefLabel": "Zambia Medicines Regulatory Authority",
+      "altLabel": [
+        "ZAMRA"
+      ],
+      "notation": "ZAMRA",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "broader": [
+        "national-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization"
+      }
+    },
+    {
+      "id": "zammsa",
+      "prefLabel": "Zambia Medicines and Medical Supplies Agency",
+      "altLabel": [
+        "ZAMMSA"
+      ],
+      "notation": "ZAMMSA",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization"
+      }
+    },
+    {
+      "id": "rwanda-medical-supply",
+      "prefLabel": "Rwanda Medical Supply Ltd.",
+      "altLabel": [
+        "RMS"
+      ],
+      "notation": "RMS",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization"
+      }
+    },
+    {
+      "id": "usaid-ghsc-psm",
+      "prefLabel": "USAID Global Health Supply Chain Program-Procurement and Supply Management",
+      "altLabel": [
+        "GHSC-PSM",
+        "USAID GHSC-PSM"
+      ],
+      "notation": "GHSC-PSM",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A USAID programme, written 'USAID GHSC-PSM' in the table.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "OrganizationalUnit",
+        "subOrganizationOf": [
+          "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/usaid/_focus"
+        ]
+      }
+    }
+  ],
+  "members": [
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/who",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/paho",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unicef",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unido",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/itu",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/hl7",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gs1",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/usaid",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/umc",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/global-fund",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gavi",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/giz",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/path",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/openhie",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gates-foundation"
+  ]
+}
