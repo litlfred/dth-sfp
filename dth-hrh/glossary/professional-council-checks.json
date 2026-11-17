@@ -1,0 +1,1260 @@
+{
+ "$comment": "Fact-check of the AI-generated 'Professional council' rows of the TWG glossary workbook (library/twg-glossary-2026-09-29/). Keyed by workbook row. build_glossary.py applies `corrections` only; nothing here has any, because no source page could be opened: the checking environment's network policy blocked every fetch, and only web search worked. So every row is `not-verified`; `suspectedIssues` and `suggestedCorrections` come from search-engine excerpts (`searchLeads`), are NOT applied, and are for the TWG to confirm against the live statute or council site. `agentVerdict` is what the checking agent proposed before this normalisation. Re-run with page fetching allowed, then move a confirmed fix into `corrections` with `evidence` (a fetched URL and quote) and set `verdict`.",
+ "checkedOn": "2026-10-14",
+ "method": "web search only; source pages could not be fetched (environment network policy)",
+ "checks": [
+  {
+   "row": 3,
+   "country": "Ghana",
+   "council": "Medical and Dental Council (MDC) Ghana",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Search snippets are consistent with the row: Part II of Act 857, object in s.27. The MDC also oversees physician assistant training (snippet). Reference gives no URL; suggest adding the GhaLII text of Act 857.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://ghalii.org/akn/gh/act/2013/857/eng@2013-05-03",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): Act 857 creates five councils: Allied Health Professions, Medical and Dental, Nursing and Midwifery, Pharmacy, Psychology.",
+     "supports": "statute"
+    },
+    {
+     "url": "https://ces.edu.gh/professions/preview/medical-training-and-practice-conference-2022-day-3",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): \"The Medical and Dental Council is the statutory agency under the Ministry of Health established under Part II of the Health Professions Regulatory Bodies Act, 2013 (Act 857)\"",
+     "supports": "name, statute, definition"
+    },
+    {
+     "url": "https://ces.edu.gh/professions/preview/medical-training-and-practice-conference-2022-day-3",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): \"The object of Council as provided for under section 27 of Act 857 is to secure in the public interest the highest standards in the training and practice of medicine and dentistry\"",
+     "supports": "mandate"
+    }
+   ]
+  },
+  {
+   "row": 4,
+   "country": "Ghana",
+   "council": "Nursing and Midwifery Council of Ghana (N&MC)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "The snippet supports Part III and the NRCD 117 predecessor. It also suggests two errors to check once a fetch works. First, the former name was 'Nurses and Midwives Council', not 'Nurses and Midwifery Council'. Second, 'LI 683 is also being reviewed', so saying Act 857 replaced LI 683 may be inaccurate. The workbook URL www.nmc.gov.gh is the www host, but search indexes nmc.gov.gh without www, so the link may not resolve as given. The repeal wording in Act 857 itself is not confirmed.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://nmc.gov.gh/web/who-we-are",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): \"a statutory body whose mandate is derived from part III of the Health Professions Regulatory Bodies Act 2013 (Act 857)\"",
+     "supports": "statute"
+    },
+    {
+     "url": "https://nmc.gov.gh/web/who-we-are",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): \"Until the passage of this Act, the Council operated under NRCD 117 of 1972 and the LI 683.\" ... \"The LI 683 is also being reviewed.\"",
+     "supports": "statute"
+    }
+   ]
+  },
+  {
+   "row": 5,
+   "country": "Kenya",
+   "council": "Kenya Medical Practitioners and Dentists Council (KMPDC)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. Snippets are consistent with Cap 253, the 2019 rename from Board to Council, and facility licensing. The mandate also covers community oral health officers (snippet). The Wikipedia URL should be dropped: its title is the pre-2019 'Medical Practitioners and Dentists Board', and it is not authoritative. Replace it with the Kenya Law URL.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://new.kenyalaw.org/akn/ke/act/1977/20/eng@2022-12-31",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): Kenya Law lists the Medical Practitioners and Dentists Act (Act 20 of 1977, Cap 253), revised to 2022-12-31.",
+     "supports": "statute"
+    },
+    {
+     "url": "https://kmpdc.go.ke/resources/5.%20CAP%20253%20(Amendments).pdf",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): the 2019 amendment replaced \"Board\" with \"Council\"; the register covers medical practitioners, dental practitioners and health institutions.",
+     "supports": "name, mandate"
+    },
+    {
+     "url": "https://kmpdc.go.ke/committees/",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): committee inspects clinics, health centres, mortuaries, maternity and nursing homes, and hospitals; licenses practitioners and premises.",
+     "supports": "mandate (facility licensing/inspection)"
+    }
+   ]
+  },
+  {
+   "row": 6,
+   "country": "Kenya",
+   "council": "Nursing Council of Kenya (NCK)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. Likely error, to confirm on fetch: Cap. 257 is now titled the 'Nurses and Midwives Act' (Act 3 of 1983), not the 'Nurses Act'. Search found no 2025 replacement Act. The workbook URL nckenya.com/beta/about/ was not reachable here.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://new.kenyalaw.org/akn/ke/act/1983/3",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): page title \"Nurses and Midwives Act\" (Act 3 of 1983, Cap. 257), latest version 2022-12-31.",
+     "supports": "statute"
+    },
+    {
+     "url": "https://nckenya.com/beta",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): NCK is \"a body corporate established by the Nurses and Midwives Act Cap 257 of the Laws of Kenya\".",
+     "supports": "statute"
+    }
+   ]
+  },
+  {
+   "row": 7,
+   "country": "Nigeria",
+   "council": "Medical and Dental Council of Nigeria (MDCN)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. Snippets suggest a mandate covering medicine, dentistry and alternative medicine, so the 'professions' field (medicine and dentistry) may be incomplete. The workbook's mention of 'laboratory' practice is not supported by any snippet seen. The official page uses mdcn.gov.ng; the www host in the workbook URL did not resolve here. Decree 23 of 1988 is supported only by a secondary snippet.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://mdcn.gov.ng/page/about-us/mdcn-mandate-mission-vission",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): \"regulated by the Medical and Dental Practitioners Act Cap 221 (now Cap M8) Laws of Federation of Nigeria 1990. The mandates include regulating training in Medicine, Dentistry and Alternative Medicine\"",
+     "supports": "statute, mandate"
+    }
+   ]
+  },
+  {
+   "row": 8,
+   "country": "Nigeria",
+   "council": "Nursing and Midwifery Council of Nigeria (NMCN)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. The snippets support Cap N143, still in force. Neither 'Decree No. 89 of 1979' nor 'category B parastatal' appeared in any snippet. The 3-year licence comes only from a community wiki. Check whether the 2021 amendment bill received assent.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://nmcn.gov.ng/establish.html",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): \"a parastatal of the Federal Government of Nigeria established by Act Cap. No143 Laws of the Federation of Nigeria, 2004.\"",
+     "supports": "statute"
+    },
+    {
+     "url": "https://www.thisdaylive.com/2021/11/30/senate-passes-nursing-midwifery-act-amendment-bill/",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): Senate passed the Nursing and Midwifery (Registration etc) Act, CAP N143 ... (Amendment) Bill (2021); assent not shown.",
+     "supports": "statute (in-force status)"
+    }
+   ]
+  },
+  {
+   "row": 9,
+   "country": "South Africa",
+   "council": "Health Professions Council of South Africa (HPCSA)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. The statute (s.2, Act 56 of 1974) is consistent with the snippets. Likely error in 'professions': the HPCSA has 12 professional boards, one of them the Medical and Dental board, and these cover many more than '11 other health professions'. Board count is not the same as profession count, so rephrase, for example 'medicine, dentistry and other health professions under 12 professional boards'. No URL is given; add the acts.co.za section 2 text or the HPCSA site.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://www.acts.co.za/health/2__establishment_of_health_professions_council_of_south_africa.php",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): section 2(1) establishes the HPCSA as a juristic person; head office in Pretoria (as amended by Act 89 of 1997).",
+     "supports": "statute"
+    },
+    {
+     "url": "https://pmg.org.za/files/HPCSA_ANNUAL_REPORT_FY2021_2022_APPROVED.pdf",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): HPCSA operates \"together with the 12 Professional Boards under its ambit\".",
+     "supports": "professions"
+    }
+   ]
+  },
+  {
+   "row": 10,
+   "country": "South Africa",
+   "council": "South African Nursing Council (SANC)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. The mandate, including the 30-day Gazette publication, is consistent with s.4 of the snippet. Wording to check: SANC predates the 2005 Act (Nursing Act 1944) and continues under s.2 of it, so 'established under' should read 'continues to exist under'. The 'professions' field likely omits midwifery, which the Nursing Act categories include; not confirmed. The sanc.co.za URL was not reachable here.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://source.acts.co.za/nursing-act-2005/4__functions_of_council.php",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): s.4(h) \"publish in the Gazette the details of the unprofessional conduct and the names ... within 30 days of the conclusion of such disciplinary action\"",
+     "supports": "mandate"
+    },
+    {
+     "url": "https://fundisa.journals.ac.za/pub/article/view/20/12",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): current Act is Nursing Act 33 of 2005, following the 1944 original and its 1978 amendment.",
+     "supports": "statute"
+    }
+   ]
+  },
+  {
+   "row": 11,
+   "country": "Canada (Ontario)",
+   "council": "College of Nurses of Ontario (CNO)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "partly-verified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Controlled acts are authorized under Nursing Act s.4 (renumbered s.4.1 per a 2023 amendment note) - consistent with mandate. RNAO PDF could not be resolved.",
+   "suggestedCorrections": {
+    "definition": "Wording nit: the Nursing Act, 1991 'continues' an existing College (s. 6); CNO predates 1991, so 'established under' should read 'continued under'.",
+    "reference": "Replace the RNAO toolkit PDF (secondary source; not reachable) with the statute: https://www.ontario.ca/laws/statute/91n32 and https://www.ontario.ca/laws/statute/91r18 (proposed; page fetch blocked)"
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.ontario.ca/laws/statute/91n32",
+     "excerpt": "The College is continued under the name College of Nurses of Ontario in English and Ordre des infirmières et infirmiers de l'Ontario in French.",
+     "supports": "name, statute (search-engine excerpt; page fetch blocked)"
+    },
+    {
+     "url": "https://www.ontario.ca/laws/statute/91n32",
+     "excerpt": "The members shall be divided into two classes, registered nurses and practical nurses.",
+     "supports": "professions (search-engine excerpt)"
+    },
+    {
+     "url": "https://cmo.on.ca/midwifery-act-1991-and-the-regulated-health-professions-act-1991-proclaimed/",
+     "excerpt": "The Regulated Health Professions Act, 1991 (RHPA), and the related Midwifery Act, 1991, came into effect on December 31, 1993",
+     "supports": "definition: in effect 1993 (search-engine excerpt)"
+    },
+    {
+     "url": "https://cno.org/globalassets/1-whatiscno/cno-qa-public-facing-report.pdf",
+     "excerpt": "CNO established its QA Program as a requirement of the Regulated Health Professions Act, 1991",
+     "supports": "mandate: QA program (search-engine excerpt)"
+    }
+   ]
+  },
+  {
+   "row": 12,
+   "country": "Canada (Ontario)",
+   "council": "College of Physicians and Surgeons of Ontario (CPSO)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "unverified",
+    "reference": "partly-verified"
+   },
+   "suspectedIssues": "",
+   "suggestedCorrections": {
+    "reference": "Add the Medicine Act, 1991, S.O. 1991, c. 30 (https://www.ontario.ca/laws/statute/91m30) alongside RHPA, S.O. 1991, c. 18; reference currently names only the RHPA and gives no URL."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.ontario.ca/laws/statute/91m30",
+     "excerpt": "The College is continued under the name College of Physicians and Surgeons of Ontario in English and Ordre des médecins et chirurgiens de l'Ontario in French.",
+     "supports": "name, statute (search-engine excerpt; s.5 Medicine Act, 1991)"
+    }
+   ]
+  },
+  {
+   "row": 13,
+   "country": "United States",
+   "council": "Federation of State Medical Boards (FSMB)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok (non-statutory body; correctly described)",
+    "mandate": "wrong",
+    "reference": "partly-verified (Wikipedia cited)"
+   },
+   "suspectedIssues": "fsmb.org reference URL unresolved from this session.",
+   "suggestedCorrections": {
+    "mandate": "FSMB co-sponsors (with NBME) the whole USMLE program (Steps 1, 2 CK and 3), not only Step 3 (proposed; based on search excerpts).",
+    "definition": "Board count: sources give 70 or 71 state medical and osteopathic boards; say 'approximately 70 state and territorial medical and osteopathic boards'.",
+    "reference": "Drop the Wikipedia link; https://www.fsmb.org/about-fsmb/ could not be checked (fetch blocked)."
+   },
+   "searchLeads": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Federation_of_State_Medical_Boards",
+     "excerpt": "the USMLE is a three-step ... examination for medical licensure that is sponsored by the FSMB and the National Board of Medical Examiners (NBME)",
+     "supports": "mandate (search-engine excerpt; Wikipedia)"
+    },
+    {
+     "url": "https://www.jmronline.org/content/100/4/17",
+     "excerpt": "successful two decade partnership in the USMLE",
+     "supports": "mandate (search-engine excerpt; Journal of Medical Regulation)"
+    },
+    {
+     "url": "https://fsmb.org/about-fsmb/history",
+     "excerpt": "representing all medical and osteopathic licensing boards across the United States and its territories",
+     "supports": "definition (search-engine excerpt, paraphrase in summary)"
+    }
+   ]
+  },
+  {
+   "row": 14,
+   "country": "United States",
+   "council": "National Council of State Boards of Nursing (NCSBN)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok (non-statutory body)",
+    "mandate": "partly-verified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Reference gives no URL; suggest https://www.ncsbn.org.",
+   "suggestedCorrections": {
+    "definition": "Official wording is 'nursing regulatory bodies act and counsel together' (members include boards of nursing and other nursing regulatory bodies, incl. associate members outside the US)."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.ncsbn.org/public-files/videos/Transcript_NCSBN_101_Overview.pdf",
+     "excerpt": "NCSBN is an independent, not-for-profit organization through which nursing regulatory bodies act in council together",
+     "supports": "definition (search-engine excerpt)"
+    },
+    {
+     "url": "https://www.ncsbn.org/history.htm",
+     "excerpt": "independent, 501(c)(3) not-for-profit organization",
+     "supports": "definition (search-engine excerpt)"
+    }
+   ]
+  },
+  {
+   "row": 15,
+   "country": "Brazil",
+   "council": "Federal Council of Medicine (Conselho Federal de Medicina - CFM)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "partly-verified",
+    "reference": "ok"
+   },
+   "suspectedIssues": "Statute facts consistent across Câmara, Senado and CFM copies per search results.",
+   "suggestedCorrections": {
+    "mandate": "Registration and licensing of physicians is done by the Regional Councils (CRMs), where the physician registers (Lei 3.268/1957); CFM is the national supervisory/normative body. 'Registers and licenses physicians nationally' overstates CFM's role (proposed; statute text not fetched)."
+   },
+   "searchLeads": [
+    {
+     "url": "https://portal.cfm.org.br/leis/lei-3268-1957-dispoe-sobre-os-conselho-de-medicina-e-da-outras-providencias",
+     "excerpt": "Law 3.268/1957 treats the Conselho Federal and regional councils, which Decreto-Lei nº 7.955 of 13 September 1945 established, as a single autarchy ... with public-law legal personality and administrative and financial autonomy",
+     "supports": "definition, statute (search-engine summary of Art. 1, not verbatim)"
+    },
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/1950-1959/lei-3268-30-setembro-1957-354846-normaatualizada-pl.html",
+     "excerpt": "Art. 2: councils supervise professional ethics across the country and act as judges and disciplinarians of the medical class",
+     "supports": "mandate (search-engine summary)"
+    }
+   ]
+  },
+  {
+   "row": 16,
+   "country": "Brazil",
+   "council": "Federal Council of Nursing (Conselho Federal de Enfermagem - COFEN)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "wrong",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "",
+   "suggestedCorrections": {
+    "mandate": "The professional card with nationwide 'fé pública' is issued by the Regional Councils (COREN) under Art. 15 VII of Lei 5.905/1973, not by COFEN. COFEN's competences (Art. 8) include approving its Regimento, installing and supervising the CORENs, and drafting the Código de Deontologia de Enfermagem; cassação (licence revocation) is decided by COFEN after hearing the COREN (proposed; statute text not fetched)."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.legjur.com/legislacao/art/lei_00059051973-15",
+     "excerpt": "Compete aos Conselhos Regionais: ... VII - expedir a carteira profissional indispensável ao exercício da profissão, a qual terá fé pública em todo o território nacional e servira de documento de identidade.",
+     "supports": "mandate: credential is issued by COREN, not COFEN (search-engine excerpt; third-party copy of Art. 15)"
+    },
+    {
+     "url": "https://www.corenms.gov.br/wp-content/uploads/2018/06/Codigo-de-Ética-Coren-MS.pdf",
+     "excerpt": "as penas referidas nos incisos I, II, III e IV deste artigo são da alçada dos Conselhos Regionais e a referida no inciso V, do Conselho Federal, ouvido o Conselho Regional interessado",
+     "supports": "mandate: COFEN decides cassação (search-engine excerpt)"
+    }
+   ]
+  },
+  {
+   "row": 17,
+   "country": "Chile",
+   "council": "Superintendence of Health (Superintendencia de Salud)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "partly-verified",
+    "reference": "partly-verified"
+   },
+   "suspectedIssues": "",
+   "suggestedCorrections": {
+    "reference": "Cite DFL N° 1/2005 (MINSAL), Art. 121 No. 6, and the registry regulation Decreto Supremo N° 16/2007 (MINSAL).",
+    "mandate": "The registry records qualifications/specialties for public information within the quality-assurance system; it is not a licensing function. 'Oversees public safety standards' is vague and was not confirmed."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.superdesalud.gob.cl/normativa/668/articles-20935_recurso_1.pdf",
+     "excerpt": "Article 121, No. 6 of DFL 1/2005 ... Intendencia de Prestadores ... keep national and regional registers of individual providers, their specialties and subspecialties, and certifying entities",
+     "supports": "statute, mandate (search-engine summary of Superintendencia resolutions)"
+    },
+    {
+     "url": "https://superdesalud.gob.cl/normativa/571/articles-7186_recurso_1.pdf",
+     "excerpt": "Reglamento sobre los Registros relativos a los Prestadores Individuales de Salud ... approved by Decreto Supremo N°16 of 2007, of the Ministry of Health",
+     "supports": "reference (search-engine excerpt)"
+    }
+   ]
+  },
+  {
+   "row": 18,
+   "country": "Pakistan",
+   "council": "Pakistan Medical and Dental Council (PMDC)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok (citation incomplete)",
+    "mandate": "unverified (HEC joint role and 'national licensing examination' not confirmed; sources indicate NLE was replaced by NRE for foreign graduates)",
+    "reference": "pmdc.pk PDF unreachable (DNS/proxy block); Wikipedia link should be replaced by the gazette"
+   },
+   "suspectedIssues": "evidence is from WebSearch excerpts only. Gazette lists the 2022 Act as Act No. IV of 2023. HEC co-role not found.",
+   "suggestedCorrections": {
+    "definition": "Add formal citation: Pakistan Medical and Dental Council Act, 2022 (Act No. IV of 2023), assented 12 January 2023, gazetted 16 January 2023.",
+    "reference": "Pakistan Medical and Dental Council Act, 2022 (Act No. IV of 2023), Gazette of Pakistan Extraordinary, 16 Jan 2023: https://www.na.gov.pk/uploads/documents/63da389a11740_404.pdf; PM&DC Registration Regulations 2023: https://www.pmdc.pk/Documents/law/Registration%20Regulations%202023.pdf"
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.na.gov.pk/uploads/documents/63da389a11740_404.pdf",
+     "excerpt": "ISLAMABAD, MONDAY, JANUARY 16, 2023 ... received the assent of the President on the 12th January, 2023 ... consolidate the law relating to the registration of medical practitioners and dentists",
+     "supports": "statute, name; search-engine excerpt, page not fetched"
+    },
+    {
+     "url": "https://www.pmdc.pk/Documents/law/Registration%20Regulations%202023.pdf",
+     "excerpt": "registers of medical and dental practitioners kept under sections 36 and 37 (search summary paraphrase)",
+     "supports": "mandate (register); paraphrase, not fetched"
+    },
+    {
+     "url": "https://pk.dental-tribune.com/news/pmdc-conducts-nre-i-2025-for-foreign-medical-graduates-across-pakistan/",
+     "excerpt": "National Registration Examination (NRE) under section 18 required for foreign-qualified graduates (search summary paraphrase)",
+     "supports": "mandate (exam is NRE, not NLE); paraphrase"
+    }
+   ]
+  },
+  {
+   "row": 19,
+   "country": "Pakistan",
+   "council": "Pakistan Nursing Council (PNC) / Pakistan Nursing and Midwifery Council (PNMC)",
+   "verdict": "not-verified",
+   "agentVerdict": "corrected",
+   "checks": {
+    "name": "ok (current name is Pakistan Nursing and Midwifery Council)",
+    "professions": "ok (Wikipedia-sourced)",
+    "statute": "partly wrong: the in-force statute is the Pakistan Nursing Council Act, 1973 as amended in 2023 (renaming to PNMC); the definition's hedge is now resolvable",
+    "mandate": "partly-verified (licensing scope); HEC accreditation role unverified",
+    "reference": "pnmc.gov.pk unreachable by fetch (DNS/proxy block); Wikipedia-only sourcing for professions"
+   },
+   "suspectedIssues": "1952 Act not located in primary form. Pending 2025/2026 consolidating PNMC legislation should be re-checked.",
+   "suggestedCorrections": {
+    "council": "Pakistan Nursing and Midwifery Council (PNMC) (formerly Pakistan Nursing Council)",
+    "definition": "Pakistan's statutory nursing and midwifery regulator, established 1948 and operating under the Pakistan Nursing Council Act, 1973; renamed the Pakistan Nursing and Midwifery Council by amendment in 2023 (gazette numbering of the 2023 amending Act differs between sources: Act No. V vs XLVI of 2023 - confirm). A further consolidating bill/Ordinance (2025-2026) was seen but its enactment is unconfirmed.",
+    "reference": "Pakistan Nursing Council Act, 1973 (as amended 2023); https://pnmc.gov.pk/pnmc-act/; https://pnmc.gov.pk/wp-content/uploads/2023/09/PNMC-Amended-Act-2023.pdf"
+   },
+   "searchLeads": [
+    {
+     "url": "https://pnmc.gov.pk/about-pnmc/",
+     "excerpt": "established under the Pakistan Nursing Council Act of (1952, 1973) and subsequently amended in 2023",
+     "supports": "statute; search excerpt, not fetched"
+    },
+    {
+     "url": "https://pnmc.gov.pk/pnmc-act/",
+     "excerpt": "adopted all regulation and decisions of the Pakistan Nursing Council established under PNC Act 1973",
+     "supports": "statute/continuity; search excerpt"
+    },
+    {
+     "url": "https://www.na.gov.pk/uploads/documents/64d5dd55c93cb_558.pdf",
+     "excerpt": "An Act further to amend the Pakistan Nursing Council Act, 1973",
+     "supports": "statute (2023 amendment); search excerpt"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pakistan_Nursing_Council",
+     "excerpt": "empowered to license nurses, midwives, lady health visitors (LHVs) and nursing auxiliaries to practice nursing throughout the country",
+     "supports": "professions/mandate; Wikipedia, search excerpt"
+    }
+   ]
+  },
+  {
+   "row": 20,
+   "country": "Egypt",
+   "council": "Egyptian Medical Syndicate (EMS)",
+   "verdict": "not-verified",
+   "agentVerdict": "corrected",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "resolvable: Law No. 45 of 1969 establishing the Doctors' Syndicate (amended, incl. 2005)",
+    "mandate": "partly wrong: Egyptian Health Council was established by Law No. 12 of 2022, not February 2021; its exam role vs syndicate not confirmed",
+    "reference": "wrong: Wikipedia + grokipedia only; no primary source"
+   },
+   "suspectedIssues": "Law 45/1969 number from Arabic legal database manshurat.org, not the Official Gazette.",
+   "suggestedCorrections": {
+    "definition": "A professional syndicate founded in 1940, with mandatory membership for physicians to practise, currently governed by Law No. 45 of 1969 establishing the Doctors' Syndicate (as amended).",
+    "mandate": "Replace 'since February 2021 ... Egyptian Health Council' with: licensing examinations for graduates of medical-sector colleges are administered by the Egyptian Health Council established under Law No. 12 of 2022 (relationship to syndicate registration to be confirmed).",
+    "reference": "Law No. 45 of 1969 (Doctors' Syndicate): https://manshurat.org/node/414 ; remove grokipedia"
+   },
+   "searchLeads": [
+    {
+     "url": "https://manshurat.org/node/414",
+     "excerpt": "law establishing the doctors' syndicate, No. 45 of 1969 ... dated 14 July 1969 ... published 24 July 1969 (search summary translation)",
+     "supports": "statute; search excerpt, not fetched"
+    },
+    {
+     "url": "https://timep.org/?p=12835",
+     "excerpt": "a January 2011 court ruling restored the 1969 law and allowed new EMS council elections to finally take place",
+     "supports": "statute in force; search excerpt"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Egyptian_Medical_Syndicate",
+     "excerpt": "founded in 1940 and is a semi-governmental organization existing primarily to help the Ministry of Health in conferring licenses to physicians",
+     "supports": "definition (Wikipedia)"
+    },
+    {
+     "url": "https://www.therapyroute.com/article/mental-health-licensing-regulation-in-egypt-2025-guide-by-therapyroute",
+     "excerpt": "Law No. 12 of 2022 regarding the establishment of the Council",
+     "supports": "mandate correction (EHC date); secondary source, search excerpt"
+    }
+   ]
+  },
+  {
+   "row": 21,
+   "country": "Egypt",
+   "council": "Nursing Professions Syndicate",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "conflict: nazra Q&A says Law 155/1976 (Gazette 9 Nov 1976); manshurat.org amendment listings name the establishing law as No. 115 of 1976",
+    "mandate": "unverified in detail (registration committee/appeal route not seen in excerpts)",
+    "reference": "nazra.org page exists (in search index) but is an NGO Q&A, not a primary legal source; fetch blocked"
+   },
+   "suspectedIssues": "Likely typo 155 vs 115; not resolved without the Gazette.",
+   "suggestedCorrections": {
+    "definition": "Flag statute number for confirmation: Law No. 115 of 1976 (per manshurat.org amendment listings, amended 1982, 1984, 1994) vs No. 155 of 1976 (per Nazra Q&A).",
+    "reference": "Add primary: https://manshurat.org/node/387 (Nursing Profession Syndicate law, 1976) - confirm number against Egyptian Official Gazette"
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.nazra.org/en/2013/12/q-about-law-regulation-nursing-professions-syndicate",
+     "excerpt": "founded by Law 155/1976, published in the Official Gazette on November 9th, 1976",
+     "supports": "statute as stated in workbook; search excerpt"
+    },
+    {
+     "url": "https://manshurat.org/node/390/relations",
+     "excerpt": "قانون إنشاء نقابة مهنة التمريض رقم 115 لسنة 1976",
+     "supports": "statute conflict (No. 115); search excerpt"
+    }
+   ]
+  },
+  {
+   "row": 22,
+   "country": "Jordan",
+   "council": "Jordan Medical Council (JMC)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok (medicine; note the 2022 law's board exam covers specialty certification)",
+    "statute": "unverified: only Lower House passage of the 'Jordanian Medical Council Law of 2022' confirmed; gazette number/date not found",
+    "mandate": "partly-verified (exam exemptions under Art. 17; minister chairs)",
+    "reference": "jordantimes.com indexed but fetch blocked; dataflowgroup.com is a commercial verification vendor, not authoritative"
+   },
+   "suspectedIssues": "Note the JMC itself predates 2022 (earlier Jordan Medical Council Law); the 2022 law replaced it - earlier law number not confirmed.",
+   "suggestedCorrections": {
+    "reference": "Jordanian Medical Council Law of 2022; https://jordantimes.com/news/local/lower-house-approves-2022-jordanian-medical-council-draft-law; MoH-hosted law text: https://moh.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%B3_%D8%A7%D9%84%D8%B7%D8%A8%D9%8A_%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A.pdf (replace dataflowgroup.com)"
+   },
+   "searchLeads": [
+    {
+     "url": "https://jordantimes.com/news/local/lower-house-approves-2022-jordanian-medical-council-draft-law",
+     "excerpt": "the majority of MPs rejected a proposal by the committee to change the name of the draft law ... go into effect 60 days after its publication in the Official Gazette",
+     "supports": "statute (draft stage); search excerpt"
+    },
+    {
+     "url": "https://www.jordannews.jo/Section-109/News/Lower-House-passes-Medical-Council-draft-legislation-21759",
+     "excerpt": "comprises the minister of health, as chairman",
+     "supports": "definition (headed by Minister); search excerpt"
+    }
+   ]
+  },
+  {
+   "row": 23,
+   "country": "Jordan",
+   "council": "Jordanian Nursing Council (JNC)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok: Temporary Law No. 21 of 2002 (Gazette 4547, 16/5/2002), made permanent as Law No. 53 of 2006",
+    "mandate": "partly-verified (regulating nursing profession)",
+    "reference": "jnc.gov.jo URL indexed (title 'JNC Establishment'); fetch blocked"
+   },
+   "suspectedIssues": "Core facts consistent.",
+   "suggestedCorrections": {
+    "definition": "Add: first established by Temporary Law No. 21 of 2002 (Official Gazette No. 4547, 16 May 2002).",
+    "reference": "Law No. 53 of 2006 (Jordanian Nursing Council Law): https://jnc.gov.jo/EBV4.0/Root_Storage/EN/JNC_law.pdf; Temporary Law No. 21 of 2002: https://jnc.gov.jo/EBV4.0/Root_Storage/EN/Temporal_Law_(21)_of_2002_(1).pdf; https://jnc.gov.jo/En/Pages/JNC_Establishment__"
+   },
+   "searchLeads": [
+    {
+     "url": "https://jnc.gov.jo/EBV4.0/Root_Storage/EN/JNC_law.pdf",
+     "excerpt": "Law number (53) for the year 2006, The Jordanian Nursing Council Law",
+     "supports": "statute; search excerpt"
+    },
+    {
+     "url": "https://jnc.gov.jo/EBV4.0/Root_Storage/EN/Temporal_Law_(21)_of_2002_(1).pdf",
+     "excerpt": "official gazette issue 4547 dated 16/5/2002 ... Temporary Law No. 21 of 2002 (search summary)",
+     "supports": "statute (2002); search excerpt"
+    },
+    {
+     "url": "https://jnc.gov.jo/En/Pages/JNC_Establishment__",
+     "excerpt": "a government institution with administrative and financial independence, responsible for regulating the nursing profession in Jordan",
+     "supports": "name, definition; search excerpt"
+    }
+   ]
+  },
+  {
+   "row": 24,
+   "country": "Lebanon",
+   "council": "Lebanese Order of Physicians (LOP)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "partly wrong: lopbeirut.org is the Order of Physicians in Beirut; Law No. 313 of 2001 created two Orders (Beirut and Tripoli/North)",
+    "professions": "ok",
+    "statute": "conflict: workbook says Law No. 1658; a Lebanese source lists it as 'Law in force by Decree No. 1958' of 17 Jan 1979; same-date Decree 1657 (midwifery) makes 1658 plausible - unresolved",
+    "mandate": "partly-verified (discipline)",
+    "reference": "lopbeirut.org pages not in search index and fetch blocked - unverified"
+   },
+   "suspectedIssues": "Gazette issue 10 of 8 March 1979 not verified.",
+   "suggestedCorrections": {
+    "council": "Order of Physicians in Beirut (Lebanese Order of Physicians) - note a separate Order of Physicians of North Lebanon (Tripoli) exists under Law No. 313 of 6 April 2001",
+    "definition": "Flag: confirm law/decree number (1658 vs 1958) of 17 January 1979 against the Lebanese Official Gazette; add Law No. 313/2001 creating two Orders."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.fpmlb.org/2023/11/page/23/",
+     "excerpt": "Law in force by Decree No. 1958, dated January 17, 1979, and its amendments (regulating the practice of the medical profession)",
+     "supports": "statute conflict; search excerpt"
+    },
+    {
+     "url": "https://www.fpmlb.org/2023/11/page/23/",
+     "excerpt": "creating two Orders of Physicians in Lebanon (Law No. 313 of April 6, 2001)",
+     "supports": "name correction; search excerpt"
+    },
+    {
+     "url": "https://www.mohamah.net/law/?p=40099",
+     "excerpt": "Decree No. 1657, issued 17/1/1979, put into effect a bill regulating the midwifery profession (search summary)",
+     "supports": "statute (numbering context)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lebanese_Order_of_Physicians",
+     "excerpt": "discipline doctors to its laws and to the medical ethics",
+     "supports": "mandate (Wikipedia)"
+    }
+   ]
+  },
+  {
+   "row": 25,
+   "country": "Lebanon",
+   "council": "Order of Nurses in Lebanon (ONL)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "missing: established by Law No. 479 of 2002 (amended by Law No. 250 of 2014)",
+    "mandate": "partly-verified (ICN description)",
+    "reference": "ICN page indexed, fetch blocked; no statute cited"
+   },
+   "suspectedIssues": "",
+   "suggestedCorrections": {
+    "definition": "Add statute: Law No. 479 of 2002 establishing a mandatory order (syndicate) for registered nurses in Lebanon, amended by Law No. 250 (2014).",
+    "reference": "Law No. 479/2002; https://www.icn.ch/membership/our-members/order-nurses-lebanon-onl; https://monthlymagazine.com/en/article/1316/ (Law 250 amendment) - primary gazette text still to be located"
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.icn.ch/membership/our-members/order-nurses-lebanon-onl",
+     "excerpt": "a mandatory regulatory body established in 2002, comprising all qualified nurses holding licenses issued by the Lebanese Ministry of Public Health",
+     "supports": "definition, name; search excerpt"
+    },
+    {
+     "url": "https://monthlymagazine.com/en/article/1316/lebanon%E2%80%99s-parliament--48-laws-in-6-days-during-2014-and-2-laws-only-in-the-entire-year-2013",
+     "excerpt": "479/2002 concerned with the establishment of a mandatory syndicate for registered male and female nurses in Lebanon",
+     "supports": "statute; secondary source, search excerpt"
+    }
+   ]
+  },
+  {
+   "row": 26,
+   "country": "Qatar",
+   "council": "Department of Healthcare Professions (DHP), Ministry of Public Health",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok: Emiri Decree No. 14 of 2019 abolished QCHP and created DHP; QCHP by Emiri Decree No. 7 of 2013; Law No. 13 of 2002 link only from search summary",
+    "mandate": "ok (Registration & Licensing, Fitness to Practice, Accreditation sections)",
+    "reference": "dhp.moph.gov.qa AboutUs indexed; fetch blocked"
+   },
+   "suspectedIssues": "Content consistent with official DHP pages.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://dhp.moph.gov.qa/en/Pages/AboutUs.aspx",
+     "excerpt": "Emiri decree no. 14 was published in February 2019, regarding the new organizational structure of the Ministry of Public Health where the Qatar Council for Healthcare Practitioners was abolished and replaced by the Department of Healthcare Professions",
+     "supports": "statute, name; search excerpt"
+    },
+    {
+     "url": "https://dhp.moph.gov.qa/en/Documents/QCHP%20Emiri%20Decree%20%20(eng).pdf",
+     "excerpt": "Emiri Decree No. 7 of 2013 (title, per search summary)",
+     "supports": "statute (QCHP); search summary"
+    }
+   ]
+  },
+  {
+   "row": 27,
+   "country": "Saudi Arabia",
+   "council": "Saudi Commission for Health Specialties (SCFHS)",
+   "verdict": "not-verified",
+   "agentVerdict": "corrected",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "minor wrong: instrument is Royal Decree No. M/2 dated 6/2/1413 AH (6 Safar 1413, ~1992) per SCFHS; Wikipedia gives 6/3/1413 and calls it Royal Order",
+    "mandate": "unverified in detail",
+    "reference": "Wikipedia-only; replace with scfhs.org.sa"
+   },
+   "suspectedIssues": "Sources disagree on exact date (6/2 vs 6/3/1413); SCFHS site favours 6 Safar.",
+   "suggestedCorrections": {
+    "definition": "...established by Royal Decree No. M/2 dated 6 Safar 1413 AH (1992)...",
+    "reference": "Royal Decree No. M/2 (6/2/1413 AH); https://scfhs.org.sa/en/our-establishment; https://scfhs.org.sa/en/overview"
+   },
+   "searchLeads": [
+    {
+     "url": "https://scfhs.org.sa/en/our-establishment",
+     "excerpt": "6 Safar 1413 AH (date given by commission's site, per search summary)",
+     "supports": "statute; search summary, not fetched"
+    },
+    {
+     "url": "https://www.protenders.com/en/companies/saudi-commission-for-health-specialties",
+     "excerpt": "established by Royal Decree No. M/2, dated 6/2/1413 AH",
+     "supports": "statute; search excerpt"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Saudi_Commission_for_Health_Specialties",
+     "excerpt": "professional scientific commission which has a legal entity, supervised by a board of trustees",
+     "supports": "definition (Wikipedia)"
+    }
+   ]
+  },
+  {
+   "row": 28,
+   "country": "United Arab Emirates (Dubai)",
+   "council": "Dubai Health Authority (DHA)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok: Law No. (6) of 2018 replaced Law No. 13 of 2007; note amended by Law No. (14) of 2021",
+    "mandate": "partly-verified (licensing of professionals confirmed only by secondary source; professions licensing governed by Executive Council Resolution No. 32 of 2012)",
+    "reference": "dlp.dubai.gov.ae URL indexed with matching title (fetch blocked); alkabban.com is a law-firm blog, secondary"
+   },
+   "suspectedIssues": "Gulf News cites it as Law No. 8 - official portal title confirms No. 6.",
+   "suggestedCorrections": {
+    "definition": "Add: as amended by Law No. (14) of 2021; health-professional licensing is regulated under Executive Council Resolution No. (32) of 2012.",
+    "reference": "Law No. (6) of 2018: https://dlp.dubai.gov.ae/Legislation%20Reference/2018/Law%20No.%20(6)%20of%202018%20Concerning%20the%20Dubai%20Health%20Authority.html; Law No. (14) of 2021: https://dlp.dubai.gov.ae/Legislation%20Reference/2021/Law%20No.%20(14)%20of%202021%20Amending%20Law%20No.%20(6)%20of%202018.html"
+   },
+   "searchLeads": [
+    {
+     "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2018/Law%20No.%20(6)%20of%202018%20Concerning%20the%20Dubai%20Health%20Authority.html",
+     "excerpt": "Law No. (6) of 2018 Concerning the Dubai Health Authority (page title)",
+     "supports": "statute, reference resolves in index"
+    },
+    {
+     "url": "https://bsalaw.com/?p=4252",
+     "excerpt": "Law No. 6 of 2018 on Dubai Health Authority (DHA), with the objectives of regulating the health sector in the Emirate, ensuring increased competitiveness, operational efficiency, transparency, quality of services",
+     "supports": "statute/repeal of 2007 law; search excerpt"
+    }
+   ]
+  },
+  {
+   "row": 29,
+   "country": "Ireland",
+   "council": "Medical Council of Ireland",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "partly-verified",
+    "reference": "partly-verified (Wikipedia cited)"
+   },
+   "suspectedIssues": "2007 Act functions not read from statute text.",
+   "suggestedCorrections": {
+    "reference": "Replace the Wikipedia link with the statute: Medical Practitioners Act 2007 (No. 25 of 2007), https://www.irishstatutebook.ie, and the Council's site https://www.medicalcouncil.ie."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.irishstatutebook.ie/1978/en/act/pub/0004/sec0006.html",
+     "excerpt": "section 6 names the body Comhairle na nDochtúiri Leighis, or the Medical Council ... a body corporate with perpetual succession",
+     "supports": "name, statute 1978 (search-engine summary)"
+    },
+    {
+     "url": "https://www.hse.ie/eng/staff/leadership-education-development/met/ed/pd/",
+     "excerpt": "Under the Medical Practitioners Act 2007, all doctors who are registered with the Medical Council (of Ireland) are required to maintain their Professional Competence ... This legal requirement came into effect from May 2011.",
+     "supports": "mandate: CPD legal duty since 2011 (search-engine excerpt)"
+    }
+   ]
+  },
+  {
+   "row": 30,
+   "country": "Ireland",
+   "council": "Nursing and Midwifery Board of Ireland (NMBI)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "partly-verified",
+    "reference": "ok"
+   },
+   "suspectedIssues": "Statutory name is Bord Altranais agus Cnáimhseachais na hÉireann (NMBI is the operating name) - not confirmed by fetch. Ministerial-advice function not checked.",
+   "suggestedCorrections": {
+    "reference": "Add Act number and URL: Nurses and Midwives Act 2011 (No. 41 of 2011), https://revisedacts.lawreform.ie/eli/2011/act/41/revised/en/html."
+   },
+   "searchLeads": [
+    {
+     "url": "https://revisedacts.lawreform.ie/eli/2011/act/41/section/8/revised/en/html",
+     "excerpt": "The object of the Board is the protection of the public in its dealing with nurses and midwives and the integrity of the practice of nursing and midwifery",
+     "supports": "mandate (search-engine excerpt, s.8)"
+    },
+    {
+     "url": "https://revisedacts.lawreform.ie/eli/2011/act/41/section/9/revised/en/html",
+     "excerpt": "establish and maintain the register of nurses and midwives and the candidate register",
+     "supports": "mandate (search-engine summary, s.9)"
+    }
+   ]
+  },
+  {
+   "row": 31,
+   "country": "United Kingdom",
+   "council": "General Medical Council (GMC)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "partly-verified",
+    "mandate": "unverified",
+    "reference": "partly-verified (Wikipedia cited)"
+   },
+   "suspectedIssues": "Note that the AA/PA Order 2024 is a separate instrument for AAs/PAs, not purely an amendment of the Medical Act 1983 (proposed nuance).",
+   "suggestedCorrections": {
+    "reference": "Drop the Wikipedia link; cite Medical Act 1983 (c. 54) and the Anaesthesia Associates and Physician Associates Order 2024 on legislation.gov.uk."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.professionalstandards.org.uk/node/1566",
+     "excerpt": "the GMC began regulating anaesthesia associates and physician associates on 13 December 2024, under the Anaesthesia Associates and Physician Associates Order",
+     "supports": "professions, statute (search-engine summary)"
+    }
+   ]
+  },
+  {
+   "row": 32,
+   "country": "United Kingdom",
+   "council": "Health and Care Professions Council (HCPC)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "partly-verified",
+    "reference": "ok"
+   },
+   "suspectedIssues": "Reference lacks the SI number (believed SI 2002/254, not verified by fetch). The current list of 15 professions was not checked item by item.",
+   "suggestedCorrections": {
+    "definition": "Remove the editorial cross-reference 'see the GMC and NMC-UK rows added below' from the definition text."
+   },
+   "searchLeads": [
+    {
+     "url": "https://mrs.hcpc-uk.org/globalassets/resources/guidance/an-introduction-to-our-education-processes.pdf",
+     "excerpt": "currently regulates 15 professions",
+     "supports": "professions (search-engine excerpt)"
+    },
+    {
+     "url": "https://www.hcpc-uk.org/media-centre/journalist-faqs/",
+     "excerpt": "Each profession has one or more designated titles protected by law under Article 39 of the Order, and anyone who uses one of these titles must be on our Register",
+     "supports": "mandate: protected titles (search-engine summary)"
+    }
+   ]
+  },
+  {
+   "row": 33,
+   "country": "United Kingdom",
+   "council": "Nursing and Midwifery Council (NMC)",
+   "verdict": "not-verified",
+   "agentVerdict": "partly-verified",
+   "checks": {
+    "name": "ok",
+    "professions": "ok",
+    "statute": "ok",
+    "mandate": "wrong",
+    "reference": "partly-verified (Wikipedia only)"
+   },
+   "suspectedIssues": "Nursing associates are registered for England only (since 2019) - not confirmed by any source found here.",
+   "suggestedCorrections": {
+    "mandate": "Registrant figure is wrong: ~788,000 is nurses only; the total register at end of March 2025 was more than 853,000 (nurses, midwives, dual-registered and nursing associates).",
+    "reference": "Replace Wikipedia-only sourcing with the Nursing and Midwifery Order 2001 (SI 2002/253) on legislation.gov.uk and NMC registration data reports (https://nmc.org.uk/about-us/reports-and-accounts/registration-statistics/)."
+   },
+   "searchLeads": [
+    {
+     "url": "https://www.nmc.org.uk/globalassets/sitedocuments/annual_reports_and_accounts/2025-annual-report-and-accounts/easy-read-annual-report-and-accounts-20242025.pdf",
+     "excerpt": "at the end of March 2025 there were more than 853,000 people on our register ... more than 788,000 nurses, more than 46,000 midwives, just over 6,000 who could do both jobs, and just under 13,000 nursing associates",
+     "supports": "mandate: registrant count (search-engine excerpt)"
+    },
+    {
+     "url": "https://legislation.gov.uk/uksi/2002/881/note/made?view=plain",
+     "excerpt": "the UKCC and the National Boards were replaced by the Nursing and Midwifery Council",
+     "supports": "definition: replaced UKCC (search-engine summary); start date 1 April 2002"
+    }
+   ]
+  },
+  {
+   "row": 34,
+   "country": "India",
+   "council": "Indian Nursing Council (INC)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. Act No. 48 (XLVIII) of 1947 and the NRTS are consistent with the snippets. Correction needed in 'professions': the INC covers nurses, midwives and health visitors, not only nursing. Mandate nuance: State Nursing Registration Councils issue the licence to practise, while NRTS enrolment gives a NUID (secondary snippet). Drop testbook.com, which is not an authoritative source.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://www.casemine.com/act/in/5f5f13209fca195c05cd05e2",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): Nursing Council (Nurses Registration and Tracking System) Regulations, 2019, made under Section 15A and 16(1) of the Act (XLVIII of 1947); INC \"constituted under section 3(1)\" for nurses, midwives and health visitors.",
+     "supports": "statute, mandate (NRTS)"
+    }
+   ]
+  },
+  {
+   "row": 35,
+   "country": "India",
+   "council": "National Medical Commission (NMC)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "No fetch possible. The NMC Act 2019 (in force 25 Sept 2020, per a secondary snippet), the National Register and State Medical Councils are consistent with the snippets. 'Administers licensing examinations' overstates current practice, because implementation of the NEXT was not confirmed. No URL is given; add the official Act text or nmc.org.in.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://prsindia.org/billtrack/prs-products/prs-bill-summary-3291",
+     "excerpt": "SEARCH SNIPPET ONLY (not fetched): functions include framing policies for regulating medical institutions and professionals and ensuring State Medical Councils comply with its regulations; s.15 National Exit Test; s.31 National Register and State Register.",
+     "supports": "mandate"
+    }
+   ]
+  },
+  {
+   "row": 36,
+   "country": "Malaysia",
+   "council": "Malaysian Medical Council (MMC)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "only WebSearch summaries available, so nothing quoted from a fetched page. Search leads: Act 50 Part II does establish the MMC; Act still in force but substantially amended in 2012 (definition should mention the amendment). The Wikipedia URL is Wikipedia-only sourcing, so replace it with the MMC-hosted Act PDF. The claim about compulsory public service was not checked. https://mmc.gov.my/laws-regulations/ was not reachable.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://mmc.gov.my/wp-content/uploads/2024/01/Act-50-Final.pdf",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: Part II titled \"The Malaysian Medical Council\"; s.3 establishment, 3A composition, 3B tenure; s.4 functions, 4A powers.",
+     "supports": "statute (lead only)"
+    },
+    {
+     "url": "https://mmc.gov.my/?p=9155",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: amendments were made to the Medical Act 1971 in 2012, which replaced the earlier regulations.",
+     "supports": "statute currency (lead only)"
+    }
+   ]
+  },
+  {
+   "row": 37,
+   "country": "Malaysia",
+   "council": "Nursing Board Malaysia (Lembaga Jururawat Malaysia)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Leads support the Nurses Act 1950 (Act 14) and the Nurses Registration Regulations 1985; give the Act number. The reference URL is the Midwives Board page, not the Nursing Board page, so it is probably the wrong page; the lead suggests hq.moh.gov.my/nursing/?p=3322 (Nursing & Midwives Board). The MOH page reportedly says the nurses/midwives legislation is under review.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://hq.moh.gov.my/nursing/?p=3322",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: functions to keep and maintain the Register of nurses and to regulate nursing practice; oversees training and discipline of nurses under the Act and the Nurses Registration Regulations 1985.",
+     "supports": "mandate, statute (lead only)"
+    },
+    {
+     "url": "https://hq.moh.gov.my/nursing/wp-content/uploads/2015/04/2.-NURSES-ACT-1950-2.pdf",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: Nurses Act 1950 (Act 14); s.3 establishment and constitution of a Nursing Board; s.4 Register of nurses.",
+     "supports": "statute (lead only)"
+    },
+    {
+     "url": "https://www.moh.gov.my/images/04-penerbitan/akta-kesihatan/midviwes act 1966.pdf",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: LAWS OF MALAYSIA ACT 436 MIDWIVES ACT 1966 (REVISED - 1990) Incorporating latest amendment - Act A724/1989",
+     "supports": "professions note re Midwives Board (lead only)"
+    }
+   ]
+  },
+  {
+   "row": 38,
+   "country": "Singapore",
+   "council": "Singapore Medical Council (SMC)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Leads suggest the 1997 Act continued an existing council (the Medical Council of Singapore) rather than newly establishing it, and that SMC is a body corporate; 'statutory board' is unconfirmed. 'Chapter 174' is the pre-2020 Revised Edition citation and may be outdated; this is unconfirmed, and the search found no source on it. The Act was amended in 2020 (Act 34 of 2020, in force 1 July 2022: disciplinary tribunals moved to a Disciplinary Commission). The reference has no URL; add the SSO or SMC page.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://healthprofessionals.gov.sg/smc/about-smc",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: functions under section 5 cover the registers, registration and practising certificates, recommendations on medical education and training, and regulating conduct and ethics.",
+     "supports": "mandate (lead only)"
+    },
+    {
+     "url": "https://lawplayer.com/sg/act/MRA1997",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: The Medical Council of Singapore is to continue to exist as a body corporate ... and, as from 3 April 1998, be called the Singapore Medical Council.",
+     "supports": "statute/name (lead only)"
+    }
+   ]
+  },
+  {
+   "row": 39,
+   "country": "Singapore",
+   "council": "Singapore Nursing Board (SNB)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "The search lead is consistent with the mandate, including APN certification under s.32 of the Nurses and Midwives Act 1999. The SNB site seems to exist on both snb.gov.sg and healthprofessionals.gov.sg/snb, so the reference URL may redirect or be legacy. Its resolution could not be tested.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://www.snb.gov.sg/who-we-are/functions-of-snb/",
+     "excerpt": "SEARCH-SNIPPET (paraphrased by search tool), NOT FETCHED: grants/refuses APN certification; accredits courses; registration/enrolment of nurses, registration of midwives; issues practising certificates; sets training standards and conduct.",
+     "supports": "mandate, reference (lead only)"
+    },
+    {
+     "url": "https://healthprofessionals.gov.sg/snb/about-snb/snb-functions",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: parallel SNB functions page on healthprofessionals.gov.sg",
+     "supports": "reference (lead only)"
+    }
+   ]
+  },
+  {
+   "row": 40,
+   "country": "Australia",
+   "council": "Medical Board of Australia (MBA)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Leads are consistent with the mandate. The statute is the National Law set out in the Schedule to the Health Practitioner Regulation National Law Act 2009 (Qld) (Act 45 of 2009), adopted by each state and territory; the citation should make clear it is the Queensland host Act. The registration-types list could not be checked. Neither reference URL was reachable.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://www.directory.gov.au/portfolios/health/medical-board-australia",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: The functions of the Medical Board of Australia include: registering medical practitioners and students; developing standards, codes and guidelines ...; handling notifications, complaints ...; assessing overseas trained practitioners",
+     "supports": "mandate (lead only)"
+    },
+    {
+     "url": "https://www.legislation.qld.gov.au/view/whole/pdf/inforce/2026-04-10/act-2009-045",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: s.35 heading 'Functions of National Boards'.",
+     "supports": "statute (lead only)"
+    }
+   ]
+  },
+  {
+   "row": 41,
+   "country": "Australia",
+   "council": "Nursing and Midwifery Board of Australia (NMBA)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Leads are consistent with the mandate: NMBA approves programs and ANMAC accredits them. The reference has no URL; add nursingmidwiferyboard.gov.au.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://www.directory.gov.au/portfolios/health/nursing-and-midwifery-board-australia",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: approving accreditation standards and accredited courses of study.",
+     "supports": "mandate (lead only)"
+    },
+    {
+     "url": "https://www.nursingmidwiferyboard.gov.au/accreditation/approved-programs-of-study",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: The details of programs of study approved by the Nursing and Midwifery Board of Australia (National Board) are available below",
+     "supports": "mandate (lead only)"
+    }
+   ]
+  },
+  {
+   "row": 42,
+   "country": "New Zealand",
+   "council": "Medical Council of New Zealand (MCNZ)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Leads are consistent: MCNZ is the 'responsible authority' (the HPCAA term; 'statutory authority appointed' is loose wording). The reference has no URL; add mcnz.org.nz or legislation.govt.nz.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://www.mcnz.org.nz/assets/standards/d90a6ed284/Employment-of-doctors-and-the-HPCAA.pdf",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: functions of Council are set out in section 118 of the Health Practitioners' Competence Assurance Act 2003 (HPCAA) and include authorisation of doctor's registration and review and promotion of a doctor's competence.",
+     "supports": "statute, mandate (lead only)"
+    },
+    {
+     "url": "https://www.mcnz.org.nz/assets/Publications/Reports/4c0c4e252e/MCNZ-RA-Review-Final-published-report-December-2021.pdf",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: The Medical Council of New Zealand is the responsible authority under the Health Practitioners Competence Assurance Act",
+     "supports": "name/statute (lead only)"
+    }
+   ]
+  },
+  {
+   "row": 43,
+   "country": "New Zealand",
+   "council": "Nursing Council of New Zealand (NCNZ)",
+   "verdict": "not-verified",
+   "agentVerdict": "unverified",
+   "checks": {
+    "name": "unverified",
+    "professions": "unverified",
+    "statute": "unverified",
+    "mandate": "unverified",
+    "reference": "unverified"
+   },
+   "suspectedIssues": "Leads say the Nurses Registration Act 1901 took effect on 1 January 1902 and was administered by the Health Department, so it is doubtful that the Council itself was 'established in 1902'. The 1902 date and the claim that New Zealand was the first country appear to come from Wikipedia and are unconfirmed. NCNZ also regulates enrolled nurses and nurse practitioners (unchecked). The reference is Wikipedia-only for the history; replace it with nursingcouncil.org.nz or NZHistory.",
+   "suggestedCorrections": {},
+   "searchLeads": [
+    {
+     "url": "https://nzhistory.govt.nz/page/worlds-first-state-registered-nurses",
+     "excerpt": "SEARCH-SNIPPET, NOT FETCHED: on 10 January 1902, the world's first state-registered nurses had their names entered in the new register (Nurses' Registration Act 1901).",
+     "supports": "definition history (lead only)"
+    }
+   ]
+  }
+ ]
+}
