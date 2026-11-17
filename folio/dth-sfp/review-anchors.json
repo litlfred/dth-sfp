@@ -74,6 +74,11 @@
  ],
  "sections": [
   {
+   "label": "sec:00-cover",
+   "title": "Cover",
+   "chapter": "00-front-matter"
+  },
+  {
    "label": "sec:00-front-matter",
    "title": "Front matter (Imprint, Acknowledgements, Abbreviations and Glossary)",
    "chapter": "00-front-matter"
@@ -130,6 +135,19 @@
   }
  ],
  "blocks": [
+  {
+   "label": "fig:cover",
+   "kind": "figure",
+   "chapter": "00-front-matter",
+   "root": "f-cover",
+   "sections": [
+    "sec:00-cover"
+   ],
+   "caption": "Cover of the WHO publication this folio transcribes: Digital transformation handbook for reporting substandard and falsified medical products: a practical handbook. Geneva: World Health Organization; 2026. ISBN 978-92-4-012074-7",
+   "hash": "2c72bd5ccc28",
+   "excerpt": "Cover of the original publication: Digital transformation handbook for reporting substandard and falsified medical products: a practical handbook . Geneva: Worl",
+   "method": "folio-snapshot"
+  },
   {
    "label": "prose:sec-000",
    "kind": "prose",
@@ -222,8 +240,8 @@
    "sections": [
     "sec:00-introduction"
    ],
-   "hash": "450d6076d1fb",
-   "excerpt": "Source: WHO, Digital transformation handbook for reporting substandard and falsified medical products, 2025, Fig. 2 ( who-iris/library/9789240120747-eng/figures",
+   "hash": "ad6210bfee26",
+   "excerpt": "Source: WHO, Digital transformation handbook for reporting substandard and falsified medical products, 2025, Fig. 2, adapted from WHO SMART Guidelines (Mehl et ",
    "method": "folio-snapshot"
   },
   {
@@ -474,8 +492,8 @@
    "sections": [
     "sec:ch03-future-state"
    ],
-   "hash": "9bb69d16dfbe",
-   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p034.png (PDF page 34). Mapped to dpi-h-ra ArchiMate view DHSC Architecture Framework (DTH SC Fig.",
+   "hash": "26112ebdef6a",
+   "excerpt": "Source: WHO, Digital transformation handbook for reporting substandard and falsified medical products, 2025, Fig. 3 (L1 section who-iris/library/9789240120747-e",
    "method": "folio-snapshot"
   },
   {
@@ -774,8 +792,8 @@
    "sections": [
     "sec:ch04-determine-requirements"
    ],
-   "hash": "e54578f517e6",
-   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p042.png (PDF page 42). Mapped to dpi-h-ra ArchiMate view Track and Trace through DHSC Components ",
+   "hash": "34e886d26525",
+   "excerpt": "Source: WHO, Digital transformation handbook for reporting substandard and falsified medical products, 2025, Fig. 4 (L1 section who-iris/library/9789240120747-e",
    "method": "folio-snapshot"
   },
   {
@@ -1494,8 +1512,8 @@
    "sections": [
     "sec:ch06-monitor-evaluate-scale"
    ],
-   "hash": "a330a3359dbd",
-   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p052.png (PDF page 52). Mapped to dpi-h-ra ArchiMate view Capabilities-Goals ( id-4e6e25746e8d4398",
+   "hash": "9975d14b77f6",
+   "excerpt": "Source: WHO, Digital transformation handbook for reporting substandard and falsified medical products, 2025, Fig. 5, adapted from WHO, Monitoring and evaluating",
    "method": "folio-snapshot"
   },
   {
@@ -1506,8 +1524,8 @@
    "sections": [
     "sec:ch06-monitor-evaluate-scale"
    ],
-   "hash": "491bb1f2e121",
-   "excerpt": "Source: who-iris/library/9789240120747-eng/media/figures/vfig-p053.png (PDF page 53). Mapped to dpi-h-ra ArchiMate view Capabilities-Goals ( id-4e6e25746e8d4398",
+   "hash": "036e0efd5e79",
+   "excerpt": "Source: WHO, Digital transformation handbook for reporting substandard and falsified medical products, 2025, Fig. 6, adapted from WHO, Monitoring and evaluating",
    "method": "folio-snapshot"
   },
   {

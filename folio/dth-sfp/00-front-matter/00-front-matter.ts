@@ -5,6 +5,11 @@ export default chapter({
   label: "chap:00-front-matter",
   sections: [
     section({
+      title: "Cover",
+      label: "sec:00-cover",
+      blocks: ["f-cover"],
+    }),
+    section({
       title: "Front matter (Imprint, Acknowledgements, Abbreviations and Glossary)",
       label: "sec:00-front-matter",
       blocks: ["p-sec-000", "p-sec-001", "p-sec-002", "p-sec-front-matter", "t-abbreviations", "t-glossary"],
