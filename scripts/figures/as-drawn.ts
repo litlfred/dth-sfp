@@ -432,7 +432,7 @@ export const SCHEMA_FILES = {
 
 export function jsonSchemaText(file: keyof typeof SCHEMA_FILES): string {
   const js = z.toJSONSchema(SCHEMA_FILES[file], { io: "input", unrepresentable: "any" }) as Record<string, unknown>;
-  return JSON.stringify({ $id: `https://litlfred.github.io/dth-sfp/schemas/${file}`, ...js }, null, 2) + "\n";
+  return JSON.stringify({ $id: `https://litlfred.github.io/dth-sfp/v0/figure-data/schemas/${file}`, ...js }, null, 2) + "\n";
 }
 
 export function build(root: string, check: boolean): string[] {
