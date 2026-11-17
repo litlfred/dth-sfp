@@ -1,5 +1,5 @@
 {
-  "$id": "https://litlfred.github.io/dth-sfp/schemas/as-drawn-figure.v1.schema.json",
+  "$id": "https://litlfred.github.io/dth-sfp/v0/figure-data/schemas/as-drawn-figure.v1.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
