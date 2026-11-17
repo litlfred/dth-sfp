@@ -1,0 +1,204 @@
+{
+  "$schema": "cat-harness-declaration/1.0.0",
+  "name": "dth-hrh",
+  "title": "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries",
+  "version": "0.1.0",
+  "iriBase": "https://litlfred.github.io/dth-hrh/",
+  "avatar": {
+    "glyph": "M2.5 6v12M2.5 12h4.5M7 6v12M10 18V6h2.5a3 3 0 010 6H10m2.5 0l3 6M18 6v12M18 12h3.5M21.5 6v12",
+    "tone": 198,
+    "reads": "the letters HRH in WHO blue: the handbook's short name, until a published cover exists"
+  },
+  "_avatar_comment": "A simple avatar, the owner's fallback (2026-11-17: \"Use the front page of the handbook. If not possible then just a simple Avatar.\"). The handbook is still at outline stage and its title page is text only, so there is no cover to crop. When WHO publishes it, its page 1 can replace this as `images` and `icon`, as dth-pc, dth-sc and dth-sfp do.",
+  "directories": [
+    {
+      "id": "folio",
+      "path": "folio/",
+      "graphTypologies": [
+        "folio"
+      ],
+      "description": "The working document of the DTH on health workforce registries: its document, chapters and blocks, including the L1 structured assets (generic personas, user scenarios, requirements, data elements).",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/dth-hrh/index.html",
+            "title": "Working document",
+            "writer": [
+              "folio-assistant-core/scripts/build-document-site.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "library",
+      "path": "library/",
+      "graphTypologies": [
+        "library"
+      ],
+      "description": "Source material, frozen: the TWG manuscript outline (2026-10-02; sectioned by its own headings with cat-harness-tools/scripts/text-structure.ts, so the library page can show it) and the TWG glossary workbook (2026-09-29), as received. Never edited to answer a comment.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/folio-assistant-core/library/index.html",
+            "title": "Library",
+            "writer": [
+              "folio-assistant-core/scripts/build-library-site.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "wg-comments",
+      "path": "review/wg-comment/",
+      "graphTypologies": [
+        "todo-items",
+        "public-comments"
+      ],
+      "description": "The working-group review record: internal authoring and Technical Working Group comments, one public-comment/1.0.0 file per comment (comments/PC-NNNN.json), one changeset/1.0.0 per change set (changesets/CS-NNN.json), one manifest per intake batch (batches/), and config.json naming the editors and committee. Same machinery as the smart-ra public review, at working-group scale; a public review, when there is one, gets its own store at review/public-comment/.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/folio-assistant-core/public-comments/folio/dth-hrh/index.html",
+            "title": "Working-group comments",
+            "writer": [
+              "folio-assistant-core/scripts/public-comment-site.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "glossary",
+      "path": "glossary/",
+      "graphTypologies": [
+        "glossary"
+      ],
+      "description": "The handbook's glossary as folio-glossary/v1 SKOS schemes: the consolidated dth-hrh scheme, the TWG candidate definitions and the professional-council examples, built from the TWG workbook by scripts/glossary/build_glossary.py. Its page is core's per-instance glossary page, written into this site with --instance dth-hrh.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/folio-assistant-core/glossary/instance/dth-hrh/index.html",
+            "title": "Glossary",
+            "writer": [
+              "folio-assistant-core/scripts/glossary-page.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "uploads",
+      "path": "uploads/",
+      "graphTypologies": [
+        "uploads"
+      ],
+      "description": "Inbox for material not yet ingested."
+    },
+    {
+      "id": "beans",
+      "path": "beans/",
+      "graphTypologies": [
+        "beans"
+      ],
+      "source": {
+        "kind": "branch",
+        "branch": "cat/dth-hrh/beans",
+        "keyedBy": "tip"
+      },
+      "description": "This instance's work plan — one Markdown file per bean, managed with the `beans` CLI (`.beans.yml`)."
+    },
+    {
+      "id": "todos",
+      "path": "todos/",
+      "graphTypologies": [
+        "todos"
+      ],
+      "source": {
+        "kind": "branch",
+        "branch": "cat/dth-hrh/todos",
+        "keyedBy": "tip"
+      },
+      "description": "People's outstanding items and the feedback raised against blocks; its inner directories are declared by `todos/todos.json`."
+    },
+    {
+      "id": "fsh-guts",
+      "path": "fsh-guts/",
+      "graphTypologies": [
+        "fsh-guts"
+      ],
+      "source": {
+        "kind": "branch",
+        "branch": "cat/dth-hrh/fsh-guts",
+        "keyedBy": "tip"
+      },
+      "description": "The trashcan that is kept: deprecated and removed content, each node declaring itself `folio-fsh-guts/v1` with where it came from. Where a cutover deposits the directory it removes from main. Never rendered."
+    },
+    {
+      "id": "archimate",
+      "path": "archimate/",
+      "graphTypologies": [
+        "archimate"
+      ],
+      "served": true,
+      "description": "The dth-hrh ArchiMate overlay on the smart-ra (DPI-H RA) model, one folder per SemVer version, named by archimate/cat-archimate.config.json. A DTH builds an overlay and does not add to smart-ra (owner, 2026-11-01, Q-RA1 A). The NHWA work lives here, not in smart-ra (owner, 2026-11-01 20:32Z): elements tagged overlay:base copy a smart-ra element, elements tagged overlay:owner=dth-hrh are this DTH's own. scripts/archimate/extract_overlay.py built 0.1.0-draft.1 from smart-ra#188's staged model.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/dth-hrh/archimate/index.html",
+            "title": "ArchiMate overlay",
+            "writer": [
+              "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "references",
+      "path": "references/",
+      "description": "dth-hrh's bibliography: one folio-reference/v1 CSL-JSON node per entry of the document's References chapter (`folio/dth-hrh/references/p-references.md`), `<key>.json`, in the KG at `references/<key>` (owner, 2026-11-02: \"each document should have a bibliography pages which includes refrenced content in the document\"). Committee content, wording kept: each node's fields are taken word for word from its entry, and `_comment` holds the entry as printed. The References chapter's block names every node in `cites`, in chapter order, so the chapter and the KG Bibliography (`en/folio-assistant-core/bibliography/`) list the same works. A key shared with the who-iris catalogue, a library asset or another folio's bibliography names the same work there.",
+      "graphTypologies": [
+        "references"
+      ]
+    }
+  ],
+  "description": "WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind `dth` in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.",
+  "needs": [
+    "smart-base",
+    "dpi-h-ra"
+  ],
+  "_needs_comment": "An L2 DTH on smart-ra (owner, 2026-10-31, option A; dth-hrh#47): its glossary terms and narrative link to dpi-h-ra (litlfred/smart-ra) glossary concepts and ArchiMate elements. smart-base stays, because the DAK block kinds (persona, user scenario, requirements, data elements) reach this folio through smart-base content-adapters/dak.json. Earlier: an L1 DTH on the smart-base harness, set up like litlfred/smart-ra (owner, 2026-10-14).",
+  "visualisers": [
+    {
+      "id": "archimate",
+      "title": "ArchiMate overlay",
+      "renderedBy": "archimate-pages",
+      "covers": [
+        "archimate"
+      ],
+      "writer": [
+        "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
+      ]
+    }
+  ],
+  "remoteGraphs": [
+    {
+      "id": "hrhis-registry-2015-glossary",
+      "url": "https://litlfred.github.io/who-iris/v0/ns/glossary/hrhis-registry-2015/",
+      "graphTypologies": [
+        "glossary"
+      ],
+      "title": "HRHIS registry glossary (WHO, 2015; who-iris)",
+      "description": "External reference only, not definitional (owner, 2026-11-02). The handbook's terms are its own working definitions; this ingested who-iris SKOS glossary is linked from the glossary as an external source."
+    }
+  ],
+  "enableSubgraphs": [
+    "folio-assistant-core.collab",
+    "smart-base.collab",
+    "fhir-harness.collab",
+    "smart-base.L2-collab",
+    "smart-base.L3-collab"
+  ]
+}
