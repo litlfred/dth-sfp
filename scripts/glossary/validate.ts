@@ -155,8 +155,11 @@ if (ra && existsSync("folio/dth-sfp")) {
   };
   const ids = byOwner["smart-ra"];
 
-  const raIriRe = /^https:\/\/litlfred\.github\.io\/smart-ra\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
-  const dthIriRe = /^https:\/\/litlfred\.github\.io\/(dth-[a-z]+)\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
+  // A reference copy's tag is the slash IRI smart-ra's (or the other DTH's)
+  // site writes for the item, …/archimate/<model>/(element|relationship|view)/<id>
+  // (dth-sfp#9, cat-harness-tools#1950); extract_overlay.py writes this form.
+  const raIriRe = /^https:\/\/litlfred\.github\.io\/smart-ra\/archimate\/([^/]+)\/(element|relationship|view)\/([^/]+)$/;
+  const dthIriRe = /^https:\/\/litlfred\.github\.io\/(dth-[a-z]+)\/archimate\/([^/]+)\/(element|relationship|view)\/([^/]+)$/;
   const overlay = { owned: 0, base: 0, dth: 0 };
   for (const [ver, { model }] of byOwner["dth-sfp"]) {
     for (const e of [...model.elements, ...model.relationships, ...model.views]) {
