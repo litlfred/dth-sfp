@@ -155,7 +155,7 @@
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/unregistered-or-unlicensed-medical-product"
         },
         {
-          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         }
       ],
       "skos:broadMatch": [
@@ -850,7 +850,7 @@
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacovigilance"
         },
         {
-          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         }
       ],
       "skos:broadMatch": [
@@ -888,7 +888,7 @@
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
         },
         {
-          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         }
       ],
       "skos:broadMatch": [
@@ -1501,7 +1501,7 @@
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
         },
         {
-          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         }
       ],
       "skos:broadMatch": [

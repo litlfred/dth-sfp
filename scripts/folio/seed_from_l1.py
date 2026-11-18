@@ -18,20 +18,20 @@ for fig_png in sorted((L1_DIR / "media" / "figures").glob("*.png")):
 
 SFP_NS = "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/"
 RA_NS = "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/"
-SC_NS = "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/"
+SC_NS = "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/"
 PC_NS = "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/"
 HRH_NS = "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/"
-ARCH_EL = "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/"
-ARCH_VW = "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/"
+ARCH_EL = "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/"
+ARCH_VW = "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/"
 
 def g(ns: str, term: str) -> dict:
     return {"iri": f"{ns}{term}", "term": term}
 
 def el(eid: str, name: str, etype: str) -> dict:
-    return {"iri": f"{ARCH_EL}{eid}.jsonld", "name": name, "type": etype}
+    return {"iri": f"{ARCH_EL}{eid}", "name": name, "type": etype}
 
 def vw(vid: str, name: str) -> dict:
-    return {"iri": f"{ARCH_VW}{vid}.jsonld", "name": name}
+    return {"iri": f"{ARCH_VW}{vid}", "name": name}
 
 EL_NMRA = el("id-8e67c8e9e1195cdc857b03a2c640e7fe", "National Regulatory Authority", "BusinessRole")
 EL_REG_SYS = el("id-22eff58eae365a4f8d0e0368d8c3497e", "Regulatory Systems", "ApplicationComponent")

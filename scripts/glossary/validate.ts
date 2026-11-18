@@ -187,7 +187,14 @@ if (ra && existsSync("folio/dth-sfp")) {
       }
     }
   }
-  const iriRe = /^https:\/\/litlfred\.github\.io\/(smart-ra|dth-sfp)\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
+  // Two forms: the slash IRI the ArchiMate site writes now,
+  // `…/archimate/<model>/element|view/<id>`, and the older
+  // `…/archimate/<model>/elements|views/<id>.jsonld`. Read as [owner, model, kind (plural), id].
+  const iriRe = /^https:\/\/litlfred\.github\.io\/(smart-ra|dth-sfp)\/archimate\/([^/]+)\/(?:(element|view)s\/([^/]+)\.jsonld|(element|view)\/([^/.]+))$/;
+  const parseArchIri = (iri: string): [string, string, "elements" | "views", string] | undefined => {
+    const m = iri.match(iriRe);
+    return m ? [m[1]!, m[2]!, `${m[3] ?? m[5]}s` as "elements" | "views", (m[4] ?? m[6])!] : undefined;
+  };
   let archBlocks = 0;
   let archLinks = 0;
   let figMappings = 0;
@@ -219,8 +226,8 @@ if (ra && existsSync("folio/dth-sfp")) {
       archBlocks++;
       for (const x of [...(a.elements ?? []), ...(a.views ?? [])]) {
         archLinks++;
-        const hit = String(x.iri).match(iriRe);
-        const ok = hit && byOwner[hit[1]].get(hit[2])?.[hit[3] as "elements" | "views"].has(hit[4]);
+        const hit = parseArchIri(String(x.iri));
+        const ok = hit && byOwner[hit[0]].get(hit[1])?.[hit[2]].has(hit[3]);
         if (!ok) {
           console.error(`✗ ${file}: ${x.iri} (${x.name}) is not in the mounted dpi-h-ra ArchiMate model or the dth-sfp overlay`);
           bad++;

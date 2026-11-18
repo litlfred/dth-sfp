@@ -3,7 +3,7 @@
 - **Role ID:** `SFP-R-10` (`pers:sfp-r-10`)
 - **ISCO-08 Code(s):** `3213`
 - **BPMN Resource ID:** `pers:sfp-r-10`
-- **ArchiMate Role / Actor:** `Health Facility` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-9cecae7a982548e1960a36ed41713a7c.jsonld`)
+- **ArchiMate Role / Actor:** `Health Facility` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-9cecae7a982548e1960a36ed41713a7c`)
 - **L1 Source Sections:** `sec-022` (PDF pp. 37)
 
 Pharmaceutical technician or assistant (§4.1, p. 25) who receives, shelves, and prepares medical products in pharmacies/stores and reports suspected SF packaging or batch anomalies.

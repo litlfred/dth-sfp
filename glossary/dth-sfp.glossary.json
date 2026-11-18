@@ -83,7 +83,7 @@
         "substandard-medical-product",
         "falsified-medical-product",
         "unregistered-or-unlicensed-medical-product",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
       ]
     },
     {
@@ -429,7 +429,7 @@
       "related": [
         "risk-based-post-market-surveillance",
         "pharmacovigilance",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
       ],
       "notation": "PMS"
     },
@@ -448,7 +448,7 @@
       ],
       "related": [
         "sf-report",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
       ],
       "notation": "Rb-PMS",
       "altLabel": [
@@ -766,7 +766,7 @@
       "related": [
         "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
       ]
     },
     {
@@ -1382,7 +1382,7 @@
       "notation": "LMIS",
       "scopeNote": "Expanded in the Annex 5 table notes (p. 63 / PDF p. 75). Linked as closeMatch to dth-sc's Health Supply Chain Information System.",
       "closeMatch": [
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
       ],
       "source": "who-iris/library/9789240120747-eng/sections/sec-039-annex-5-template-for-assessing-current-software.md",
       "status": "candidate"

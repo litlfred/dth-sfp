@@ -3,7 +3,7 @@
 - **Role ID:** `SFP-R-09` (`pers:sfp-r-09`)
 - **ISCO-08 Code(s):** `2240, 3258`
 - **BPMN Resource ID:** `pers:sfp-r-09`
-- **ArchiMate Role / Actor:** `Community Health` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-2bdc635e575f5ec59bb5d6cbff12de78.jsonld`)
+- **ArchiMate Role / Actor:** `Community Health` (`https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-2bdc635e575f5ec59bb5d6cbff12de78`)
 - **L1 Source Sections:** `sec-023` (PDF pp. 40)
 
 Emergency paramedical responder (Table 9 scenario 9, p. 28; SF-REP-006) who administers emergency medical products in field settings and submits SF reports online or via the offline outbox.

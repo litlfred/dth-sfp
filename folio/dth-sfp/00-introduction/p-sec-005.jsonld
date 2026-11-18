@@ -62,7 +62,7 @@
         "term": "digital-transformation"
       },
       {
-        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "iri": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
         "term": "traceability"
       }
     ],
@@ -77,44 +77,44 @@
       "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/global-surveillance-and-monitoring-system",
       "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines",
       "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/digital-transformation",
-      "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+      "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
     ],
     "archimate": {
       "model": "0.3.0-draft.1",
       "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-8e67c8e9e1195cdc857b03a2c640e7fe",
           "name": "National Regulatory Authority",
           "type": "BusinessRole"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-22eff58eae365a4f8d0e0368d8c3497e",
           "name": "Regulatory Systems",
           "type": "ApplicationComponent"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-a9c92f8fa2924d4180e8f5512b0d0097.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-a9c92f8fa2924d4180e8f5512b0d0097",
           "name": "Recall",
           "type": "Capability"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e3c4f0ec36f35eccb0d4c50f887316e5.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-e3c4f0ec36f35eccb0d4c50f887316e5",
           "name": "Global Platforms",
           "type": "ApplicationComponent"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-92267636cc42566ca5d2cff0e81be8c9",
           "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-3ad41900b17d47f78129e16d32ed2f38.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-3ad41900b17d47f78129e16d32ed2f38",
           "name": "Components"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-4e6e25746e8d4398add06fcbc4fb5a4e.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-4e6e25746e8d4398add06fcbc4fb5a4e",
           "name": "Capabilities-Goals"
         }
       ]
