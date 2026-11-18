@@ -16,5 +16,6 @@ Part of [Digital Transformation Handbook for Reporting Substandard and Falsified
 | [`l1-coverage.md`](l1-coverage.md) | L1 Normative Coverage Report (dth-sfp) |  |
 | [`workplan.md`](workplan.md) | Workplan: dth-sfp as an L2 DTH on smart-ra (draft for approval, 2026-10-31) |  |
 | [`assets/`](assets/) | _nothing declares what this holds_ | |
+| [`prov-qaqc/`](prov-qaqc/) | _nothing declares what this holds_ | |
 
 <!-- kg:subgraph:end -->
