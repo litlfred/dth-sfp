@@ -42,7 +42,7 @@ concurrency:
 jobs:
   checks:
     if: github.event.action != 'labeled' || github.event.label.name == 'release' || github.event.label.name == 'preview'
-    uses: litlfred/cat-harness-tools/.github/workflows/layer-pr-checks.yml@976c22c4ac82416fcbb533586ce396910998e31c # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-pr-checks.yml@4a373af9e6541ae0d974dd676a6b1a2df100a2a8 # index.lock.json
     with:
       # On a draft PR: prepare and typecheck only; the full tier runs on ready_for_review.
       draft-fast-tier: true

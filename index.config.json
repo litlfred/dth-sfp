@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "976c22c4ac82416fcbb533586ce396910998e31c",
+          "ref": "4a373af9e6541ae0d974dd676a6b1a2df100a2a8",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -243,8 +243,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-18",
-              "ref": "976c22c4ac82416fcbb533586ce396910998e31c",
-              "evidence": "litlfred 2026-11-18 ~06:22Z on the merge manager card (session_01EucfRnjwjC8CPYgVnsFuHS): \"Yes, re-pin all\"; confirmed ~13:10Z in session_01EucfRn33bgBwFGAQSDMBDb: \"Yes, all four\"; re-pin every layer to its current main so cat-harness-tools >= 8b143993 (#2446) unblocks WorldHealthOrganization/dth-sfp#2 (main moved to 976c22c4 during the re-pin)"
+              "ref": "4a373af9e6541ae0d974dd676a6b1a2df100a2a8",
+              "evidence": "litlfred 2026-11-18 ~06:22Z on the merge manager card (session_01EucfRnjwjC8CPYgVnsFuHS): \"Yes, re-pin all\", re-pin window open until ~23:10Z (merge manager roll call 17:11Z); re-pin every layer to its current main so cat-harness-tools >= 4a373af9 (#2449, the empty-seeded bean store fix) reaches dth-sfp"
             }
           }
         }
@@ -302,7 +302,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "fe583a430055b488f497ef84309eb949f28d8ed5",
+          "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -339,8 +339,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-18",
-              "ref": "fe583a430055b488f497ef84309eb949f28d8ed5",
-              "evidence": "litlfred 2026-11-18 ~06:22Z on the merge manager card (session_01EucfRnjwjC8CPYgVnsFuHS): \"Yes, re-pin all\"; confirmed ~13:10Z in session_01EucfRn33bgBwFGAQSDMBDb: \"Yes, all four\", and again on a card in this session allowing this consent record to name litlfred; re-pin every layer to its current main so cat-harness-tools >= 8b143993 (#2446) unblocks WorldHealthOrganization/dth-sfp#2"
+              "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
+              "evidence": "litlfred 2026-11-18 ~06:22Z on the merge manager card (session_01EucfRnjwjC8CPYgVnsFuHS): \"Yes, re-pin all\", re-pin window open until ~23:10Z (merge manager roll call 17:11Z); re-pin every layer to its current main so cat-harness-tools >= 4a373af9 (#2449, the empty-seeded bean store fix) reaches dth-sfp"
             }
           }
         }
