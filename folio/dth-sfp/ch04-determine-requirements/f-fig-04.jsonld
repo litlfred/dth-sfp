@@ -109,11 +109,11 @@
         "term": "traceability"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "term": "occupation"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "term": "international-standard-classification-of-occupations"
       }
     ],
@@ -135,8 +135,8 @@
       "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
       "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/transactional-data",
       "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
     ],
     "archimate": {
       "model": "0.3.0-draft.1",

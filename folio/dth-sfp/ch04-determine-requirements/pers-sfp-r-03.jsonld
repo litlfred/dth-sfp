@@ -70,11 +70,11 @@
         "term": "user-persona"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "term": "occupation"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "term": "international-standard-classification-of-occupations"
       }
     ],
@@ -83,8 +83,8 @@
       "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
       "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
       "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
     ],
     "archimate": {
       "model": "0.3.0-draft.1",

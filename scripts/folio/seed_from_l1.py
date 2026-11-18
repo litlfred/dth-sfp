@@ -20,7 +20,7 @@ SFP_NS = "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/"
 RA_NS = "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/"
 SC_NS = "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/"
 PC_NS = "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/"
-HRH_NS = "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/"
+HRH_NS = "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/"
 ARCH_EL = "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/"
 ARCH_VW = "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/"
 

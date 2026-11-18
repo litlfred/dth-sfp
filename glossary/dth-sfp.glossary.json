@@ -106,7 +106,7 @@
         "anonymous-report",
         "reporter-feedback-loop",
         "health-care-professional",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
       ]
     },
     {
@@ -515,7 +515,7 @@
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
       ],
       "closeMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation"
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation"
       ],
       "related": [
         "sf-report",
@@ -604,11 +604,11 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-002-glossary.md",
       "status": "candidate",
       "closeMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-practitioner"
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-practitioner"
       ],
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "notation": "HCP"
@@ -631,12 +631,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -656,12 +656,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -706,15 +706,15 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "closeMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers"
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers"
       ],
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ],
       "notation": "CHW"
@@ -734,12 +734,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -759,12 +759,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report",
         "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
       ]
@@ -785,12 +785,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -810,12 +810,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -837,12 +837,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-023-42-define-user-scenarios.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -861,12 +861,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "pharmacist",
         "sf-report"
       ]
@@ -886,12 +886,12 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -910,11 +910,11 @@
       "source": "who-iris/library/9789240120747-eng/sections/sec-036-annex-2-user-persona-template.md",
       "status": "candidate",
       "broadMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
       ],
       "related": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "sf-report"
       ]
     },
@@ -1232,7 +1232,7 @@
       "notation": "ISCO-08",
       "scopeNote": "2008 revision of the ILO International Standard Classification of Occupations (ISCO), used to code user personas in §4.1 (p. 25 / PDF p. 37). A candidate: no definition has been written.",
       "exactMatch": [
-        "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+        "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
       ],
       "source": "who-iris/library/9789240120747-eng/sections/sec-022-41-identify-user-personas.md",
       "status": "candidate"

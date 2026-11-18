@@ -50,7 +50,7 @@
         "term": "governance-health-supply-chain"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation",
         "term": "regulation"
       }
     ],
@@ -62,7 +62,7 @@
       "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/governance",
       "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/goal",
       "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation"
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation"
     ],
     "archimate": {
       "model": "0.3.0-draft.1",

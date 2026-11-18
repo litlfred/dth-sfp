@@ -204,7 +204,7 @@
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/health-care-professional"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
         }
       ],
       "skos:broadMatch": [
@@ -1016,7 +1016,7 @@
       ],
       "skos:closeMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/regulation"
         }
       ],
       "skos:broadMatch": [
@@ -1194,15 +1194,15 @@
       ],
       "skos:closeMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-practitioner"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-practitioner"
         }
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1244,7 +1244,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1252,10 +1252,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1295,7 +1295,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1303,10 +1303,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1391,7 +1391,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1399,15 +1399,15 @@
       ],
       "skos:closeMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers"
         }
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1444,7 +1444,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1452,10 +1452,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1495,7 +1495,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1506,10 +1506,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1549,7 +1549,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1557,10 +1557,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1600,7 +1600,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1608,10 +1608,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-professional"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1653,7 +1653,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1661,10 +1661,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1701,7 +1701,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/pharmacist"
@@ -1712,10 +1712,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1752,7 +1752,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1760,10 +1760,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workers"
         },
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"
@@ -1800,7 +1800,7 @@
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations"
         },
         {
           "@id": "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report"
@@ -1808,7 +1808,7 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
+          "@id": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona"

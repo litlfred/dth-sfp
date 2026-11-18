@@ -54,7 +54,7 @@
         "term": "traceability"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry",
         "term": "health-workforce-registry"
       }
     ],
@@ -67,7 +67,7 @@
       "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
       "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
       "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry"
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/health-workforce-registry"
     ],
     "archimate": {
       "model": "0.3.0-draft.1",
