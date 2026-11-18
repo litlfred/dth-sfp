@@ -22,7 +22,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "fe583a430055b488f497ef84309eb949f28d8ed5"
+      "value": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b"
     }
   },
   "isPartOf": {
@@ -31,8 +31,8 @@
   },
   "significantLink": [
     "https://litlfred.github.io/folio-assistant/#harness-dpi-h-ra",
-    "https://github.com/litlfred/smart-ra/tree/fe583a430055b488f497ef84309eb949f28d8ed5",
-    "https://github.com/litlfred/smart-ra/blob/fe583a430055b488f497ef84309eb949f28d8ed5/README.md",
-    "https://github.com/litlfred/smart-ra/blob/fe583a430055b488f497ef84309eb949f28d8ed5/AGENTS.md"
+    "https://github.com/litlfred/smart-ra/tree/fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
+    "https://github.com/litlfred/smart-ra/blob/fe66c5f8ed87e0eface26fe2951532ab9bd12b4b/README.md",
+    "https://github.com/litlfred/smart-ra/blob/fe66c5f8ed87e0eface26fe2951532ab9bd12b4b/AGENTS.md"
   ]
 }
