@@ -39,7 +39,7 @@
         "term": "product-master-data"
       },
       {
-        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "iri": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
         "term": "traceability"
       }
     ],
@@ -47,39 +47,39 @@
       "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/suspect-product",
       "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier",
       "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
-      "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+      "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
     ],
     "archimate": {
       "model": "0.3.0-draft.1",
       "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-ed45b0d35d7c5ccbbf4abe599a80be5c",
           "name": "National Product Catalogue",
           "type": "ApplicationComponent"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-975c5567001151299672c0341a733111.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-975c5567001151299672c0341a733111",
           "name": "Product Verification",
           "type": "ApplicationService"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-5dc77dae1bce5d11b288830795b31bdf.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-5dc77dae1bce5d11b288830795b31bdf",
           "name": "Traceability Event",
           "type": "DataObject"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-053fa0e33f6b5b0bb218195486c05160.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-053fa0e33f6b5b0bb218195486c05160",
           "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-02175c6feb9155618981ff120f954420",
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-bea56e01c8345fbc803dee47a17ccfd3.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-bea56e01c8345fbc803dee47a17ccfd3",
           "name": "Track and Trace through DHSC Components (DTH SC Fig. 24)"
         }
       ]

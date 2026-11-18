@@ -70,15 +70,15 @@
         "term": "user-persona"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
         "term": "occupation"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
         "term": "international-standard-classification-of-occupations"
       },
       {
-        "iri": "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers",
+        "iri": "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers",
         "term": "community-health-workers"
       }
     ],
@@ -87,32 +87,32 @@
       "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/reporter",
       "https://litlfred.github.io/dth-sfp/v0/ns#glossary/dth-sfp/sf-report",
       "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/user-persona",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
-      "https://litlfred.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers"
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/occupation",
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/international-standard-classification-of-occupations",
+      "https://worldhealthorganization.github.io/dth-hrh/v0/ns#glossary/dth-hrh/community-health-workers"
     ],
     "archimate": {
       "model": "0.3.0-draft.1",
       "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-2bdc635e575f5ec59bb5d6cbff12de78.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-2bdc635e575f5ec59bb5d6cbff12de78",
           "name": "Community Health",
           "type": "BusinessRole"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-8e67c8e9e1195cdc857b03a2c640e7fe",
           "name": "National Regulatory Authority",
           "type": "BusinessRole"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-19be800d18a34a618d6e1955cf58e956.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-19be800d18a34a618d6e1955cf58e956",
           "name": "ALL High Level - Health Workforce"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-2d524cffba25509e82684f47d624cc42.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-2d524cffba25509e82684f47d624cc42",
           "name": "Health Supply Chain Partners and Processes (DTH SC Figs. 1-3)"
         }
       ]

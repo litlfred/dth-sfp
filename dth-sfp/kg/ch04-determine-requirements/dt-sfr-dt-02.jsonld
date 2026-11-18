@@ -58,28 +58,28 @@
       "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-8e67c8e9e1195cdc857b03a2c640e7fe",
           "name": "National Regulatory Authority",
           "type": "BusinessRole"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-ed45b0d35d7c5ccbbf4abe599a80be5c",
           "name": "National Product Catalogue",
           "type": "ApplicationComponent"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-4e0767822dcf46409554156a133fbc67.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-4e0767822dcf46409554156a133fbc67",
           "name": "DPI-H: Facility Registry",
           "type": "ApplicationComponent"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-02175c6feb9155618981ff120f954420",
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-92267636cc42566ca5d2cff0e81be8c9",
           "name": "DHSC Architecture Framework (DTH SC Fig. 14)"
         }
       ]

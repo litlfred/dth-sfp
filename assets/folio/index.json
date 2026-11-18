@@ -41,7 +41,7 @@
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-000.jsonld",
-          "bytes": 8134,
+          "bytes": 8100,
           "size": "7.9 KB"
         },
         {
@@ -51,13 +51,13 @@
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-000.ts",
-          "bytes": 6550,
+          "bytes": 6516,
           "size": "6.4 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-001.jsonld",
-          "bytes": 8154,
-          "size": "8.0 KB"
+          "bytes": 8120,
+          "size": "7.9 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-001.md",
@@ -66,12 +66,12 @@
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-001.ts",
-          "bytes": 6570,
+          "bytes": 6536,
           "size": "6.4 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-002.jsonld",
-          "bytes": 9138,
+          "bytes": 9104,
           "size": "8.9 KB"
         },
         {
@@ -81,13 +81,13 @@
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-002.ts",
-          "bytes": 7520,
+          "bytes": 7486,
           "size": "7.3 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-front-matter.jsonld",
-          "bytes": 8158,
-          "size": "8.0 KB"
+          "bytes": 8124,
+          "size": "7.9 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-front-matter.md",
@@ -96,12 +96,12 @@
         },
         {
           "path": "dth-sfp/00-front-matter/p-sec-front-matter.ts",
-          "bytes": 6556,
+          "bytes": 6522,
           "size": "6.4 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/t-abbreviations.jsonld",
-          "bytes": 8192,
+          "bytes": 8158,
           "size": "8.0 KB"
         },
         {
@@ -111,13 +111,13 @@
         },
         {
           "path": "dth-sfp/00-front-matter/t-abbreviations.ts",
-          "bytes": 6573,
+          "bytes": 6539,
           "size": "6.4 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/t-glossary.jsonld",
-          "bytes": 9181,
-          "size": "9.0 KB"
+          "bytes": 9147,
+          "size": "8.9 KB"
         },
         {
           "path": "dth-sfp/00-front-matter/t-glossary.md",
@@ -126,8 +126,8 @@
         },
         {
           "path": "dth-sfp/00-front-matter/t-glossary.ts",
-          "bytes": 7544,
-          "size": "7.4 KB"
+          "bytes": 7510,
+          "size": "7.3 KB"
         },
         {
           "path": "dth-sfp/00-introduction/00-introduction.ts",
@@ -136,7 +136,7 @@
         },
         {
           "path": "dth-sfp/00-introduction/f-fig-01.jsonld",
-          "bytes": 6703,
+          "bytes": 6677,
           "size": "6.5 KB"
         },
         {
@@ -146,12 +146,12 @@
         },
         {
           "path": "dth-sfp/00-introduction/f-fig-01.ts",
-          "bytes": 5354,
+          "bytes": 5328,
           "size": "5.2 KB"
         },
         {
           "path": "dth-sfp/00-introduction/f-fig-02.jsonld",
-          "bytes": 6392,
+          "bytes": 6366,
           "size": "6.2 KB"
         },
         {
@@ -161,12 +161,12 @@
         },
         {
           "path": "dth-sfp/00-introduction/f-fig-02.ts",
-          "bytes": 5099,
+          "bytes": 5073,
           "size": "5.0 KB"
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-003.jsonld",
-          "bytes": 5165,
+          "bytes": 5139,
           "size": "5.0 KB"
         },
         {
@@ -176,12 +176,12 @@
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-003.ts",
-          "bytes": 4015,
+          "bytes": 3989,
           "size": "3.9 KB"
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-004.jsonld",
-          "bytes": 5536,
+          "bytes": 5510,
           "size": "5.4 KB"
         },
         {
@@ -191,13 +191,13 @@
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-004.ts",
-          "bytes": 4370,
-          "size": "4.3 KB"
+          "bytes": 4344,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-005.jsonld",
-          "bytes": 5189,
-          "size": "5.1 KB"
+          "bytes": 5163,
+          "size": "5.0 KB"
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-005.md",
@@ -206,13 +206,13 @@
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-005.ts",
-          "bytes": 4039,
+          "bytes": 4013,
           "size": "3.9 KB"
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-006.jsonld",
-          "bytes": 5189,
-          "size": "5.1 KB"
+          "bytes": 5163,
+          "size": "5.0 KB"
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-006.md",
@@ -221,12 +221,12 @@
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-006.ts",
-          "bytes": 4039,
+          "bytes": 4013,
           "size": "3.9 KB"
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-007.jsonld",
-          "bytes": 5203,
+          "bytes": 5177,
           "size": "5.1 KB"
         },
         {
@@ -236,12 +236,12 @@
         },
         {
           "path": "dth-sfp/00-introduction/p-sec-007.ts",
-          "bytes": 4053,
-          "size": "4.0 KB"
+          "bytes": 4027,
+          "size": "3.9 KB"
         },
         {
           "path": "dth-sfp/00-introduction/t-table-01.jsonld",
-          "bytes": 5226,
+          "bytes": 5200,
           "size": "5.1 KB"
         },
         {
@@ -251,8 +251,8 @@
         },
         {
           "path": "dth-sfp/00-introduction/t-table-01.ts",
-          "bytes": 4051,
-          "size": "4.0 KB"
+          "bytes": 4025,
+          "size": "3.9 KB"
         },
         {
           "path": "dth-sfp/annexes/annexes.ts",
@@ -261,7 +261,7 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-034.jsonld",
-          "bytes": 2886,
+          "bytes": 2854,
           "size": "2.8 KB"
         },
         {
@@ -271,13 +271,13 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-034.ts",
-          "bytes": 2086,
+          "bytes": 2054,
           "size": "2.0 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-035.jsonld",
-          "bytes": 2948,
-          "size": "2.9 KB"
+          "bytes": 2916,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-035.md",
@@ -286,12 +286,12 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-035.ts",
-          "bytes": 2148,
+          "bytes": 2116,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-036.jsonld",
-          "bytes": 3111,
+          "bytes": 3079,
           "size": "3.0 KB"
         },
         {
@@ -301,12 +301,12 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-036.ts",
-          "bytes": 2295,
+          "bytes": 2263,
           "size": "2.2 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-037.jsonld",
-          "bytes": 2970,
+          "bytes": 2938,
           "size": "2.9 KB"
         },
         {
@@ -316,13 +316,13 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-037.ts",
-          "bytes": 2170,
+          "bytes": 2138,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-038.jsonld",
-          "bytes": 2926,
-          "size": "2.9 KB"
+          "bytes": 2894,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-038.md",
@@ -331,12 +331,12 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-038.ts",
-          "bytes": 2126,
-          "size": "2.1 KB"
+          "bytes": 2094,
+          "size": "2.0 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-039.jsonld",
-          "bytes": 2971,
+          "bytes": 2939,
           "size": "2.9 KB"
         },
         {
@@ -346,13 +346,13 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-039.ts",
-          "bytes": 2171,
+          "bytes": 2139,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-040.jsonld",
-          "bytes": 2922,
-          "size": "2.9 KB"
+          "bytes": 2890,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-040.md",
@@ -361,13 +361,13 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-040.ts",
-          "bytes": 2122,
-          "size": "2.1 KB"
+          "bytes": 2090,
+          "size": "2.0 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-041.jsonld",
-          "bytes": 2928,
-          "size": "2.9 KB"
+          "bytes": 2896,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-sfp/annexes/p-sec-041.md",
@@ -376,12 +376,12 @@
         },
         {
           "path": "dth-sfp/annexes/p-sec-041.ts",
-          "bytes": 2128,
-          "size": "2.1 KB"
+          "bytes": 2096,
+          "size": "2.0 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-01.jsonld",
-          "bytes": 2990,
+          "bytes": 2958,
           "size": "2.9 KB"
         },
         {
@@ -391,13 +391,13 @@
         },
         {
           "path": "dth-sfp/annexes/t-annex-01.ts",
-          "bytes": 2165,
+          "bytes": 2133,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-02.jsonld",
-          "bytes": 3129,
-          "size": "3.1 KB"
+          "bytes": 3097,
+          "size": "3.0 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-02.md",
@@ -406,12 +406,12 @@
         },
         {
           "path": "dth-sfp/annexes/t-annex-02.ts",
-          "bytes": 2288,
+          "bytes": 2256,
           "size": "2.2 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-03.jsonld",
-          "bytes": 3000,
+          "bytes": 2968,
           "size": "2.9 KB"
         },
         {
@@ -421,12 +421,12 @@
         },
         {
           "path": "dth-sfp/annexes/t-annex-03.ts",
-          "bytes": 2181,
+          "bytes": 2149,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-04.jsonld",
-          "bytes": 2953,
+          "bytes": 2921,
           "size": "2.9 KB"
         },
         {
@@ -436,12 +436,12 @@
         },
         {
           "path": "dth-sfp/annexes/t-annex-04.ts",
-          "bytes": 2128,
-          "size": "2.1 KB"
+          "bytes": 2096,
+          "size": "2.0 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-05.jsonld",
-          "bytes": 2989,
+          "bytes": 2957,
           "size": "2.9 KB"
         },
         {
@@ -451,12 +451,12 @@
         },
         {
           "path": "dth-sfp/annexes/t-annex-05.ts",
-          "bytes": 2164,
+          "bytes": 2132,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-06.jsonld",
-          "bytes": 2957,
+          "bytes": 2925,
           "size": "2.9 KB"
         },
         {
@@ -466,13 +466,13 @@
         },
         {
           "path": "dth-sfp/annexes/t-annex-06.ts",
-          "bytes": 2132,
+          "bytes": 2100,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-07.jsonld",
-          "bytes": 2946,
-          "size": "2.9 KB"
+          "bytes": 2914,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-sfp/annexes/t-annex-07.md",
@@ -481,8 +481,8 @@
         },
         {
           "path": "dth-sfp/annexes/t-annex-07.ts",
-          "bytes": 2121,
-          "size": "2.1 KB"
+          "bytes": 2089,
+          "size": "2.0 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/ch01-assess-current-state.ts",
@@ -491,7 +491,7 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-008.jsonld",
-          "bytes": 4701,
+          "bytes": 4675,
           "size": "4.6 KB"
         },
         {
@@ -501,12 +501,12 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-008.ts",
-          "bytes": 3623,
+          "bytes": 3597,
           "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-009.jsonld",
-          "bytes": 4655,
+          "bytes": 4629,
           "size": "4.5 KB"
         },
         {
@@ -516,13 +516,13 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-009.ts",
-          "bytes": 3577,
+          "bytes": 3551,
           "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-010.jsonld",
-          "bytes": 4663,
-          "size": "4.6 KB"
+          "bytes": 4637,
+          "size": "4.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-010.md",
@@ -531,12 +531,12 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-010.ts",
-          "bytes": 3585,
+          "bytes": 3559,
           "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-011.jsonld",
-          "bytes": 4712,
+          "bytes": 4686,
           "size": "4.6 KB"
         },
         {
@@ -546,12 +546,12 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/p-sec-011.ts",
-          "bytes": 3634,
+          "bytes": 3608,
           "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-02.jsonld",
-          "bytes": 4701,
+          "bytes": 4675,
           "size": "4.6 KB"
         },
         {
@@ -561,12 +561,12 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-02.ts",
-          "bytes": 3598,
+          "bytes": 3572,
           "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-03.jsonld",
-          "bytes": 4705,
+          "bytes": 4679,
           "size": "4.6 KB"
         },
         {
@@ -576,12 +576,12 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-03.ts",
-          "bytes": 3602,
+          "bytes": 3576,
           "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-04.jsonld",
-          "bytes": 4731,
+          "bytes": 4705,
           "size": "4.6 KB"
         },
         {
@@ -591,13 +591,13 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-04.ts",
-          "bytes": 3628,
+          "bytes": 3602,
           "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-05.jsonld",
-          "bytes": 4762,
-          "size": "4.7 KB"
+          "bytes": 4736,
+          "size": "4.6 KB"
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-05.md",
@@ -606,7 +606,7 @@
         },
         {
           "path": "dth-sfp/ch01-assess-current-state/t-table-05.ts",
-          "bytes": 3665,
+          "bytes": 3639,
           "size": "3.6 KB"
         },
         {
@@ -616,7 +616,7 @@
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-012.jsonld",
-          "bytes": 4383,
+          "bytes": 4387,
           "size": "4.3 KB"
         },
         {
@@ -626,12 +626,12 @@
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-012.ts",
-          "bytes": 3341,
+          "bytes": 3345,
           "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-013.jsonld",
-          "bytes": 4409,
+          "bytes": 4413,
           "size": "4.3 KB"
         },
         {
@@ -641,12 +641,12 @@
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-013.ts",
-          "bytes": 3367,
+          "bytes": 3371,
           "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-014.jsonld",
-          "bytes": 4341,
+          "bytes": 4345,
           "size": "4.2 KB"
         },
         {
@@ -656,13 +656,13 @@
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-014.ts",
-          "bytes": 3299,
+          "bytes": 3303,
           "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-015.jsonld",
-          "bytes": 4351,
-          "size": "4.2 KB"
+          "bytes": 4355,
+          "size": "4.3 KB"
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-015.md",
@@ -671,12 +671,12 @@
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-015.ts",
-          "bytes": 3309,
+          "bytes": 3313,
           "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-016.jsonld",
-          "bytes": 4327,
+          "bytes": 4331,
           "size": "4.2 KB"
         },
         {
@@ -686,12 +686,12 @@
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-016.ts",
-          "bytes": 3285,
+          "bytes": 3289,
           "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-017.jsonld",
-          "bytes": 4551,
+          "bytes": 4555,
           "size": "4.4 KB"
         },
         {
@@ -701,7 +701,7 @@
         },
         {
           "path": "dth-sfp/ch02-shared-understanding-governance/p-sec-017.ts",
-          "bytes": 3493,
+          "bytes": 3497,
           "size": "3.4 KB"
         },
         {
@@ -711,8 +711,8 @@
         },
         {
           "path": "dth-sfp/ch03-future-state/f-fig-03.jsonld",
-          "bytes": 7464,
-          "size": "7.3 KB"
+          "bytes": 7412,
+          "size": "7.2 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/f-fig-03.md",
@@ -721,12 +721,12 @@
         },
         {
           "path": "dth-sfp/ch03-future-state/f-fig-03.ts",
-          "bytes": 5930,
-          "size": "5.8 KB"
+          "bytes": 5878,
+          "size": "5.7 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-018.jsonld",
-          "bytes": 6273,
+          "bytes": 6221,
           "size": "6.1 KB"
         },
         {
@@ -736,13 +736,13 @@
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-018.ts",
-          "bytes": 4879,
-          "size": "4.8 KB"
+          "bytes": 4827,
+          "size": "4.7 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-019.jsonld",
-          "bytes": 6300,
-          "size": "6.2 KB"
+          "bytes": 6248,
+          "size": "6.1 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-019.md",
@@ -751,13 +751,13 @@
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-019.ts",
-          "bytes": 4906,
-          "size": "4.8 KB"
+          "bytes": 4854,
+          "size": "4.7 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-020.jsonld",
-          "bytes": 6512,
-          "size": "6.4 KB"
+          "bytes": 6460,
+          "size": "6.3 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-020.md",
@@ -766,13 +766,13 @@
         },
         {
           "path": "dth-sfp/ch03-future-state/p-sec-020.ts",
-          "bytes": 5102,
-          "size": "5.0 KB"
+          "bytes": 5050,
+          "size": "4.9 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/t-table-06.jsonld",
-          "bytes": 6349,
-          "size": "6.2 KB"
+          "bytes": 6297,
+          "size": "6.1 KB"
         },
         {
           "path": "dth-sfp/ch03-future-state/t-table-06.md",
@@ -781,7 +781,7 @@
         },
         {
           "path": "dth-sfp/ch03-future-state/t-table-06.ts",
-          "bytes": 4930,
+          "bytes": 4878,
           "size": "4.8 KB"
         },
         {
@@ -791,7 +791,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-001.jsonld",
-          "bytes": 5342,
+          "bytes": 5308,
           "size": "5.2 KB"
         },
         {
@@ -801,8 +801,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-001.ts",
-          "bytes": 4278,
-          "size": "4.2 KB"
+          "bytes": 4244,
+          "size": "4.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-002.bpmn",
@@ -811,7 +811,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-002.jsonld",
-          "bytes": 4638,
+          "bytes": 4604,
           "size": "4.5 KB"
         },
         {
@@ -821,7 +821,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-002.ts",
-          "bytes": 3596,
+          "bytes": 3562,
           "size": "3.5 KB"
         },
         {
@@ -831,7 +831,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-003.jsonld",
-          "bytes": 4645,
+          "bytes": 4611,
           "size": "4.5 KB"
         },
         {
@@ -841,7 +841,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-003.ts",
-          "bytes": 3623,
+          "bytes": 3589,
           "size": "3.5 KB"
         },
         {
@@ -851,8 +851,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-004.jsonld",
-          "bytes": 4678,
-          "size": "4.6 KB"
+          "bytes": 4644,
+          "size": "4.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-004.md",
@@ -861,8 +861,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-004.ts",
-          "bytes": 3638,
-          "size": "3.6 KB"
+          "bytes": 3604,
+          "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-005.bpmn",
@@ -871,7 +871,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-005.jsonld",
-          "bytes": 4624,
+          "bytes": 4590,
           "size": "4.5 KB"
         },
         {
@@ -881,7 +881,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-005.ts",
-          "bytes": 3582,
+          "bytes": 3548,
           "size": "3.5 KB"
         },
         {
@@ -891,7 +891,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-006.jsonld",
-          "bytes": 4630,
+          "bytes": 4596,
           "size": "4.5 KB"
         },
         {
@@ -901,7 +901,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/bp-sf-rep-006.ts",
-          "bytes": 3614,
+          "bytes": 3580,
           "size": "3.5 KB"
         },
         {
@@ -911,7 +911,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de01.jsonld",
-          "bytes": 3191,
+          "bytes": 3151,
           "size": "3.1 KB"
         },
         {
@@ -921,12 +921,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de01.ts",
-          "bytes": 2410,
-          "size": "2.4 KB"
+          "bytes": 2370,
+          "size": "2.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de02.jsonld",
-          "bytes": 2910,
+          "bytes": 2878,
           "size": "2.8 KB"
         },
         {
@@ -936,12 +936,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de02.ts",
-          "bytes": 2217,
-          "size": "2.2 KB"
+          "bytes": 2185,
+          "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de03.jsonld",
-          "bytes": 3501,
+          "bytes": 3483,
           "size": "3.4 KB"
         },
         {
@@ -951,12 +951,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de03.ts",
-          "bytes": 2685,
+          "bytes": 2667,
           "size": "2.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de04.jsonld",
-          "bytes": 2969,
+          "bytes": 2929,
           "size": "2.9 KB"
         },
         {
@@ -966,12 +966,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de04.ts",
-          "bytes": 2224,
-          "size": "2.2 KB"
+          "bytes": 2184,
+          "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de05.jsonld",
-          "bytes": 3305,
+          "bytes": 3265,
           "size": "3.2 KB"
         },
         {
@@ -981,12 +981,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de05.ts",
-          "bytes": 2588,
+          "bytes": 2548,
           "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de06.jsonld",
-          "bytes": 3200,
+          "bytes": 3182,
           "size": "3.1 KB"
         },
         {
@@ -996,12 +996,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de06.ts",
-          "bytes": 2407,
-          "size": "2.4 KB"
+          "bytes": 2389,
+          "size": "2.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de07.jsonld",
-          "bytes": 2943,
+          "bytes": 2933,
           "size": "2.9 KB"
         },
         {
@@ -1011,12 +1011,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de07.ts",
-          "bytes": 2196,
+          "bytes": 2186,
           "size": "2.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de08.jsonld",
-          "bytes": 3702,
+          "bytes": 3662,
           "size": "3.6 KB"
         },
         {
@@ -1026,13 +1026,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de08.ts",
-          "bytes": 2940,
-          "size": "2.9 KB"
+          "bytes": 2900,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de09.jsonld",
-          "bytes": 3058,
-          "size": "3.0 KB"
+          "bytes": 3018,
+          "size": "2.9 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de09.md",
@@ -1041,12 +1041,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de09.ts",
-          "bytes": 2311,
-          "size": "2.3 KB"
+          "bytes": 2271,
+          "size": "2.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de10.jsonld",
-          "bytes": 3064,
+          "bytes": 3024,
           "size": "3.0 KB"
         },
         {
@@ -1056,8 +1056,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/de-sfr-a1-de10.ts",
-          "bytes": 2320,
-          "size": "2.3 KB"
+          "bytes": 2280,
+          "size": "2.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-01.dmn",
@@ -1066,8 +1066,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-01.jsonld",
-          "bytes": 3674,
-          "size": "3.6 KB"
+          "bytes": 3634,
+          "size": "3.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-01.md",
@@ -1076,8 +1076,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-01.ts",
-          "bytes": 2837,
-          "size": "2.8 KB"
+          "bytes": 2797,
+          "size": "2.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-02.dmn",
@@ -1086,7 +1086,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-02.jsonld",
-          "bytes": 3678,
+          "bytes": 3638,
           "size": "3.6 KB"
         },
         {
@@ -1096,8 +1096,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-02.ts",
-          "bytes": 2831,
-          "size": "2.8 KB"
+          "bytes": 2791,
+          "size": "2.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-03.dmn",
@@ -1106,8 +1106,8 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-03.jsonld",
-          "bytes": 3367,
-          "size": "3.3 KB"
+          "bytes": 3327,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-03.md",
@@ -1116,7 +1116,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-03.ts",
-          "bytes": 2572,
+          "bytes": 2532,
           "size": "2.5 KB"
         },
         {
@@ -1126,7 +1126,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-04.jsonld",
-          "bytes": 3285,
+          "bytes": 3245,
           "size": "3.2 KB"
         },
         {
@@ -1136,12 +1136,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/dt-sfr-dt-04.ts",
-          "bytes": 2506,
+          "bytes": 2466,
           "size": "2.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/f-fig-04.jsonld",
-          "bytes": 10986,
+          "bytes": 10940,
           "size": "10.7 KB"
         },
         {
@@ -1151,13 +1151,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/f-fig-04.ts",
-          "bytes": 8911,
+          "bytes": 8865,
           "size": "8.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-001.jsonld",
-          "bytes": 3446,
-          "size": "3.4 KB"
+          "bytes": 3406,
+          "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-001.md",
@@ -1166,13 +1166,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-001.ts",
-          "bytes": 2645,
-          "size": "2.6 KB"
+          "bytes": 2605,
+          "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-002.jsonld",
-          "bytes": 3447,
-          "size": "3.4 KB"
+          "bytes": 3407,
+          "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-002.md",
@@ -1181,13 +1181,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-002.ts",
-          "bytes": 2646,
-          "size": "2.6 KB"
+          "bytes": 2606,
+          "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-003.jsonld",
-          "bytes": 3554,
-          "size": "3.5 KB"
+          "bytes": 3514,
+          "size": "3.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-003.md",
@@ -1196,13 +1196,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-003.ts",
-          "bytes": 2740,
-          "size": "2.7 KB"
+          "bytes": 2700,
+          "size": "2.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-004.jsonld",
-          "bytes": 3543,
-          "size": "3.5 KB"
+          "bytes": 3503,
+          "size": "3.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-004.md",
@@ -1211,13 +1211,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-004.ts",
-          "bytes": 2729,
-          "size": "2.7 KB"
+          "bytes": 2689,
+          "size": "2.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-005.jsonld",
-          "bytes": 3565,
-          "size": "3.5 KB"
+          "bytes": 3525,
+          "size": "3.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-005.md",
@@ -1226,12 +1226,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-005.ts",
-          "bytes": 2751,
-          "size": "2.7 KB"
+          "bytes": 2711,
+          "size": "2.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-006.jsonld",
-          "bytes": 3585,
+          "bytes": 3545,
           "size": "3.5 KB"
         },
         {
@@ -1241,12 +1241,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-006.ts",
-          "bytes": 2771,
+          "bytes": 2731,
           "size": "2.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-007.jsonld",
-          "bytes": 3602,
+          "bytes": 3562,
           "size": "3.5 KB"
         },
         {
@@ -1256,13 +1256,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/fxnreq-sfr-007.ts",
-          "bytes": 2788,
+          "bytes": 2748,
           "size": "2.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-01.jsonld",
-          "bytes": 3541,
-          "size": "3.5 KB"
+          "bytes": 3501,
+          "size": "3.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-01.md",
@@ -1271,12 +1271,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-01.ts",
-          "bytes": 2767,
+          "bytes": 2727,
           "size": "2.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-02.jsonld",
-          "bytes": 3703,
+          "bytes": 3663,
           "size": "3.6 KB"
         },
         {
@@ -1286,13 +1286,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-02.ts",
-          "bytes": 2931,
-          "size": "2.9 KB"
+          "bytes": 2891,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-03.jsonld",
-          "bytes": 3364,
-          "size": "3.3 KB"
+          "bytes": 3324,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-03.md",
@@ -1301,12 +1301,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-03.ts",
-          "bytes": 2599,
+          "bytes": 2559,
           "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-04.jsonld",
-          "bytes": 3370,
+          "bytes": 3330,
           "size": "3.3 KB"
         },
         {
@@ -1316,12 +1316,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-04.ts",
-          "bytes": 2603,
+          "bytes": 2563,
           "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-05.jsonld",
-          "bytes": 3309,
+          "bytes": 3269,
           "size": "3.2 KB"
         },
         {
@@ -1331,13 +1331,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-05.ts",
-          "bytes": 2544,
-          "size": "2.5 KB"
+          "bytes": 2504,
+          "size": "2.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-06.jsonld",
-          "bytes": 3328,
-          "size": "3.3 KB"
+          "bytes": 3288,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-06.md",
@@ -1346,13 +1346,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-06.ts",
-          "bytes": 2567,
+          "bytes": 2527,
           "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-07.jsonld",
-          "bytes": 3334,
-          "size": "3.3 KB"
+          "bytes": 3294,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-07.md",
@@ -1361,13 +1361,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-07.ts",
-          "bytes": 2569,
+          "bytes": 2529,
           "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-08.jsonld",
-          "bytes": 3362,
-          "size": "3.3 KB"
+          "bytes": 3322,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-08.md",
@@ -1376,12 +1376,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-08.ts",
-          "bytes": 2593,
+          "bytes": 2553,
           "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-09.jsonld",
-          "bytes": 3271,
+          "bytes": 3231,
           "size": "3.2 KB"
         },
         {
@@ -1391,12 +1391,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-09.ts",
-          "bytes": 2505,
+          "bytes": 2465,
           "size": "2.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-10.jsonld",
-          "bytes": 3326,
+          "bytes": 3286,
           "size": "3.2 KB"
         },
         {
@@ -1406,12 +1406,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-10.ts",
-          "bytes": 2562,
+          "bytes": 2522,
           "size": "2.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-11.jsonld",
-          "bytes": 3299,
+          "bytes": 3259,
           "size": "3.2 KB"
         },
         {
@@ -1421,12 +1421,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/nfxnreq-sfr-11.ts",
-          "bytes": 2528,
-          "size": "2.5 KB"
+          "bytes": 2488,
+          "size": "2.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-decision-points-without-rules.jsonld",
-          "bytes": 2778,
+          "bytes": 2754,
           "size": "2.7 KB"
         },
         {
@@ -1436,13 +1436,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-decision-points-without-rules.ts",
-          "bytes": 1917,
-          "size": "1.9 KB"
+          "bytes": 1893,
+          "size": "1.8 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-021.jsonld",
-          "bytes": 9201,
-          "size": "9.0 KB"
+          "bytes": 9155,
+          "size": "8.9 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-021.md",
@@ -1451,12 +1451,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-021.ts",
-          "bytes": 7303,
+          "bytes": 7257,
           "size": "7.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-022.jsonld",
-          "bytes": 9740,
+          "bytes": 9694,
           "size": "9.5 KB"
         },
         {
@@ -1466,12 +1466,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-022.ts",
-          "bytes": 7826,
+          "bytes": 7780,
           "size": "7.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-023.jsonld",
-          "bytes": 9435,
+          "bytes": 9389,
           "size": "9.2 KB"
         },
         {
@@ -1481,13 +1481,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-023.ts",
-          "bytes": 7521,
+          "bytes": 7475,
           "size": "7.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-024.jsonld",
-          "bytes": 9927,
-          "size": "9.7 KB"
+          "bytes": 9881,
+          "size": "9.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-024.md",
@@ -1496,12 +1496,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-024.ts",
-          "bytes": 8007,
+          "bytes": 7961,
           "size": "7.8 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-025.jsonld",
-          "bytes": 9623,
+          "bytes": 9577,
           "size": "9.4 KB"
         },
         {
@@ -1511,13 +1511,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-025.ts",
-          "bytes": 7703,
+          "bytes": 7657,
           "size": "7.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-026.jsonld",
-          "bytes": 9904,
-          "size": "9.7 KB"
+          "bytes": 9858,
+          "size": "9.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-026.md",
@@ -1526,238 +1526,238 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/p-sec-026.ts",
-          "bytes": 7978,
-          "size": "7.8 KB"
+          "bytes": 7932,
+          "size": "7.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-01.jsonld",
-          "bytes": 4273,
+          "bytes": 4331,
           "size": "4.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-01.md",
-          "bytes": 657,
-          "size": "657 B"
+          "bytes": 649,
+          "size": "649 B"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-01.ts",
-          "bytes": 3156,
+          "bytes": 3214,
           "size": "3.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-02.jsonld",
-          "bytes": 4240,
-          "size": "4.1 KB"
+          "bytes": 4298,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-02.md",
-          "bytes": 620,
-          "size": "620 B"
+          "bytes": 612,
+          "size": "612 B"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-02.ts",
-          "bytes": 3123,
-          "size": "3.0 KB"
+          "bytes": 3181,
+          "size": "3.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-03.jsonld",
-          "bytes": 4063,
-          "size": "4.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-03.md",
-          "bytes": 610,
-          "size": "610 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-03.ts",
-          "bytes": 2982,
-          "size": "2.9 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-04.jsonld",
-          "bytes": 4409,
-          "size": "4.3 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-04.md",
-          "bytes": 635,
-          "size": "635 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-04.ts",
-          "bytes": 3292,
-          "size": "3.2 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-05.jsonld",
-          "bytes": 4179,
-          "size": "4.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-05.md",
-          "bytes": 605,
-          "size": "605 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-05.ts",
-          "bytes": 3100,
-          "size": "3.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-06.jsonld",
-          "bytes": 4124,
-          "size": "4.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-06.md",
-          "bytes": 580,
-          "size": "580 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-06.ts",
-          "bytes": 3045,
-          "size": "3.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-07.jsonld",
-          "bytes": 4216,
-          "size": "4.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-07.md",
-          "bytes": 686,
-          "size": "686 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-07.ts",
-          "bytes": 3121,
-          "size": "3.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-08.jsonld",
-          "bytes": 4146,
-          "size": "4.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-08.md",
-          "bytes": 702,
-          "size": "702 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-08.ts",
-          "bytes": 3089,
-          "size": "3.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-09.jsonld",
-          "bytes": 4180,
-          "size": "4.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-09.md",
-          "bytes": 725,
-          "size": "725 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-09.ts",
-          "bytes": 3123,
-          "size": "3.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-10.jsonld",
-          "bytes": 4190,
-          "size": "4.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-10.md",
-          "bytes": 698,
-          "size": "698 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-10.ts",
-          "bytes": 3133,
-          "size": "3.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-11.jsonld",
-          "bytes": 4196,
-          "size": "4.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-11.md",
-          "bytes": 692,
-          "size": "692 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-11.ts",
-          "bytes": 3139,
-          "size": "3.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-12.jsonld",
-          "bytes": 4182,
-          "size": "4.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-12.md",
-          "bytes": 703,
-          "size": "703 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-12.ts",
-          "bytes": 3125,
-          "size": "3.1 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-13.jsonld",
-          "bytes": 4788,
-          "size": "4.7 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-13.md",
-          "bytes": 735,
-          "size": "735 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-13.ts",
-          "bytes": 3555,
-          "size": "3.5 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-14.jsonld",
-          "bytes": 4046,
-          "size": "4.0 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-14.md",
-          "bytes": 693,
-          "size": "693 B"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-14.ts",
-          "bytes": 3003,
-          "size": "2.9 KB"
-        },
-        {
-          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-15.jsonld",
           "bytes": 4091,
           "size": "4.0 KB"
         },
         {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-03.md",
+          "bytes": 602,
+          "size": "602 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-03.ts",
+          "bytes": 3010,
+          "size": "2.9 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-04.jsonld",
+          "bytes": 4467,
+          "size": "4.4 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-04.md",
+          "bytes": 627,
+          "size": "627 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-04.ts",
+          "bytes": 3350,
+          "size": "3.3 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-05.jsonld",
+          "bytes": 4237,
+          "size": "4.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-05.md",
+          "bytes": 597,
+          "size": "597 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-05.ts",
+          "bytes": 3158,
+          "size": "3.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-06.jsonld",
+          "bytes": 4182,
+          "size": "4.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-06.md",
+          "bytes": 572,
+          "size": "572 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-06.ts",
+          "bytes": 3103,
+          "size": "3.0 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-07.jsonld",
+          "bytes": 4274,
+          "size": "4.2 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-07.md",
+          "bytes": 678,
+          "size": "678 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-07.ts",
+          "bytes": 3179,
+          "size": "3.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-08.jsonld",
+          "bytes": 4204,
+          "size": "4.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-08.md",
+          "bytes": 694,
+          "size": "694 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-08.ts",
+          "bytes": 3147,
+          "size": "3.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-09.jsonld",
+          "bytes": 4238,
+          "size": "4.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-09.md",
+          "bytes": 717,
+          "size": "717 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-09.ts",
+          "bytes": 3181,
+          "size": "3.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-10.jsonld",
+          "bytes": 4248,
+          "size": "4.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-10.md",
+          "bytes": 690,
+          "size": "690 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-10.ts",
+          "bytes": 3191,
+          "size": "3.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-11.jsonld",
+          "bytes": 4254,
+          "size": "4.2 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-11.md",
+          "bytes": 684,
+          "size": "684 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-11.ts",
+          "bytes": 3197,
+          "size": "3.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-12.jsonld",
+          "bytes": 4240,
+          "size": "4.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-12.md",
+          "bytes": 695,
+          "size": "695 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-12.ts",
+          "bytes": 3183,
+          "size": "3.1 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-13.jsonld",
+          "bytes": 4816,
+          "size": "4.7 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-13.md",
+          "bytes": 727,
+          "size": "727 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-13.ts",
+          "bytes": 3583,
+          "size": "3.5 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-14.jsonld",
+          "bytes": 4074,
+          "size": "4.0 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-14.md",
+          "bytes": 685,
+          "size": "685 B"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-14.ts",
+          "bytes": 3031,
+          "size": "3.0 KB"
+        },
+        {
+          "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-15.jsonld",
+          "bytes": 4119,
+          "size": "4.0 KB"
+        },
+        {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-15.md",
-          "bytes": 643,
-          "size": "643 B"
+          "bytes": 635,
+          "size": "635 B"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/pers-sfp-r-15.ts",
-          "bytes": 3054,
+          "bytes": 3082,
           "size": "3.0 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-07.jsonld",
-          "bytes": 9804,
-          "size": "9.6 KB"
+          "bytes": 9758,
+          "size": "9.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-07.md",
@@ -1766,13 +1766,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-07.ts",
-          "bytes": 7871,
-          "size": "7.7 KB"
+          "bytes": 7825,
+          "size": "7.6 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-08.jsonld",
-          "bytes": 9824,
-          "size": "9.6 KB"
+          "bytes": 9778,
+          "size": "9.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-08.md",
@@ -1781,13 +1781,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-08.ts",
-          "bytes": 7885,
+          "bytes": 7839,
           "size": "7.7 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-09.jsonld",
-          "bytes": 9508,
-          "size": "9.3 KB"
+          "bytes": 9462,
+          "size": "9.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-09.md",
@@ -1796,12 +1796,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-09.ts",
-          "bytes": 7575,
+          "bytes": 7529,
           "size": "7.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-10.jsonld",
-          "bytes": 9940,
+          "bytes": 9894,
           "size": "9.7 KB"
         },
         {
@@ -1811,13 +1811,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-10.ts",
-          "bytes": 7995,
+          "bytes": 7949,
           "size": "7.8 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-11.jsonld",
-          "bytes": 9689,
-          "size": "9.5 KB"
+          "bytes": 9643,
+          "size": "9.4 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-11.md",
@@ -1826,12 +1826,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-11.ts",
-          "bytes": 7747,
-          "size": "7.6 KB"
+          "bytes": 7701,
+          "size": "7.5 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-12.jsonld",
-          "bytes": 9976,
+          "bytes": 9930,
           "size": "9.7 KB"
         },
         {
@@ -1841,12 +1841,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-12.ts",
-          "bytes": 8028,
+          "bytes": 7982,
           "size": "7.8 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-13.jsonld",
-          "bytes": 9964,
+          "bytes": 9918,
           "size": "9.7 KB"
         },
         {
@@ -1856,13 +1856,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/t-table-13.ts",
-          "bytes": 8019,
+          "bytes": 7973,
           "size": "7.8 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-01.jsonld",
-          "bytes": 4272,
-          "size": "4.2 KB"
+          "bytes": 4232,
+          "size": "4.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-01.md",
@@ -1871,13 +1871,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-01.ts",
-          "bytes": 3349,
-          "size": "3.3 KB"
+          "bytes": 3309,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-02.jsonld",
-          "bytes": 4257,
-          "size": "4.2 KB"
+          "bytes": 4217,
+          "size": "4.1 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-02.md",
@@ -1886,13 +1886,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-02.ts",
-          "bytes": 3334,
-          "size": "3.3 KB"
+          "bytes": 3294,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-03.jsonld",
-          "bytes": 4364,
-          "size": "4.3 KB"
+          "bytes": 4324,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-03.md",
@@ -1901,13 +1901,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-03.ts",
-          "bytes": 3441,
-          "size": "3.4 KB"
+          "bytes": 3401,
+          "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-04.jsonld",
-          "bytes": 4364,
-          "size": "4.3 KB"
+          "bytes": 4324,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-04.md",
@@ -1916,12 +1916,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-04.ts",
-          "bytes": 3441,
-          "size": "3.4 KB"
+          "bytes": 3401,
+          "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-05.jsonld",
-          "bytes": 4342,
+          "bytes": 4302,
           "size": "4.2 KB"
         },
         {
@@ -1931,13 +1931,13 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-05.ts",
-          "bytes": 3419,
+          "bytes": 3379,
           "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-06.jsonld",
-          "bytes": 4375,
-          "size": "4.3 KB"
+          "bytes": 4335,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-06.md",
@@ -1946,12 +1946,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-06.ts",
-          "bytes": 3452,
-          "size": "3.4 KB"
+          "bytes": 3412,
+          "size": "3.3 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-07.jsonld",
-          "bytes": 4203,
+          "bytes": 4163,
           "size": "4.1 KB"
         },
         {
@@ -1961,12 +1961,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-07.ts",
-          "bytes": 3280,
+          "bytes": 3240,
           "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-08.jsonld",
-          "bytes": 4246,
+          "bytes": 4206,
           "size": "4.1 KB"
         },
         {
@@ -1976,12 +1976,12 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-08.ts",
-          "bytes": 3323,
+          "bytes": 3283,
           "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-09.jsonld",
-          "bytes": 4299,
+          "bytes": 4259,
           "size": "4.2 KB"
         },
         {
@@ -1991,7 +1991,7 @@
         },
         {
           "path": "dth-sfp/ch04-determine-requirements/us-sfp-scen-09.ts",
-          "bytes": 3376,
+          "bytes": 3336,
           "size": "3.3 KB"
         },
         {
@@ -2001,7 +2001,7 @@
         },
         {
           "path": "dth-sfp/ch05-plan-implementation/p-sec-027.jsonld",
-          "bytes": 3382,
+          "bytes": 3342,
           "size": "3.3 KB"
         },
         {
@@ -2011,12 +2011,12 @@
         },
         {
           "path": "dth-sfp/ch05-plan-implementation/p-sec-027.ts",
-          "bytes": 2498,
+          "bytes": 2458,
           "size": "2.4 KB"
         },
         {
           "path": "dth-sfp/ch05-plan-implementation/t-table-14.jsonld",
-          "bytes": 3430,
+          "bytes": 3390,
           "size": "3.3 KB"
         },
         {
@@ -2026,12 +2026,12 @@
         },
         {
           "path": "dth-sfp/ch05-plan-implementation/t-table-14.ts",
-          "bytes": 2521,
-          "size": "2.5 KB"
+          "bytes": 2481,
+          "size": "2.4 KB"
         },
         {
           "path": "dth-sfp/ch05-plan-implementation/t-table-15.jsonld",
-          "bytes": 3422,
+          "bytes": 3382,
           "size": "3.3 KB"
         },
         {
@@ -2041,8 +2041,8 @@
         },
         {
           "path": "dth-sfp/ch05-plan-implementation/t-table-15.ts",
-          "bytes": 2513,
-          "size": "2.5 KB"
+          "bytes": 2473,
+          "size": "2.4 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ch06-monitor-evaluate-scale.ts",
@@ -2051,8 +2051,8 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/f-fig-05.jsonld",
-          "bytes": 5328,
-          "size": "5.2 KB"
+          "bytes": 5272,
+          "size": "5.1 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/f-fig-05.md",
@@ -2061,13 +2061,13 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/f-fig-05.ts",
-          "bytes": 4175,
-          "size": "4.1 KB"
+          "bytes": 4119,
+          "size": "4.0 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/f-fig-06.jsonld",
-          "bytes": 5386,
-          "size": "5.3 KB"
+          "bytes": 5330,
+          "size": "5.2 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/f-fig-06.md",
@@ -2076,13 +2076,13 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/f-fig-06.ts",
-          "bytes": 4231,
+          "bytes": 4175,
           "size": "4.1 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-01.jsonld",
-          "bytes": 3846,
-          "size": "3.8 KB"
+          "bytes": 3806,
+          "size": "3.7 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-01.md",
@@ -2091,12 +2091,12 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-01.ts",
-          "bytes": 3193,
+          "bytes": 3153,
           "size": "3.1 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-02.jsonld",
-          "bytes": 3940,
+          "bytes": 3900,
           "size": "3.8 KB"
         },
         {
@@ -2106,13 +2106,13 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-02.ts",
-          "bytes": 3313,
+          "bytes": 3273,
           "size": "3.2 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-03.jsonld",
-          "bytes": 3844,
-          "size": "3.8 KB"
+          "bytes": 3804,
+          "size": "3.7 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-03.md",
@@ -2121,13 +2121,13 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-03.ts",
-          "bytes": 3165,
+          "bytes": 3125,
           "size": "3.1 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-04.jsonld",
-          "bytes": 3870,
-          "size": "3.8 KB"
+          "bytes": 3830,
+          "size": "3.7 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-04.md",
@@ -2136,13 +2136,13 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-04.ts",
-          "bytes": 3207,
+          "bytes": 3167,
           "size": "3.1 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-05.jsonld",
-          "bytes": 3848,
-          "size": "3.8 KB"
+          "bytes": 3808,
+          "size": "3.7 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-05.md",
@@ -2151,13 +2151,13 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/ind-sfp-05.ts",
-          "bytes": 3206,
+          "bytes": 3166,
           "size": "3.1 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/p-sec-028.jsonld",
-          "bytes": 4075,
-          "size": "4.0 KB"
+          "bytes": 4019,
+          "size": "3.9 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/p-sec-028.md",
@@ -2166,12 +2166,12 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/p-sec-028.ts",
-          "bytes": 3069,
-          "size": "3.0 KB"
+          "bytes": 3013,
+          "size": "2.9 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/p-sec-029.jsonld",
-          "bytes": 4103,
+          "bytes": 4047,
           "size": "4.0 KB"
         },
         {
@@ -2181,12 +2181,12 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/p-sec-029.ts",
-          "bytes": 3097,
+          "bytes": 3041,
           "size": "3.0 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/p-sec-030.jsonld",
-          "bytes": 4121,
+          "bytes": 4065,
           "size": "4.0 KB"
         },
         {
@@ -2196,12 +2196,12 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/p-sec-030.ts",
-          "bytes": 3115,
+          "bytes": 3059,
           "size": "3.0 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/t-table-16.jsonld",
-          "bytes": 4142,
+          "bytes": 4086,
           "size": "4.0 KB"
         },
         {
@@ -2211,12 +2211,12 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/t-table-16.ts",
-          "bytes": 3111,
+          "bytes": 3055,
           "size": "3.0 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/t-table-17.jsonld",
-          "bytes": 4118,
+          "bytes": 4062,
           "size": "4.0 KB"
         },
         {
@@ -2226,13 +2226,13 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/t-table-17.ts",
-          "bytes": 3087,
+          "bytes": 3031,
           "size": "3.0 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/t-table-18.jsonld",
-          "bytes": 4160,
-          "size": "4.1 KB"
+          "bytes": 4104,
+          "size": "4.0 KB"
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/t-table-18.md",
@@ -2241,8 +2241,8 @@
         },
         {
           "path": "dth-sfp/ch06-monitor-evaluate-scale/t-table-18.ts",
-          "bytes": 3129,
-          "size": "3.1 KB"
+          "bytes": 3073,
+          "size": "3.0 KB"
         },
         {
           "path": "dth-sfp/ch07-share-experiences/ch07-share-experiences.ts",
@@ -2251,7 +2251,7 @@
         },
         {
           "path": "dth-sfp/ch07-share-experiences/p-sec-031.jsonld",
-          "bytes": 3305,
+          "bytes": 3257,
           "size": "3.2 KB"
         },
         {
@@ -2261,8 +2261,8 @@
         },
         {
           "path": "dth-sfp/ch07-share-experiences/p-sec-031.ts",
-          "bytes": 2441,
-          "size": "2.4 KB"
+          "bytes": 2393,
+          "size": "2.3 KB"
         },
         {
           "path": "dth-sfp/dth-sfp.ts",
@@ -2331,7 +2331,7 @@
         },
         {
           "path": "dth-sfp/media/fig-3-diig-enterprise-architecture.svg",
-          "bytes": 81082,
+          "bytes": 81097,
           "size": "79.2 KB"
         },
         {
@@ -2351,7 +2351,7 @@
         },
         {
           "path": "dth-sfp/references-resources/p-sec-032.jsonld",
-          "bytes": 2892,
+          "bytes": 2860,
           "size": "2.8 KB"
         },
         {
@@ -2361,12 +2361,12 @@
         },
         {
           "path": "dth-sfp/references-resources/p-sec-032.ts",
-          "bytes": 2092,
+          "bytes": 2060,
           "size": "2.0 KB"
         },
         {
           "path": "dth-sfp/references-resources/p-sec-033.jsonld",
-          "bytes": 2890,
+          "bytes": 2858,
           "size": "2.8 KB"
         },
         {
@@ -2376,7 +2376,7 @@
         },
         {
           "path": "dth-sfp/references-resources/p-sec-033.ts",
-          "bytes": 2090,
+          "bytes": 2058,
           "size": "2.0 KB"
         },
         {

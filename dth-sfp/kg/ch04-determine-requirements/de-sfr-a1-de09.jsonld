@@ -49,27 +49,27 @@
       "basis": "agent-proposed by name, for working-group review (litlfred/dth-sfp#1)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1555c26cfbcd57f49b6e63fed8491d80.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-1555c26cfbcd57f49b6e63fed8491d80",
           "name": "Quality Systems",
           "type": "ApplicationComponent"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-22eff58eae365a4f8d0e0368d8c3497e",
           "name": "Regulatory Systems",
           "type": "ApplicationComponent"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-053fa0e33f6b5b0bb218195486c05160.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-053fa0e33f6b5b0bb218195486c05160",
           "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-02175c6feb9155618981ff120f954420",
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-bea56e01c8345fbc803dee47a17ccfd3.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-bea56e01c8345fbc803dee47a17ccfd3",
           "name": "Track and Trace through DHSC Components (DTH SC Fig. 24)"
         }
       ]
