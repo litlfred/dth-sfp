@@ -61,7 +61,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
+          "ref": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -85,9 +85,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp's platform layers to dth-pc's stable-point pins so the cover avatar PR dth-sfp#18 can pass check:foreign-paths)"
+              "on": "2026-11-18",
+              "ref": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so dth-sfp picks up dth-pc's merged avatar (dth-pc#34) and mounts the dth-sc and dth-pc docs directories, as lock:freshness and check:docs-populated require"
             }
           }
         }
@@ -98,7 +98,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "6485bbf6c0ef6550796c27cf3dd921230db3c60d",
+          "ref": "1faf8ae72ef7c4da39a2d4d6267678c51f18c02c",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -133,9 +133,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "6485bbf6c0ef6550796c27cf3dd921230db3c60d",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "on": "2026-11-18",
+              "ref": "1faf8ae72ef7c4da39a2d4d6267678c51f18c02c",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so dth-sfp picks up dth-pc's merged avatar (dth-pc#34) and mounts the dth-sc and dth-pc docs directories, as lock:freshness and check:docs-populated require"
             }
           }
         }
@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "54484a85b464e2cbc1d26d41c40f32d4a1f7bf0f",
+          "ref": "5f2558de7820ee6812efc4bf220a1ce6602e8b7e",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -183,9 +183,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "54484a85b464e2cbc1d26d41c40f32d4a1f7bf0f",
-              "evidence": "litlfred 2026-11-17 in session session_01EucfRqYSWYLZDQCayeryd8: 're-pin dth-sfp for the sibling avatars'; re-pin every layer to its current main so dth-sfp sees dth-hrh's merged avatar (dth-hrh#153), as lock:freshness requires"
+              "on": "2026-11-18",
+              "ref": "5f2558de7820ee6812efc4bf220a1ce6602e8b7e",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so dth-sfp picks up dth-pc's merged avatar (dth-pc#34) and mounts the dth-sc and dth-pc docs directories, as lock:freshness and check:docs-populated require"
             }
           }
         }
@@ -196,7 +196,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
+          "ref": "db52366f1f8b96c702de1c064c472e874b927337",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -211,9 +211,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
+              "on": "2026-11-18",
+              "ref": "db52366f1f8b96c702de1c064c472e874b927337",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so dth-sfp picks up dth-pc's merged avatar (dth-pc#34) and mounts the dth-sc and dth-pc docs directories, as lock:freshness and check:docs-populated require"
             }
           }
         }
@@ -224,7 +224,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
+          "ref": "db55d2da5d4cc5947a5c03c9638d18ac3a8546f6",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -242,9 +242,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up folio-assistant-core#840 (DIIG figure) and absorbs dth-sfp#13, as lock:freshness requires"
+              "on": "2026-11-18",
+              "ref": "db55d2da5d4cc5947a5c03c9638d18ac3a8546f6",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so dth-sfp picks up dth-pc's merged avatar (dth-pc#34) and mounts the dth-sc and dth-pc docs directories, as lock:freshness and check:docs-populated require"
             }
           }
         }
@@ -302,7 +302,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "4ff3621433dae8e6a44f303c043845f52d3f7fe8",
+          "ref": "440611f945761e9ce9c981d6b1ea32c49dd7745d",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -338,9 +338,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "4ff3621433dae8e6a44f303c043845f52d3f7fe8",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "on": "2026-11-18",
+              "ref": "440611f945761e9ce9c981d6b1ea32c49dd7745d",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so dth-sfp picks up dth-pc's merged avatar (dth-pc#34) and mounts the dth-sc and dth-pc docs directories, as lock:freshness and check:docs-populated require"
             }
           }
         }
@@ -355,7 +355,8 @@
           "overrides": {
             "dth-sc": {
               "directories": [
-                "glossary"
+                "glossary",
+                "dth-sc-docs"
               ]
             },
             "dpi-h-ra": {
@@ -402,11 +403,12 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-pc",
-          "ref": "ed671c0211dfd100bca9cd67dccb5ba167aa6fe3",
+          "ref": "f2e404731cc7440a7c3e1235492248ad135441c2",
           "overrides": {
             "dth-pc": {
               "directories": [
-                "glossary"
+                "glossary",
+                "dth-pc-docs"
               ]
             },
             "dpi-h-ra": {
@@ -443,9 +445,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "ed671c0211dfd100bca9cd67dccb5ba167aa6fe3",
-              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update' (re-pin dth-sfp to every layer's current main, as lock:freshness requires, so the cover avatar PR dth-sfp#18 can pass)"
+              "on": "2026-11-18",
+              "ref": "f2e404731cc7440a7c3e1235492248ad135441c2",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so dth-sfp picks up dth-pc's merged avatar (dth-pc#34) and mounts the dth-sc and dth-pc docs directories, as lock:freshness and check:docs-populated require"
             }
           }
         }

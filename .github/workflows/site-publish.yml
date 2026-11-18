@@ -21,9 +21,8 @@ name: Site publish
 
 on:
   push:
-    # main only: the owner ruled "never use master" (2026-11-15). The canonical
-    # caller still lists master until cat-harness-tools#2339 lands, so
-    # check:site-publish-caller reports this one line until then.
+    # main only (owner, 2026-11-15): a repository whose default branch is
+    # still `master` renames it to `main` rather than this trigger growing.
     branches: [main]
   workflow_dispatch:
     inputs:
@@ -42,6 +41,6 @@ permissions:
 
 jobs:
   publish:
-    uses: litlfred/cat-harness-tools/.github/workflows/folio-site-publish.yml@7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/folio-site-publish.yml@db55d2da5d4cc5947a5c03c9638d18ac3a8546f6 # index.lock.json
     with:
       plan: ${{ inputs.plan == true }}
