@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-6665684387505f2a8129f914b7e5717b",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-6665684387505f2a8129f914b7e5717b",
+  "schema:name": "SF Reporting in the DIIG Enterprise Architecture (DTH SFP Fig. 3)",
+  "schema:description": "Substandard and falsified (SF) medical product reporting within the DIIG Digital Health Enterprise Architecture Framework (Section 3.2, Fig. 3, PDF 33-34): placing the SF Reporting Application in the Point-of-Service layer (specializing Point-of-service application), the NMRA Case Management Back End and Pharmacovigilance System in the Business Domain Services layer (linked into dth-sc Regulatory Systems and Quality Systems), and DPI-H registries (Product Registry, DPI-H Health Workforce Registry, Facility registry), Terminology Service, Identity Management Service, DPI-F Security & Consent Module, Update Subscription/Notification, and Interoperability Component in the foundational and interoperability layers.",
+  "schema:image": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-6665684387505f2a8129f914b7e5717b.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-808925f4d2075d7b95e0651ebae00fcf"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-804f2eb9d1e95868800db95b375a3e09"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-468996723bd95e59878b054d5b88b6ee"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-15c4b3149c3f5fe7ab091d40ab621ab9"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-0848bc6da1315a9e80b82d66167df022"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ad0415292a725125ad23387b6ae8d0b3"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-646c18afcfc54f4fb33ae93110e02c2c"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-c7a1fbef2d2e5265ab5ea21bb98324cc"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-423c76f32ea55498a5c71fcee027aac1"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-22eff58eae365a4f8d0e0368d8c3497e"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-d79aa0eec0584b0792b44bca408afeb6"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-350840520ae44f658b6ad3b3762e382e"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-80856538cbd44167a37b276e38c994c3"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-6b78a242e71a428c87434e2fe5891ee2"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-1555c26cfbcd57f49b6e63fed8491d80"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-366955c9809942bc8a57d0a77c11d202"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-59c26d672a4248e0bb83cf4d26cba10c"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-5f6d9b9678824b37b95952735420ae8d"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-3f41de2b51c24041b08243bf72b140d1"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a9c92f8fa2924d4180e8f5512b0d0097"
+    }
+  ],
+  "schema:subjectOf": [
+    {
+      "schema:name": "Fig. 3",
+      "schema:url": "https://litlfred.github.io/dth-sfp/folio/dth-sfp/ch03-future-state/f-fig-03.md"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

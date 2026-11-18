@@ -1,0 +1,50 @@
+{
+ "$schema": "site-link-report/v1",
+ "pages": 1705,
+ "unresolved": [
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../../../decisions/SFR-DT-01.dmn"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../../../decisions/SFR-DT-02.dmn"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../../../decisions/SFR-DT-03.dmn"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../../../decisions/SFR-DT-04.dmn"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../media/SF-REP-001.svg"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../media/SF-REP-002.svg"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../media/SF-REP-003.svg"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../media/SF-REP-004.svg"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../media/SF-REP-005.svg"
+  },
+  {
+   "page": "en/dth-sfp/index.html",
+   "href": "../media/SF-REP-006.svg"
+  }
+ ],
+ "selfAddress": [],
+ "content": [],
+ "diagrams": 30,
+ "inDiagrams": []
+}

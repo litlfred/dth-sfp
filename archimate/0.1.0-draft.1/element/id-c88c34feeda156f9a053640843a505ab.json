@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-c88c34feeda156f9a053640843a505ab",
+  "@type": "archimate:Capability",
+  "schema:identifier": "id-c88c34feeda156f9a053640843a505ab",
+  "schema:name": "Regulatory Enforcement",
+  "schema:description": "Capability of regulatory authorities to act on confirmed substandard and falsified medical product reports by removing products from the supply chain and market, initiating withdrawals or recalls, imposing sanctions, and issuing safety alerts. (Intro p. 1, Section 2.1, PDF 13, 27)",
+  "schema:category": "Strategy",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

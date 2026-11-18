@@ -1,0 +1,97 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_SF_REP_005",
+ "markers": [
+  {
+   "id": "Task_501_PrepareGSMSDossier",
+   "name": "Compile validated SF product & batch dossier",
+   "left": 31.31,
+   "top": 15.56,
+   "box": {
+    "left": 22.9,
+    "top": 29.11,
+    "width": 2.24,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_502_SubmitToGSMS",
+   "name": "Transmit SF report to WHO GSMS",
+   "left": 50.47,
+   "top": 15.56,
+   "box": {
+    "left": 42.06,
+    "top": 29.11,
+    "width": 2.24,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_503_RecordInGSMS",
+   "name": "Register incident in GSMS & assess risk",
+   "left": 68.69,
+   "top": 64.44,
+   "box": {
+    "left": 60.28,
+    "top": 78,
+    "width": 2.24,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_504_IssueGlobalAlert",
+   "name": "Coordinate Member States & issue WHO alert",
+   "left": 87.85,
+   "top": 64.44,
+   "box": {
+    "left": 79.44,
+    "top": 78,
+    "width": 2.24,
+    "height": 5.33
+   }
+  }
+ ],
+ "processHref": "SF-REP-005.html",
+ "tasks": {
+  "Task_501_PrepareGSMSDossier": {
+   "id": "Task_501_PrepareGSMSDossier",
+   "name": "Compile validated SF product & batch dossier",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-005.html#step-Task_501_PrepareGSMSDossier",
+   "lane": "NMRA Focal Point (SFP-R-13)",
+   "laneHref": "SF-REP-005.html#lane-Lane_SF_REP_005_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_502_SubmitToGSMS": {
+   "id": "Task_502_SubmitToGSMS",
+   "name": "Transmit SF report to WHO GSMS",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-005.html#step-Task_502_SubmitToGSMS",
+   "lane": "NMRA Focal Point (SFP-R-13)",
+   "laneHref": "SF-REP-005.html#lane-Lane_SF_REP_005_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_503_RecordInGSMS": {
+   "id": "Task_503_RecordInGSMS",
+   "name": "Register incident in GSMS & assess risk",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-005.html#step-Task_503_RecordInGSMS",
+   "lane": "WHO Global Surveillance (GSMS) (SFP-R-15)",
+   "laneHref": "SF-REP-005.html#lane-Lane_SF_REP_005_GSMS",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_504_IssueGlobalAlert": {
+   "id": "Task_504_IssueGlobalAlert",
+   "name": "Coordinate Member States & issue WHO alert",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-005.html#step-Task_504_IssueGlobalAlert",
+   "lane": "WHO Global Surveillance (GSMS) (SFP-R-15)",
+   "laneHref": "SF-REP-005.html#lane-Lane_SF_REP_005_GSMS",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-f1369f21011c5193b132bb364a2519dc",
+  "@type": "archimate:Assessment",
+  "schema:identifier": "id-f1369f21011c5193b132bb364a2519dc",
+  "schema:name": "Technical and Infrastructure Barriers",
+  "schema:description": "Lack of digitalization (lengthy or paper-based reporting systems) and lack of or limited internet connectivity and infrastructure in remote areas, addressed by intuitive automated reporting and offline reporting with synchronization. (Table 5, Annex 6, PDF 25, 70)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

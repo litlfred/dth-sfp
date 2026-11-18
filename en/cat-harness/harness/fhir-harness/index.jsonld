@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/fhir-harness/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/fhir-harness/",
+  "@type": "WebPage",
+  "name": "FHIR IG Harness on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/fhir-harness/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "fhir-harness",
+    "name": "FHIR IG Harness",
+    "description": "The bare FHIR IG pipeline — SUSHI, the IG Publisher, Jekyll assembly and publication — with no WHO, DAK or SMART assumption. What a non-WHO implementation guide instantiates.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/fhir-harness",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/folio-assistant-core/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "d34ae7692a304983a495b20b62f37b8b98d3cb85"
+    },
+    "keywords": [
+      "ig"
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/fhir-harness/",
+    "https://github.com/litlfred/fhir-harness/tree/d34ae7692a304983a495b20b62f37b8b98d3cb85",
+    "https://github.com/litlfred/fhir-harness/blob/d34ae7692a304983a495b20b62f37b8b98d3cb85/README.md",
+    "https://github.com/litlfred/fhir-harness/blob/d34ae7692a304983a495b20b62f37b8b98d3cb85/AGENTS.md"
+  ]
+}

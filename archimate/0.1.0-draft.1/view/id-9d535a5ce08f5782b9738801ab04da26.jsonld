@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-9d535a5ce08f5782b9738801ab04da26",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-9d535a5ce08f5782b9738801ab04da26",
+  "schema:name": "SF Reporting Business Process View (DTH SFP Fig. 4 & SF-REP-001..006)",
+  "schema:description": "End-to-end business process view for reporting and acting on suspected substandard and falsified medical products (Table 10, Fig. 4, Table 9, Intro p. 1, Section 2.1-2.2, Section 2.4; PDF 13, 27-28, 39-43): roles (Health Care Professional (Reporter), NMRA Reviewer, National Regulatory Authority), processes SF-REP-001 through SF-REP-006, business objects (SF Report, Medical Product Alert, Trade Item), and realized capabilities (SF Case Reporting, SF Case Investigation, Regulatory Enforcement, Recall, Traceability).",
+  "schema:image": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-9d535a5ce08f5782b9738801ab04da26.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a2320dbc07e6450b94f3f0f3e03bb877"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-468996723bd95e59878b054d5b88b6ee"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-60e7d1d9e64c5011a1efe8becac406d0"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ac6852fe91ab574baef07b27aa0bc945"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-c3b12e95f3e5549f8633683012b28ccf"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ad0415292a725125ad23387b6ae8d0b3"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-edfb9d0b618453f294948f0427a64c9e"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8365e05ff4ca58039d623ddbafcf9884"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-b6e235b281cb544897f2f6a29fb3b994"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-d337ea1f6d0e5833bb56da0dddb03aae"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8d3dd8b68d504c2a9fe8cf414b16c127"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-1515f5569faa5f27a8ca2e20e86d15be"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-b4ce9166335e5f90b71f97b849cc5d62"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-fff91eb836095bb788b47e975bc90d00"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8e67c8e9e1195cdc857b03a2c640e7fe"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-e88f6d077d31407bb1af5f2ecfd3b48a"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8436ad35e0bc560ea49d2005a6bda297"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a9c92f8fa2924d4180e8f5512b0d0097"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-c88c34feeda156f9a053640843a505ab"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a34c53b84879572898c066304e46348b"
+    }
+  ],
+  "schema:subjectOf": [
+    {
+      "schema:name": "Fig. 4",
+      "schema:url": "https://litlfred.github.io/dth-sfp/folio/dth-sfp/ch04-determine-requirements/f-fig-04.md"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

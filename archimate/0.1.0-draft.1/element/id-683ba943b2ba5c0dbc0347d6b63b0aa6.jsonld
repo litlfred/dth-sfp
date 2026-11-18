@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-683ba943b2ba5c0dbc0347d6b63b0aa6",
+  "@type": "archimate:Assessment",
+  "schema:identifier": "id-683ba943b2ba5c0dbc0347d6b63b0aa6",
+  "schema:name": "Trust and Incentives Barriers",
+  "schema:description": "Fear of reputational, professional, personal or legal repercussions, lack of NMRA feedback, and economic or reputational damage from recalls, addressed by anonymous reporting options, reporter identity protection, legal protections, and feedback loops. (Table 5, Annex 6, PDF 25, 70)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

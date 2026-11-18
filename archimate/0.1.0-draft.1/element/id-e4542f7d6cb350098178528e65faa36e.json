@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-e4542f7d6cb350098178528e65faa36e",
+  "@type": "archimate:Stakeholder",
+  "schema:identifier": "id-e4542f7d6cb350098178528e65faa36e",
+  "schema:name": "Professional Associations",
+  "schema:description": "Health care professional associations engaged in stakeholder consultations, governance advisory councils, and mobilization to support reporting of substandard and falsified medical products. (Section 1.1, Section 2.3, Table 1, PDF 15, 20, 28)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

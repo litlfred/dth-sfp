@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ccd5b2a63a0d514a9df3b4fc09d6a139",
+  "@type": "archimate:Goal",
+  "schema:identifier": "id-ccd5b2a63a0d514a9df3b4fc09d6a139",
+  "schema:name": "Reduced Detection-to-Notification Time",
+  "schema:description": "Strategic goal to reduce the average detection-to-notification time for suspected substandard and falsified medical products. (Section 2.4, PDF 28)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

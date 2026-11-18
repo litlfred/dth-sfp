@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-edfb9d0b618453f294948f0427a64c9e",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-edfb9d0b618453f294948f0427a64c9e",
+  "schema:name": "Report Suspected SF Product (SF-REP-001)",
+  "schema:description": "Enable health care professionals to promptly identify anomalies, isolate the suspect product, capture product, batch, expiry, photo, and incident details (online or offline with synchronization), and submit a suspected substandard or falsified medical product report to the NMRA. (Table 10, Fig. 4, Table 9, Table 12, PDF 39-43)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

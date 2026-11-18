@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-2c8f9517b8e152fcb6e39ef5f4d2b840",
+  "@type": "archimate:Goal",
+  "schema:identifier": "id-2c8f9517b8e152fcb6e39ef5f4d2b840",
+  "schema:name": "Timely Regulatory Action",
+  "schema:description": "Strategic goal to strengthen regulatory action on suspected substandard and falsified medical products through timely investigation, removal from the supply chain, recalls, and sanctions. (Intro p. 1, Section 2.1, Section 2.4, PDF 13, 27-28)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

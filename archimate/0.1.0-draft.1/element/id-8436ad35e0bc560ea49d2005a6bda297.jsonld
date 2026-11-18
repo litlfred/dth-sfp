@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8436ad35e0bc560ea49d2005a6bda297",
+  "@type": "archimate:BusinessObject",
+  "schema:identifier": "id-8436ad35e0bc560ea49d2005a6bda297",
+  "schema:name": "Medical Product Alert",
+  "schema:description": "Official notification or alert issued by the NMRA or WHO on confirmed or suspected substandard and falsified medical products to inform health care professionals, supply chain actors, and the public. (Table 6, Table 9, Ch. 7, PDF 32, 39-40, 59)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

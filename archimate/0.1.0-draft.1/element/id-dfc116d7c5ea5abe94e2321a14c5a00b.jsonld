@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-dfc116d7c5ea5abe94e2321a14c5a00b",
+  "@type": "archimate:ApplicationComponent",
+  "schema:identifier": "id-dfc116d7c5ea5abe94e2321a14c5a00b",
+  "schema:name": "VigiFlow / VigiBase",
+  "schema:description": "Global pharmacovigilance data management and adverse drug reaction database systems into which national pharmacovigilance centres submit satisfactory adverse drug reaction reports. (Table 4, PDF 24)",
+  "schema:category": "Application",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

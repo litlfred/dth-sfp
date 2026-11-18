@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a34c53b84879572898c066304e46348b",
+  "@type": "archimate:Stakeholder",
+  "schema:identifier": "id-a34c53b84879572898c066304e46348b",
+  "schema:name": "Law Enforcement and Customs",
+  "schema:description": "Customs officers and law enforcement agencies with whom policies are aligned to enable swift data sharing and who spearhead investigations and border control where criminal activity is suspected. (Intro p. 1, Section 2.1-2.2, PDF 13, 27-28)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-6f89371aa7a15ea49dc70bf18bb81a34",
+  "@type": "archimate:ApplicationComponent",
+  "schema:identifier": "id-6f89371aa7a15ea49dc70bf18bb81a34",
+  "schema:name": "WHO GSMS",
+  "schema:description": "WHO Global Surveillance and Monitoring System (GSMS), WHO's global case reporting database and surveillance system to which NMRAs report data on suspected and confirmed substandard and falsified medical products to facilitate global coordination and alerts. (Abbreviations p. vi, Intro p. 1, Table 4, PDF 8, 13, 24)",
+  "schema:category": "Application",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

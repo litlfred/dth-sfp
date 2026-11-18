@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8365e05ff4ca58039d623ddbafcf9884",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-8365e05ff4ca58039d623ddbafcf9884",
+  "schema:name": "Verify Product Identity and Batch (SF-REP-002)",
+  "schema:description": "Search the product catalogue/registry to select the product and automatically assign product type, capture or scan batch number and expiry date, and verify product details and registration status. (Table 9, Table 10, Fig. 4, Table 11-12, PDF 39-43)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/relationship/id-60b10b83076d560a9bd759655f00b7a7",
+  "@type": "archimate:Association",
+  "schema:identifier": "id-60b10b83076d560a9bd759655f00b7a7",
+  "schema:name": "IT and infrastructure specialists",
+  "archimate:source": {
+    "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-10de2f264997537cb9769a18c3c2dfdb"
+  },
+  "archimate:target": {
+    "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-3a85660bd48e554bb8468f8b98a4ffe6"
+  },
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

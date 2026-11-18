@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-bdd86916cc2550c1b7f9586e6d16735f",
+  "@type": "archimate:Goal",
+  "schema:identifier": "id-bdd86916cc2550c1b7f9586e6d16735f",
+  "schema:name": "Supply Chain Transparency",
+  "schema:description": "Strategic goal to improve supply chain transparency and reduce the prevalence of substandard and falsified medical products entering the market. (Intro p. 1, Section 2.4, PDF 13, 28)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

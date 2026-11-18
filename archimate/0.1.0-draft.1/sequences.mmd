@@ -1,0 +1,67 @@
+sequenceDiagram
+  %% SF Reporting Application Cooperation View (id-a996a76d1225505098286f98eb10d686): sequence diagram, derived by archimate-diagrams. Do not edit.
+  participant id_804f2eb9d1e95868800db95b375a3e09 as SF Reporting Application
+  participant id_c7a1fbef2d2e5265ab5ea21bb98324cc as NMRA Case Management Back End
+  participant id_476dcafd7f755bdba2eba1c53d46200b as WHO Medical Product Alert System
+  participant id_6f89371aa7a15ea49dc70bf18bb81a34 as WHO GSMS
+  participant id_423c76f32ea55498a5c71fcee027aac1 as Pharmacovigilance System
+  participant id_80856538cbd44167a37b276e38c994c3 as Interoperability Component
+  participant id_dfc116d7c5ea5abe94e2321a14c5a00b as VigiFlow / VigiBase
+  participant id_22eff58eae365a4f8d0e0368d8c3497e as Regulatory Systems
+  participant id_753b4997886b5790b4e6153f5835be66 as SF Report Data Object
+  participant id_975c5567001151299672c0341a733111 as Product Verification
+  participant id_5dc77dae1bce5d11b288830795b31bdf as Traceability Event
+  id_804f2eb9d1e95868800db95b375a3e09->>id_c7a1fbef2d2e5265ab5ea21bb98324cc: flows to NMRA Case Management Back End
+  id_476dcafd7f755bdba2eba1c53d46200b->>id_804f2eb9d1e95868800db95b375a3e09: flows to SF Reporting Application
+  id_476dcafd7f755bdba2eba1c53d46200b->>id_c7a1fbef2d2e5265ab5ea21bb98324cc: flows to NMRA Case Management Back End
+  id_c7a1fbef2d2e5265ab5ea21bb98324cc->>id_6f89371aa7a15ea49dc70bf18bb81a34: flows to WHO GSMS
+  id_c7a1fbef2d2e5265ab5ea21bb98324cc->>id_423c76f32ea55498a5c71fcee027aac1: flows to Pharmacovigilance System
+  id_6f89371aa7a15ea49dc70bf18bb81a34->>id_476dcafd7f755bdba2eba1c53d46200b: flows to WHO Medical Product Alert System
+  id_80856538cbd44167a37b276e38c994c3->>id_c7a1fbef2d2e5265ab5ea21bb98324cc: flows to NMRA Case Management Back End
+  id_80856538cbd44167a37b276e38c994c3->>id_423c76f32ea55498a5c71fcee027aac1: flows to Pharmacovigilance System
+  id_423c76f32ea55498a5c71fcee027aac1->>id_dfc116d7c5ea5abe94e2321a14c5a00b: flows to VigiFlow / VigiBase
+  id_423c76f32ea55498a5c71fcee027aac1->>id_6f89371aa7a15ea49dc70bf18bb81a34: flows to WHO GSMS
+  id_22eff58eae365a4f8d0e0368d8c3497e->>id_dfc116d7c5ea5abe94e2321a14c5a00b: flows to VigiFlow / VigiBase
+  id_804f2eb9d1e95868800db95b375a3e09->>id_753b4997886b5790b4e6153f5835be66: reads/writes SF Report Data Object
+  id_975c5567001151299672c0341a733111->>id_5dc77dae1bce5d11b288830795b31bdf: reads Traceability Event
+
+sequenceDiagram
+  %% SF Reporting Business Process View (DTH SFP Fig. 4 & SF-REP-001..006) (id-9d535a5ce08f5782b9738801ab04da26): sequence diagram, derived by archimate-diagrams. Do not edit.
+  participant id_edfb9d0b618453f294948f0427a64c9e as Report Suspected SF Product (SF-REP-001)
+  participant id_8365e05ff4ca58039d623ddbafcf9884 as Verify Product Identity and Batch (SF-REP-002)
+  participant id_b6e235b281cb544897f2f6a29fb3b994 as Triage and Route SF Report (SF-REP-003)
+  participant id_fff91eb836095bb788b47e975bc90d00 as Investigate SF Report (SF-REP-004)
+  participant id_b4ce9166335e5f90b71f97b849cc5d62 as Take Regulatory Action and Issue Alert (SF-REP-005)
+  participant id_1515f5569faa5f27a8ca2e20e86d15be as Give Feedback to Reporter and Report to GSMS (SF-REP-006)
+  participant id_60e7d1d9e64c5011a1efe8becac406d0 as Trade Item
+  participant id_ac6852fe91ab574baef07b27aa0bc945 as SF Report
+  actor id_ad0415292a725125ad23387b6ae8d0b3 as Health Care Professional (Reporter)
+  participant id_8436ad35e0bc560ea49d2005a6bda297 as Medical Product Alert
+  id_edfb9d0b618453f294948f0427a64c9e->>id_8365e05ff4ca58039d623ddbafcf9884: triggers Verify Product Identity and Batch (SF-REP-002)
+  id_8365e05ff4ca58039d623ddbafcf9884->>id_b6e235b281cb544897f2f6a29fb3b994: triggers Triage and Route SF Report (SF-REP-003)
+  id_b6e235b281cb544897f2f6a29fb3b994->>id_fff91eb836095bb788b47e975bc90d00: triggers Investigate SF Report (SF-REP-004)
+  id_b4ce9166335e5f90b71f97b849cc5d62->>id_1515f5569faa5f27a8ca2e20e86d15be: triggers Give Feedback to Reporter and Report to GSMS (SF-REP-006)
+  id_fff91eb836095bb788b47e975bc90d00->>id_b4ce9166335e5f90b71f97b849cc5d62: triggers Take Regulatory Action and Issue Alert (SF-REP-005)
+  id_edfb9d0b618453f294948f0427a64c9e->>id_60e7d1d9e64c5011a1efe8becac406d0: reads Trade Item
+  id_8365e05ff4ca58039d623ddbafcf9884->>id_60e7d1d9e64c5011a1efe8becac406d0: reads Trade Item
+  id_8365e05ff4ca58039d623ddbafcf9884->>id_ac6852fe91ab574baef07b27aa0bc945: reads/writes SF Report
+  id_b6e235b281cb544897f2f6a29fb3b994->>id_ac6852fe91ab574baef07b27aa0bc945: reads SF Report
+  id_1515f5569faa5f27a8ca2e20e86d15be-->>id_ad0415292a725125ad23387b6ae8d0b3: serves Health Care Professional (Reporter)
+  id_1515f5569faa5f27a8ca2e20e86d15be->>id_8436ad35e0bc560ea49d2005a6bda297: reads Medical Product Alert
+  id_b4ce9166335e5f90b71f97b849cc5d62->>id_8436ad35e0bc560ea49d2005a6bda297: accesses Medical Product Alert
+
+sequenceDiagram
+  %% SF Reporting in the DIIG Enterprise Architecture (DTH SFP Fig. 3) (id-6665684387505f2a8129f914b7e5717b): sequence diagram, derived by archimate-diagrams. Do not edit.
+  participant id_804f2eb9d1e95868800db95b375a3e09 as SF Reporting Application
+  participant id_c7a1fbef2d2e5265ab5ea21bb98324cc as NMRA Case Management Back End
+  participant id_423c76f32ea55498a5c71fcee027aac1 as Pharmacovigilance System
+  participant id_80856538cbd44167a37b276e38c994c3 as Interoperability Component
+  participant id_1555c26cfbcd57f49b6e63fed8491d80 as Quality Systems
+  participant id_22eff58eae365a4f8d0e0368d8c3497e as Regulatory Systems
+  actor id_ad0415292a725125ad23387b6ae8d0b3 as Health Care Professional (Reporter)
+  id_804f2eb9d1e95868800db95b375a3e09->>id_c7a1fbef2d2e5265ab5ea21bb98324cc: flows to NMRA Case Management Back End
+  id_c7a1fbef2d2e5265ab5ea21bb98324cc->>id_423c76f32ea55498a5c71fcee027aac1: flows to Pharmacovigilance System
+  id_c7a1fbef2d2e5265ab5ea21bb98324cc->>id_80856538cbd44167a37b276e38c994c3: flows to Interoperability Component
+  id_423c76f32ea55498a5c71fcee027aac1->>id_80856538cbd44167a37b276e38c994c3: flows to Interoperability Component
+  id_1555c26cfbcd57f49b6e63fed8491d80->>id_22eff58eae365a4f8d0e0368d8c3497e: flows to Regulatory Systems
+  id_804f2eb9d1e95868800db95b375a3e09-->>id_ad0415292a725125ad23387b6ae8d0b3: serves Health Care Professional (Reporter)

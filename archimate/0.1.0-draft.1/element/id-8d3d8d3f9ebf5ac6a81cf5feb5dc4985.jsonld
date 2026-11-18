@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8d3d8d3f9ebf5ac6a81cf5feb5dc4985",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-8d3d8d3f9ebf5ac6a81cf5feb5dc4985",
+  "schema:name": "Advisory Council",
+  "schema:description": "External experts, professional associations, patient advocacy groups, and private sector partners offering insights on best practices, user expectations, and emerging technologies to the steering committee and technical working group without decision-making authority. (Section 2.3, PDF 28)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

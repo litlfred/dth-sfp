@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ad0415292a725125ad23387b6ae8d0b3",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-ad0415292a725125ad23387b6ae8d0b3",
+  "schema:name": "Health Care Professional (Reporter)",
+  "schema:description": "An individual who provides health care treatment and advice based on formal training and experience (such as doctors, nurses, midwives, pharmacists, community health workers, laboratory technicians, paramedics, and veterinarians) who detects and reports suspected substandard and falsified medical products. (Glossary p. viii, Section 4.1, Tables 7-9, Annex 2, PDF 10, 35-41, 64)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

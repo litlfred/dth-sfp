@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ac6852fe91ab574baef07b27aa0bc945",
+  "@type": "archimate:BusinessObject",
+  "schema:identifier": "id-ac6852fe91ab574baef07b27aa0bc945",
+  "schema:name": "SF Report",
+  "schema:description": "A report of a suspected substandard or falsified medical product submitted by a health care professional or other reporter to the National Medicines Regulatory Authority, carrying product identification, batch/expiry, incident description, photos, and tracking status. (Intro p. 1-2, Table 4, Table 9-11, PDF 13-14, 24, 39-43)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

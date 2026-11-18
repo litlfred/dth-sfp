@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-sc/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-sc/",
+  "@type": "WebPage",
+  "name": "Digital Transformation Handbook for Health Supply Chain Architecture on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/dth-sc/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "dth-sc",
+    "name": "Digital Transformation Handbook for Health Supply Chain Architecture",
+    "description": "WHO Digital transformation handbook for health supply chain architecture (ISBN 9789240101197), as an L2 DTH on smart-ra: the working document folio seeded from its L1 entry in who-iris, and its supply chain glossary linked to the smart-ra glossary and ArchiMate model. dth-pc and dth-sfp depend on it.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/dth-sc",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      },
+      {
+        "@id": "https://litlfred.github.io/smart-ra/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/dth-sc/",
+    "https://github.com/litlfred/dth-sc/tree/6aaf7e392554f182f5ecbb59eb6aadedcbc12b12"
+  ]
+}

@@ -1,0 +1,51 @@
+classDiagram
+  %% DTH-SFP overlay on the DPI-H reference architecture (0.1.0-draft.1): data class diagram, derived by archimate-diagrams. Do not edit.
+  class id_8436ad35e0bc560ea49d2005a6bda297["Medical Product Alert"]
+  <<BusinessObject>> id_8436ad35e0bc560ea49d2005a6bda297
+  id_8436ad35e0bc560ea49d2005a6bda297 : +Identifier alertIdentifier
+  id_8436ad35e0bc560ea49d2005a6bda297 : +Reference(Organization) (NMRA / WHO) issuingAuthority
+  id_8436ad35e0bc560ea49d2005a6bda297 : +Reference(TradeItem) affectedProduct
+  id_8436ad35e0bc560ea49d2005a6bda297 : +string 0..* batchNumbers
+  id_8436ad35e0bc560ea49d2005a6bda297 : +string recommendedAction
+  class id_ac6852fe91ab574baef07b27aa0bc945["SF Report"]
+  <<BusinessObject>> id_ac6852fe91ab574baef07b27aa0bc945
+  id_ac6852fe91ab574baef07b27aa0bc945 : +Identifier (GTIN / Product ID) productIdentification
+  id_ac6852fe91ab574baef07b27aa0bc945 : +string batchNumber
+  id_ac6852fe91ab574baef07b27aa0bc945 : +date expiryDate
+  id_ac6852fe91ab574baef07b27aa0bc945 : +string incidentDescription
+  id_ac6852fe91ab574baef07b27aa0bc945 : +Attachment 0..* photos
+  id_ac6852fe91ab574baef07b27aa0bc945 : +code trackingStatus
+  class id_753b4997886b5790b4e6153f5835be66["SF Report Data Object"]
+  <<DataObject>> id_753b4997886b5790b4e6153f5835be66
+  id_753b4997886b5790b4e6153f5835be66 : +CodeableConcept 1..1 (Region) SFR.A1.DE1
+  id_753b4997886b5790b4e6153f5835be66 : +code 1..1 (Type of report) SFR.A1.DE2
+  id_753b4997886b5790b4e6153f5835be66 : +Identifier 1..1 (Product ID) SFR.A1.DE3
+  id_753b4997886b5790b4e6153f5835be66 : +string 0..1 (Product description) SFR.A1.DE4
+  id_753b4997886b5790b4e6153f5835be66 : +CodeableConcept 1..1 (Type of product) SFR.A1.DE5
+  id_753b4997886b5790b4e6153f5835be66 : +string 1..1 (Batch number) SFR.A1.DE6
+  id_753b4997886b5790b4e6153f5835be66 : +date 1..1 (Expiry date) SFR.A1.DE7
+  id_753b4997886b5790b4e6153f5835be66 : +CodeableConcept 1..1 (Substandard or falsified?) SFR.A1.DE8
+  id_753b4997886b5790b4e6153f5835be66 : +boolean 1..1 (Adverse reaction or lack of efficacy?) SFR.A1.DE9
+  id_753b4997886b5790b4e6153f5835be66 : +string 1..1 (Reporting reason / description) SFR.A1.DE10
+  class id_5dc77dae1bce5d11b288830795b31bdf["Traceability Event"]
+  <<DataObject>> id_5dc77dae1bce5d11b288830795b31bdf
+  id_5dc77dae1bce5d11b288830795b31bdf : +Identifier (GTIN, batch/lot no., serial no.) what
+  id_5dc77dae1bce5d11b288830795b31bdf : +dateTime (event timestamp) when
+  id_5dc77dae1bce5d11b288830795b31bdf : +Location (facility / warehouse GLN) where
+  id_5dc77dae1bce5d11b288830795b31bdf : +code (receiving, shipping, dispensing, discarding) why
+  class id_60e7d1d9e64c5011a1efe8becac406d0["Trade Item"]
+  <<BusinessObject>> id_60e7d1d9e64c5011a1efe8becac406d0
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +Identifier 1..* (GTIN) identifier
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +code 1..1 status
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +BackboneElement 0..* (nameType 1..1, name 1..1) tradeItemName
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +string 0..1 description
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +CodeableConcept 0..* classification
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +Reference(Organization) 0..1 manufacturer
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +CodeableConcept 1..1 countryOfOrigin
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +Duration 0..1 shelfLife
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +BackboneElement 0..* (genericProduct 1..1, quantity 1..1) associatedGenericProduct
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +BackboneElement 0..* (tradeItem 1..1, quantity 1..1) contains
+  id_60e7d1d9e64c5011a1efe8becac406d0 : +BackboneElement 0..* (type 1..1, value[x] 1..1) attribute
+  id_753b4997886b5790b4e6153f5835be66 --> id_5dc77dae1bce5d11b288830795b31bdf : DE3 Product ID, DE6 Batch, DE7 Expiry
+  id_753b4997886b5790b4e6153f5835be66 --> id_60e7d1d9e64c5011a1efe8becac406d0 : DE3 Product ID / DE5 Type
+  id_753b4997886b5790b4e6153f5835be66 ..|> id_ac6852fe91ab574baef07b27aa0bc945 : realises

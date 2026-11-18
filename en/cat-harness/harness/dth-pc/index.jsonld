@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-pc/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-pc/",
+  "@type": "WebPage",
+  "name": "Digital Transformation Handbook for Health Product Catalogue on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/dth-pc/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "dth-pc",
+    "name": "Digital Transformation Handbook for Health Product Catalogue",
+    "description": "WHO Digital transformation handbook for health product catalogue (ISBN 9789240116191), as an L2 DTH on smart-ra and dth-sc: the working document folio seeded from its L1 entry in who-iris, and its product catalogue glossary linked to the dth-sc and smart-ra glossaries and the smart-ra ArchiMate model.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/dth-pc",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      },
+      {
+        "@id": "https://litlfred.github.io/smart-ra/"
+      },
+      {
+        "@id": "https://litlfred.github.io/dth-sc/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "f2e404731cc7440a7c3e1235492248ad135441c2"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/dth-pc/",
+    "https://github.com/litlfred/dth-pc/tree/f2e404731cc7440a7c3e1235492248ad135441c2"
+  ]
+}

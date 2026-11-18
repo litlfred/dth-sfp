@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dpi-h-ra/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dpi-h-ra/",
+  "@type": "WebPage",
+  "name": "Reference Architecture and Guidance for Digital Public Infrastructure for the Health Sector on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/smart-ra/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "dpi-h-ra",
+    "name": "Reference Architecture and Guidance for Digital Public Infrastructure for the Health Sector",
+    "description": "The DPI-H Reference Architecture guidance (WHO/ITU), an L1 document: the draft for public comment as an editable document folio, its frozen review version in the library, and the public-comment adjudication record.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/smart-ra",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "440611f945761e9ce9c981d6b1ea32c49dd7745d"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/#harness-dpi-h-ra",
+    "https://github.com/litlfred/smart-ra/tree/440611f945761e9ce9c981d6b1ea32c49dd7745d",
+    "https://github.com/litlfred/smart-ra/blob/440611f945761e9ce9c981d6b1ea32c49dd7745d/README.md",
+    "https://github.com/litlfred/smart-ra/blob/440611f945761e9ce9c981d6b1ea32c49dd7745d/AGENTS.md"
+  ]
+}

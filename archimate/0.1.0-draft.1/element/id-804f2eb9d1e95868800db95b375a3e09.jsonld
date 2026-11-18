@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-804f2eb9d1e95868800db95b375a3e09",
+  "@type": "archimate:ApplicationComponent",
+  "schema:identifier": "id-804f2eb9d1e95868800db95b375a3e09",
+  "schema:name": "SF Reporting Application",
+  "schema:description": "Point-of-service digital application (such as a mobile smartphone app or web form) used by health care professionals to capture and submit reports of suspected substandard and falsified medical products, receive tracking updates and alerts, and store reports offline for synchronization. (Intro p. 2, Section 3.2, Fig. 3, Ch. 4, Ch. 7, PDF 14, 33-34, 35-47, 59)",
+  "schema:category": "Application",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

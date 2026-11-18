@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1",
+  "@type": "archimate:Model",
+  "schema:identifier": "0.1.0-draft.1",
+  "schema:name": "DTH-SFP overlay 0.1.0-draft.1",
+  "schema:description": "The dth-sfp overlay on the smart-ra (DPI-H RA) ArchiMate model 0.3.0-draft.1: the four substandard and falsified (SF) medical product reporting views (DIIG enterprise architecture, business process with SF-REP-001..006, application cooperation, regulatory governance). Elements tagged overlay:base copy a smart-ra element and name it by IRI; elements tagged overlay:dth copy a dth-phc overlay element; elements tagged overlay:owner=dth-sfp are this DTH's own.",
+  "dcterms:identifier": "id-dthsfp-overlay-0-1-0-draft-1",
+  "schema:contentUrl": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/dth-sfp-overlay.archimate",
+  "schema:hasPart": [
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-a996a76d1225505098286f98eb10d686",
+      "@type": "archimate:Diagram",
+      "schema:name": "SF Reporting Application Cooperation View"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-9d535a5ce08f5782b9738801ab04da26",
+      "@type": "archimate:Diagram",
+      "schema:name": "SF Reporting Business Process View (DTH SFP Fig. 4 & SF-REP-001..006)"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-aab2eade5c2253eb9931cb02903bc889",
+      "@type": "archimate:Diagram",
+      "schema:name": "SF Reporting Regulatory Governance View (DTH SFP §2.3)"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-6665684387505f2a8129f914b7e5717b",
+      "@type": "archimate:Diagram",
+      "schema:name": "SF Reporting in the DIIG Enterprise Architecture (DTH SFP Fig. 3)"
+    }
+  ]
+}

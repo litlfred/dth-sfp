@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/who-iris/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/who-iris/",
+  "@type": "WebPage",
+  "name": "WHO IRIS on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://worldhealthorganization.github.io/who-iris/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "who-iris",
+    "name": "WHO IRIS",
+    "description": "The WHO Institutional Repository for Information Sharing, catalogued by reference — 1,057,223 files known, a handful materialized as the pre-CDN preview.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/who-iris",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/folio-assistant-core/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/who-iris/",
+    "https://github.com/litlfred/who-iris/tree/bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
+    "https://github.com/litlfred/who-iris/blob/bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707/README.md",
+    "https://github.com/litlfred/who-iris/blob/bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707/AGENTS.md"
+  ]
+}

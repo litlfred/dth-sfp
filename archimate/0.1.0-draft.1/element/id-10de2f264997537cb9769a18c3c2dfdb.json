@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-10de2f264997537cb9769a18c3c2dfdb",
+  "@type": "archimate:Stakeholder",
+  "schema:identifier": "id-10de2f264997537cb9769a18c3c2dfdb",
+  "schema:name": "ICT Ministry",
+  "schema:description": "Digital innovation and ICT ministries and agencies that collaborate to integrate the reporting system with existing national eHealth strategies or digital infrastructure. (Section 2.2, PDF 28)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

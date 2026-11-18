@@ -1,0 +1,54 @@
+@startuml
+' DTH-SFP overlay on the DPI-H reference architecture (0.1.0-draft.1): data class diagram, derived by archimate-diagrams. Do not edit.
+skinparam classAttributeIconSize 0
+hide empty members
+class "Medical Product Alert" as id_8436ad35e0bc560ea49d2005a6bda297 <<BusinessObject>> <<MedicalProductAlert>> {
+  +alertIdentifier : Identifier
+  +issuingAuthority : Reference(Organization) (NMRA / WHO)
+  +affectedProduct : Reference(TradeItem)
+  +batchNumbers : string 0..*
+  +recommendedAction : string
+}
+class "SF Report" as id_ac6852fe91ab574baef07b27aa0bc945 <<BusinessObject>> <<SFReport>> {
+  +productIdentification : Identifier (GTIN / Product ID)
+  +batchNumber : string
+  +expiryDate : date
+  +incidentDescription : string
+  +photos : Attachment 0..*
+  +trackingStatus : code
+}
+class "SF Report Data Object" as id_753b4997886b5790b4e6153f5835be66 <<DataObject>> <<SFR.A1.DE1..DE10>> {
+  +SFR.A1.DE1 : CodeableConcept 1..1 (Region)
+  +SFR.A1.DE2 : code 1..1 (Type of report)
+  +SFR.A1.DE3 : Identifier 1..1 (Product ID)
+  +SFR.A1.DE4 : string 0..1 (Product description)
+  +SFR.A1.DE5 : CodeableConcept 1..1 (Type of product)
+  +SFR.A1.DE6 : string 1..1 (Batch number)
+  +SFR.A1.DE7 : date 1..1 (Expiry date)
+  +SFR.A1.DE8 : CodeableConcept 1..1 (Substandard or falsified?)
+  +SFR.A1.DE9 : boolean 1..1 (Adverse reaction or lack of efficacy?)
+  +SFR.A1.DE10 : string 1..1 (Reporting reason / description)
+}
+class "Traceability Event" as id_5dc77dae1bce5d11b288830795b31bdf <<DataObject>> <<TraceabilityEvent>> {
+  +what : Identifier (GTIN, batch/lot no., serial no.)
+  +when : dateTime (event timestamp)
+  +where : Location (facility / warehouse GLN)
+  +why : code (receiving, shipping, dispensing, discarding)
+}
+class "Trade Item" as id_60e7d1d9e64c5011a1efe8becac406d0 <<BusinessObject>> <<TradeItem>> {
+  +identifier : Identifier 1..* (GTIN)
+  +status : code 1..1
+  +tradeItemName : BackboneElement 0..* (nameType 1..1, name 1..1)
+  +description : string 0..1
+  +classification : CodeableConcept 0..*
+  +manufacturer : Reference(Organization) 0..1
+  +countryOfOrigin : CodeableConcept 1..1
+  +shelfLife : Duration 0..1
+  +associatedGenericProduct : BackboneElement 0..* (genericProduct 1..1, quantity 1..1)
+  +contains : BackboneElement 0..* (tradeItem 1..1, quantity 1..1)
+  +attribute : BackboneElement 0..* (type 1..1, value[x] 1..1)
+}
+id_753b4997886b5790b4e6153f5835be66 --> id_5dc77dae1bce5d11b288830795b31bdf : DE3 Product ID, DE6 Batch, DE7 Expiry
+id_753b4997886b5790b4e6153f5835be66 --> id_60e7d1d9e64c5011a1efe8becac406d0 : DE3 Product ID / DE5 Type
+id_753b4997886b5790b4e6153f5835be66 ..|> id_ac6852fe91ab574baef07b27aa0bc945 : realises
+@enduml

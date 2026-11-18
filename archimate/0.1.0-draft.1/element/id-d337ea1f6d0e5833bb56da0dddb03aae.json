@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-d337ea1f6d0e5833bb56da0dddb03aae",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-d337ea1f6d0e5833bb56da0dddb03aae",
+  "schema:name": "NMRA Reviewer",
+  "schema:description": "Regulatory staff and pharmacovigilance/monitoring teams within the National Medicines Regulatory Authority who receive, review, triage, investigate, and follow up on submitted substandard and falsified medical product reports. (Table 1, Section 2.1, Table 9, Ch. 7, PDF 15, 27, 39-40, 59)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

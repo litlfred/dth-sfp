@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/relationship/id-6504fd56653259188be0005b99d088eb",
+  "@type": "archimate:Association",
+  "schema:identifier": "id-6504fd56653259188be0005b99d088eb",
+  "schema:name": "professional credential alignment",
+  "archimate:source": {
+    "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-63c448813aea4067bb68281f7926fd2b"
+  },
+  "archimate:target": {
+    "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-f17f9ba2ee345fe694d51630d424ad8a"
+  },
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

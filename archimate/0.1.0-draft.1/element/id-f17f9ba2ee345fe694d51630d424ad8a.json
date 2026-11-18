@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-f17f9ba2ee345fe694d51630d424ad8a",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-f17f9ba2ee345fe694d51630d424ad8a",
+  "schema:name": "Project Champion",
+  "schema:description": "High-level official or recognized expert who advocates for the project across government and partners, engages professional associations, civil society, and private sector players, and mobilizes stakeholders to obtain buy-in and address policy barriers. (Section 2.3, PDF 28)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

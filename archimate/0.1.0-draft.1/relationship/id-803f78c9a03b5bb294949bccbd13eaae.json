@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/relationship/id-803f78c9a03b5bb294949bccbd13eaae",
+  "@type": "archimate:Association",
+  "schema:identifier": "id-803f78c9a03b5bb294949bccbd13eaae",
+  "schema:name": "DE3 Product ID, DE6 Batch, DE7 Expiry",
+  "archimate:source": {
+    "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-753b4997886b5790b4e6153f5835be66"
+  },
+  "archimate:target": {
+    "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-5dc77dae1bce5d11b288830795b31bdf"
+  },
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

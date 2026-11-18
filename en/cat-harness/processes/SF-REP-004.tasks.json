@@ -1,0 +1,119 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_SF_REP_004",
+ "markers": [
+  {
+   "id": "Task_403_ExecuteSupplyChainRecall",
+   "name": "Trace batch (DE6), quarantine & remove stock",
+   "left": 53.76,
+   "top": 9.23,
+   "box": {
+    "left": 46.99,
+    "top": 18.62,
+    "width": 1.8,
+    "height": 3.69
+   }
+  },
+  {
+   "id": "Task_401_IssueRapidAlert",
+   "name": "Issue national alert & notify facilities",
+   "left": 24.44,
+   "top": 43.38,
+   "box": {
+    "left": 17.67,
+    "top": 52.77,
+    "width": 1.8,
+    "height": 3.69
+   }
+  },
+  {
+   "id": "Task_402_OrderRecallWithdrawal",
+   "name": "Order batch quarantine or recall",
+   "left": 38.72,
+   "top": 43.38,
+   "box": {
+    "left": 31.95,
+    "top": 52.77,
+    "width": 1.8,
+    "height": 3.69
+   }
+  },
+  {
+   "id": "Task_404_ApplySanctions",
+   "name": "Apply regulatory sanctions & close action",
+   "left": 90.23,
+   "top": 43.38,
+   "box": {
+    "left": 83.46,
+    "top": 52.77,
+    "width": 1.8,
+    "height": 3.69
+   }
+  },
+  {
+   "id": "Task_405_LawEnforcementReferral",
+   "name": "Refer case to law enforcement & customs",
+   "left": 76.69,
+   "top": 76.92,
+   "box": {
+    "left": 69.92,
+    "top": 86.31,
+    "width": 1.8,
+    "height": 3.69
+   }
+  }
+ ],
+ "processHref": "SF-REP-004.html",
+ "tasks": {
+  "Task_403_ExecuteSupplyChainRecall": {
+   "id": "Task_403_ExecuteSupplyChainRecall",
+   "name": "Trace batch (DE6), quarantine & remove stock",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-004.html#step-Task_403_ExecuteSupplyChainRecall",
+   "lane": "Supply Chain & Dispensers (SFP-R-14, R-06)",
+   "laneHref": "SF-REP-004.html#lane-Lane_SF_REP_004_SupplyChain",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_401_IssueRapidAlert": {
+   "id": "Task_401_IssueRapidAlert",
+   "name": "Issue national alert & notify facilities",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-004.html#step-Task_401_IssueRapidAlert",
+   "lane": "NMRA Enforcement Authority (SFP-R-13)",
+   "laneHref": "SF-REP-004.html#lane-Lane_SF_REP_004_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_402_OrderRecallWithdrawal": {
+   "id": "Task_402_OrderRecallWithdrawal",
+   "name": "Order batch quarantine or recall",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-004.html#step-Task_402_OrderRecallWithdrawal",
+   "lane": "NMRA Enforcement Authority (SFP-R-13)",
+   "laneHref": "SF-REP-004.html#lane-Lane_SF_REP_004_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_404_ApplySanctions": {
+   "id": "Task_404_ApplySanctions",
+   "name": "Apply regulatory sanctions & close action",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-004.html#step-Task_404_ApplySanctions",
+   "lane": "NMRA Enforcement Authority (SFP-R-13)",
+   "laneHref": "SF-REP-004.html#lane-Lane_SF_REP_004_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_405_LawEnforcementReferral": {
+   "id": "Task_405_LawEnforcementReferral",
+   "name": "Refer case to law enforcement & customs",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-004.html#step-Task_405_LawEnforcementReferral",
+   "lane": "Law Enforcement & Customs (SFP-R-15)",
+   "laneHref": "SF-REP-004.html#lane-Lane_SF_REP_004_LawEnforcement",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

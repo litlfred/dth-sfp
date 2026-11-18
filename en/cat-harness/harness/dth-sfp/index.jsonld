@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-sfp/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-sfp/",
+  "@type": "WebPage",
+  "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "dth-sfp",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+    "description": "WHO Digital transformation handbook for reporting substandard and falsified medical products (2026, ISBN 9789240120747, IRIS 187cabc7), as an L2 DTH on smart-ra, dth-sc, dth-pc, dth-hrh, and smart-base: the working document folio seeded from its L1 entry in who-iris (9789240120747-eng), DAK components (personas, user scenarios, BPMN 2.0 workflows, DMN 1.3 decision tables, core data elements, requirements, and indicators), and its Cluster C domain glossary linked to smart-ra, dth-sc, dth-pc, and dth-hrh.",
+    "version": "0.1.0",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-ra/"
+      },
+      {
+        "@id": "https://litlfred.github.io/dth-sc/"
+      },
+      {
+        "@id": "https://litlfred.github.io/dth-pc/"
+      },
+      {
+        "@id": "https://litlfred.github.io/dth-hrh/"
+      },
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      },
+      {
+        "@id": "https://worldhealthorganization.github.io/who-iris/"
+      }
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": []
+}

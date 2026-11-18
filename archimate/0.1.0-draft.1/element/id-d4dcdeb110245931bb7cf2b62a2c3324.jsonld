@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-d4dcdeb110245931bb7cf2b62a2c3324",
+  "@type": "archimate:Stakeholder",
+  "schema:identifier": "id-d4dcdeb110245931bb7cf2b62a2c3324",
+  "schema:name": "Regional and Global Regulators",
+  "schema:description": "Regional and global regulatory authorities (such as the European Medicines Agency, African Medicines Agency, and WHO) working to harmonize regulations, coordinate alerts, and support national authorities. (Section 2.2, PDF 28)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

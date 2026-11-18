@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-9ae317ee45ea527d8fe5b51119d126d7",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-9ae317ee45ea527d8fe5b51119d126d7",
+  "schema:name": "Steering Committee",
+  "schema:description": "National steering committee led by the ministry of health or NMRA that provides strategic oversight, ensures alignment with national health goals, mobilizes resources, and makes key strategic decisions on substandard and falsified medical products reporting. (Section 2.3, PDF 28)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

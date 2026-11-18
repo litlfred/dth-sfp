@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ba3df4e65d2b5a4c89dd57d712e0c373",
+  "@type": "archimate:Driver",
+  "schema:identifier": "id-ba3df4e65d2b5a4c89dd57d712e0c373",
+  "schema:name": "Patient Safety",
+  "schema:description": "Strategic driver to safeguard the quality of medicines, prevent adverse effects or therapeutic failure, and protect public health. (Intro p. 1, Section 2.4, PDF 13, 28-29)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

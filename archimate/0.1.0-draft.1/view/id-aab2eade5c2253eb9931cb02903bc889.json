@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-aab2eade5c2253eb9931cb02903bc889",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-aab2eade5c2253eb9931cb02903bc889",
+  "schema:name": "SF Reporting Regulatory Governance View (DTH SFP §2.3)",
+  "schema:description": "Regulatory governance, multisectoral stakeholder alignment, strategic goals, and reporting barrier assessments for substandard and falsified medical products reporting (Section 1.1, Table 5, Section 2.2-2.4, Annex 4, Annex 6; PDF 20, 25, 28, 68, 70): Ministry of Health, National Regulatory Authority, Steering Committee, Technical Working Group, Advisory Council, Project Champion, Digital Health Coordinator, multisectoral stakeholders (Law Enforcement and Customs, Professional Associations, Medical Product Industry, Health Financing and Procurement Agencies, ICT Ministry, Regional and Global Regulators, Licensing Bodies, Health Workers, Patients), strategic driver and goals (Patient Safety, Timely Regulatory Action, Supply Chain Transparency, Reduced Detection-to-Notification Time), and Table 5 barrier assessments.",
+  "schema:image": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/view/id-aab2eade5c2253eb9931cb02903bc889.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-d4dcdeb110245931bb7cf2b62a2c3324"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-1c5c0bc9234e4282b654dbc71b9da706"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-10de2f264997537cb9769a18c3c2dfdb"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-6774a84c00a753f88e4e4fb4c54597c5"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-e4542f7d6cb350098178528e65faa36e"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-b684f920f2b75e9299907611ef73d567"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a34c53b84879572898c066304e46348b"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8e67c8e9e1195cdc857b03a2c640e7fe"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-9ae317ee45ea527d8fe5b51119d126d7"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-3a85660bd48e554bb8468f8b98a4ffe6"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8d3d8d3f9ebf5ac6a81cf5feb5dc4985"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-f17f9ba2ee345fe694d51630d424ad8a"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-2c8f9517b8e152fcb6e39ef5f4d2b840"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ba3df4e65d2b5a4c89dd57d712e0c373"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-ccd5b2a63a0d514a9df3b4fc09d6a139"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-f0265a0349fc56a6b8d57a1d5f839840"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-bdd86916cc2550c1b7f9586e6d16735f"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-63c448813aea4067bb68281f7926fd2b"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-683ba943b2ba5c0dbc0347d6b63b0aa6"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a2320dbc07e6450b94f3f0f3e03bb877"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-5aea6ed682a3587e85099da05afb7bd7"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-f1369f21011c5193b132bb364a2519dc"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a581413dfcaa5c8aac48702d6d68a856"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-8d3dd8b68d504c2a9fe8cf414b16c127"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

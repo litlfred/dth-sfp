@@ -1,0 +1,317 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_SF_REP_001",
+ "markers": [
+  {
+   "id": "Task_1_OpenAppAndCheckReg",
+   "name": "Open reporting app & check registration (DE1, DE3)",
+   "left": 23.72,
+   "top": 11.6,
+   "box": {
+    "left": 17.15,
+    "top": 19.73,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_3_EnterProductDetails",
+   "name": "Select product & auto-populate type (SFR.DT.02)",
+   "left": 44.89,
+   "top": 2.67,
+   "box": {
+    "left": 38.32,
+    "top": 10.8,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_FlagUnregistered",
+   "name": "Record unregistered product details (F2)",
+   "left": 44.89,
+   "top": 20.67,
+   "box": {
+    "left": 38.32,
+    "top": 28.8,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_4_EnterBatchExpiry",
+   "name": "Enter or scan batch (DE6) & expiry (DE7)",
+   "left": 59.49,
+   "top": 11.6,
+   "box": {
+    "left": 52.92,
+    "top": 19.73,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_5_SelectReportType",
+   "name": "Select channel & SF category (DE2, DE8)",
+   "left": 73.36,
+   "top": 11.6,
+   "box": {
+    "left": 66.79,
+    "top": 19.73,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_6a_SubstandardDetails",
+   "name": "Describe quality defect or ADR (DE9)",
+   "left": 95.26,
+   "top": 2.67,
+   "box": {
+    "left": 88.69,
+    "top": 10.8,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_6b_FalsifiedDetails",
+   "name": "Describe suspected falsification (DE9)",
+   "left": 95.26,
+   "top": 20.67,
+   "box": {
+    "left": 88.69,
+    "top": 28.8,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_7_AttachPhotos",
+   "name": "Attach product & packaging photos",
+   "left": 43.07,
+   "top": 47.6,
+   "box": {
+    "left": 36.5,
+    "top": 55.73,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_8a_EnterContact",
+   "name": "Confirm profile, region & contact (DE10)",
+   "left": 66.42,
+   "top": 39.33,
+   "box": {
+    "left": 59.85,
+    "top": 47.47,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_8b_RemainAnonymous",
+   "name": "Omit personal contact details",
+   "left": 66.42,
+   "top": 56,
+   "box": {
+    "left": 59.85,
+    "top": 64.13,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_9_SubmitReport",
+   "name": "Submit SF report to NMRA",
+   "left": 81.75,
+   "top": 47.6,
+   "box": {
+    "left": 75.18,
+    "top": 55.73,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_10_ReceiveAndValidate",
+   "name": "Receive report, assign tracking ID & log",
+   "left": 43.07,
+   "top": 78.93,
+   "box": {
+    "left": 36.5,
+    "top": 87.07,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_11_SendAcknowledgement",
+   "name": "Return confirmation & tracking ID",
+   "left": 58.39,
+   "top": 78.93,
+   "box": {
+    "left": 51.82,
+    "top": 87.07,
+    "width": 1.75,
+    "height": 3.2
+   }
+  },
+  {
+   "id": "Task_12_InitialScreening",
+   "name": "Screen report & trigger triage (SF-REP-002)",
+   "left": 73.72,
+   "top": 78.93,
+   "box": {
+    "left": 67.15,
+    "top": 87.07,
+    "width": 1.75,
+    "height": 3.2
+   }
+  }
+ ],
+ "processHref": "SF-REP-001.html",
+ "tasks": {
+  "Task_1_OpenAppAndCheckReg": {
+   "id": "Task_1_OpenAppAndCheckReg",
+   "name": "Open reporting app & check registration (DE1, DE3)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_1_OpenAppAndCheckReg",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_3_EnterProductDetails": {
+   "id": "Task_3_EnterProductDetails",
+   "name": "Select product & auto-populate type (SFR.DT.02)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_3_EnterProductDetails",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_FlagUnregistered": {
+   "id": "Task_FlagUnregistered",
+   "name": "Record unregistered product details (F2)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_FlagUnregistered",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_4_EnterBatchExpiry": {
+   "id": "Task_4_EnterBatchExpiry",
+   "name": "Enter or scan batch (DE6) & expiry (DE7)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_4_EnterBatchExpiry",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_5_SelectReportType": {
+   "id": "Task_5_SelectReportType",
+   "name": "Select channel & SF category (DE2, DE8)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_5_SelectReportType",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_6a_SubstandardDetails": {
+   "id": "Task_6a_SubstandardDetails",
+   "name": "Describe quality defect or ADR (DE9)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_6a_SubstandardDetails",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_6b_FalsifiedDetails": {
+   "id": "Task_6b_FalsifiedDetails",
+   "name": "Describe suspected falsification (DE9)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_6b_FalsifiedDetails",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_7_AttachPhotos": {
+   "id": "Task_7_AttachPhotos",
+   "name": "Attach product & packaging photos",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_7_AttachPhotos",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_8a_EnterContact": {
+   "id": "Task_8a_EnterContact",
+   "name": "Confirm profile, region & contact (DE10)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_8a_EnterContact",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_8b_RemainAnonymous": {
+   "id": "Task_8b_RemainAnonymous",
+   "name": "Omit personal contact details",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_8b_RemainAnonymous",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_9_SubmitReport": {
+   "id": "Task_9_SubmitReport",
+   "name": "Submit SF report to NMRA",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_9_SubmitReport",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_HCP",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_10_ReceiveAndValidate": {
+   "id": "Task_10_ReceiveAndValidate",
+   "name": "Receive report, assign tracking ID & log",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-001.html#step-Task_10_ReceiveAndValidate",
+   "lane": "NMRA & Reporting System (SFP-R-13)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_11_SendAcknowledgement": {
+   "id": "Task_11_SendAcknowledgement",
+   "name": "Return confirmation & tracking ID",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-001.html#step-Task_11_SendAcknowledgement",
+   "lane": "NMRA & Reporting System (SFP-R-13)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_12_InitialScreening": {
+   "id": "Task_12_InitialScreening",
+   "name": "Screen report & trigger triage (SF-REP-002)",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-001.html#step-Task_12_InitialScreening",
+   "lane": "NMRA & Reporting System (SFP-R-13)",
+   "laneHref": "SF-REP-001.html#lane-Lane_SF_REP_001_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

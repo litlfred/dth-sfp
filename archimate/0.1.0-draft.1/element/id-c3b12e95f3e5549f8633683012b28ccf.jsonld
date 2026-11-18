@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-c3b12e95f3e5549f8633683012b28ccf",
+  "@type": "archimate:Capability",
+  "schema:identifier": "id-c3b12e95f3e5549f8633683012b28ccf",
+  "schema:name": "SF Case Investigation",
+  "schema:description": "Capability of national medicines regulatory authorities (NMRAs) to triage, verify, and thoroughly investigate reported suspected substandard and falsified medical products, in collaboration with laboratories and law enforcement where needed. (Intro p. 1, Section 2.1, Table 9, PDF 13, 27, 39-40)",
+  "schema:category": "Strategy",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

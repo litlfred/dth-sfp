@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-808925f4d2075d7b95e0651ebae00fcf",
+  "@type": "archimate:ApplicationComponent",
+  "schema:identifier": "id-808925f4d2075d7b95e0651ebae00fcf",
+  "schema:name": "Point-of-service application",
+  "schema:description": "Person-centred point of service system (PCPOSS) are digital systems that facilitate the provision and delivery of health services to individuals (i.e. persons, clients, patients, health service users) at the point of service or point of care. This includes software capabilities and embedded health interoperability standards that enable health workers to access, record and update individuals' health information, and to screen, manage, treat, and/or communicate with individuals. PCPOSS encompass community-based information systems, decision support systems, electronic health record systems and personal health records. (PDF 9, 18)",
+  "schema:category": "Application",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

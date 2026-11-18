@@ -1,0 +1,362 @@
+{
+  "$schema": "archimate-data-model/v1",
+  "model": "0.1.0-draft.1",
+  "name": "DTH-SFP overlay on the DPI-H reference architecture",
+  "classes": [
+    {
+      "id": "id-8436ad35e0bc560ea49d2005a6bda297",
+      "name": "Medical Product Alert",
+      "type": "BusinessObject",
+      "documentation": "Official notification or alert issued by the NMRA or WHO on confirmed or suspected substandard and falsified medical products to inform health care professionals, supply chain actors, and the public. (Table 6, Table 9, Ch. 7, PDF 32, 39-40, 59)",
+      "logicalModel": "MedicalProductAlert",
+      "skosConcept": "https://github.com/litlfred/dth-sfp/blob/main/glossary/dth-sfp.glossary.json#medical-product-alert",
+      "attributes": [
+        {
+          "name": "alertIdentifier",
+          "type": "Identifier",
+          "source": "property"
+        },
+        {
+          "name": "issuingAuthority",
+          "type": "Reference(Organization) (NMRA / WHO)",
+          "source": "property"
+        },
+        {
+          "name": "affectedProduct",
+          "type": "Reference(TradeItem)",
+          "source": "property"
+        },
+        {
+          "name": "batchNumbers",
+          "type": "string 0..*",
+          "source": "property"
+        },
+        {
+          "name": "recommendedAction",
+          "type": "string",
+          "source": "property"
+        }
+      ],
+      "accessedBy": [
+        {
+          "elementId": "id-b4ce9166335e5f90b71f97b849cc5d62",
+          "name": "Take Regulatory Action and Issue Alert (SF-REP-005)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-59a84dfca4f3564b86341596b75671bf",
+          "kind": "access"
+        },
+        {
+          "elementId": "id-1515f5569faa5f27a8ca2e20e86d15be",
+          "name": "Give Feedback to Reporter and Report to GSMS (SF-REP-006)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-798d00d6931d5c9a8ee81be56d178fd1",
+          "kind": "read"
+        }
+      ]
+    },
+    {
+      "id": "id-ac6852fe91ab574baef07b27aa0bc945",
+      "name": "SF Report",
+      "type": "BusinessObject",
+      "documentation": "A report of a suspected substandard or falsified medical product submitted by a health care professional or other reporter to the National Medicines Regulatory Authority, carrying product identification, batch/expiry, incident description, photos, and tracking status. (Intro p. 1-2, Table 4, Table 9-11, PDF 13-14, 24, 39-43)",
+      "logicalModel": "SFReport",
+      "skosConcept": "https://github.com/litlfred/dth-sfp/blob/main/glossary/dth-sfp.glossary.json#sf-report",
+      "attributes": [
+        {
+          "name": "productIdentification",
+          "type": "Identifier (GTIN / Product ID)",
+          "source": "property"
+        },
+        {
+          "name": "batchNumber",
+          "type": "string",
+          "source": "property"
+        },
+        {
+          "name": "expiryDate",
+          "type": "date",
+          "source": "property"
+        },
+        {
+          "name": "incidentDescription",
+          "type": "string",
+          "source": "property"
+        },
+        {
+          "name": "photos",
+          "type": "Attachment 0..*",
+          "source": "property"
+        },
+        {
+          "name": "trackingStatus",
+          "type": "code",
+          "source": "property"
+        }
+      ],
+      "accessedBy": [
+        {
+          "elementId": "id-edfb9d0b618453f294948f0427a64c9e",
+          "name": "Report Suspected SF Product (SF-REP-001)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-78071ea2d6fc51eaba22c3323b6d52d7",
+          "kind": "readwrite"
+        },
+        {
+          "elementId": "id-b6e235b281cb544897f2f6a29fb3b994",
+          "name": "Triage and Route SF Report (SF-REP-003)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-83f7766689fa58cc93da911cfdad37f2",
+          "kind": "read"
+        },
+        {
+          "elementId": "id-b4ce9166335e5f90b71f97b849cc5d62",
+          "name": "Take Regulatory Action and Issue Alert (SF-REP-005)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-8beee3fb35625c4784d82464ef737340",
+          "kind": "read"
+        },
+        {
+          "elementId": "id-8365e05ff4ca58039d623ddbafcf9884",
+          "name": "Verify Product Identity and Batch (SF-REP-002)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-be58876cf5b35691a9f7154ba4a3f61c",
+          "kind": "readwrite"
+        },
+        {
+          "elementId": "id-fff91eb836095bb788b47e975bc90d00",
+          "name": "Investigate SF Report (SF-REP-004)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-bfe84f6afa2b533d9e6901f241696d31",
+          "kind": "readwrite"
+        },
+        {
+          "elementId": "id-1515f5569faa5f27a8ca2e20e86d15be",
+          "name": "Give Feedback to Reporter and Report to GSMS (SF-REP-006)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-e248e69ddbf05f66b6b20c530a26e609",
+          "kind": "read"
+        }
+      ]
+    },
+    {
+      "id": "id-753b4997886b5790b4e6153f5835be66",
+      "name": "SF Report Data Object",
+      "type": "DataObject",
+      "documentation": "Structured data record for a substandard and falsified medical product report, comprising the core data elements of Table 11 (SFR.A1.DE1 Region, DE2 Type of report, DE3 Product ID, DE4 Product description, DE5 Type of product, DE6 Batch number, DE7 Expiry date, DE8 Substandard or falsified?, DE9 Adverse reaction or lack of efficacy?, DE10 Reporting reason/description) encoded with HL7 FHIR and standard terminologies (ICD-11, SNOMED GPS). (Section 4.4, Table 11, Table 13, PDF 42-43, 47)",
+      "logicalModel": "SFR.A1.DE1..DE10",
+      "skosConcept": "https://github.com/litlfred/dth-sfp/blob/main/glossary/dth-sfp.glossary.json#sf-report-data-object",
+      "attributes": [
+        {
+          "name": "SFR.A1.DE1",
+          "type": "CodeableConcept 1..1 (Region)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE2",
+          "type": "code 1..1 (Type of report)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE3",
+          "type": "Identifier 1..1 (Product ID)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE4",
+          "type": "string 0..1 (Product description)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE5",
+          "type": "CodeableConcept 1..1 (Type of product)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE6",
+          "type": "string 1..1 (Batch number)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE7",
+          "type": "date 1..1 (Expiry date)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE8",
+          "type": "CodeableConcept 1..1 (Substandard or falsified?)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE9",
+          "type": "boolean 1..1 (Adverse reaction or lack of efficacy?)",
+          "source": "property"
+        },
+        {
+          "name": "SFR.A1.DE10",
+          "type": "string 1..1 (Reporting reason / description)",
+          "source": "property"
+        }
+      ],
+      "accessedBy": [
+        {
+          "elementId": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "name": "NMRA Case Management Back End",
+          "type": "ApplicationComponent",
+          "relationshipId": "id-04ae38a0e4fa59a8815fa23b82180079",
+          "kind": "readwrite"
+        },
+        {
+          "elementId": "id-804f2eb9d1e95868800db95b375a3e09",
+          "name": "SF Reporting Application",
+          "type": "ApplicationComponent",
+          "relationshipId": "id-84cb64151f6d568ab89db4df67c0090c",
+          "kind": "readwrite"
+        }
+      ]
+    },
+    {
+      "id": "id-5dc77dae1bce5d11b288830795b31bdf",
+      "name": "Traceability Event",
+      "type": "DataObject",
+      "documentation": "Traceability data. What: product identifier, batch no., serial no. When: date and time of the event. Where: location of the event. Why: details of the transaction (e.g., receiving, shipping, dispensing, discarding). (Fig. 24, PDF 55)",
+      "logicalModel": "TraceabilityEvent",
+      "attributes": [
+        {
+          "name": "what",
+          "type": "Identifier (GTIN, batch/lot no., serial no.)",
+          "source": "property"
+        },
+        {
+          "name": "when",
+          "type": "dateTime (event timestamp)",
+          "source": "property"
+        },
+        {
+          "name": "where",
+          "type": "Location (facility / warehouse GLN)",
+          "source": "property"
+        },
+        {
+          "name": "why",
+          "type": "code (receiving, shipping, dispensing, discarding)",
+          "source": "property"
+        }
+      ],
+      "accessedBy": [
+        {
+          "elementId": "id-975c5567001151299672c0341a733111",
+          "name": "Product Verification",
+          "type": "ApplicationService",
+          "relationshipId": "id-25d00334b7355e66b67722087d9a16fe",
+          "kind": "read"
+        }
+      ]
+    },
+    {
+      "id": "id-60e7d1d9e64c5011a1efe8becac406d0",
+      "name": "Trade Item",
+      "type": "BusinessObject",
+      "documentation": "Manufacturer-specific branded health products. (PDF 28) Narrower than the GS1 trade item (broadMatch, litlfred/smart-ra#142).",
+      "logicalModel": "TradeItem",
+      "skosConcept": "https://github.com/litlfred/dth-pc/blob/main/glossary/dth-pc.glossary.json#trade-item",
+      "attributes": [
+        {
+          "name": "identifier",
+          "type": "Identifier 1..* (GTIN)",
+          "source": "property"
+        },
+        {
+          "name": "status",
+          "type": "code 1..1",
+          "source": "property"
+        },
+        {
+          "name": "tradeItemName",
+          "type": "BackboneElement 0..* (nameType 1..1, name 1..1)",
+          "source": "property"
+        },
+        {
+          "name": "description",
+          "type": "string 0..1",
+          "source": "property"
+        },
+        {
+          "name": "classification",
+          "type": "CodeableConcept 0..*",
+          "source": "property"
+        },
+        {
+          "name": "manufacturer",
+          "type": "Reference(Organization) 0..1",
+          "source": "property"
+        },
+        {
+          "name": "countryOfOrigin",
+          "type": "CodeableConcept 1..1",
+          "source": "property"
+        },
+        {
+          "name": "shelfLife",
+          "type": "Duration 0..1",
+          "source": "property"
+        },
+        {
+          "name": "associatedGenericProduct",
+          "type": "BackboneElement 0..* (genericProduct 1..1, quantity 1..1)",
+          "source": "property"
+        },
+        {
+          "name": "contains",
+          "type": "BackboneElement 0..* (tradeItem 1..1, quantity 1..1)",
+          "source": "property"
+        },
+        {
+          "name": "attribute",
+          "type": "BackboneElement 0..* (type 1..1, value[x] 1..1)",
+          "source": "property"
+        }
+      ],
+      "accessedBy": [
+        {
+          "elementId": "id-edfb9d0b618453f294948f0427a64c9e",
+          "name": "Report Suspected SF Product (SF-REP-001)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-50cb9d26fd3c5f3db6fab5f161c693d4",
+          "kind": "read"
+        },
+        {
+          "elementId": "id-8365e05ff4ca58039d623ddbafcf9884",
+          "name": "Verify Product Identity and Batch (SF-REP-002)",
+          "type": "BusinessProcess",
+          "relationshipId": "id-f19e929c1eac5e7daeb3dc2abacb071e",
+          "kind": "read"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "id-803f78c9a03b5bb294949bccbd13eaae",
+      "source": "id-753b4997886b5790b4e6153f5835be66",
+      "target": "id-5dc77dae1bce5d11b288830795b31bdf",
+      "type": "Association",
+      "name": "DE3 Product ID, DE6 Batch, DE7 Expiry",
+      "role": "DE3 Product ID, DE6 Batch, DE7 Expiry"
+    },
+    {
+      "id": "id-eef71a1115e75530b1d9d43bef01cfed",
+      "source": "id-753b4997886b5790b4e6153f5835be66",
+      "target": "id-60e7d1d9e64c5011a1efe8becac406d0",
+      "type": "Association",
+      "name": "DE3 Product ID / DE5 Type",
+      "role": "DE3 Product ID / DE5 Type"
+    },
+    {
+      "id": "id-74f05dc8d8fd5248826a9f33ab6bf123",
+      "source": "id-753b4997886b5790b4e6153f5835be66",
+      "target": "id-ac6852fe91ab574baef07b27aa0bc945",
+      "type": "Realization"
+    }
+  ],
+  "problems": []
+}

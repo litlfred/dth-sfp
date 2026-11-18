@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-a581413dfcaa5c8aac48702d6d68a856",
+  "@type": "archimate:Assessment",
+  "schema:identifier": "id-a581413dfcaa5c8aac48702d6d68a856",
+  "schema:name": "Awareness and Knowledge Barriers",
+  "schema:description": "Lack of awareness of substandard and falsified medical products and lack of knowledge on how to recognize and report them, addressed by integrating detection and reporting guidance within the reporting application. (Table 5, Annex 6, PDF 25, 70)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/smart-base/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/smart-base/",
+  "@type": "WebPage",
+  "name": "SMART Base on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/smart-base/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "smart-base",
+    "name": "SMART Base",
+    "description": "The WHO SMART Guidelines base layer — the ingested WHO digital-health corpus, the methodologies read out of it, and the editorial voices derived from it.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/smart-base",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/fhir-harness/"
+      },
+      {
+        "@id": "https://worldhealthorganization.github.io/who-iris/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "1faf8ae72ef7c4da39a2d4d6267678c51f18c02c"
+    },
+    "keywords": [
+      "dak"
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/#harness-smart-base",
+    "https://github.com/litlfred/smart-base/tree/1faf8ae72ef7c4da39a2d4d6267678c51f18c02c",
+    "https://github.com/litlfred/smart-base/blob/1faf8ae72ef7c4da39a2d4d6267678c51f18c02c/README.md",
+    "https://github.com/litlfred/smart-base/blob/1faf8ae72ef7c4da39a2d4d6267678c51f18c02c/AGENTS.md"
+  ]
+}

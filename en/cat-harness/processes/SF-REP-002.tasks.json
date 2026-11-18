@@ -1,0 +1,163 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_SF_REP_002",
+ "markers": [
+  {
+   "id": "Task_201_AutoAssignRegion",
+   "name": "Derive region & product type (SFR.DT.02-03)",
+   "left": 26.21,
+   "top": 15.56,
+   "box": {
+    "left": 18.95,
+    "top": 29.11,
+    "width": 1.94,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_202_AlertFocalPoint",
+   "name": "Send real-time alert to NMRA focal point",
+   "left": 41.94,
+   "top": 15.56,
+   "box": {
+    "left": 34.68,
+    "top": 29.11,
+    "width": 1.94,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_203_ScreenCompleteness",
+   "name": "Screen report completeness & triage priority",
+   "left": 57.66,
+   "top": 15.56,
+   "box": {
+    "left": 50.4,
+    "top": 29.11,
+    "width": 1.94,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_204_ClassifyIncident",
+   "name": "Classify report path & link related cases",
+   "left": 73.39,
+   "top": 15.56,
+   "box": {
+    "left": 66.13,
+    "top": 29.11,
+    "width": 1.94,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_205_UpdateCaseStatus",
+   "name": "Record triage decision & update status",
+   "left": 89.11,
+   "top": 15.56,
+   "box": {
+    "left": 81.85,
+    "top": 29.11,
+    "width": 1.94,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_206_ReceiveTrackingNumber",
+   "name": "Receive acknowledgement & tracking ID",
+   "left": 73.39,
+   "top": 64.44,
+   "box": {
+    "left": 66.13,
+    "top": 78,
+    "width": 1.94,
+    "height": 5.33
+   }
+  },
+  {
+   "id": "Task_207_TrackReportProgress",
+   "name": "Check report progress via tracking ID",
+   "left": 89.11,
+   "top": 64.44,
+   "box": {
+    "left": 81.85,
+    "top": 78,
+    "width": 1.94,
+    "height": 5.33
+   }
+  }
+ ],
+ "processHref": "SF-REP-002.html",
+ "tasks": {
+  "Task_201_AutoAssignRegion": {
+   "id": "Task_201_AutoAssignRegion",
+   "name": "Derive region & product type (SFR.DT.02-03)",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-002.html#step-Task_201_AutoAssignRegion",
+   "lane": "NMRA Reviewer & System (SFP-R-13)",
+   "laneHref": "SF-REP-002.html#lane-Lane_SF_REP_002_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_202_AlertFocalPoint": {
+   "id": "Task_202_AlertFocalPoint",
+   "name": "Send real-time alert to NMRA focal point",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-002.html#step-Task_202_AlertFocalPoint",
+   "lane": "NMRA Reviewer & System (SFP-R-13)",
+   "laneHref": "SF-REP-002.html#lane-Lane_SF_REP_002_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_203_ScreenCompleteness": {
+   "id": "Task_203_ScreenCompleteness",
+   "name": "Screen report completeness & triage priority",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-002.html#step-Task_203_ScreenCompleteness",
+   "lane": "NMRA Reviewer & System (SFP-R-13)",
+   "laneHref": "SF-REP-002.html#lane-Lane_SF_REP_002_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_204_ClassifyIncident": {
+   "id": "Task_204_ClassifyIncident",
+   "name": "Classify report path & link related cases",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-002.html#step-Task_204_ClassifyIncident",
+   "lane": "NMRA Reviewer & System (SFP-R-13)",
+   "laneHref": "SF-REP-002.html#lane-Lane_SF_REP_002_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_205_UpdateCaseStatus": {
+   "id": "Task_205_UpdateCaseStatus",
+   "name": "Record triage decision & update status",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-002.html#step-Task_205_UpdateCaseStatus",
+   "lane": "NMRA Reviewer & System (SFP-R-13)",
+   "laneHref": "SF-REP-002.html#lane-Lane_SF_REP_002_NMRA",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_206_ReceiveTrackingNumber": {
+   "id": "Task_206_ReceiveTrackingNumber",
+   "name": "Receive acknowledgement & tracking ID",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-002.html#step-Task_206_ReceiveTrackingNumber",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-002.html#lane-Lane_SF_REP_002_Reporter",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_207_TrackReportProgress": {
+   "id": "Task_207_TrackReportProgress",
+   "name": "Check report progress via tracking ID",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-002.html#step-Task_207_TrackReportProgress",
+   "lane": "Reporter (SFP-R-01..12, R-14)",
+   "laneHref": "SF-REP-002.html#lane-Lane_SF_REP_002_Reporter",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

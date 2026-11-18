@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-468996723bd95e59878b054d5b88b6ee",
+  "@type": "archimate:Capability",
+  "schema:identifier": "id-468996723bd95e59878b054d5b88b6ee",
+  "schema:name": "SF Case Reporting",
+  "schema:description": "Capability enabling health care professionals and other reporters to promptly identify, document, and submit reports of suspected substandard and falsified medical products to regulatory authorities. (Intro p. 1-2, Ch. 3-4, PDF 13-14, 31-43)",
+  "schema:category": "Strategy",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

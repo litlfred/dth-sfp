@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-753b4997886b5790b4e6153f5835be66",
+  "@type": "archimate:DataObject",
+  "schema:identifier": "id-753b4997886b5790b4e6153f5835be66",
+  "schema:name": "SF Report Data Object",
+  "schema:description": "Structured data record for a substandard and falsified medical product report, comprising the core data elements of Table 11 (SFR.A1.DE1 Region, DE2 Type of report, DE3 Product ID, DE4 Product description, DE5 Type of product, DE6 Batch number, DE7 Expiry date, DE8 Substandard or falsified?, DE9 Adverse reaction or lack of efficacy?, DE10 Reporting reason/description) encoded with HL7 FHIR and standard terminologies (ICD-11, SNOMED GPS). (Section 4.4, Table 11, Table 13, PDF 42-43, 47)",
+  "schema:category": "Application",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

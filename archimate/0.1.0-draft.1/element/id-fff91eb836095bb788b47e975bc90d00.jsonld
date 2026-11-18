@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-fff91eb836095bb788b47e975bc90d00",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-fff91eb836095bb788b47e975bc90d00",
+  "schema:name": "Investigate SF Report (SF-REP-004)",
+  "schema:description": "Conduct regulatory and laboratory investigation of the suspected substandard or falsified medical product, following up with the reporter for additional details or retained samples and collaborating with law enforcement and customs where criminal activity is suspected. (Intro p. 1, Section 2.1-2.2, Table 9, Ch. 7, PDF 13, 27-28, 39-40, 59)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

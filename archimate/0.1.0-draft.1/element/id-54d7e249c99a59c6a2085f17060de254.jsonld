@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-54d7e249c99a59c6a2085f17060de254",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-54d7e249c99a59c6a2085f17060de254",
+  "schema:name": "Health worker",
+  "schema:description": "End-users of a PCPOSS at the point of care (point of service), including all health worker occupational groups operating at all care levels and outside of formal health-care facilities (e.g. community health workers and health volunteers). (PDF 19)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

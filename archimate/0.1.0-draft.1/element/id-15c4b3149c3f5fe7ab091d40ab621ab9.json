@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-15c4b3149c3f5fe7ab091d40ab621ab9",
+  "@type": "archimate:Capability",
+  "schema:identifier": "id-15c4b3149c3f5fe7ab091d40ab621ab9",
+  "schema:name": "Post-Market Surveillance",
+  "schema:description": "The practice of monitoring the safety and quality of a pharmaceutical drug or medical device after it has been released on the market, including risk-based post-market surveillance (Rb-PMS) to prioritize and allocate resources by risk. (Glossary p. viii, Intro p. 1, PDF 10, 13)",
+  "schema:category": "Strategy",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

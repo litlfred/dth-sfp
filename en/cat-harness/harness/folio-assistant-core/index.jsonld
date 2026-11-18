@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/folio-assistant-core/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/folio-assistant-core/",
+  "@type": "WebPage",
+  "name": "Folio Assistant Core on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/folio-assistant-core/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "folio-assistant-core",
+    "name": "Folio Assistant Core",
+    "description": "What a folio IS — the content-object model, the block kinds, the adapters, and the `folio` graph typology itself.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/folio-assistant-core",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/cat-harness/"
+      },
+      {
+        "identifier": "cat-harness-tools"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "5f2558de7820ee6812efc4bf220a1ce6602e8b7e"
+    },
+    "keywords": [
+      "document"
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/folio-assistant-core/",
+    "https://github.com/litlfred/folio-assistant-core/tree/5f2558de7820ee6812efc4bf220a1ce6602e8b7e",
+    "https://github.com/litlfred/folio-assistant-core/blob/5f2558de7820ee6812efc4bf220a1ce6602e8b7e/README.md",
+    "https://github.com/litlfred/folio-assistant-core/blob/5f2558de7820ee6812efc4bf220a1ce6602e8b7e/AGENTS.md"
+  ]
+}

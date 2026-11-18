@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-hrh/",
+  "url": "https://litlfred.github.io/dth-sfp/en/cat-harness/harness/dth-hrh/",
+  "@type": "WebPage",
+  "name": "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries on Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products",
+  "about": {
+    "@id": "https://litlfred.github.io/dth-hrh/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "dth-hrh",
+    "name": "Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries",
+    "description": "WHO Digital Transformation Handbook: Planning for Human Resources for Health and Health Worker Registries, an L1 document (document kind `dth` in smart-base): the working document folio, its glossary, its L1 structured assets, and the working-group comment record.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/dth-hrh",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      },
+      {
+        "@id": "https://litlfred.github.io/smart-ra/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "bc2ca4690400c22eb5f8d68180a1d0eabb4bb19d"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-sfp/",
+    "name": "Digital Transformation Handbook for Reporting Substandard and Falsified Medical Products"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/#harness-dth-hrh",
+    "https://github.com/litlfred/dth-hrh/tree/bc2ca4690400c22eb5f8d68180a1d0eabb4bb19d"
+  ]
+}

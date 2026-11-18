@@ -1,0 +1,119 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_SF_REP_006",
+ "markers": [
+  {
+   "id": "Task_601_CompleteOfflineForm",
+   "name": "Complete SF report & attach photos offline",
+   "left": 27.69,
+   "top": 14.89,
+   "box": {
+    "left": 20.25,
+    "top": 27.87,
+    "width": 1.98,
+    "height": 5.11
+   }
+  },
+  {
+   "id": "Task_602_SaveToOutbox",
+   "name": "Save report to local encrypted outbox",
+   "left": 44.63,
+   "top": 14.89,
+   "box": {
+    "left": 37.19,
+    "top": 27.87,
+    "width": 1.98,
+    "height": 5.11
+   }
+  },
+  {
+   "id": "Task_603_QueueEncryptedOutbox",
+   "name": "Queue encrypted report & attachments locally",
+   "left": 44.63,
+   "top": 61.7,
+   "box": {
+    "left": 37.19,
+    "top": 74.68,
+    "width": 1.98,
+    "height": 5.11
+   }
+  },
+  {
+   "id": "Task_604_SyncToNMRAServer",
+   "name": "Synchronise queued report to NMRA server",
+   "left": 72.73,
+   "top": 61.7,
+   "box": {
+    "left": 65.29,
+    "top": 74.68,
+    "width": 1.98,
+    "height": 5.11
+   }
+  },
+  {
+   "id": "Task_605_DeliverConfirmation",
+   "name": "Update local status & display tracking ID",
+   "left": 89.67,
+   "top": 61.7,
+   "box": {
+    "left": 82.23,
+    "top": 74.68,
+    "width": 1.98,
+    "height": 5.11
+   }
+  }
+ ],
+ "processHref": "SF-REP-006.html",
+ "tasks": {
+  "Task_601_CompleteOfflineForm": {
+   "id": "Task_601_CompleteOfflineForm",
+   "name": "Complete SF report & attach photos offline",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-006.html#step-Task_601_CompleteOfflineForm",
+   "lane": "Paramedic / Field Reporter (SFP-R-09)",
+   "laneHref": "SF-REP-006.html#lane-Lane_SF_REP_006_Reporter",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_602_SaveToOutbox": {
+   "id": "Task_602_SaveToOutbox",
+   "name": "Save report to local encrypted outbox",
+   "type": "bpmn:UserTask",
+   "stepHref": "SF-REP-006.html#step-Task_602_SaveToOutbox",
+   "lane": "Paramedic / Field Reporter (SFP-R-09)",
+   "laneHref": "SF-REP-006.html#lane-Lane_SF_REP_006_Reporter",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_603_QueueEncryptedOutbox": {
+   "id": "Task_603_QueueEncryptedOutbox",
+   "name": "Queue encrypted report & attachments locally",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-006.html#step-Task_603_QueueEncryptedOutbox",
+   "lane": "SF Reporting App & Sync Service (SFP-R-13)",
+   "laneHref": "SF-REP-006.html#lane-Lane_SF_REP_006_App",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_604_SyncToNMRAServer": {
+   "id": "Task_604_SyncToNMRAServer",
+   "name": "Synchronise queued report to NMRA server",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-006.html#step-Task_604_SyncToNMRAServer",
+   "lane": "SF Reporting App & Sync Service (SFP-R-13)",
+   "laneHref": "SF-REP-006.html#lane-Lane_SF_REP_006_App",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Task_605_DeliverConfirmation": {
+   "id": "Task_605_DeliverConfirmation",
+   "name": "Update local status & display tracking ID",
+   "type": "bpmn:ServiceTask",
+   "stepHref": "SF-REP-006.html#step-Task_605_DeliverConfirmation",
+   "lane": "SF Reporting App & Sync Service (SFP-R-13)",
+   "laneHref": "SF-REP-006.html#lane-Lane_SF_REP_006_App",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

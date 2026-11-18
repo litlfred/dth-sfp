@@ -1,0 +1,70 @@
+digraph "DTH-SFP overlay on the DPI-H reference architecture — metamodel in use" {
+  graph [rankdir=TB, newrank=true, fontname="Helvetica", fontsize=11, nodesep=0.6, ranksep=1.3];
+  node [shape=box, style="filled", fontname="Helvetica", fontsize=11, margin="0.14,0.08"];
+  edge [fontname="Helvetica", fontsize=9, color="#555555", fontcolor="#333333"];
+  subgraph cluster_0 {
+    label="Motivation"; class="mm-layer-motivation"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
+    rank=same;
+    "Assessment" [label="Assessment
+4 element(s)", class="mm-layer-motivation", fillcolor="#ccccff", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-Assessment", target="_top", tooltip="Assessment: its elements"];
+    "Driver" [label="Driver
+1 element(s)", class="mm-layer-motivation", fillcolor="#ccccff", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-Driver", target="_top", tooltip="Driver: its elements"];
+    "Goal" [label="Goal
+3 element(s)", class="mm-layer-motivation", fillcolor="#ccccff", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-Goal", target="_top", tooltip="Goal: its elements"];
+    "Stakeholder" [label="Stakeholder
+10 element(s)", class="mm-layer-motivation", fillcolor="#ccccff", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-Stakeholder", target="_top", tooltip="Stakeholder: its elements"];
+  }
+  subgraph cluster_1 {
+    label="Strategy"; class="mm-layer-strategy"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
+    rank=same;
+    "Capability" [label="Capability
+8 element(s)
+(to itself: aggregates ×1)", class="mm-layer-strategy", fillcolor="#f5deaa", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-Capability", target="_top", tooltip="Capability: its elements"];
+  }
+  subgraph cluster_2 {
+    label="Business"; class="mm-layer-business"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
+    rank=same;
+    "BusinessObject" [label="Business Object
+3 element(s)", class="mm-layer-business", fillcolor="#ffffb5", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-BusinessObject", target="_top", tooltip="Business Object: its elements"];
+    "BusinessProcess" [label="Business Process
+6 element(s)
+(to itself: triggers ×5)", class="mm-layer-business", fillcolor="#ffffb5", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-BusinessProcess", target="_top", tooltip="Business Process: its elements"];
+    "BusinessRole" [label="Business Role
+9 element(s)
+(to itself: serves ×5, aggregates ×2)", class="mm-layer-business", fillcolor="#ffffb5", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-BusinessRole", target="_top", tooltip="Business Role: its elements"];
+  }
+  subgraph cluster_3 {
+    label="Application"; class="mm-layer-application"; labeljust=l; style="rounded,filled"; fillcolor="#f7f7f7"; color="#bbbbbb"; fontcolor="#666666";
+    rank=same;
+    "ApplicationComponent" [label="Application Component
+15 element(s)
+(to itself: flows to ×14, serves ×5, aggregates ×2, specialises ×1)", class="mm-layer-application", fillcolor="#b5ffff", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-ApplicationComponent", target="_top", tooltip="Application Component: its elements"];
+    "ApplicationService" [label="Application Service
+3 element(s)", class="mm-layer-application", fillcolor="#b5ffff", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-ApplicationService", target="_top", tooltip="Application Service: its elements"];
+    "DataObject" [label="Data Object
+2 element(s)", class="mm-layer-application", fillcolor="#b5ffff", URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#type-DataObject", target="_top", tooltip="Data Object: its elements"];
+  }
+  "Assessment" -> "Capability" [style=invis, constraint=true, weight=10];
+  "Capability" -> "BusinessObject" [style=invis, constraint=true, weight=10];
+  "BusinessObject" -> "ApplicationComponent" [style=invis, constraint=true, weight=10];
+  "ApplicationComponent" -> "Capability" [label="realises ×10", class="mm-cat-structural mm-from-application mm-to-strategy", style=dashed, arrowhead=empty, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-ApplicationComponent-Capability", target="_top", tooltip="Application Component → Capability: its relationships"];
+  "BusinessProcess" -> "BusinessObject" [label="accesses ×10", class="mm-cat-dependency mm-from-business mm-to-business", style=dotted, arrowhead=vee, arrowsize=0.6, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-BusinessProcess-BusinessObject", target="_top", tooltip="Business Process → Business Object: its relationships"];
+  "BusinessProcess" -> "Capability" [label="realises ×7", class="mm-cat-structural mm-from-business mm-to-strategy", style=dashed, arrowhead=empty, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-BusinessProcess-Capability", target="_top", tooltip="Business Process → Capability: its relationships"];
+  "BusinessRole" -> "BusinessProcess" [label="assigned to ×7", class="mm-cat-structural mm-from-business mm-to-business", dir=both, arrowtail=dot, arrowhead=normal, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-BusinessRole-BusinessProcess", target="_top", tooltip="Business Role → Business Process: its relationships"];
+  "ApplicationComponent" -> "BusinessProcess" [label="realises ×6", class="mm-cat-structural mm-from-application mm-to-business", style=dashed, arrowhead=empty, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-ApplicationComponent-BusinessProcess", target="_top", tooltip="Application Component → Business Process: its relationships"];
+  "ApplicationService" -> "ApplicationComponent" [label="serves ×5", class="mm-cat-dependency mm-from-application mm-to-application", arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-ApplicationService-ApplicationComponent", target="_top", tooltip="Application Service → Application Component: its relationships"];
+  "Assessment" -> "Goal" [label="influences ×4", class="mm-cat-dependency mm-from-motivation mm-to-motivation", style=dashed, arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-Assessment-Goal", target="_top", tooltip="Assessment → Goal: its relationships"];
+  "BusinessRole" -> "Goal" [label="realises ×4
+influences ×2", class="mm-cat-structural mm-cat-dependency mm-from-business mm-to-motivation", arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-BusinessRole-Goal", target="_top", tooltip="Business Role → Goal: its relationships"];
+  "Capability" -> "Goal" [label="realises ×4", class="mm-cat-structural mm-from-strategy mm-to-motivation", style=dashed, arrowhead=empty, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-Capability-Goal", target="_top", tooltip="Capability → Goal: its relationships"];
+  "ApplicationComponent" -> "DataObject" [label="accesses ×2", class="mm-cat-dependency mm-from-application mm-to-application", style=dotted, arrowhead=vee, arrowsize=0.6, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-ApplicationComponent-DataObject", target="_top", tooltip="Application Component → Data Object: its relationships"];
+  "ApplicationComponent" -> "ApplicationService" [label="serves ×2
+realises ×1", class="mm-cat-dependency mm-cat-structural mm-from-application mm-to-application", arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-ApplicationComponent-ApplicationService", target="_top", tooltip="Application Component → Application Service: its relationships"];
+  "Assessment" -> "Driver" [label="influences ×2", class="mm-cat-dependency mm-from-motivation mm-to-motivation", style=dashed, arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-Assessment-Driver", target="_top", tooltip="Assessment → Driver: its relationships"];
+  "BusinessRole" -> "Driver" [label="influences ×2", class="mm-cat-dependency mm-from-business mm-to-motivation", style=dashed, arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-BusinessRole-Driver", target="_top", tooltip="Business Role → Driver: its relationships"];
+  "Goal" -> "Driver" [label="influences ×2", class="mm-cat-dependency mm-from-motivation mm-to-motivation", style=dashed, arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-Goal-Driver", target="_top", tooltip="Goal → Driver: its relationships"];
+  "ApplicationComponent" -> "BusinessRole" [label="serves ×1", class="mm-cat-dependency mm-from-application mm-to-business", arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-ApplicationComponent-BusinessRole", target="_top", tooltip="Application Component → Business Role: its relationships"];
+  "ApplicationService" -> "DataObject" [label="accesses ×1", class="mm-cat-dependency mm-from-application mm-to-application", style=dotted, arrowhead=vee, arrowsize=0.6, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-ApplicationService-DataObject", target="_top", tooltip="Application Service → Data Object: its relationships"];
+  "BusinessProcess" -> "BusinessRole" [label="serves ×1", class="mm-cat-dependency mm-from-business mm-to-business", arrowhead=vee, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-BusinessProcess-BusinessRole", target="_top", tooltip="Business Process → Business Role: its relationships"];
+  "DataObject" -> "BusinessObject" [label="realises ×1", class="mm-cat-structural mm-from-application mm-to-business", style=dashed, arrowhead=empty, URL="../../en/dth-sfp/archimate/0.1.0-draft.1/metamodel/#pattern-DataObject-BusinessObject", target="_top", tooltip="Data Object → Business Object: its relationships"];
+}

@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-1515f5569faa5f27a8ca2e20e86d15be",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-1515f5569faa5f27a8ca2e20e86d15be",
+  "schema:name": "Give Feedback to Reporter and Report to GSMS (SF-REP-006)",
+  "schema:description": "Provide status updates, investigation outcomes, and safety alerts back to the reporting health care professional (reporter feedback loop) and submit confirmed or validated case reports to the WHO Global Surveillance and Monitoring System (GSMS) and global pharmacovigilance databases. (Intro p. 1, Table 4, Table 6, Table 9-10, Ch. 7, PDF 13, 24, 31-32, 39-41, 59)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

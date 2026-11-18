@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-3a85660bd48e554bb8468f8b98a4ffe6",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-3a85660bd48e554bb8468f8b98a4ffe6",
+  "schema:name": "Technical Working Group",
+  "schema:description": "Multidisciplinary group of subject matter experts (medical product regulators, IT specialists, pharmacovigilance experts) working under the leadership of the steering committee, responsible for design, planning, and implementation details. (Section 2.3, PDF 28)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

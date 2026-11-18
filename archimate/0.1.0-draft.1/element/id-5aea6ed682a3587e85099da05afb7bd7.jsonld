@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-5aea6ed682a3587e85099da05afb7bd7",
+  "@type": "archimate:Assessment",
+  "schema:identifier": "id-5aea6ed682a3587e85099da05afb7bd7",
+  "schema:name": "Process and Operational Barriers",
+  "schema:description": "Health care professional workload and time constraints, under-resourced NMRAs, lack of trained personnel, polypharmacy, and lack of continuity of care. (Table 5, Annex 6, PDF 25, 70)",
+  "schema:category": "Motivation",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

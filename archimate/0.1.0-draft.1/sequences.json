@@ -1,0 +1,422 @@
+{
+  "$schema": "archimate-sequences/v1",
+  "model": "0.1.0-draft.1",
+  "name": "DTH-SFP overlay on the DPI-H reference architecture",
+  "sequences": [
+    {
+      "id": "id-a996a76d1225505098286f98eb10d686",
+      "title": "SF Reporting Application Cooperation View",
+      "source": "view",
+      "viewId": "id-a996a76d1225505098286f98eb10d686",
+      "participants": [
+        {
+          "id": "id-804f2eb9d1e95868800db95b375a3e09",
+          "name": "SF Reporting Application",
+          "type": "ApplicationComponent",
+          "elementId": "id-804f2eb9d1e95868800db95b375a3e09"
+        },
+        {
+          "id": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "name": "NMRA Case Management Back End",
+          "type": "ApplicationComponent",
+          "elementId": "id-c7a1fbef2d2e5265ab5ea21bb98324cc"
+        },
+        {
+          "id": "id-476dcafd7f755bdba2eba1c53d46200b",
+          "name": "WHO Medical Product Alert System",
+          "type": "ApplicationComponent",
+          "elementId": "id-476dcafd7f755bdba2eba1c53d46200b"
+        },
+        {
+          "id": "id-6f89371aa7a15ea49dc70bf18bb81a34",
+          "name": "WHO GSMS",
+          "type": "ApplicationComponent",
+          "elementId": "id-6f89371aa7a15ea49dc70bf18bb81a34"
+        },
+        {
+          "id": "id-423c76f32ea55498a5c71fcee027aac1",
+          "name": "Pharmacovigilance System",
+          "type": "ApplicationComponent",
+          "elementId": "id-423c76f32ea55498a5c71fcee027aac1"
+        },
+        {
+          "id": "id-80856538cbd44167a37b276e38c994c3",
+          "name": "Interoperability Component",
+          "type": "ApplicationComponent",
+          "elementId": "id-80856538cbd44167a37b276e38c994c3"
+        },
+        {
+          "id": "id-dfc116d7c5ea5abe94e2321a14c5a00b",
+          "name": "VigiFlow / VigiBase",
+          "type": "ApplicationComponent",
+          "elementId": "id-dfc116d7c5ea5abe94e2321a14c5a00b"
+        },
+        {
+          "id": "id-22eff58eae365a4f8d0e0368d8c3497e",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent",
+          "elementId": "id-22eff58eae365a4f8d0e0368d8c3497e"
+        },
+        {
+          "id": "id-753b4997886b5790b4e6153f5835be66",
+          "name": "SF Report Data Object",
+          "type": "DataObject",
+          "elementId": "id-753b4997886b5790b4e6153f5835be66"
+        },
+        {
+          "id": "id-975c5567001151299672c0341a733111",
+          "name": "Product Verification",
+          "type": "ApplicationService",
+          "elementId": "id-975c5567001151299672c0341a733111"
+        },
+        {
+          "id": "id-5dc77dae1bce5d11b288830795b31bdf",
+          "name": "Traceability Event",
+          "type": "DataObject",
+          "elementId": "id-5dc77dae1bce5d11b288830795b31bdf"
+        }
+      ],
+      "messages": [
+        {
+          "from": "id-804f2eb9d1e95868800db95b375a3e09",
+          "to": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "label": "flows to NMRA Case Management Back End",
+          "kind": "flow",
+          "relationshipId": "id-b0aabb0432315cce98101419e6859323"
+        },
+        {
+          "from": "id-476dcafd7f755bdba2eba1c53d46200b",
+          "to": "id-804f2eb9d1e95868800db95b375a3e09",
+          "label": "flows to SF Reporting Application",
+          "kind": "flow",
+          "relationshipId": "id-1f46d1d162cf5e49b88d5790f64419b7"
+        },
+        {
+          "from": "id-476dcafd7f755bdba2eba1c53d46200b",
+          "to": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "label": "flows to NMRA Case Management Back End",
+          "kind": "flow",
+          "relationshipId": "id-30f3329a930e559aa67ba020992dbc45"
+        },
+        {
+          "from": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "to": "id-6f89371aa7a15ea49dc70bf18bb81a34",
+          "label": "flows to WHO GSMS",
+          "kind": "flow",
+          "relationshipId": "id-9e82722d1d78569ba16deec23b504cd2"
+        },
+        {
+          "from": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "to": "id-423c76f32ea55498a5c71fcee027aac1",
+          "label": "flows to Pharmacovigilance System",
+          "kind": "flow",
+          "relationshipId": "id-7218d9c7589b5e98bf7d396eb546c025"
+        },
+        {
+          "from": "id-6f89371aa7a15ea49dc70bf18bb81a34",
+          "to": "id-476dcafd7f755bdba2eba1c53d46200b",
+          "label": "flows to WHO Medical Product Alert System",
+          "kind": "flow",
+          "relationshipId": "id-7ed1ca4e792c53c2bab167ff6ac02aca"
+        },
+        {
+          "from": "id-80856538cbd44167a37b276e38c994c3",
+          "to": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "label": "flows to NMRA Case Management Back End",
+          "kind": "flow",
+          "relationshipId": "id-c25ef287aec35cbabba7761cd9841be2"
+        },
+        {
+          "from": "id-80856538cbd44167a37b276e38c994c3",
+          "to": "id-423c76f32ea55498a5c71fcee027aac1",
+          "label": "flows to Pharmacovigilance System",
+          "kind": "flow",
+          "relationshipId": "id-b4457f91aaf754a49a841787619eb23b"
+        },
+        {
+          "from": "id-423c76f32ea55498a5c71fcee027aac1",
+          "to": "id-dfc116d7c5ea5abe94e2321a14c5a00b",
+          "label": "flows to VigiFlow / VigiBase",
+          "kind": "flow",
+          "relationshipId": "id-1a473249fc5a5d429bbf40cd13a9f332"
+        },
+        {
+          "from": "id-423c76f32ea55498a5c71fcee027aac1",
+          "to": "id-6f89371aa7a15ea49dc70bf18bb81a34",
+          "label": "flows to WHO GSMS",
+          "kind": "flow",
+          "relationshipId": "id-5321f063f2ac5fb7812d21f4448599c0"
+        },
+        {
+          "from": "id-22eff58eae365a4f8d0e0368d8c3497e",
+          "to": "id-dfc116d7c5ea5abe94e2321a14c5a00b",
+          "label": "flows to VigiFlow / VigiBase",
+          "kind": "flow",
+          "relationshipId": "id-0e952a105d8a53c7972c2858c5bc0d4d"
+        },
+        {
+          "from": "id-804f2eb9d1e95868800db95b375a3e09",
+          "to": "id-753b4997886b5790b4e6153f5835be66",
+          "label": "reads/writes SF Report Data Object",
+          "kind": "access",
+          "relationshipId": "id-84cb64151f6d568ab89db4df67c0090c"
+        },
+        {
+          "from": "id-975c5567001151299672c0341a733111",
+          "to": "id-5dc77dae1bce5d11b288830795b31bdf",
+          "label": "reads Traceability Event",
+          "kind": "access",
+          "relationshipId": "id-25d00334b7355e66b67722087d9a16fe"
+        }
+      ]
+    },
+    {
+      "id": "id-9d535a5ce08f5782b9738801ab04da26",
+      "title": "SF Reporting Business Process View (DTH SFP Fig. 4 & SF-REP-001..006)",
+      "source": "view",
+      "viewId": "id-9d535a5ce08f5782b9738801ab04da26",
+      "participants": [
+        {
+          "id": "id-edfb9d0b618453f294948f0427a64c9e",
+          "name": "Report Suspected SF Product (SF-REP-001)",
+          "type": "BusinessProcess",
+          "elementId": "id-edfb9d0b618453f294948f0427a64c9e"
+        },
+        {
+          "id": "id-8365e05ff4ca58039d623ddbafcf9884",
+          "name": "Verify Product Identity and Batch (SF-REP-002)",
+          "type": "BusinessProcess",
+          "elementId": "id-8365e05ff4ca58039d623ddbafcf9884"
+        },
+        {
+          "id": "id-b6e235b281cb544897f2f6a29fb3b994",
+          "name": "Triage and Route SF Report (SF-REP-003)",
+          "type": "BusinessProcess",
+          "elementId": "id-b6e235b281cb544897f2f6a29fb3b994"
+        },
+        {
+          "id": "id-fff91eb836095bb788b47e975bc90d00",
+          "name": "Investigate SF Report (SF-REP-004)",
+          "type": "BusinessProcess",
+          "elementId": "id-fff91eb836095bb788b47e975bc90d00"
+        },
+        {
+          "id": "id-b4ce9166335e5f90b71f97b849cc5d62",
+          "name": "Take Regulatory Action and Issue Alert (SF-REP-005)",
+          "type": "BusinessProcess",
+          "elementId": "id-b4ce9166335e5f90b71f97b849cc5d62"
+        },
+        {
+          "id": "id-1515f5569faa5f27a8ca2e20e86d15be",
+          "name": "Give Feedback to Reporter and Report to GSMS (SF-REP-006)",
+          "type": "BusinessProcess",
+          "elementId": "id-1515f5569faa5f27a8ca2e20e86d15be"
+        },
+        {
+          "id": "id-60e7d1d9e64c5011a1efe8becac406d0",
+          "name": "Trade Item",
+          "type": "BusinessObject",
+          "elementId": "id-60e7d1d9e64c5011a1efe8becac406d0"
+        },
+        {
+          "id": "id-ac6852fe91ab574baef07b27aa0bc945",
+          "name": "SF Report",
+          "type": "BusinessObject",
+          "elementId": "id-ac6852fe91ab574baef07b27aa0bc945"
+        },
+        {
+          "id": "id-ad0415292a725125ad23387b6ae8d0b3",
+          "name": "Health Care Professional (Reporter)",
+          "type": "BusinessRole",
+          "elementId": "id-ad0415292a725125ad23387b6ae8d0b3"
+        },
+        {
+          "id": "id-8436ad35e0bc560ea49d2005a6bda297",
+          "name": "Medical Product Alert",
+          "type": "BusinessObject",
+          "elementId": "id-8436ad35e0bc560ea49d2005a6bda297"
+        }
+      ],
+      "messages": [
+        {
+          "from": "id-edfb9d0b618453f294948f0427a64c9e",
+          "to": "id-8365e05ff4ca58039d623ddbafcf9884",
+          "label": "triggers Verify Product Identity and Batch (SF-REP-002)",
+          "kind": "triggering",
+          "relationshipId": "id-40075f602619571eb891f13a5c7c5058"
+        },
+        {
+          "from": "id-8365e05ff4ca58039d623ddbafcf9884",
+          "to": "id-b6e235b281cb544897f2f6a29fb3b994",
+          "label": "triggers Triage and Route SF Report (SF-REP-003)",
+          "kind": "triggering",
+          "relationshipId": "id-52268c87eb5750deaa54cead66b3c7ef"
+        },
+        {
+          "from": "id-b6e235b281cb544897f2f6a29fb3b994",
+          "to": "id-fff91eb836095bb788b47e975bc90d00",
+          "label": "triggers Investigate SF Report (SF-REP-004)",
+          "kind": "triggering",
+          "relationshipId": "id-e63581f58a7b5307996d60eb06451fe2"
+        },
+        {
+          "from": "id-b4ce9166335e5f90b71f97b849cc5d62",
+          "to": "id-1515f5569faa5f27a8ca2e20e86d15be",
+          "label": "triggers Give Feedback to Reporter and Report to GSMS (SF-REP-006)",
+          "kind": "triggering",
+          "relationshipId": "id-31b23e8dcb315ed88acb682361a82bb6"
+        },
+        {
+          "from": "id-fff91eb836095bb788b47e975bc90d00",
+          "to": "id-b4ce9166335e5f90b71f97b849cc5d62",
+          "label": "triggers Take Regulatory Action and Issue Alert (SF-REP-005)",
+          "kind": "triggering",
+          "relationshipId": "id-d488aa67ea9d58abae3d54549d779184"
+        },
+        {
+          "from": "id-edfb9d0b618453f294948f0427a64c9e",
+          "to": "id-60e7d1d9e64c5011a1efe8becac406d0",
+          "label": "reads Trade Item",
+          "kind": "access",
+          "relationshipId": "id-50cb9d26fd3c5f3db6fab5f161c693d4"
+        },
+        {
+          "from": "id-8365e05ff4ca58039d623ddbafcf9884",
+          "to": "id-60e7d1d9e64c5011a1efe8becac406d0",
+          "label": "reads Trade Item",
+          "kind": "access",
+          "relationshipId": "id-f19e929c1eac5e7daeb3dc2abacb071e"
+        },
+        {
+          "from": "id-8365e05ff4ca58039d623ddbafcf9884",
+          "to": "id-ac6852fe91ab574baef07b27aa0bc945",
+          "label": "reads/writes SF Report",
+          "kind": "access",
+          "relationshipId": "id-be58876cf5b35691a9f7154ba4a3f61c"
+        },
+        {
+          "from": "id-b6e235b281cb544897f2f6a29fb3b994",
+          "to": "id-ac6852fe91ab574baef07b27aa0bc945",
+          "label": "reads SF Report",
+          "kind": "access",
+          "relationshipId": "id-83f7766689fa58cc93da911cfdad37f2"
+        },
+        {
+          "from": "id-1515f5569faa5f27a8ca2e20e86d15be",
+          "to": "id-ad0415292a725125ad23387b6ae8d0b3",
+          "label": "serves Health Care Professional (Reporter)",
+          "kind": "serving",
+          "relationshipId": "id-f5fc48ebee8d57ff9cdc5e5d970ab93f"
+        },
+        {
+          "from": "id-1515f5569faa5f27a8ca2e20e86d15be",
+          "to": "id-8436ad35e0bc560ea49d2005a6bda297",
+          "label": "reads Medical Product Alert",
+          "kind": "access",
+          "relationshipId": "id-798d00d6931d5c9a8ee81be56d178fd1"
+        },
+        {
+          "from": "id-b4ce9166335e5f90b71f97b849cc5d62",
+          "to": "id-8436ad35e0bc560ea49d2005a6bda297",
+          "label": "accesses Medical Product Alert",
+          "kind": "access",
+          "relationshipId": "id-59a84dfca4f3564b86341596b75671bf"
+        }
+      ]
+    },
+    {
+      "id": "id-6665684387505f2a8129f914b7e5717b",
+      "title": "SF Reporting in the DIIG Enterprise Architecture (DTH SFP Fig. 3)",
+      "source": "view",
+      "viewId": "id-6665684387505f2a8129f914b7e5717b",
+      "participants": [
+        {
+          "id": "id-804f2eb9d1e95868800db95b375a3e09",
+          "name": "SF Reporting Application",
+          "type": "ApplicationComponent",
+          "elementId": "id-804f2eb9d1e95868800db95b375a3e09"
+        },
+        {
+          "id": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "name": "NMRA Case Management Back End",
+          "type": "ApplicationComponent",
+          "elementId": "id-c7a1fbef2d2e5265ab5ea21bb98324cc"
+        },
+        {
+          "id": "id-423c76f32ea55498a5c71fcee027aac1",
+          "name": "Pharmacovigilance System",
+          "type": "ApplicationComponent",
+          "elementId": "id-423c76f32ea55498a5c71fcee027aac1"
+        },
+        {
+          "id": "id-80856538cbd44167a37b276e38c994c3",
+          "name": "Interoperability Component",
+          "type": "ApplicationComponent",
+          "elementId": "id-80856538cbd44167a37b276e38c994c3"
+        },
+        {
+          "id": "id-1555c26cfbcd57f49b6e63fed8491d80",
+          "name": "Quality Systems",
+          "type": "ApplicationComponent",
+          "elementId": "id-1555c26cfbcd57f49b6e63fed8491d80"
+        },
+        {
+          "id": "id-22eff58eae365a4f8d0e0368d8c3497e",
+          "name": "Regulatory Systems",
+          "type": "ApplicationComponent",
+          "elementId": "id-22eff58eae365a4f8d0e0368d8c3497e"
+        },
+        {
+          "id": "id-ad0415292a725125ad23387b6ae8d0b3",
+          "name": "Health Care Professional (Reporter)",
+          "type": "BusinessRole",
+          "elementId": "id-ad0415292a725125ad23387b6ae8d0b3"
+        }
+      ],
+      "messages": [
+        {
+          "from": "id-804f2eb9d1e95868800db95b375a3e09",
+          "to": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "label": "flows to NMRA Case Management Back End",
+          "kind": "flow",
+          "relationshipId": "id-b0aabb0432315cce98101419e6859323"
+        },
+        {
+          "from": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "to": "id-423c76f32ea55498a5c71fcee027aac1",
+          "label": "flows to Pharmacovigilance System",
+          "kind": "flow",
+          "relationshipId": "id-7218d9c7589b5e98bf7d396eb546c025"
+        },
+        {
+          "from": "id-c7a1fbef2d2e5265ab5ea21bb98324cc",
+          "to": "id-80856538cbd44167a37b276e38c994c3",
+          "label": "flows to Interoperability Component",
+          "kind": "flow",
+          "relationshipId": "id-47556cd656205f738e87f0e20e196c92"
+        },
+        {
+          "from": "id-423c76f32ea55498a5c71fcee027aac1",
+          "to": "id-80856538cbd44167a37b276e38c994c3",
+          "label": "flows to Interoperability Component",
+          "kind": "flow",
+          "relationshipId": "id-e2c4f5224c6b564d8270350455c75a74"
+        },
+        {
+          "from": "id-1555c26cfbcd57f49b6e63fed8491d80",
+          "to": "id-22eff58eae365a4f8d0e0368d8c3497e",
+          "label": "flows to Regulatory Systems",
+          "kind": "flow",
+          "relationshipId": "id-c19c517e62c35d4daf6eabeb1db43ce8"
+        },
+        {
+          "from": "id-804f2eb9d1e95868800db95b375a3e09",
+          "to": "id-ad0415292a725125ad23387b6ae8d0b3",
+          "label": "serves Health Care Professional (Reporter)",
+          "kind": "serving",
+          "relationshipId": "id-394552847cd1524aa0ea94858c5c2ea3"
+        }
+      ]
+    }
+  ]
+}

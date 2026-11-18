@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-b4ce9166335e5f90b71f97b849cc5d62",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-b4ce9166335e5f90b71f97b849cc5d62",
+  "schema:name": "Take Regulatory Action and Issue Alert (SF-REP-005)",
+  "schema:description": "Upon confirmation of a substandard or falsified medical product, remove the product from the supply chain and market, initiate product recalls or withdrawals, impose sanctions, refer criminal cases to law enforcement, and issue medical product safety alerts. (Intro p. 1, Section 2.1-2.2, Table 9, Ch. 7, PDF 13, 27-28, 39-40, 59)",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}

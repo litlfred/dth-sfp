@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1/element/id-0848bc6da1315a9e80b82d66167df022",
+  "@type": "archimate:Capability",
+  "schema:identifier": "id-0848bc6da1315a9e80b82d66167df022",
+  "schema:name": "Pharmacovigilance",
+  "schema:description": "The science and activities relating to the detection, assessment, understanding and prevention of adverse effects or any other medicine/vaccine-related problem, encompassing active and passive pharmacovigilance. (Glossary p. viii, Section 1.3, Section 2.1, PDF 10, 22, 27)",
+  "schema:category": "Strategy",
+  "dcterms:isPartOf": "https://litlfred.github.io/dth-sfp/archimate/0.1.0-draft.1"
+}
