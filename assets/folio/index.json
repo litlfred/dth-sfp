@@ -30,6 +30,11 @@
       "nodes": 0,
       "files": [
         {
+          "path": "README.md",
+          "bytes": 1538,
+          "size": "1.5 KB"
+        },
+        {
           "path": "dth-sfp/00-front-matter/00-front-matter.ts",
           "bytes": 474,
           "size": "474 B"
